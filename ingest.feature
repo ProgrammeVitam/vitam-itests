@@ -149,7 +149,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
+    Et les statuts des événements PROCESS_SIP_UNITARY, STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_MANIFEST_OBJECTNUMBER, CHECK_MANIFEST, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Test PUID incohérents
     Etant donné un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_FORMT_PUID-incoherent.zip
