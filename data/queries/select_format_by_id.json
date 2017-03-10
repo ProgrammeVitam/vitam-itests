@@ -1,0 +1,15 @@
+{
+	"$query": {
+		"$eq": {
+			"PUID": "x-fmt/1"
+		}
+	},
+	"$projection": {
+		"$fields": {
+			"#id": 1,
+			"PUID": 1,
+			"Name": 1
+		}
+	},
+	"$filter": {}
+}
