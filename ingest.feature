@@ -337,3 +337,8 @@ Fonctionnalité: uploader des fichier SIP
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement CHECK_SEDA.CONTAINER_FORMAT.FILE est KO
 
+  Scénario: test reject SIP unit declare Binary Data Object reference to OG
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_1986_unit_declare_IDobjet_au_lieu_IDGOT.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_MANIFEST, STP_INGEST_CONTROL_SIP sont KO
