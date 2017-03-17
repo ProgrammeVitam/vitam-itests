@@ -1,0 +1,13 @@
+{
+	"$query": {
+		"$and": [
+			{
+				"$eq": {
+					"Extension": "png"
+				}
+			}
+		]
+	},
+	"$filter": {},
+	"$projection": {}
+}

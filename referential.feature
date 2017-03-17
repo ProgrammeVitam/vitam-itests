@@ -9,44 +9,56 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Etant donné les tests effectués sur le tenant 1
     Quand je vérifie le fichier nommé data/formats/DROID_SignatureFile_KO.xml pour le référentiel FORMATS
     Alors les metadonnées sont
-      | Code           | 400                 |
+      | Code           | 400                                     |
     Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_KO.xml dans le référentiel FORMATS
     Alors les metadonnées sont
-      | Code           | 400                 |
+      | Code           | 400                                     |
 
   Scénario: Vérification et import des formats OK, recherche par id OK
     Etant donné les tests effectués sur le tenant 1
     Quand je vérifie le fichier nommé data/formats/DROID_SignatureFile_V88.xml pour le référentiel FORMATS
     Alors les metadonnées sont
-      | Code           | 200                 |
+      | Code           | 200                                     |
     Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_V88.xml dans le référentiel FORMATS
     Alors les metadonnées sont
-      | Code           | 201                 |
+      | Code           | 201                                     |
     Quand j'utilise le fichier de requête suivant data/queries/select_format_by_id.json 
     Et je recherche les données dans le référentiel FORMATS
     Alors le nombre de résultat est 1
     Et les metadonnées sont
-      | Status           | 204                 |
-
+      | PUID           | "x-fmt/1"                               |
+      | Name           | Microsoft Word for Macintosh Document   |
+    Quand j'utilise le fichier de requête suivant data/queries/select_format_png.json
+    Et je recherche les données dans le référentiel FORMATS
+    Alors le nombre de résultat est 4
+      
   Scénario: Vérification et import des règles KO
     Etant donné les tests effectués sur le tenant 1
     Quand je vérifie le fichier nommé data/rules/regles_CSV_KO.csv pour le référentiel RULES
     Alors les metadonnées sont
-      | Code           | 400                 |
+      | Code           | 400                                     |
     Quand j'importe le fichier nommé data/rules/regles_CSV_KO.csv dans le référentiel RULES
     Alors les metadonnées sont
-      | Code           | 400                 |
+      | Code           | 400                                     |
 
   Scénario: Vérification et import des règles OK, recherche par id OK
     Etant donné les tests effectués sur le tenant 1
     Quand je vérifie le fichier nommé data/rules/regles_CSV.csv pour le référentiel RULES
     Alors les metadonnées sont
-      | Code           | 200                 |
+      | Code           | 200                                     |
     Quand j'importe le fichier nommé data/rules/regles_CSV.csv dans le référentiel RULES
     Alors les metadonnées sont
-      | Code           | 201                 |
+      | Code           | 201                                     |
     Quand j'utilise le fichier de requête suivant data/queries/select_rule_by_id.json 
-    Et je recherche les données dans le référentiel FORMATS
+    Et je recherche les données dans le référentiel RULES
     Alors le nombre de résultat est 1
     Et les metadonnées sont
-      | Status           | 204                 |
+      | RuleId           | APP-00001                             |
+    Quand j'utilise la requête suivante
+"""
+{"$query":{"$and":[{"$eq":{"RuleValue":"Dossier individuel d’agent civil"}},{"$eq":{"RuleType":"AppraisalRule"}}]},"$filter":{},"$projection":{}}
+"""
+    Et je recherche les données dans le référentiel RULES
+    Alors les metadonnées sont
+      | RuleId           | APP-00001                             |
+
