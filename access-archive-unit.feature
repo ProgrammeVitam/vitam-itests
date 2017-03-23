@@ -4,12 +4,14 @@
 Fonctionnalité: Recherche une archive unit existante
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
-
-  Scénario: Recherche une archive unit avec un grands interval de tmeps sur plusieurs tenants
     Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé SIP_OK/ZIP/OK_SIP_SRC1_DATES_EXTREMES_OBJETS.zip
+
+  Scénario: SRC1 - Recherche une archive unit avec un grands interval de temps sur plusieurs tenants
+    Etant donné les tests effectués sur le tenant 0
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_SRC1_DATES_EXTREMES_OBJETS.zip
     Quand je télécharge le SIP
-    Et j'utilise la requête suivante
+    Alors le statut final du journal des opérations est OK
+    Quand j'utilise la requête suivante
 """
 { "$roots": [],
   "$query": [
@@ -38,47 +40,44 @@ Fonctionnalité: Recherche une archive unit existante
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
 
-
-#  Scenario: SRC2 : chercher les unités ayant un titre donné et une description contenant au moins un mots clés donnés
-#    Given The test are done on tenant 0
-#    And a valid SIP named SIP_WARNING/ZIP/WARNING_SIP_SRC2_TITLE_DESC_UNITS_SANS_OBJ.zip
-#    And I upload this SIP
-#    When I use the following query
-#"""
-#{
-#  "$roots": [],
-#  "$query": [{ "$or": [{
-#          "$and": [ {
-#              "$match": {
-#                "Title": "Rectorat"
-#              }},{
-#              "$match": {
-#                "Description": "public"
-#              }}]},{
-#          "$and": [{
-#              "$match": {
-#                "Title": "Rectorat"
-#              }},{
-#              "$match": {
-#                "Description": "privé"
-#              }}] }],
-#      "$depth": 20
-#    }],
-#  "$filter": {
-#    "$orderby": {
-#      "TransactedDate": 1 }
-#  },
-#  "$projection": {
-#    "$fields": {
-#      "TransactedDate": 1, "#id": 1, "Title": 1, "#object": 1
-#    }}}
-#"""
-#    And I search the archive unit
-#    Then the metadata are
-#      | Title | Rectorat de Nantes  |
-#      | Title | Rectorat de Noisiel |
-#      | Title | Rectorat de Reims   |
-#    When The test are done on tenant 1
-#    And I search the archive unit
-#    And the number of results is 0
+  Scénario: SRC2 - chercher les unités ayant un titre donné et une description contenant au moins un mots clés donnés
+    Etant donné les tests effectués sur le tenant 0
+    Et un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_SRC2_TITLE_DESC_UNITS_SANS_OBJ.zip
+    Quand je télécharge le SIP
+    Et j'utilise la requête suivante
+"""
+{
+  "$roots": [],
+  "$query": [{ "$or": [{
+          "$and": [ {
+              "$match": {
+                "Title": "Rectorat"
+              }},{
+              "$match": {
+                "Description": "public"
+              }}]},{
+          "$and": [{
+              "$match": {
+                "Title": "Rectorat"
+              }},{
+              "$match": {
+                "Description": "privé"
+              }}] }],
+      "$depth": 20
+    }],
+  "$filter": {
+    "$orderby": {
+      "TransactedDate": 1 }
+  },
+  "$projection": {
+    "$fields": {
+      "TransactedDate": 1, "#id": 1, "Title": 1, "#object": 1
+    }}}
+"""
+    Et je recherche les unités archivistiques
+    Alors les metadonnées sont
+      | Title | Rectorat de Nantes  |
+    Mais les tests effectués sur le tenant 1
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 0
 
