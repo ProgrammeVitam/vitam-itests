@@ -1,0 +1,32 @@
+[
+    {
+        "Name":"SIA archives nationales",
+        "Description":"Contrat d'accès - SIA archives nationales",
+        "Status" : "ACTIVE",
+        "LastUpdate":"10/12/2016",
+        "CreationDate":"10/12/2016",
+        "ActivationDate":"10/12/2016",
+        "DeactivationDate":"10/12/2016",
+        "OriginatingAgencies":["FRAAA","BBBBB","CCCCC"]
+    },
+    {
+        "Name":"Société archéologique de Touraine",
+        "Description":"Contrat d'accès - Société archéologique de Touraine",
+        "Status" : "ACTIVE",
+        "LastUpdate":"10/12/2016",
+        "CreationDate":"10/12/2016",
+        "ActivationDate":"10/12/2016",
+        "DeactivationDate":"10/12/2016",
+        "OriginatingAgencies":["FRAAA","BBBBB","CCCCC"]
+    },
+    {
+        "Name":"Air France",
+        "Description":"Contrat d'accès - Air France",
+        "Status" : "INACTIVE",
+        "LastUpdate":"10/12/2016",
+        "CreationDate":"10/12/2016",
+        "ActivationDate":"10/12/2016",
+        "DeactivationDate":"10/12/2016",
+        "OriginatingAgencies":["FRAAA","BBBBB","CCCCC"]
+    }
+]

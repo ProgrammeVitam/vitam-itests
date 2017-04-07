@@ -1,0 +1,29 @@
+# language: fr
+
+@Contacts
+Fonctionnalité: recherche d'un contrat existant
+
+  Contexte: Avant de lancer cette suite de test, je verifie qu'au moins un contrat est uploadé.
+    Etant donné les tests effectués sur le tenant 0
+
+  Scénario: Tentative d'import de contrat un contract Entree
+    Etant donné un contract nommé data/contracts/referential_contracts_ok.json
+    Alors j'importe ce contrat de type CONTRACTS
+
+  Scénario: Tentative d'import de contrat un contract access
+    Etant donné un contract nommé data/contracts/contrats_acces_ok.json
+    Alors j'importe ce contrat de type ACCESS_CONTRACTS
+
+  Scénario: CONTRACTS -recherche d'un contrat d'entree
+    Quand je cherche un contrat de type CONTRACTS et nommé ArchivalAgreement0
+    Alors le contrat existe
+    Et les métadonnées du contrat sont
+      | Name        | ArchivalAgreement0 |
+      | Description | Contrat Vitam 0    |
+
+  Scénario: ACCESS_CONTRACTS - recherche d'un contrat d'accès
+    Quand je cherche un contrat de type ACCESS_CONTRACTS et nommé Air France
+    Alors le contrat existe
+    Et les métadonnées du contrat sont
+      | Name        | Air France                   |
+      | Description | Contrat d'accès - Air France |
