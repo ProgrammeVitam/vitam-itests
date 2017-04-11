@@ -342,3 +342,15 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_MANIFEST, STP_INGEST_CONTROL_SIP sont KO
+
+  Scénario: Test upload SIP with valid contract OK
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
+    Et les statuts des événements CHECK_CONTRACT_INGEST, STP_INGEST_CONTROL_SIP sont OK
+
+  Scénario: Test SIP with invalid contract KO
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_2_GO_INVALID_CONTRACT.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_CONTRACT_INGEST, STP_INGEST_CONTROL_SIP sont KO
