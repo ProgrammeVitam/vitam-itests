@@ -277,23 +277,11 @@ Fonctionnalité: uploader des fichier SIP
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_OG_CHECK_AND_TRANSFORME, OG_OBJECTS_FORMAT_CHECK sont OK
 
-  Scénario: SIP contenant un groupe d'objet sans unit
-    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_GROUPE_OBJET_SANS_UNIT.zip
-    Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est KO
-    Et les statuts des événements CHECK_CONSISTENCY, STP_INGEST_CONTROL_SIP sont KO
-
   Scénario: SIP avec empreinte KO - Retour ATR doit être OK
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_Empreinte_test_ATR.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements STP_INGEST_FINALISATION, ATR_NOTIFICATION sont OK
-
-  Scénario: SIP avec Règle de gestion d'une durée de 999 ans
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_RULE_999_ans.zip
-    Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est OK
-    Et le statut de l'événement UNITS_RULES_COMPUTE est KO
 
   Scénario: SIP avec un Binary Master
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_USAGE_1_BM.zip
@@ -318,12 +306,6 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
     Et le statut de l'événement PROCESS_SIP_UNITARY est OK
-
-  Scénario: SIP FATAL
-    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_FATAL.zip
-    Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est FATAL
-    Et les statuts des événements STP_INGEST_FINALISATION, ATR_NOTIFICATION sont OK
 
   Scénario: test multi répertoire Content in SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_DEUX_Contents.zip
