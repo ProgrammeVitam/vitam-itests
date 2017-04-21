@@ -336,3 +336,15 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_CONTRACT_INGEST, STP_INGEST_CONTROL_SIP sont KO
+    
+  Scénario: Test SIP with empty title KO (US 1791)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_TITLE_VIDE.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et le statut de l'événement CHECK_UNIT_SCHEMA est KO
+    
+  Scénario: Test SIP with invalid date KO (US 1791)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_RG-STARTDATE_AN9000.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et le statut de l'événement CHECK_UNIT_SCHEMA est KO
