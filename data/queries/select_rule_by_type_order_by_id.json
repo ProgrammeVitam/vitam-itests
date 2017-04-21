@@ -1,0 +1,15 @@
+{
+	"$query": {
+		"$eq": {
+			"RuleType": "AppraisalRule"
+		}
+	},
+	"$projection": {
+		"$fields": {
+			"#id": 1,
+			"RuleId": 1,
+			"Name": 1
+		}
+	},
+	"$filter": { "$orderby": { "RuleId": -1 } }
+}

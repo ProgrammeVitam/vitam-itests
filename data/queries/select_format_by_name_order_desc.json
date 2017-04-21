@@ -1,0 +1,13 @@
+{
+	"$query": {
+		"$and": [
+			{
+				"$match": {
+					"Name": "acrobat"
+				}
+			}
+		]
+	},
+	"$filter": { "$orderby": { "Name": -1 } },
+	"$projection": {}
+}

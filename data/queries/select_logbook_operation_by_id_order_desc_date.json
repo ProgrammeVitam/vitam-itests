@@ -1,0 +1,9 @@
+{
+	"$query": {
+		"$in": {
+			"evTypeProc": ["INGEST","UPDATE"]
+		}
+	},
+	"$projection": {},
+	"$filter": { "$orderby": { "evTypeProc": -1 } }
+}

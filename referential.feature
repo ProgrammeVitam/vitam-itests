@@ -10,17 +10,17 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Quand je vérifie le fichier nommé data/formats/DROID_SignatureFile_KO.xml pour le référentiel FORMATS
     Alors les metadonnées sont
       | Code           | 400                                     |
-    Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_KO.xml dans le référentiel FORMATS
-    Alors les metadonnées sont
-      | Code           | 400                                     |
+#    Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_KO.xml dans le référentiel FORMATS
+#    Alors les metadonnées sont
+#      | Code           | 400                                     |
 
-  Scénario: Vérification et import des formats OK, recherche par id OK
+  Scénario: Vérification et import des formats OK, recherche par id OK, rechercher par name OK
     Quand je vérifie le fichier nommé data/formats/DROID_SignatureFile_V88.xml pour le référentiel FORMATS
     Alors les metadonnées sont
       | Code           | 200                                     |
-    Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_V88.xml dans le référentiel FORMATS
-    Alors les metadonnées sont
-      | Code           | 201                                     |
+#    Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_V88.xml dans le référentiel FORMATS
+#    Alors les metadonnées sont
+#      | Code           | 201                                     |
     Quand j'utilise le fichier de requête suivant data/queries/select_format_by_id.json 
     Et je recherche les données dans le référentiel FORMATS
     Alors le nombre de résultat est 1
@@ -30,6 +30,12 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Quand j'utilise le fichier de requête suivant data/queries/select_format_png.json
     Et je recherche les données dans le référentiel FORMATS
     Alors le nombre de résultat est 4
+    Quand j'utilise le fichier de requête suivant data/queries/select_format_by_name_order_desc.json 
+    Et je recherche les données dans le référentiel FORMATS
+    Alors le nombre de résultat est 31
+    Et les metadonnées sont
+      | PUID           | "fmt/491"                                                     |
+      | Name           | Acrobat PDF/X - Portable Document Format - Exchange PDF/X-5pg |
       
   Scénario: Vérification et import des règles KO
     Quand je vérifie le fichier nommé data/rules/jeu_donnees_KO_regles_CSV.csv pour le référentiel RULES
@@ -40,12 +46,12 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
       | Code           | 400                                     |
 
   Scénario: Vérification et import des règles OK, recherche par id OK
-    Quand je vérifie le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES
-    Alors les metadonnées sont
-      | Code           | 200                                     |
-    Quand j'importe le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv dans le référentiel RULES
-    Alors les metadonnées sont
-      | Code           | 201                                     |
+#    Quand je vérifie le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES
+#    Alors les metadonnées sont
+#      | Code           | 200                                     |
+#    Quand j'importe le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv dans le référentiel RULES
+#    Alors les metadonnées sont
+#      | Code           | 201                                     |
     Quand j'utilise le fichier de requête suivant data/queries/select_rule_by_id.json 
     Et je recherche les données dans le référentiel RULES
     Alors le nombre de résultat est 1
@@ -58,4 +64,10 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Et je recherche les données dans le référentiel RULES
     Alors les metadonnées sont
       | RuleId           | APP-00001                             |
+    Quand j'utilise le fichier de requête suivant data/queries/select_rule_by_type_order_by_id.json 
+    Et je recherche les données dans le référentiel RULES
+    Alors le nombre de résultat est 6
+    Et les metadonnées sont
+      | RuleId           | APP-1069004                            |
+
 
