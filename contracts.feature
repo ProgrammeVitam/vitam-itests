@@ -27,3 +27,17 @@ Fonctionnalité: recherche d'un contrat existant
     Et les métadonnées du contrat sont
       | Name        | Air France                   |
       | Description | Contrat d'accès - Air France |
+      
+  Scénario: ACCESS_CONTRACTS - recherche de contrats d'accès ordonnés par Name (desc)
+    Quand j'utilise le fichier de requête suivant data/queries/select_access_contract_order_name_desc.json
+    Et je recherche les données dans le référentiel ACCESS_CONTRACTS
+    Alors le nombre de résultat est 3
+    Et les metadonnées sont
+      | Name        | Soci\u00E9t\u00E9 arch\u00E9ologique de Touraine  |
+
+  Scénario: CONTRACTS - recherche de contrats d'entrée ordonnés par Name (desc)
+    Quand j'utilise le fichier de requête suivant data/queries/select_ingest_contract_order_name_desc.json
+    Et je recherche les données dans le référentiel CONTRACTS
+    Alors le nombre de résultat est 3
+    Et les metadonnées sont
+      | Name        | ArchivalAgreement1 |

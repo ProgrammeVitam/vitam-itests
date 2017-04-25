@@ -1,0 +1,13 @@
+{
+	"$query": {
+		"$and": [
+			{
+				"$match": {
+					"Description": "Contrat d'accès"
+				}
+			}
+		]
+	},
+	"$filter": { "$orderby": { "Name": -1 } },
+	"$projection": {}
+}

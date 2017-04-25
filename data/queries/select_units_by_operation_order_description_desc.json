@@ -1,0 +1,23 @@
+{
+	"$roots": [],
+	"$query": [
+		{
+			"$and": [
+				{
+					"$in": {
+						"#operations": [
+							"Operation-Id"
+						]
+					}
+				}
+			],
+         "$depth": 20
+		},
+		{
+			"$match": { "Description" : "Description" },
+			"$depth": 0	
+		}
+	],
+	"$filter": { "$orderby": { "Description": -1 } },
+	"$projection": {}
+}

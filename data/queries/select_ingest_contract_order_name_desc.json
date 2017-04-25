@@ -1,0 +1,13 @@
+{
+	"$query": {
+		"$and": [
+			{
+				"$match": {
+					"Description": "Contrat Vitam"
+				}
+			}
+		]
+	},
+	"$filter": { "$orderby": { "Name": -1 } },
+	"$projection": {}
+}

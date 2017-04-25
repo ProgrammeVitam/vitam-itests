@@ -81,3 +81,17 @@ Fonctionnalité: Recherche une archive unit existante
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
 
+
+  Scénario: Access SORT - Recherche de plusieurs archive unit ordonées dans l'ordre inverse des titres
+    Etant donné les tests effectués sur le tenant 0
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE_SORT.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_order_description_desc.json
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 5
+    Alors les metadonnées sont
+      | Title            | ID8                                             |
+      | Description      | Description de l'archive unit d'identifiant ID8 |
+      
+      
