@@ -22,11 +22,11 @@ Fonctionnalité: recherche d'un contrat existant
       | Description | Contrat Vitam 0    |
 
   Scénario: ACCESS_CONTRACTS - recherche d'un contrat d'accès
-    Quand je cherche un contrat de type ACCESS_CONTRACTS et nommé Air France
+    Quand je cherche un contrat de type ACCESS_CONTRACTS et nommé AccessContract0
     Alors le contrat existe
     Et les métadonnées du contrat sont
-      | Name        | Air France                   |
-      | Description | Contrat d'accès - Air France |
+      | Name        | AccessContract0 |
+      | Description | Contrat Acces 0 |
       
   Scénario: ACCESS_CONTRACTS - recherche de contrats d'accès ordonnés par Name (desc)
     Quand j'utilise le fichier de requête suivant data/queries/select_access_contract_order_name_desc.json
