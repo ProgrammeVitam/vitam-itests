@@ -29,15 +29,17 @@ Fonctionnalité: recherche d'un contrat existant
       | Description | Contrat Acces 0 |
       
   Scénario: ACCESS_CONTRACTS - recherche de contrats d'accès ordonnés par Name (desc)
+    Etant donné un contract nommé data/contracts/contrats_acces_ok_sort.json
+    Alors j'importe ce contrat de type ACCESS_CONTRACTS
     Quand j'utilise le fichier de requête suivant data/queries/select_access_contract_order_name_desc.json
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
-    Alors le nombre de résultat est 3
     Et les metadonnées sont
-      | Name        | Soci\u00E9t\u00E9 arch\u00E9ologique de Touraine  |
+      | Name        | Zimbabwe - ZIM archives nationales  |
 
   Scénario: CONTRACTS - recherche de contrats d'entrée ordonnés par Name (desc)
+    Etant donné un contract nommé data/contracts/referential_contracts_ok_sort.json
+    Alors j'importe ce contrat de type CONTRACTS
     Quand j'utilise le fichier de requête suivant data/queries/select_ingest_contract_order_name_desc.json
     Et je recherche les données dans le référentiel CONTRACTS
-    Alors le nombre de résultat est 3
     Et les metadonnées sont
       | Name        | ArchivalAgreement1 |
