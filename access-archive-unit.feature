@@ -6,7 +6,7 @@ Fonctionnalité: Recherche une archive unit existante
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
     Etant donné les tests effectués sur le tenant 0
 
-  Scénario: SRC1 - Recherche une archive unit avec un grands interval de temps sur plusieurs tenants
+  Scénario: SRC1 - Recherche une archive unit avec un intervalle de temps sur plusieurs tenants
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_SRC1_DATES_EXTREMES_OBJETS.zip
     Quand je télécharge le SIP
@@ -17,10 +17,10 @@ Fonctionnalité: Recherche une archive unit existante
   "$query": [
     { "$and": [
         { "$gte": {
-            "StartDate": "1914-01-01T23:00:00.000Z"
+            "StartDate": "1700-01-01T23:00:00.000Z"
           } }, {
           "$lte": {
-            "EndDate": "1918-12-31T22:59:59.000Z"
+            "EndDate": "1701-01-02T22:59:59.000Z"
           } } ],
       "$depth": 20}],
   "$filter": {
@@ -34,8 +34,8 @@ Fonctionnalité: Recherche une archive unit existante
     Alors les metadonnées sont
       | Title            | Liste des armements |
       | DescriptionLevel | Item                |
-      | StartDate        | 1917-01-01          |
-      | EndDate          | 1918-01-01          |
+      | StartDate        | 1700-01-01          |
+      | EndDate          | 1700-01-02          |
     Mais les tests effectués sur le tenant 1
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
@@ -51,14 +51,14 @@ Fonctionnalité: Recherche une archive unit existante
   "$query": [{ "$or": [{
           "$and": [ {
               "$match": {
-                "Title": "Rectorat"
+                "Title": "SRC2_TITLE_DESC_UNITS_Rectorat"
               }},{
               "$match": {
                 "Description": "public"
               }}]},{
           "$and": [{
               "$match": {
-                "Title": "Rectorat"
+                "Title": "SRC2_TITLE_DESC_UNITS_Rectorat"
               }},{
               "$match": {
                 "Description": "privé"
@@ -76,7 +76,7 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | Title | Rectorat de Nantes  |
+      | Title | SRC2_TITLE_DESC_UNITS_Rectorat de Nantes  |
     Mais les tests effectués sur le tenant 1
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
