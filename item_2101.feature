@@ -12,31 +12,38 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise la requête suivante
 """
 {
-  "$roots": [],
-  "$query": [
-    {
-      "$and": [
-        {
-          "$match": {
-            "Description": "17"
-          }
-        }
-      ],
-      "$depth": 20
-    }
-  ],
-  "$filter": {
-    "$orderby": {
-      "TransactedDate": 1
-    }
-  },
-  "$projection": {
-    "$fields": {
-      "TransactedDate": 1,
-      "#id": 1,
-      "Title": 1
-    }
-  }
+	"$roots": [],
+	"$query": [
+		{
+			"$and": [
+				{
+					"$in": {
+						"#operations": [
+							"Operation-Id"
+						]
+					}
+				},
+				{
+					"$match": {
+						"Description": "17"
+					}
+				}
+			],
+			"$depth": 20
+		}
+	],
+	"$filter": {
+		"$orderby": {
+			"TransactedDate": 1
+		}
+	},
+	"$projection": {
+		"$fields": {
+			"TransactedDate": 1,
+			"#id": 1,
+			"Title": 1
+		}
+	}
 }
 """
     Et je recherche les unités archivistiques
