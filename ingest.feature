@@ -106,7 +106,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_REGISTRE.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements STP_ACCESSION_REGISTRATION, ACCESSION_REGISTRATION sont KO
+    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_MANIFEST sont KO
 
   Scénario: Règle inconnue
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO-RULES.zip
