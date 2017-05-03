@@ -11,7 +11,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements PROCESS_SIP_UNITARY, STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_MANIFEST_OBJECTNUMBER, CHECK_MANIFEST, STP_UNIT_CHECK_AND_PROCESS, STP_STORAGE_AVAILABILITY_CHECK, OG_METADATA_INDEXATION, OG_STORAGE, STP_INGEST_FINALISATION, ATR_NOTIFICATION, ACCESSION_REGISTRATION sont OK
+    Et les statuts des événements PROCESS_SIP_UNITARY, STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_UNIT_CHECK_AND_PROCESS, STP_STORAGE_AVAILABILITY_CHECK, OG_METADATA_INDEXATION, OG_STORAGE, STP_INGEST_FINALISATION, ATR_NOTIFICATION, ACCESSION_REGISTRATION sont OK
 
   Scénario: SIP au mauvais format
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_Mauvais_Format.pdf
@@ -46,7 +46,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements CHECK_MANIFEST, STP_INGEST_CONTROL_SIP, STP_UNIT_STORING, OG_STORAGE sont OK
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_INGEST_CONTROL_SIP, STP_UNIT_STORING, OG_STORAGE sont OK
 
   Scénario: Test SEDA
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_non_conforme_seda.zip
@@ -58,7 +58,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_OBJT_nombresup_SEDA.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_MANIFEST_OBJECTNUMBER est KO
+    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER est KO
 
   Scénario: Empreinte invalide
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_empreinte_KO.zip
@@ -70,7 +70,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_OBJT_orphelins.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_CONSISTENCY est KO
+    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY est KO
 
   Scénario: Bordereau absent
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_absent.zip
@@ -106,7 +106,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_REGISTRE.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_MANIFEST sont KO
+    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
 
   Scénario: Règle inconnue
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO-RULES.zip
@@ -124,13 +124,13 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_MANIFESTE-URI.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_MANIFEST_OBJECTNUMBER sont KO
+    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER sont KO
 
   Scénario: Objets déclarés absents
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_OBJET-NOMBRE-INFERIEUR.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_MANIFEST_OBJECTNUMBER sont KO
+    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER sont KO
 
   Scénario: XML invalide
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_xmlKO_sansobjet.zip
@@ -143,13 +143,13 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est WARNING
     Et le statut de l'événement STP_OG_CHECK_AND_TRANSFORME est WARNING
-    Et le statut de l'événement CHECK_MANIFEST_OBJECTNUMBER est OK
+    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER est OK
 
   Scénario: Enregistrement d'une archive physique
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements PROCESS_SIP_UNITARY, STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_MANIFEST_OBJECTNUMBER, CHECK_MANIFEST, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
+    Et les statuts des événements PROCESS_SIP_UNITARY, STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Test PUID incohérents
     Etant donné un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_FORMT_PUID-incoherent.zip
@@ -161,7 +161,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_ARBO_recursif.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_MANIFEST est KO
+    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est KO
 
   Scénario: SIP au format TAR
     Etant donné un fichier SIP nommé data/SIP_OK/TAR/OK_SIP_2_GO.tar
@@ -239,7 +239,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_mauvaise-version.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
 
   Scénario: Test de l'indexation d'une arborescence complexe
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE.zip
@@ -287,19 +287,19 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_USAGE_1_BM.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_MANIFEST sont OK
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont OK
 
   Scénario: SIP avec des usages sans numéros
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_USAGE_SANS_NUMERO.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_MANIFEST sont OK
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont OK
 
   Scénario: Manifest avec deux Binary Master
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_USAGES_2_BM.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_MANIFEST est KO
+    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est KO
 
   Scénario: Manifest contenant plus de 900 AU
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_900_AU.zip
@@ -323,7 +323,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_1986_unit_declare_IDobjet_au_lieu_IDGOT.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements CHECK_MANIFEST, STP_INGEST_CONTROL_SIP sont KO
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_INGEST_CONTROL_SIP sont KO
 
   Scénario: Test upload SIP with valid contract OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
