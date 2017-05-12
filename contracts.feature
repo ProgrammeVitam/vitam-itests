@@ -1,7 +1,7 @@
 # language: fr
 
 @Contacts
-Fonctionnalité: recherche d'un contrat existant
+Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès)
 
   Contexte: Avant de lancer cette suite de test, je verifie qu'au moins un contrat est uploadé.
     Etant donné les tests effectués sur le tenant 0
@@ -10,9 +10,17 @@ Fonctionnalité: recherche d'un contrat existant
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
     Alors j'importe ce contrat de type CONTRACTS
 
+  Scénario: Tentative d'import KO d'un contrat d'entrée déjà existant
+    Etant donné un contract nommé data/contracts/referential_contracts_ok.json
+    Alors j'importe ce contrat incorrect de type CONTRACTS
+  
   Scénario: Tentative d'import de contrat un contract access
     Etant donné un contract nommé data/contracts/contrats_acces_ok.json
     Alors j'importe ce contrat de type ACCESS_CONTRACTS
+
+  Scénario: Tentative d'import KO d'un contrat d'accès déjà existant
+    Etant donné un contract nommé data/contracts/contrats_acces_ok.json
+    Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
 
   Scénario: CONTRACTS -recherche d'un contrat d'entree
     Quand je cherche un contrat de type CONTRACTS et nommé ArchivalAgreement0
@@ -43,3 +51,19 @@ Fonctionnalité: recherche d'un contrat existant
     Et je recherche les données dans le référentiel CONTRACTS
     Et les metadonnées sont
       | Name        | ArchivalAgreement1 |
+
+  Scénario: Tentative d'import de contrat d'accès ko (nom manquant)
+    Etant donné un contract nommé data/contracts/ko_contrat_acces_name_manquant.json
+    Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+
+  Scénario: Tentative d'import de contrat d'accès ko (fichier xml)
+    Etant donné un contract nommé data/contracts/ko_contrat_acces.xml
+    Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+
+  Scénario: Scénario: Tentative d'import de contrat d'entrée ko (nom manquant)
+    Etant donné un contract nommé data/contracts/ko_referential_contracts_INVALID_MissingName.json
+    Alors j'importe ce contrat incorrect de type CONTRACTS
+    
+  Scénario: Scénario: Tentative d'import de contrat d'entrée ko (fichier xml)
+    Etant donné un contract nommé data/contracts/ko_referential_contracts.xml
+    Alors j'importe ce contrat incorrect de type CONTRACTS

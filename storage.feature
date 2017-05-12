@@ -1,6 +1,6 @@
 # language: fr
 
-@Ingest
+@Storage
 Fonctionnalité: uploader des fichier et verifier qu'ils sont sauvegardés dans les offres de stockages
   Avant de lancer cette suite de test je presupose ques la configuration des clients est bien faite.
   description
