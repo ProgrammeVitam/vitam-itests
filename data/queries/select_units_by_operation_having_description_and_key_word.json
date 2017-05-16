@@ -1,0 +1,51 @@
+{
+  "$roots": [],
+  "$query": [
+    {
+      "$or": [
+        {
+          "$and": [
+            {
+              "$match": {
+                "Title": "SRC2_TITLE_DESC_UNITS_Rectorat"
+              }
+            },
+            {
+              "$match": {
+                "Description": "public"
+              }
+            }
+          ]
+        },
+        {
+          "$and": [
+            {
+              "$match": {
+                "Title": "SRC2_TITLE_DESC_UNITS_Rectorat"
+              }
+            },
+            {
+              "$match": {
+                "Description": "privé"
+              }
+            }
+          ]
+        }
+      ],
+      "$depth": 20
+    }
+  ],
+  "$filter": {
+    "$orderby": {
+      "TransactedDate": 1
+    }
+  },
+  "$projection": {
+    "$fields": {
+      "TransactedDate": 1,
+      "#id": 1,
+      "Title": 1,
+      "#object": 1
+    }
+  }
+}
