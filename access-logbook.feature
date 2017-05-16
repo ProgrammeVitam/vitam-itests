@@ -3,7 +3,12 @@
 @AccessLogbook
 Fonctionnalité: Recherche dans le journal des opérations
 
-  Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
+  Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès.
+    Etant donné les tests effectués sur le tenant 0
+    Et un contract nommé data/contracts/contract_acces_TNR.json
+    Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
+    Et un contract nommé data/contracts/referential_contracts_ok.json
+    Et j'importe ce contrat sans échec de type CONTRACTS
 
   Scénario: Upload d'un SIP et vérification du contenu du champ "evDetData"
     Etant donné les tests effectués sur le tenant 0
@@ -32,4 +37,4 @@ Fonctionnalité: Recherche dans le journal des opérations
     Quand j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id_order_asc_date.json
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
-      | evTypeProc        | INGEST |      
+      | evTypeProc        | INGEST |

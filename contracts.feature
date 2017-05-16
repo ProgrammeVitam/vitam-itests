@@ -6,9 +6,13 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
   Contexte: Avant de lancer cette suite de test, je verifie qu'au moins un contrat est uploadé.
     Etant donné les tests effectués sur le tenant 0
 
-  Scénario: Tentative d'import de contrat un contract Entree
+  Scénario: Import de contrat de type contract Entree
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
     Alors j'importe ce contrat de type CONTRACTS
+
+  Scénario: Import de contrat de type contract accès
+    Etant donné un contract nommé data/contracts/contrats_acces_ok.json
+    Alors j'importe ce contrat de type ACCESS_CONTRACTS
 
   Scénario: Tentative d'import KO d'un contrat d'entrée déjà existant
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
