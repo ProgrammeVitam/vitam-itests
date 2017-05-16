@@ -138,4 +138,33 @@ Fonctionnalité: Recherche une archive unit existante
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
 	      | Title            | BAD0431E2C5E80E5BD42D547A3ED59665555.odt |
-      
+
+
+  Scénario: US 2216 / CAS OK = import SIP OK et métadonnées de l'objet physique OK
+    Etant donné les tests effectués sur le tenant 0
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
+    Quand j'utilise la requête suivante
+"""
+{ "$roots": [],
+  "$query": [{"$and":[{"$eq":{"Title":"Sed blandit mi dolor"}},{"$in":{"#operations":["Operation-Id"]}}],
+      "$depth": 0}],
+    "$projection": {
+    "$fields": {
+      "TransactedDate": 1, "#id": 1, "Title": 1, "#object": 1, "DescriptionLevel": 1, "EndDate": 1, "StartDate": 1
+}}}
+"""
+    Et je recherche les groupes d'objets des unités archivistiques
+    Alors les metadonnées sont
+	      | #qualifiers.PhysicalMaster.versions.0.DataObjectVersion                      | PhysicalMaster_1    |
+	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Height.value        | 21                  |
+	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Height.unit         | centimetre          |
+	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Length.value        | 29.7                |
+	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Length.unit         | centimetre          |
+	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Weight.value        | 1                   |
+	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Weight.unit         | kilogram            |
+	      | #qualifiers.BinaryMaster.versions.0.DataObjectVersion                        | BinaryMaster_1      |
+	      | #qualifiers.BinaryMaster.versions.0.FileInfo.Filename                        | Filename0           |
+	      | #qualifiers.BinaryMaster.versions.0.FormatIdentification.FormatId            | fmt/18              |
+	      

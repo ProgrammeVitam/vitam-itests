@@ -348,3 +348,22 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement CHECK_UNIT_SCHEMA est KO
+
+  Scénario: Test SIP with invalid SEDA on physical object KO (US 2216)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2216_CA2_non_conforme_SEDA.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et le statut de l'événement CHECK_SEDA est KO
+
+  Scénario: Test SIP with invalid version on physical object KO (US 2216)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2216_CA3_Usages_invalide.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION est KO
+
+  Scénario: Test SIP with invalid orphan GOT on physical object KO (US 2216)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2216_CA4_GOT_orphelin.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY est KO
+    
