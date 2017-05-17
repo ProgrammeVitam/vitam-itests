@@ -19,9 +19,9 @@ Fonctionnalité: Recherche une archive unit existante
 
   Scénario: SRC1 - Recherche une archive unit avec un intervalle de temps sur plusieurs tenants
     Etant donné les tests effectués sur le tenant 0
-#    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_SRC1_DATES_EXTREMES_OBJETS.zip
-#    Quand je télécharge le SIP
-#    Alors le statut final du journal des opérations est OK
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_SRC1_DATES_EXTREMES_OBJETS.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
     Quand  j'utilise le fichier de requête suivant data/queries/select_dates_extremes_src1.json
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
@@ -35,12 +35,12 @@ Fonctionnalité: Recherche une archive unit existante
 
   Scénario: SRC2 - chercher les unités ayant un titre donné et une description contenant au moins un mots clés donnés
     Etant donné les tests effectués sur le tenant 0
-#    Et un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_SRC2_TITLE_DESC_UNITS_SANS_OBJ.zip
-#    Quand je télécharge le SIP
+    Et un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_SRC2_TITLE_DESC_UNITS_SANS_OBJ.zip
+    Quand je télécharge le SIP
     Et j'utilise le fichier de requête suivant data/queries/select_titre_description_src2.json
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | Title | SRC2_TITLE_DESC_UNITS_Rectorat de Nantes  |
+      | Title | Rectorat de Seine-Et-Marne  |
     Mais les tests effectués sur le tenant 1
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
@@ -49,7 +49,7 @@ Fonctionnalité: Recherche une archive unit existante
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE_SORT.zip
     Quand je télécharge le SIP
-#    Alors le statut final du journal des opérations est OK
+    Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_order_description_desc.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 5
@@ -59,8 +59,8 @@ Fonctionnalité: Recherche une archive unit existante
 
   Scénario: Recherche une archive unit qui contient le letter tokenizer
     Etant donné les tests effectués sur le tenant 0
-#    Et un fichier SIP nommé data/SIP_OK/US_2101/OK_SIP_2101.zip
-#    Quand je télécharge le SIP
+    Et un fichier SIP nommé data/SIP_OK/US_2101/OK_SIP_2101.zip
+    Quand je télécharge le SIP
     Et j'utilise la requête suivante
 """
 {
