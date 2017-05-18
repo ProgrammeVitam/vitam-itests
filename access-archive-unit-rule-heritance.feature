@@ -86,7 +86,7 @@ Fonctionnalité: Calcul des règles de gestion
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-	| inheritedRule.StorageRule.R2.{{unit:AU2}}.path        | [["{{unit:AU2}}","{{unit:AU4}}"]]    |
+	| inheritedRule.StorageRule.R2.{{unit:AU2}}.path        | [["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]    |
 
 
   Scénario: Recherche une archive unit avec les règles héritées en cas de l'exclusion d'héritage (RefNonRuleId item_2093_CA4)
@@ -125,9 +125,18 @@ Fonctionnalité: Calcul des règles de gestion
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-  | inheritedRule                                         | {"StorageRule":{"R1":{"{{unit:AU1}}":{"StartDate":"2017-01-01","RefNonRuleId":["R5"],"FinalAction":"RestrictAccess","EndDate":"2018-01-01","path":[["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}},"R2":{"{{unit:AU2}}":{"StartDate":"2017-02-01","FinalAction":"RestrictAccess","EndDate":"2019-02-01","path":[["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}}},"AccessRule":{"ACC-00001":{"{{unit:AU1}}":{"StartDate":"2017-01-01","EndDate":"2017-01-01","path":[["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}}}} |
-	| inheritedRule.StorageRule.R1.{{unit:AU1}}.path        | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]    |
-	| inheritedRule.StorageRule.R2.{{unit:AU2}}.path        | [["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]                   |
+	| inheritedRule.StorageRule.R1.{{unit:AU1}}.path            | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]    |
+	| inheritedRule.StorageRule.R1.{{unit:AU1}}.StartDate       | "2017-01-01"                                                       |
+	| inheritedRule.StorageRule.R1.{{unit:AU1}}.RefNonRuleId    | "R5"                                                               |
+	| inheritedRule.StorageRule.R1.{{unit:AU1}}.FinalAction     | "RestrictAccess"                                                   |
+	| inheritedRule.StorageRule.R1.{{unit:AU1}}.EndDate         | "2018-01-01"                                                       |
+	| inheritedRule.StorageRule.R2.{{unit:AU2}}.path            | [["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]                   |
+	| inheritedRule.StorageRule.R2.{{unit:AU2}}.StartDate       | "2017-02-01"                                                       |
+	| inheritedRule.StorageRule.R2.{{unit:AU2}}.FinalAction     | "RestrictAccess"                                                   |
+	| inheritedRule.StorageRule.R2.{{unit:AU2}}.EndDate         | "2019-02-01"                                                       |
+	| inheritedRule.AccessRule.ACC-00001.{{unit:AU1}}.path      | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]    |
+	| inheritedRule.AccessRule.ACC-00001.{{unit:AU1}}.StartDate | "2017-01-01"                                                       |
+	| inheritedRule.AccessRule.ACC-00001.{{unit:AU1}}.EndDate   | "2017-01-01"                                                       |
 
 
   Scénario: Recherche une archive unit avec les règles héritées en cas de l'exclusion d'héritage (RefNonRuleId item_2093_CA6)
@@ -146,5 +155,6 @@ Fonctionnalité: Calcul des règles de gestion
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-	| inheritedRule.StorageRule.R1.{{unit:AU1}}.path        | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU4}}"]]    |
-	| inheritedRule.StorageRule.R2.{{unit:AU2}}.path        | [["{{unit:AU2}}","{{unit:AU4}}"]]                   |
+	| inheritedRule.StorageRule.R1.{{unit:AU1}}.path        | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]    |
+	| inheritedRule.StorageRule.R2.{{unit:AU2}}.path        | [["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]                   |
+	| inheritedRule.AccessRule.ACC-00001.{{unit:AU1}}.path  | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]    |
