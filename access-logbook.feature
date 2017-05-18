@@ -38,3 +38,18 @@ Fonctionnalité: Recherche dans le journal des opérations
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
       | evTypeProc        | INGEST |
+
+
+  Scénario: Vérifier les journaux de cycles de vies de l'unité archivistique et du group objet technique
+    Etant donné les tests effectués sur le tenant 0
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_title.json
+    Et je recherche les unités archivistiques
+    Alors les metadonnées sont
+      | Title            | Fichier 2 nouveau jeu de test |
+    Quand je recherche le JCV de l'unité archivistique dont le titre est Fichier 2 nouveau jeu de test
+    Alors les statuts de JCV des événements LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Fichier 2 nouveau jeu de test
+    Alors les statuts de JCV des événements LFC.CHECK_CONSISTENCY, LFC.CHECK_DIGEST, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OG_STORAGE, LFC.OG_METADATA_INDEXATION sont OK

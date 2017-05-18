@@ -1,0 +1,22 @@
+{
+	"$roots": [],
+	"$query": [
+		{
+			"$and": [
+				{
+					"$in": {
+						"#operations": [
+							"Operation-Id"
+						]
+					}
+				},
+				{
+					"$eq": { "Title" : "Fichier 2 nouveau jeu de test" }
+				}
+			],
+      			"$depth": 20
+		}
+	],
+	"$filter": {},
+	"$projection": {}
+}
