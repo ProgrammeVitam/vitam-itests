@@ -125,7 +125,7 @@ Fonctionnalité: Calcul des règles de gestion
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-  | inheritedRule                                         | {"StorageRule":{"R1":{"{{unit:AU1}}":{"StartDate":"2017-01-01","RefNonRuleId":["R5"],"FinalAction":"RestrictAccess","EndDate":"2018-01-01","path":[["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}},"R2":{"{{unit:AU2}}":{"StartDate":"2017-02-01","FinalAction":"RestrictAccess","EndDate":"2019-02-01","path":[["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}}},"AccessRule":{"ACC-00001":{"{{unit:AU1}}":{"StartDate":"2017-01-01","EndDate":"2017-01-01","path":[["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}}}}}],"$context":{"$roots":["{{unit:AU4}}"],"$query":[],"$filter":{},"$projection":{"$fields":{"$rules":1}}}}|
+  | inheritedRule                                         | {"StorageRule":{"R1":{"{{unit:AU1}}":{"StartDate":"2017-01-01","RefNonRuleId":["R5"],"FinalAction":"RestrictAccess","EndDate":"2018-01-01","path":[["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}},"R2":{"{{unit:AU2}}":{"StartDate":"2017-02-01","FinalAction":"RestrictAccess","EndDate":"2019-02-01","path":[["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}}},"AccessRule":{"ACC-00001":{"{{unit:AU1}}":{"StartDate":"2017-01-01","EndDate":"2017-01-01","path":[["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]}}}} |
 	| inheritedRule.StorageRule.R1.{{unit:AU1}}.path        | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]    |
 	| inheritedRule.StorageRule.R2.{{unit:AU2}}.path        | [["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]]                   |
 
