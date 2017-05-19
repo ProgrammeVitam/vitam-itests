@@ -17,7 +17,7 @@ Fonctionnalité: Recherche dans le journal des opérations
     Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
-      | evDetData        | "{\"evDetDataType\":\"MASTER\",\"EvDetailReq\":\"2eme SIP\",\"EvDateTimeReq\":\"2016-10-18T14:52:27\",\"ArchivalAgreement\":\"ArchivalAgreement0\",\"AgIfTrans\":\"Identifier5\"}" |
+      | evDetData        | "{\"evDetDataType\":\"MASTER\",\"EvDetailReq\":\"2eme SIP\",\"EvDateTimeReq\":\"2016-10-18T14:52:27\",\"ArchivalAgreement\":\"ArchivalAgreement0\",\"AgIfTrans\":\"Identifier5\",\"ServiceLevel\":null}" |
 
   Scénario: Upload d'un SIP et récupération du logbook ordonné par type de process : UPDATE (desc) / INGEST (asc) 
     Etant donné les tests effectués sur le tenant 0
