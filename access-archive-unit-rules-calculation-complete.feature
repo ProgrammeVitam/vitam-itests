@@ -514,7 +514,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.path                             | [["{{unit:Danube}}","{{unit:Botzaris}}"]] |
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.StartDate                        | "2000-01-01" |
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.EndDate                          | "2100-01-01" |
-	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.path         | [["{{unit:6_Pré Saint Gervais}}","{{unit:Place des Fêtes}}","{{unit:Botzaris}}"],["{{unit:6_Pré Saint Gervais}}","{{unit:Danube}}","{{unit:Botzaris}}"]] |
+	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.path         | [["{{unit:6_Pré Saint Gervais}}","{{unit:Danube}}","{{unit:Botzaris}}"],["{{unit:6_Pré Saint Gervais}}","{{unit:Place des Fêtes}}","{{unit:Botzaris}}"]] |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.StartDate    | "2000-01-01" |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.EndDate      | "2025-01-01" |
 
@@ -669,7 +669,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.path                               | [["{{unit:Danube}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}"]] |
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.StartDate                          | "2000-01-01" |
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.EndDate                            | "2100-01-01" |
-	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.path           | [["{{unit:6_Pré Saint Gervais}}","{{unit:Place des Fêtes}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}"],["{{unit:6_Pré Saint Gervais}}","{{unit:Danube}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}"]] |
+	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.path           | [["{{unit:6_Pré Saint Gervais}}","{{unit:Danube}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}"],["{{unit:6_Pré Saint Gervais}}","{{unit:Place des Fêtes}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}"]] |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.StartDate      | "2000-01-01" |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.EndDate        | "2025-01-01" |
 
@@ -753,7 +753,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.path                          | [["{{unit:Danube}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}","{{Bolivar.txt}}"]] |
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.StartDate                     | "2000-01-01" |
 	| inheritedRule.AccessRule.ACC-00036.{{unit:Danube}}.EndDate                       | "2100-01-01" |
-	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.path      | [["{{unit:6_Pré Saint Gervais}}","{{unit:Place des Fêtes}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}","{{Bolivar.txt}}"],["{{unit:6_Pré Saint Gervais}}","{{unit:Danube}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}","{{Bolivar.txt}}"]] |
+	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.path      | [["{{unit:6_Pré Saint Gervais}}","{{unit:Danube}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}","{{Bolivar.txt}}"],["{{unit:6_Pré Saint Gervais}}","{{unit:Place des Fêtes}}","{{unit:Botzaris}}","{{unit:Buttes-Chaumont}}","{{Bolivar.txt}}"]] |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.StartDate | "2000-01-01" |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:6_Pré Saint Gervais}}.EndDate   | "2025-01-01" |
 
