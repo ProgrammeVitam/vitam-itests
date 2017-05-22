@@ -68,3 +68,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
   Scénario: Scénario: Tentative d'import de contrat d'entrée ko (fichier xml)
     Etant donné un contract nommé data/contracts/ko_referential_contracts.xml
     Alors j'importe ce contrat incorrect de type CONTRACTS
+
+  Scénario: Scénario: Tentative d'import de contrat d'entrée ko (Id du plan parent est incorrect)
+    Etant donné un contract nommé data/contracts/referential_contracts_unknowID_ko.json
+    Alors j'importe ce contrat incorrect de type CONTRACTS
