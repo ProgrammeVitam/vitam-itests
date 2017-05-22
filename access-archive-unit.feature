@@ -137,4 +137,56 @@ Fonctionnalité: Recherche une archive unit existante
     Quand je recherche les groupes d'objets de l'unité archivistique dont le titre est ID8  
     Alors les metadonnées sont
       | FileInfo.Filename                  | jeux_test.ods   |
-      | #qualifiers.BinaryMaster._nbc      | 1               |  
+      | #qualifiers.BinaryMaster._nbc      | 1               |
+
+  Scénario: Recherche avancée d’archives – cas OK d’une recherche monocritère en utilisant comme critère de recherche une métadonnée de gestion (API)
+    Etant donné les tests effectués sur le tenant 0
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO_test.zip
+    Et je télécharge le SIP
+    Quand  j'utilise le fichier de requête suivant data/queries/select_monocritere.json
+    Et je recherche les unités archivistiques
+    Alors les metadonnées sont
+      | Title            | untitredesipunique  |
+      | DescriptionLevel | RecordGrp           |
+      | StartDate        | 2016-06-03T15:28:00 |
+      | EndDate          | 2016-06-03T15:28:00 |
+
+  Scénario: Recherche avancée d’archives – cas OK d’une recherche multicritères de métadonnées de gestion (API)
+    Etant donné les tests effectués sur le tenant 0
+    Quand  j'utilise le fichier de requête suivant data/queries/select_multicriteres.json
+    Et je recherche les unités archivistiques
+    Alors les metadonnées sont
+      | Title            | untitredesipunique  |
+      | DescriptionLevel | RecordGrp           |
+      | StartDate        | 2016-06-03T15:28:00 |
+      | EndDate          | 2016-06-03T15:28:00 |
+
+
+  Scénario: Recherche avancée d’archives – cas OK d’une recherche multicritères de métadonnées de gestion (API)
+    Etant donné les tests effectués sur le tenant 0
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK-RULES_TEST.zip
+    Et je télécharge le SIP
+    Quand  j'utilise le fichier de requête suivant data/queries/select_multicriteres_md.json
+    Et je recherche les unités archivistiques
+    Alors les metadonnées sont
+      | Title            | titre20999999  |
+      | StartDate        | 2012-06-20T18:58:18 |
+      | EndDate          | 2014-12-07T09:52:56 |
+
+  Scénario: Recherche avancée d’archives – recherche d’archives dans un tenant sur la base de critères correspondant à des archives conservées dans un autre tenant (manuel)
+    Etant donné les tests effectués sur le tenant 0
+    Quand  j'utilise le fichier de requête suivant data/queries/select_multicriteres_md.json
+    Et je recherche les unités archivistiques
+    Alors les metadonnées sont
+      | Title            | titre20999999  |
+      | StartDate        | 2012-06-20T18:58:18 |
+      | EndDate          | 2014-12-07T09:52:56 |
+    Mais les tests effectués sur le tenant 1
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 0
+
+  Scénario: Recherche avancée d’archives – recherche KO par date, le format de date étant invalide (API)
+    Etant donné les tests effectués sur le tenant 0
+    Quand  j'utilise le fichier de requête suivant data/queries/select_dates_extremes_src_mauvais_format.json
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 0

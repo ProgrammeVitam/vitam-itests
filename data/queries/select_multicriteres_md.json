@@ -1,0 +1,29 @@
+{
+  "$roots": [],
+  "$query": [
+    {
+
+          "$and": [
+            {
+              "$match": {
+                "#management.AccessRule.Rule": "ACC-00002"
+              }
+            },
+            {
+              "$match": {
+                "Title": "titre20999999"
+              }
+            }
+          ],
+      "$depth": 20
+    }
+  ],
+  "$filter": {
+    "$orderby": {
+      "TransactedDate": 1
+    }
+  },
+  "$projection": {
+
+  }
+}

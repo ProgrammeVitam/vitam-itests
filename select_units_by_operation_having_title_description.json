@@ -1,0 +1,24 @@
+{
+	"$roots": [],
+	"$query": [
+		{
+			"$and": [
+				{
+					"$in": {
+						"#operations": [
+							"s-Id"
+						]
+					}
+				},
+				{
+					"$exists": "TitleTitleTitle"
+				},
+				{
+					"$exists": "Description"
+				}
+			]
+		}
+	],
+	"$filter": {},
+	"$projection": {}
+}
