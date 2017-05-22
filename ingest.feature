@@ -276,10 +276,10 @@ Fonctionnalité: uploader des fichier SIP
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
 
   Scénario: SIP avec un fichier dont l'extension contient un caractère spécial
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_FILE_extension_caractere_special.zip
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_FILE_extension_caractere_special.zip
     Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est OK
-    Et les statuts des événements STP_OG_CHECK_AND_TRANSFORME, OG_OBJECTS_FORMAT_CHECK sont OK
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements STP_OG_CHECK_AND_TRANSFORME, CHECK_DIGEST sont FATAL
 
   Scénario: SIP avec empreinte KO - Retour ATR doit être OK
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_Empreinte_test_ATR.zip
