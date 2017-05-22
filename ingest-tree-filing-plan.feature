@@ -16,7 +16,7 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
   Scénario: Télécharger un plan avec workflow de ingest
     Etant donné un fichier SIP nommé data/SIP_OK/US_1900_2011/test_plan.zip
     Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est KO
+    Alors le statut final du journal des opérations est WARNING
 
   Scénario: Télécharger un arbre
     Etant donné un fichier SIP nommé data/SIP_OK/US_1900_2011/OK_arbre_AN.zip
@@ -26,4 +26,4 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
   Scénario: Ttélécharger un arbre avec workflow de ingest
     Etant donné un fichier SIP nommé data/SIP_OK/US_1900_2011/OK_arbre_AN.zip
     Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est KO
+    Alors le statut final du journal des opérations est WARNING
