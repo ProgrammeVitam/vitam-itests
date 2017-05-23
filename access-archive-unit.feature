@@ -236,7 +236,7 @@ en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un a
       | EndDate          | 2016-06-03T15:28:00 |
 
 
-  Scénario: Recherche avancée d’archives – cas OK d’une recherche multicritères de métadonnées de gestion (API)
+  Scénario: Recherche avancée d’archives – cas OK d’une recherche multicritères croisant métadonnées métadonnées descriptives et métadonnées de gestion (API)
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK-RULES_TEST.zip
     Et je télécharge le SIP
