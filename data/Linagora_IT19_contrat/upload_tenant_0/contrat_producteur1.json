@@ -1,0 +1,14 @@
+[
+	{
+		"Name":"contrat_producteur1",
+		"Description":"Contrat permettant de faire des opérations pour tous les services producteurs et sur tous les usages",
+		"Status":"ACTIVE",
+		"OriginatingAgencies":["producteur1"],
+		"DataObjectVersion": ["PhysicalMaster", "BinaryMaster", "Dissemination", "Thumbnail", "TextContent"],
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016",
+		"WritingPermission": true
+	}
+]

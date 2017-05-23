@@ -1,0 +1,23 @@
+{
+  "$roots": [],
+  "$query": [
+    {
+      "$and": [
+        {
+          "$in": {
+            "#operations": [
+              "Operation-Id"
+            ]
+          }
+        },
+        {
+          "$match": {
+            "Title": "Gallieni par producteur1"
+          }
+        }
+      ]
+    }
+  ],
+  "$filter": {},
+  "$projection": {}
+}
