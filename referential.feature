@@ -46,12 +46,7 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
       | Code           | 400                                     |
 
   Scénario: Vérification et import des règles OK, recherche par id OK
-    Quand je vérifie le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES
-    Alors les metadonnées sont
-      | Code           | 200                                     |
-#    Quand j'importe le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv dans le référentiel RULES
-#    Alors les metadonnées sont
-#      | Code           | 201                                     |
+    Quand je vérifie le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES                                |
     Quand j'utilise le fichier de requête suivant data/queries/select_rule_by_id.json 
     Et je recherche les données dans le référentiel RULES
     Alors le nombre de résultat est 1
