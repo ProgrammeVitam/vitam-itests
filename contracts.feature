@@ -44,6 +44,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
     Et les metadonnées sont
       | Name        | Zimbabwe - ZIM archives nationales  |
+      | Identifier        | AC-0000 |
 
   Scénario: CONTRACTS - recherche de contrats d'entrée ordonnés par Name (desc)
     Etant donné un contract nommé data/contracts/referential_contracts_ok_sort.json
@@ -52,6 +53,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Et je recherche les données dans le référentiel CONTRACTS
     Et les metadonnées sont
       | Name        | ArchivalAgreement1 |
+      | Identifier        | IC-0000 |
 
   Scénario: Tentative d'import de contrat d'accès ko (nom manquant)
     Etant donné un contract nommé data/contracts/ko_contrat_acces_name_manquant.json
