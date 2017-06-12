@@ -25,6 +25,7 @@ Fonctionnalité: Tests d'imports et de recherches  de profils
     Et les métadonnées du profil sont
       | Name        | profilTrnXsd            |
       | Description | Recherche de profil XSD |
+      | Identifier        | PR- |
 
   Scénario: Recherche de profil RNG - Recherche de profil RNG
     Quand je cherche un profil nommé profilTrnRng
@@ -32,6 +33,7 @@ Fonctionnalité: Tests d'imports et de recherches  de profils
     Et les métadonnées du profil sont
       | Name        | profilTrnRng            |
       | Description | Recherche de profil RNG |
+      | Identifier        | PR- |
 
 
 
