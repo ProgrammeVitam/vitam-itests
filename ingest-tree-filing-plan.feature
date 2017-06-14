@@ -31,4 +31,37 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Etant donné un fichier SIP nommé data/SIP_OK/US_1900_2011/OK_arbre_AN.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est WARNING
-   
+
+
+  Scénario: Ratachement d'une unit de sip à une unit de  sip
+    Etant donné un fichier SIP nommé data/SIP_OK/US_1900_2011/OK_arbre_AN.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est WARNING
+
+  Scénario: Ratachement d'une unit d'arbre  à une unit de sip
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
+    Et j'utilise la requête suivante
+"""
+  { "$roots": [], "$query": [{"$and":[{"$eq":{"Title":"RattachementUnitTnrTitle"}}], "$depth": 0}]}
+
+"""
+    Et je recherche une unité archivistique et je recupère son id
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/sip_attachement.zip
+    Et je construit le sip de rattachement avec le template
+    Et je télécharge l'arbre
+    Alors le statut final du journal des opérations est KO
+
+  Scénario: Ratachement d'une unit de  plan  à une unit de sip
+    Quand j'utilise la requête suivante
+"""
+  { "$roots": [], "$query": [{"$and":[{"$eq":{"Title":"RattachementUnitTnrTitle"}}], "$depth": 0}]}
+
+"""
+    Et je recherche une unité archivistique et je recupère son id
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/sip_attachement.zip
+    Et je construit le sip de rattachement avec le template
+    Et je télécharge le plan
+    Alors le statut final du journal des opérations est KO
+
