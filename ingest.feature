@@ -98,7 +98,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_FORMAT_Varies.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est WARNING
-    Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME, PROCESS_SIP_UNITARY sont WARNING
+    Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME, DEFAULT_WORKFLOW sont WARNING
 
   Scénario: Objet sans GOT
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_MANIFESTE-OBJET-SANS-GOT.zip
