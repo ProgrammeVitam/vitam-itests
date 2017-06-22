@@ -1,7 +1,7 @@
 {
 	"$query": {
 		"$eq": {
-			"#id": "Operation-Id"
+			"OperationIds": "Operation-Id"
 		}
 	},
 	"$projection": {},
