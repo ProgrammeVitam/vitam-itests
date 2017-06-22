@@ -76,7 +76,7 @@ en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un a
 
   Scénario: US2231 -- Sélectionner le contrat “contrat_producteur1”
     Etant donné les tests effectués sur le tenant 0
-    Et les tests effectués sur le contrat id contrat_producteur1
+    Et les tests effectués sur le contrat id ContratTNR
     Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
     Et j'utilise le fichier de requête suivant data/queries/select_accession_register_by_id.json
