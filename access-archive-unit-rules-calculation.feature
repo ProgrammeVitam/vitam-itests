@@ -108,7 +108,7 @@ Fonctionnalité: Recherche une archive unit existante
 	|inheritedRule.StorageRule.R1.{{unit:AU1}}.path | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]] |
 	|inheritedRule.StorageRule.R1.{{unit:AU5}}.path | [["{{unit:AU5}}","{{unit:AU3}}","{{unit:AU4}}"]] |
 
-  
+
   Scénario: Recherche une archive unit avec les règles héritées(CA6)
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/US_1069/1069_CA6.zip
@@ -125,7 +125,4 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | inheritedRule.StorageRule.R1.{{unit:AU1}}.path | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU4}}"],["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]] |
-
-
-
+      | inheritedRule.StorageRule.R1.{{unit:AU1}}.path | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"], ["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU4}}"]] |
