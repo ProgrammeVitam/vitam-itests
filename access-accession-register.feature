@@ -8,7 +8,7 @@ Fonctionnalité: Recherche dans les registres de fond
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
-    Et j'importe ce contrat sans échec de type CONTRACTS
+    Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS
 
   Scénario: Upload d'un SIP et vérification du contenu dans le registre de fonds
     Etant donné les tests effectués sur le tenant 0

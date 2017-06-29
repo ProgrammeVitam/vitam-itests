@@ -9,7 +9,7 @@ Fonctionnalité: uploader des fichier SIP
   # Je m'assure que les contracts d'entrée sont bient importés
   Scénario: Import de contrat de type contract Entree
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
-    Alors j'importe ce contrat sans échec de type CONTRACTS
+    Alors j'importe ce contrat sans échec de type ENTRY_CONTRACTS
 
   Scénario: Test des différentes étapes OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
