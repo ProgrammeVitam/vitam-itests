@@ -8,7 +8,7 @@ Fonctionnalité: Mise à jour d'une unité archivistique
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
-    Et j'importe ce contrat sans échec de type CONTRACTS
+    Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS
 
   Scénario: UPDATE1 : vérifier la bonne modification du titre et d'une description d'une unité d'archive
     Etant donné les tests effectués sur le tenant 0
