@@ -260,3 +260,14 @@ en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un a
     Quand  j'utilise le fichier de requête suivant data/queries/select_dates_extremes_src_mauvais_format.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
+
+  Scénario: US2455 -- Spécifier un usage par défaut aux contrats d'accès
+    Etant donné les tests effectués sur le tenant 0
+    Et les tests effectués sur le contrat id contract_with_field_EveryDataObjectVersion
+    Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
+    Quand je télécharge le SIP
+    Et je télécharge le fichier binaire à l'usage "BinaryMaster" version 0
+    Alors le status de la réponse est UNAUTHORIZED
+    Quand je modifie le contrat d'accès avec le fichier de requête suivant data/queries/update_context.json
+    Et je télécharge le fichier binaire à l'usage "BinaryMaster" version 0
+    Alors le status de la réponse est OK
