@@ -5,6 +5,8 @@ Fonctionnalité: Recherche une archive unit existante
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
     Etant donné les tests effectués sur le tenant 0
+    Et un contract nommé data/contracts/contract_access_every_originating_agency.json
+    Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/Linagora_IT19_contrat/upload_tenant_0/contrat_modification_autorisees.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/Linagora_IT19_contrat/upload_tenant_0/contrat_modification_interdites.json
@@ -30,8 +32,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et les tests effectués sur le tenant 1
     Alors j'importe ce contrat sans échec de type ACCESS_CONTRACTS
 
-  Scénario: US2230 --  chercher une unité archivistique nommée “Galliéni”, 
-en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un autre tenant “contrat_tous_producteurs”
+  Scénario: US2230 --  chercher une unité archivistique nommée “Galliéni”, en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un autre tenant “contrat_tous_producteurs”
     Etant donné les tests effectués sur le tenant 2
     Et les tests effectués sur le contrat id contrat_tous_producteur
     Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
@@ -188,7 +189,7 @@ en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un a
 	      | #qualifiers.BinaryMaster.versions.0.DataObjectVersion                        | BinaryMaster_1      |
 	      | #qualifiers.BinaryMaster.versions.0.FileInfo.Filename                        | Filename0           |
 	      | #qualifiers.BinaryMaster.versions.0.FormatIdentification.FormatId            | fmt/18              |
-	      
+
   Scénario: Access SORT - Recherche de plusieurs archive unit ordonées dans l'ordre inverse des titres
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE_SORT.zip
@@ -202,12 +203,30 @@ en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un a
       | Description      | Description de l'archive unit d'identifiant ID8 |
       | DescriptionLevel | Item                                            |
       | #unitups         | ["{{unit:ID4}}","{{unit:ID10}}"] |
-  
-    
     Quand je recherche les groupes d'objets de l'unité archivistique dont le titre est ID8  
     Alors les metadonnées sont
       | FileInfo.Filename                  | jeux_test.ods   |
       | #qualifiers.BinaryMaster._nbc      | 1               |
+  
+  Scénario: Access EveryOriginatingAgency OK - Recherche d'une archive avec un contrat acceptant tous les services producteurs
+    Etant donné les tests effectués sur le tenant 0
+    Et les tests effectués sur le contrat id contrat_EveryOriginatingAgency_true
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 1
+
+  Scénario: Access EveryOriginatingAgency KO - Recherche d'une archive avec un contrat n'acceptant pas tous les services producteurs
+    Etant donné les tests effectués sur le tenant 0
+    Et les tests effectués sur le contrat id contrat_EveryOriginatingAgency_false
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 0
 
   Scénario: Recherche avancée d’archives – cas OK d’une recherche monocritère en utilisant comme critère de recherche une métadonnée de gestion (API)
     Etant donné les tests effectués sur le tenant 0
