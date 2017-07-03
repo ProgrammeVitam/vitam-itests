@@ -20,7 +20,8 @@
       "FRAN_NP_005568",
       "FR_ORG_AGEN"
     ],
-    "EveryDataObjectVersion": true,
+    "EveryOriginatingAgency": true,
+    "EveryDataObjectVersion": false,
     "DataObjectVersion": [],
     "LastUpdate": "10/12/2016",
     "CreationDate": "10/12/2016",

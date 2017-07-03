@@ -1,0 +1,11 @@
+{
+	"$query": [],
+	"$filter": {},
+	"$action": [
+		{
+			"$set": {
+				"EveryDataObjectVersion": true
+			}
+		}
+	]
+}
