@@ -266,8 +266,8 @@ en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un a
     Et les tests effectués sur le contrat id contract_with_field_EveryDataObjectVersion
     Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
-    Et je télécharge le fichier binaire à l'usage "BinaryMaster" version 0
+    Et je télécharge le fichier binaire de l'unité archivistique nommé "Gambetta par producteur1" à l'usage "BinaryMaster" version 0
     Alors le status de la réponse est UNAUTHORIZED
-    Quand je modifie le contrat d'accès avec le fichier de requête suivant data/queries/update_context.json
-    Et je télécharge le fichier binaire à l'usage "BinaryMaster" version 0
+    Quand je modifie le contrat d'accès contract_with_field_EveryDataObjectVersion avec le fichier de requête suivant data/queries/update_contract.json
+    Et je télécharge le fichier binaire de l'unité archivistique nommé "Gambetta par producteur1" à l'usage "BinaryMaster" version 0
     Alors le status de la réponse est OK
