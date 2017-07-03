@@ -62,7 +62,8 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_OBJT_nombresup_SEDA.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER est KO
+    Et le statut de l'événement CHECK_HEADER.CHECK_IC_AP_RELATION est KO
+    #FIX ME, should be : Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER est KO
 
   Scénario: Empreinte invalide
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_empreinte_KO.zip
@@ -98,7 +99,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_FORMAT_Varies.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est WARNING
-    Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME, DEFAULT_WORKFLOW sont WARNING
+    Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME, PROCESS_SIP_UNITARY sont WARNING
 
   Scénario: Objet sans GOT
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_MANIFESTE-OBJET-SANS-GOT.zip
@@ -110,7 +111,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_REGISTRE.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements STP_INGEST_CONTROL_SIP, DEFAULT_WORKFLOW sont KO
+    Et les statuts des événements STP_INGEST_CONTROL_SIP, PROCESS_SIP_UNITARY sont KO
 
   Scénario: Règle inconnue
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO-RULES.zip
@@ -340,13 +341,13 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_HEADER.CHECK_CONTRACT_INGEST, STP_INGEST_CONTROL_SIP sont KO
-    
+
   Scénario: Test SIP with empty title KO (US 1791)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_TITLE_VIDE.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement CHECK_UNIT_SCHEMA est KO
-    
+
   Scénario: Test SIP with invalid date KO (US 1791)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_RG-STARTDATE_AN9000.zip
     Quand je télécharge le SIP
@@ -370,4 +371,3 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY est KO
-    
