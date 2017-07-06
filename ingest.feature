@@ -306,12 +306,6 @@ Fonctionnalité: uploader des fichier SIP
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est KO
 
-  Scénario: Manifest contenant plus de 900 AU
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_900_AU.zip
-    Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est OK
-    Et le statut de l'événement PROCESS_SIP_UNITARY est OK
-
   Scénario: test multi répertoire Content in SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_DEUX_Contents.zip
     Quand je télécharge le SIP
