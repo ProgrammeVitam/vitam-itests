@@ -57,7 +57,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | Title            | Gambetta par producteur1 |
+      | Title            | Porte de Bagnolet par producteur1 |
     Quand j'utilise le fichier de requête suivant data/queries/update_unit_title_description.json
     Et je modifie les unités archivistiques
     Alors le nombre de résultat est 1
@@ -110,7 +110,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise le fichier de requête suivant data/queries/select_titre_description_src2.json
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | Title | Rectorat de Seine-Et-Marne  |
+      | Title | SRC2_TITLE_DESC_UNITS_Rectorat de Nantes  |
     Mais les tests effectués sur le tenant 1
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
@@ -195,9 +195,9 @@ Fonctionnalité: Recherche une archive unit existante
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE_SORT.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_order_description_desc.json
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_order_having_object_description_desc.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 5
+    Alors le nombre de résultat est 2
     Alors les metadonnées sont
       | Title            | ID8                                             |
       | Description      | Description de l'archive unit d'identifiant ID8 |
@@ -277,8 +277,7 @@ Fonctionnalité: Recherche une archive unit existante
   Scénario: Recherche avancée d’archives – recherche KO par date, le format de date étant invalide (API)
     Etant donné les tests effectués sur le tenant 0
     Quand  j'utilise le fichier de requête suivant data/queries/select_dates_extremes_src_mauvais_format.json
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Method Not Allowed
 
   Scénario: US2455 -- Spécifier un usage par défaut aux contrats d'accès
     Etant donné les tests effectués sur le tenant 0

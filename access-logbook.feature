@@ -17,7 +17,7 @@ Fonctionnalité: Recherche dans le journal des opérations
     Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
-      | evDetData        | "{\"evDetDataType\":\"MASTER\",\"EvDetailReq\":\"2eme SIP\",\"EvDateTimeReq\":\"2016-10-18T14:52:27\",\"ArchivalAgreement\":\"ArchivalAgreement0\",\"AgIfTrans\":\"Identifier5\",\"ServiceLevel\":null}" |
+      | evDetData        | "{\n  \"EvDetailReq\" : \"2eme SIP\",\n  \"EvDateTimeReq\" : \"2016-10-18T14:52:27\",\n  \"ArchivalAgreement\" : \"ArchivalAgreement0\",\n  \"AgIfTrans\" : \"Identifier5\",\n  \"ServiceLevel\" : null\n}" |
 
   Scénario: Upload d'un SIP et récupération du logbook ordonné par type de process : UPDATE (desc) / INGEST (asc) 
     Etant donné les tests effectués sur le tenant 0
@@ -27,7 +27,7 @@ Fonctionnalité: Recherche dans le journal des opérations
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | Title            | monSIP |
+      | Title            | dossier1 |
 		Quand j'utilise le fichier de requête suivant data/queries/update_unit_title_description.json
     Et je modifie les unités archivistiques
     Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id_order_desc_date.json
