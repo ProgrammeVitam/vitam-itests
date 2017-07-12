@@ -15,7 +15,12 @@
 				},
 				{
 					"$exists": "Description"
-				}
+				},
+                {
+                  "$eq": {
+                    "OriginatingSystemId": "Originating_System_Id"
+                  }
+                }
 			]
 		}
 	],

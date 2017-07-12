@@ -16,7 +16,7 @@ Fonctionnalité: Mise à jour d'une unité archivistique
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est WARNING
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
-    Et je recherche les unités archivistiques
+    Et je recherche les unités archivistiques pour trouver l'unite OriginatingSystemId_01
     Alors les metadonnées sont
       | Title            | Liste des rectorats |
     Quand j'utilise le fichier de requête suivant data/queries/update_unit_title_description.json

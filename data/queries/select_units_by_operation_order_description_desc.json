@@ -18,6 +18,6 @@
 			"$depth": 0	
 		}
 	],
-	"$filter": { "$orderby": { "Description": -1 } },
+	"$filter": { "$orderby": { "OriginatingSystemId": 1 } },
 	"$projection": {}
 }
