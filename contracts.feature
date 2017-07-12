@@ -43,7 +43,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Quand j'utilise le fichier de requête suivant data/queries/select_access_contract_order_name_desc.json
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
     Et les metadonnées sont
-      | Name        | Zimbabwe - ZIM archives nationales  |
+      | Name        | Zimbabwe - Air Zimbabwe  |
       | Identifier        | AC- |
 
   Scénario: CONTRACTS - recherche de contrats d'entrée ordonnés par Name (desc)
@@ -52,7 +52,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Quand j'utilise le fichier de requête suivant data/queries/select_ingest_contract_order_name_desc.json
     Et je recherche les données dans le référentiel ENTRY_CONTRACTS
     Et les metadonnées sont
-      | Name        | ArchivalAgreement1 |
+      | Name        | ZimbabweArchivalAgreement1 |
       | Identifier        | IC- |
 
   Scénario: Tentative d'import de contrat d'accès ko (nom manquant)

@@ -30,12 +30,12 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Quand j'utilise le fichier de requête suivant data/queries/select_format_png.json
     Et je recherche les données dans le référentiel FORMATS
     Alors le nombre de résultat est 4
-    Quand j'utilise le fichier de requête suivant data/queries/select_format_by_name_order_desc.json 
+    Quand j'utilise le fichier de requête suivant data/queries/select_format_by_puid_order_asc.json 
     Et je recherche les données dans le référentiel FORMATS
     Alors le nombre de résultat est 31
     Et les metadonnées sont
-      | PUID           | "fmt/491"                                                     |
-      | Name           | Acrobat PDF/X - Portable Document Format - Exchange PDF/X-5pg |
+      | PUID           | "fmt/14"                                                     |
+      | Name           | Acrobat PDF 1.0 - Portable Document Format |
       
   Scénario: Vérification et import des règles KO
     Quand je vérifie le fichier nommé data/rules/jeu_donnees_KO_regles_CSV.csv pour le référentiel RULES
