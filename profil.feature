@@ -10,13 +10,6 @@ Fonctionnalité: Tests d'imports et de recherches  de profils
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS  
 
-  Scénario: Import de  profil au format RNG
-    Etant donné un profil nommé data/profiles/profiles_for_tnr_rng_ok.json
-    Alors je fais un import du profile d'archivage
-    Etant donné un profil nommé data/profiles/profile_ok.rng
-    Et je rattache un ficher à ce profil d'archivage
-
-
   Scénario: Import de  profil au format XSD
     Etant donné un profil nommé data/profiles/profiles_for_tnr_xsd_ok.json
     Alors je fais un import du profile d'archivage
