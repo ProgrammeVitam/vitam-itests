@@ -365,3 +365,26 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY est KO
+
+  Scénario: Test SIP with profil KO (US 468, US_2725 and US_2557)
+    Etant donné un profil nommé data/profiles/profiles_for_tnr_rng_ok.json
+    Alors je fais un import du profile d'archivage
+    Etant donné un profil nommé data/profiles/profil_ok.rng
+    Et je rattache un ficher à ce profil d'archivage
+    Etant donné un contract nommé data/contracts/contract_with_profil.json
+    Alors j'importe ce contrat de type ENTRY_CONTRACTS
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_468.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
+    Et je recherche les journaux d'opération
+    Alors les metadonnées sont
+      | evDetData        | Title\\\\\" invalid; must be equal to \\\\\\"Versement de la matrice cadastrale num\\\\u00E9rique |
+      | obIdIn           | Matrice cadastrale numérique                                                                      |
+      | agIdOrig         | DGFIP                                                                                             |
+
+
+  Scénario: Test SIP with profil OK (US 468 and US_2557)
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_468.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
