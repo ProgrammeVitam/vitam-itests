@@ -10,7 +10,7 @@
         "OriginatingAgencies":["FRAAA","BBBBB","CCCCC","Vitam", "FRAN_NP_009913", "FRAN_NP_009941", "FRAN_NP_050500", "FRAN_NP_050770",  "FRAN_NP_050758", "FRAN_NP_050056", "FRAN_NP_005568", "ABCDEFG", "OAIAJJAZ", "ZAJFKNNDSC", "Service_producteur", "SOC_ARCHEO_TOURRAINE", "EEEEEE", "FRAN_NP_009734", "FRAN_NP_050392", "RATP", "ASP", "FFRAN_NP_050313", "FRAN_NP_051314","producteur1","producteur2"]
     },
     {
-        "Name":"Société archéologique de Touraine",
+        "Name":"Societe archeologique de Touraine",
         "Description":"Contrat d'accès - Société archéologique de Touraine",
         "Status" : "ACTIVE",
         "LastUpdate":"10/12/2016",
