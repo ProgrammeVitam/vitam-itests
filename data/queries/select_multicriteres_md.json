@@ -5,7 +5,7 @@
 
           "$and": [
             {
-              "$match": {
+              "$eq": {
                 "#management.AccessRule.Rule": "ACC-00002"
               }
             },

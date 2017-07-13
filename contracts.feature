@@ -52,7 +52,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Quand j'utilise le fichier de requête suivant data/queries/select_ingest_contract_order_name_desc.json
     Et je recherche les données dans le référentiel ENTRY_CONTRACTS
     Et les metadonnées sont
-      | Name        | ZimbabweArchivalAgreement1 |
+      | Name        | ZimbabweArchivalAgreement0 |
       | Identifier        | IC- |
 
   Scénario: Tentative d'import de contrat d'accès ko (nom manquant)

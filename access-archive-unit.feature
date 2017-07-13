@@ -55,7 +55,7 @@ Fonctionnalité: Recherche une archive unit existante
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
-    Et je recherche les unités archivistiques
+    Et je recherche les unités archivistiques pour trouver l'unite OriginatingSystemId_00
     Alors les metadonnées sont
       | Title            | Porte de Bagnolet par producteur1 |
     Quand j'utilise le fichier de requête suivant data/queries/update_unit_title_description.json
@@ -69,9 +69,9 @@ Fonctionnalité: Recherche une archive unit existante
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
-    Et je recherche les unités archivistiques
+    Et je recherche les unités archivistiques pour trouver l'unite OriginatingSystemId_00
     Alors les metadonnées sont
-      | Title            | Gambetta par producteur1 |
+      | Title            | Porte de Bagnolet par producteur1 |
     Quand j'utilise le fichier de requête suivant data/queries/update_unit_title_description.json
     Alors le statut de update résultat est Unauthorized
 
@@ -195,9 +195,9 @@ Fonctionnalité: Recherche une archive unit existante
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE_SORT.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_order_having_object_description_desc.json
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_order_description_desc.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 2
+    Alors le nombre de résultat est 5
     Alors les metadonnées sont
       | Title            | ID8                                             |
       | Description      | Description de l'archive unit d'identifiant ID8 |
@@ -207,7 +207,7 @@ Fonctionnalité: Recherche une archive unit existante
     Alors les metadonnées sont
       | FileInfo.Filename                  | jeux_test.ods   |
       | #qualifiers.BinaryMaster._nbc      | 1               |
-  
+
   Scénario: Access EveryOriginatingAgency OK - Recherche d'une archive avec un contrat acceptant tous les services producteurs
     Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id contrat_EveryOriginatingAgency_true

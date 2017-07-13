@@ -25,7 +25,7 @@ Fonctionnalité: Recherche dans le journal des opérations
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
-    Et je recherche les unités archivistiques
+    Et je recherche les unités archivistiques pour trouver l'unite OriginatingSystemId_02
     Alors les metadonnées sont
       | Title            | dossier1 |
 		Quand j'utilise le fichier de requête suivant data/queries/update_unit_title_description.json
