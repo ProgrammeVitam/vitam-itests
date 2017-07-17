@@ -30,4 +30,4 @@ Fonctionnalité: Tests d'imports et de recherches  de profils
     Et les métadonnées du profil sont
       | Name        | profilTrnRng            |
       | Description | Recherche de profil RNG |
-      | Identifier        | PR- |
+      | Identifier        | PROFIL-TNR |
