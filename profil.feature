@@ -28,6 +28,6 @@ Fonctionnalité: Tests d'imports et de recherches  de profils
     Quand je cherche un profil nommé profilTrnRng
     Alors le profil existe
     Et les métadonnées du profil sont
-      | Name        | profilTnrRng            |
+      | Name        | profilTrnRng            |
       | Description | Recherche de profil RNG |
       | Identifier        | PR- |
