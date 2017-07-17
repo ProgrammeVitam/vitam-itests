@@ -190,7 +190,7 @@ Fonctionnalité: Recherche une archive unit existante
 	      | #qualifiers.BinaryMaster.versions.0.FileInfo.Filename                        | Filename0           |
 	      | #qualifiers.BinaryMaster.versions.0.FormatIdentification.FormatId            | fmt/18              |
 
-  Scénario: Access SORT - Recherche de plusieurs archive unit ordonées dans l'ordre inverse des titres
+  Scénario: Access SORT - Recherche de plusieurs archive unit ordonées dans l'ordre inverse des OrignatingSystemId
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE_SORT.zip
     Quand je télécharge le SIP
@@ -202,7 +202,6 @@ Fonctionnalité: Recherche une archive unit existante
       | Title            | ID8                                             |
       | Description      | Description de l'archive unit d'identifiant ID8 |
       | DescriptionLevel | Item                                            |
-      | #unitups         | ["{{unit:ID4}}","{{unit:ID10}}"] |
     Quand je recherche les groupes d'objets de l'unité archivistique dont le titre est ID8  
     Alors les metadonnées sont
       | FileInfo.Filename                  | jeux_test.ods   |

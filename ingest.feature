@@ -380,7 +380,7 @@ Fonctionnalité: uploader des fichier SIP
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
       | evDetData        | Title\\\\\" invalid; must be equal to \\\\\\"Versement de la matrice cadastrale num\\\\u00E9rique |
-      | obIdIn           | Matrice cadastrale num\\\\u00E9rique.                                                                    |
+      | obIdIn           | Matrice cadastrale num\\u00E9rique.                                                               |
       | agIdOrig         | DGFIP                                                                                             |
 
 
