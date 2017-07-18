@@ -199,9 +199,10 @@ Fonctionnalité: Recherche une archive unit existante
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 5
     Alors les metadonnées sont
-      | Title            | ID8                                             |
-      | Description      | Description de l'archive unit d'identifiant ID8 |
-      | DescriptionLevel | Item                                            |
+      | Title                 | ID8                                             |
+      | Description           | Description de l'archive unit d'identifiant ID8 |
+      | DescriptionLevel      | Item                                            |
+      | #unitups.path.array[] | ["{{unit:ID4}}","{{unit:ID10}}"]                |
     Quand je recherche les groupes d'objets de l'unité archivistique dont le titre est ID8  
     Alors les metadonnées sont
       | FileInfo.Filename                  | jeux_test.ods   |
