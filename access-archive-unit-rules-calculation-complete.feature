@@ -160,12 +160,14 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-	| inheritedRule.AccessRule                | {} |
+	| inheritedRule.AccessRule                                         | {} |
+	| #management.AccessRule.Inheritance.PreventInheritance            | true |
 
   Scénario: Recherche une archive unit avec les règles héritées 8 (Porte de la Chapelle) : régles héritées(ACC-00002 et ACC-00003) sur unit qui surcharge un règle (ACC-00002)
     Etant donné les tests effectués sur le tenant 0
@@ -377,7 +379,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
@@ -386,9 +389,10 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.AccessRule.ACC-00002.{{unit:Porte de la Chapelle}}.StartDate        | "2002-01-01" |
 	| inheritedRule.AccessRule.ACC-00002.{{unit:Porte de la Chapelle}}.EndDate          | "2027-01-01" |
 	| inheritedRule.AccessRule.ACC-00003                                                | {} |
-	| inheritedRule.DisseminationRule.DIS-00002.{{unit:Marx Dormoy}}.path.array[][]               | [["{{unit:Marx Dormoy}}"]] |
+	| inheritedRule.DisseminationRule.DIS-00002.{{unit:Marx Dormoy}}.path.array[][]     | [["{{unit:Marx Dormoy}}"]] |
 	| inheritedRule.DisseminationRule.DIS-00002.{{unit:Marx Dormoy}}.StartDate          | "2000-01-01" |
 	| inheritedRule.DisseminationRule.DIS-00002.{{unit:Marx Dormoy}}.EndDate            | "2075-01-01" |
+	| #management.AccessRule.Inheritance.PreventRulesId.array[]                         | "ACC-00003" |
 
   Scénario: Recherche une archive unit avec les règles héritées 16 (Père Lachaise) : régle héritées (ACC-00002, ACC-00003) bloquées (PreventInheritance ACC) sur unit qui ajoute des règles (ACC-00004, ACC-00005)
     Etant donné les tests effectués sur le tenant 0
@@ -402,19 +406,21 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
 	| inheritedRule.AccessRule.ACC-00002                                           | {} |
 	| inheritedRule.AccessRule.ACC-00003                                           | {} |
-	| inheritedRule.AccessRule.ACC-00004.{{unit:Père Lachaise}}.path.array[][]               | [["{{unit:Père Lachaise}}"]] |
+	| inheritedRule.AccessRule.ACC-00004.{{unit:Père Lachaise}}.path.array[][]     | [["{{unit:Père Lachaise}}"]] |
 	| inheritedRule.AccessRule.ACC-00004.{{unit:Père Lachaise}}.StartDate          | "2000-01-01" |
 	| inheritedRule.AccessRule.ACC-00004.{{unit:Père Lachaise}}.EndDate            | "2025-01-01" |
-	| inheritedRule.AccessRule.ACC-00005.{{unit:Père Lachaise}}.path.array[][]               | [["{{unit:Père Lachaise}}"]] |
+	| inheritedRule.AccessRule.ACC-00005.{{unit:Père Lachaise}}.path.array[][]     | [["{{unit:Père Lachaise}}"]] |
 	| inheritedRule.AccessRule.ACC-00005.{{unit:Père Lachaise}}.StartDate          | "2000-01-01" |
 	| inheritedRule.AccessRule.ACC-00005.{{unit:Père Lachaise}}.EndDate            | "2025-01-01" |
+	| #management.AccessRule.Inheritance.PreventInheritance                        | true |
 
   Scénario: Recherche une archive unit avec les règles héritées 17 (Château Rouge) : régle héritées (ACC-00002, DIS-00001) sur unit qui ajoute une règle (ACC-00003)
     Etant donné les tests effectués sur le tenant 0
@@ -428,7 +434,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
@@ -439,7 +446,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.AccessRule.ACC-00003.{{unit:Château Rouge}}.EndDate                      | "2025-01-01" |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:4_ Porte de Clignancourt}}.path.array[][]       | [["{{unit:4_ Porte de Clignancourt}}","{{unit:Simplon}}","{{unit:Château Rouge}}"]] |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:4_ Porte de Clignancourt}}.StartDate  | "2000-01-01" |
-	| inheritedRule.DisseminationRule.DIS-00001.{{unit:4_ Porte de Clignancourt}}.EndDate    | "2025-01-01" |	
+	| inheritedRule.DisseminationRule.DIS-00001.{{unit:4_ Porte de Clignancourt}}.EndDate    | "2025-01-01" |
+	| #management.AccessRule.Inheritance.PreventInheritance                                  | true |	
 
   Scénario: Recherche une archive unit avec les règles héritées 18 (Porte de Pantin) : régle héritées (STO-00001, APP-00003, ACC-00002, ACC-00003, DIS-00001, REU-00001, CLASS-00003) sur unit qui ajoute des règles (ACC-00002, DIS-00002) et bloque l'héritage ACC-00002 (RefNonRuleId)
     Etant donné les tests effectués sur le tenant 0
@@ -453,7 +461,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
@@ -486,6 +495,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.EndDate              | "2010-01-01" |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.ClassificationLevel  | "Secret D\u00E9fense" |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.ClassificationOwner  | "RATP" |
+	| #management.AccessRule.Inheritance.PreventRulesId.array[]                                   | "ACC-00002" |
 
   Scénario: Recherche une archive unit avec les règles héritées 19 (Botzaris) : régles héritées par deux chemins (ACC-00001, ACC-00003, ACC-00036, DIS-00001) sur unit qui surcharge une règle (ACC-00003)
     Etant donné les tests effectués sur le tenant 0
@@ -530,7 +540,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
@@ -543,7 +554,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.ReuseRule.REU-00001.{{unit:Carrefour Pleyel}}.StartDate          | "2000-01-01" |
 	| inheritedRule.ReuseRule.REU-00001.{{unit:Carrefour Pleyel}}.EndDate            | "2010-01-01" |
 	| inheritedRule.StorageRule                                                      | {} |
-
+	| #management.StorageRule.Inheritance.PreventRulesId.array[]                     | "STO-00001" |
+	| #management.DisseminationRule.Inheritance.PreventInheritance                   | true |
 
   Scénario: Recherche une archive unit avec les règles héritées 21 (République) : régles héritées (ACC-00004, ACC-00005) sur unit qui bloque ACC-00004 (RefNonRuleId) et ajoute ACC-00004
     Etant donné les tests effectués sur le tenant 0
@@ -557,7 +569,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
@@ -568,6 +581,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.AccessRule.ACC-00005.{{unit:Père Lachaise}}.path.array[][]            | [["{{unit:Père Lachaise}}","{{unit:République}}"]] |
 	| inheritedRule.AccessRule.ACC-00005.{{unit:Père Lachaise}}.StartDate       | "2000-01-01" |
 	| inheritedRule.AccessRule.ACC-00005.{{unit:Père Lachaise}}.EndDate         | "2025-01-01" |
+  | #management.AccessRule.Inheritance.PreventRulesId.array[]                 | "ACC-00004" |
 
 
   Scénario: Recherche une archive unit avec les règles héritées 22 (Gare du Nord) : régles héritées (ACC-00002, ACC-00003, DIS-00001) sur unit qui bloque DIS-00001 (RefNonRuleId) et ajoute DIS-00002
@@ -582,7 +596,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
@@ -594,7 +609,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.DisseminationRule.DIS-00002.{{unit:Gare du Nord}}.path.array[][]         | [["{{unit:Gare du Nord}}"]] |
 	| inheritedRule.DisseminationRule.DIS-00002.{{unit:Gare du Nord}}.StartDate    | "2000-01-01" |
 	| inheritedRule.DisseminationRule.DIS-00002.{{unit:Gare du Nord}}.EndDate      | "2075-01-01" |
-
+  | #management.DisseminationRule.Inheritance.PreventRulesId.array[]             | "DIS-00001" |
 
   Scénario: Recherche une archive unit avec les règles héritées 23 (Stalingrad.txt) : régles héritées (STO-00001, APP-00002, ACC-00002, ACC-00003, DIS-00001, DIS-00002, REU-00001, CLASS-00001) sur unit
     Etant donné les tests effectués sur le tenant 0
@@ -711,7 +726,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
       "$depth": 0}],
   "$projection": {
   "$fields": {
-    "$rules": 1
+    "$rules": 1,
+    "#management": 1
 }}}
 """
     Et je recherche les unités archivistiques
@@ -725,6 +741,8 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:Réaumur}}.StartDate   | "2000-01-01" |
 	| inheritedRule.DisseminationRule.DIS-00001.{{unit:Réaumur}}.EndDate     | "2025-01-01" |
 	| inheritedRule.DisseminationRule.DIS-00002                              | {} |
+  | #management.AccessRule.Inheritance.PreventInheritance                  | true |
+	| #management.DisseminationRule.Inheritance.PreventRulesId.array[]       | "DIS-00002" |
 	
 
   Scénario: Recherche une archive unit avec les règles héritées 27 (Bolivar.txt) : régles héritées par deux chemins (ACC-00001, ACC-00003, ACC-00036, DIS-00001) sur unit
