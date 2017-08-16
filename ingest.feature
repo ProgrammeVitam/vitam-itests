@@ -15,7 +15,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_UNIT_CHECK_AND_PROCESS, STP_STORAGE_AVAILABILITY_CHECK, OG_METADATA_INDEXATION, OG_STORAGE, STP_INGEST_FINALISATION, ATR_NOTIFICATION, ACCESSION_REGISTRATION sont OK
+    Et les statuts des événements STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_UNIT_CHECK_AND_PROCESS, STP_STORAGE_AVAILABILITY_CHECK, OG_METADATA_INDEXATION, OBJ_STORAGE, STP_INGEST_FINALISATION, ATR_NOTIFICATION, ACCESSION_REGISTRATION sont OK
 
   Scénario: SIP au mauvais format
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_Mauvais_Format.pdf
@@ -26,7 +26,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_desunitsdeclare_1unitfilsavantpere.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
+    Et les statuts des événements STP_OBJ_STORING, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Test virus
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VIRUS_code2.zip
@@ -50,7 +50,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_INGEST_CONTROL_SIP, STP_UNIT_STORING, OG_STORAGE sont OK
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_INGEST_CONTROL_SIP, STP_UNIT_METADATA, STP_UNIT_STORING, OBJ_STORAGE sont OK
 
   Scénario: Test SEDA
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_non_conforme_seda.zip
@@ -105,7 +105,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_MANIFESTE-OBJET-SANS-GOT.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements OG_METADATA_INDEXATION, STP_OG_STORING, UNIT_METADATA_INDEXATION, STP_UNIT_STORING sont OK
+    Et les statuts des événements OG_METADATA_INDEXATION, STP_OBJ_STORING, STP_OG_STORING, UNIT_METADATA_INDEXATION, STP_UNIT_STORING sont OK
 
   Scénario: Registre des fonds absent
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_REGISTRE.zip
@@ -154,7 +154,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
+    Et les statuts des événements STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_OBJ_STORING, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Test PUID incohérents
     Etant donné un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_FORMT_PUID-incoherent.zip
@@ -250,13 +250,13 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
+    Et les statuts des événements STP_OBJ_STORING, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Test de l'indexation d'une archive ayant une description multi-valuée
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP-multivalue.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
-    Et les statuts des événements STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
+    Et les statuts des événements STP_OBJ_STORING, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Manifest avec deux objets qui déclarent le GO
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2_OBJT_declarent_le_GO.zip
