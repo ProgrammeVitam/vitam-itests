@@ -1,7 +1,5 @@
 [
-	
-		{
-		"Identifier":"PROFIL-TNR",
+	{	"Identifier":"PROFIL_TNR_RNG",
 		"Name":"profilTrnRng",
 		"Description":"Recherche de profil RNG",
 		"Status":"ACTIVE",
