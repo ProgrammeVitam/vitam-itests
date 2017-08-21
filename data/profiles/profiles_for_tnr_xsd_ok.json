@@ -1,5 +1,5 @@
 [
-	{
+	{ 	"Identifier":"PROFIL_TNR_XSD",
 		"Name":"profilTrnXsd",
 		"Description":"Recherche de profil XSD",
 		"Status":"ACTIVE",
@@ -8,16 +8,5 @@
 		"CreationDate":"10/12/2016",
 		"ActivationDate":"10/12/2016",
 		"DeactivationDate":"10/12/2016"
-	},
-  {
-    "Name":"profilTnrRng",
-    "Description":"Recherche de profil RNG",
-    "Status":"ACTIVE",
-    "Format":"RNG",
-    "LastUpdate":"10/12/2016",
-    "CreationDate":"10/12/2016",
-    "ActivationDate":"10/12/2016",
-    "DeactivationDate":"10/12/2016"
-  }
-	
+	}
 ]
