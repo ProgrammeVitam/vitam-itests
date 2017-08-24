@@ -75,7 +75,8 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_OBJT_orphelins.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY est KO
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY sont KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY est CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY.CHECK_CONSISTANCY_ORPHAN_OBJECT.KO
 
   Scénario: Bordereau absent
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_absent.zip
@@ -388,3 +389,24 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_468.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
+
+  Scénario: Test SIP avec cycle KO (US 2754)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_CYCLE.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_LOOP.KO
+
+  Scénario: Test SIP avec AU rattachement KO (US 2754)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_WRONG_ATTACHMENT_AU.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_WRONG_ATTACHMENT.KO
+
+  Scénario: Test SIP avec GOT rattachement KO (US 2754)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_WRONG_ATTACHMENT_GOT.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_WRONG_ATTACHMENT.KO
