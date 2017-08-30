@@ -1,0 +1,30 @@
+{
+     "$roots": [],
+     "$query": [
+          {
+               "$or": [
+                    {
+                         "$match": {
+                              "Title": "日本の"
+                         }
+                    }
+               ],
+               "$depth": 20
+          }
+     ],
+     "$filter": {
+          "$orderby": {
+               "TransactedDate": 1
+          }
+     },
+     "$projection": {
+          "$fields": {
+               "TransactedDate": 1,
+               "#id": 1,
+               "#unittype": 1,
+               "Title": 1,
+               "#object": 1,
+               "Description": 1
+          }
+     }
+}
