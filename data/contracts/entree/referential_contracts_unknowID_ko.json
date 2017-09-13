@@ -1,0 +1,13 @@
+[
+	{
+		"Name":"contrat_de_rattachement",
+		"Description":"Rattachant les SIP à une AU",
+		"Status" : "ACTIVE",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016",
+		"FilingParentId": "not_an_ID"
+	}
+
+]

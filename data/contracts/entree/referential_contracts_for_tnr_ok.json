@@ -1,0 +1,30 @@
+[
+	{
+		"Name":"ArchivalAgreement987",
+		"Description":"Contrat Vitam 987",
+		"Status" : "ACTIVE",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
+	},
+	{
+		"Name":"ArchivalAgreement9871",
+		"Description":"Contrat Vitam 9872",
+		"Status" : "ACTIVE",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
+	},
+	{
+		"Name":"ArchivalAgreement9872",
+		"Description":"Contrat Vitam 9876",
+		"Status" : "ACTIVE",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
+	}
+
+]
