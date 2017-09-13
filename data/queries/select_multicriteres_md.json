@@ -6,7 +6,7 @@
           "$and": [
             {
               "$eq": {
-                "#management.AccessRule.Rule": "ACC-00002"
+                "#management.AccessRule.Rules.Rule": "ACC-00002"
               }
             },
             {

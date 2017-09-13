@@ -8,7 +8,7 @@ Fonctionnalité: Tests d'imports et de recherches de profils
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
-    Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS  
+    Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS
 
   Scénario: Import de  profil au format XSD
     Etant donné un profil nommé data/profiles/profiles_for_tnr_xsd_ok.json
@@ -22,7 +22,6 @@ Fonctionnalité: Tests d'imports et de recherches de profils
     Et les métadonnées du profil sont
       | Name        | profilTrnXsd            |
       | Description | Recherche de profil XSD |
-      | Identifier  | PROFIL_TNR_XSD          |
 
   Scénario: Recherche de profil RNG
     Quand je cherche un profil nommé profilTrnRng
@@ -30,4 +29,3 @@ Fonctionnalité: Tests d'imports et de recherches de profils
     Et les métadonnées du profil sont
       | Name        | profilTrnRng            |
       | Description | Recherche de profil RNG |
-      | Identifier  | PROFIL_TNR_RNG          |

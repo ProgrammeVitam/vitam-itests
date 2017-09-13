@@ -203,7 +203,7 @@ Fonctionnalité: Recherche une archive unit existante
       | Description           | Description de l'archive unit d'identifiant ID8 |
       | DescriptionLevel      | Item                                            |
       | #unitups.path.array[] | ["{{unit:ID4}}","{{unit:ID10}}"]                |
-    Quand je recherche les groupes d'objets de l'unité archivistique dont le titre est ID8  
+    Quand je recherche les groupes d'objets de l'unité archivistique dont le titre est ID8
     Alors les metadonnées sont
       | FileInfo.Filename                  | jeux_test.ods   |
       | #qualifiers.BinaryMaster._nbc      | 1               |
@@ -292,7 +292,7 @@ Fonctionnalité: Recherche une archive unit existante
 
   Scénario: Recherche avancée d’archives – recherche OK sur des titres dans des alphabets différents (API)
     Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_test_title_differentes_langues.zip
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_test_differentes_langues.zip
     Quand je télécharge le SIP
     Et j'utilise le fichier de requête suivant data/queries/select_unit_by_title_hebrew.json
     Et je recherche les unités archivistiques
