@@ -1,11 +1,13 @@
 [
 	{
 		"Name":"aName",
+		"Identifier":"aName",
 		"Description":"aDescription of the contract",
 		"Status" : "ACTIVE"
 	},
 	{
 		"Name":"",
+		"Identifier":"",
 		"Description":"aDescription of the contract",
 		"Status" : "ACTIVE"
 	}

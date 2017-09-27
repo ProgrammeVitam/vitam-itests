@@ -1,6 +1,7 @@
 [
 	{
 		"Name":"ZimbabweArchivalAgreement0",
+		"Identifier":"ZimbabweArchivalAgreement0",
 		"Description":"Zimbabwe Contrat Vitam 0",
 		"Status" : "ACTIVE",
 		"LastUpdate":"10/12/2016",
@@ -10,6 +11,7 @@
 	},
 	{
 		"Name":"ZimbabweArchivalAgreement1",
+		"Identifier":"ZimbabweArchivalAgreement1",
 		"Description":"Zimbabwe Contrat Vitam 1",
 		"Status" : "ACTIVE",
 		"LastUpdate":"10/12/2016",
@@ -19,6 +21,7 @@
 	},
 	{
 		"Name":"ZimbabweArchivalAgreement0Test",
+		"Identifier":"ZimbabweArchivalAgreement0Test",
 		"Description":"Zimbabwe Contrat Vitam 0",
 		"Status" : "ACTIVE",
 		"LastUpdate":"10/12/2016",
