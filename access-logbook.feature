@@ -53,3 +53,14 @@ Fonctionnalité: Recherche dans le journal des opérations
     Alors les statuts de JCV des événements LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Fichier 2 nouveau jeu de test
     Alors les statuts de JCV des événements LFC.CHECK_CONSISTENCY, LFC.CHECK_DIGEST, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OBJ_STORAGE, LFC.OG_METADATA_INDEXATION sont OK
+
+
+  Scénario: Upload d'un SIP en passant d'identifiant de transaction et vérification du contenu du champ "evIdAppSession"
+      Etant donné les tests effectués sur le tenant 0
+      Et les tests effectués avec l'identifiant de transaction APP_SESSION_ID
+      Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
+      Quand je télécharge le SIP
+      Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
+      Et je recherche les journaux d'opération
+      Alors les metadonnées sont
+        | evIdAppSession        | APP_SESSION_ID           |
