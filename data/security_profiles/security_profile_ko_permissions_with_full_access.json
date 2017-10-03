@@ -1,0 +1,9 @@
+[
+  {
+    "Name": "TNR_SEC_PROFILE_KO_1",
+    "FullAccess": true,
+    "Permissions": [
+        "units:read"
+    ]
+  }
+]
