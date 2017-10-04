@@ -62,6 +62,10 @@ Regroupe des scénarios de test sur la vérification du stockage des objets sur 
  - traceability.feature :
 Regroupe des scénarios de test sur la fonctionnalité de sécurisation du journal des opérations.
 
+ - security_profiles.feature :
+Regroupe des scénarios de test sur les profiles de sécurité.
+
+
 Fichiers de configuration pour lancement en local
 =================================================
 

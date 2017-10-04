@@ -1,0 +1,13 @@
+{
+    "$query": {},
+    "$filter": {},
+    "$action": [
+        {
+            "$set": {
+                "Permissions": [
+                    "contexts:read"
+                 ]
+             }
+         }
+    ]
+}
