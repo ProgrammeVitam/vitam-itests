@@ -1,0 +1,31 @@
+{
+     "$roots": [],
+     "$query": [
+          {
+               "$and": [
+                    {
+                         "$in": {
+                              "#operations": [
+                                   "Operation-Id"
+                              ]
+                         }
+                    }
+               ],
+               "$depth": 0
+          },
+          {
+               "$range": {
+                    "DataDecimal3.DataDecimal31": {
+                         "$gte": 1235.567890,
+                         "$lte": 1235.567890
+                    }
+               },
+               "$depth": 0
+          }
+     ],
+     "$projection": {
+          "$fields": {
+               "#id": 1
+          }
+     }
+}

@@ -1,0 +1,31 @@
+{
+     "$roots": [],
+     "$query": [
+          {
+               "$and": [
+                    {
+                         "$in": {
+                              "#operations": [
+                                   "Operation-Id"
+                              ]
+                         }
+                    }
+               ],
+               "$depth": 0
+          },
+          {
+               "$range": {
+                    "DataString3.DataString31": {
+                         "$gte": "Mon texte data31",
+                         "$lte": "Mon texte data31"
+                    }
+               },
+               "$depth": 0
+          }
+     ],
+     "$projection": {
+          "$fields": {
+               "#id": 1
+          }
+     }
+}

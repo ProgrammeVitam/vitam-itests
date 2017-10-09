@@ -1,0 +1,31 @@
+{
+     "$roots": [],
+     "$query": [
+          {
+               "$and": [
+                    {
+                         "$in": {
+                              "#operations": [
+                                   "Operation-Id"
+                              ]
+                         }
+                    }
+               ],
+               "$depth": 0
+          },
+          {
+               "$range": {
+                    "DataDate3.DataDate33.DataDate332": {
+                         "$gte": "2017-05-31T19:17:00",
+                         "$lte": "2017-05-31T19:18:00"
+                    }
+               },
+               "$depth": 0
+          }
+     ],
+     "$projection": {
+          "$fields": {
+               "#id": 1
+          }
+     }
+}
