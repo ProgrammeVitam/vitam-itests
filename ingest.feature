@@ -411,8 +411,7 @@ Fonctionnalité: uploader des fichier SIP
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
     Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_WRONG_ATTACHMENT.KO
 
-#  Scénario: [TODO activer lors du Bug #3461] Test SIP avec metadonnees libres complexes
-#    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes.zip
-#    Quand je télécharge le SIP
-#    Alors le statut final du journal des opérations est OK
-    
+  Scénario: Test SIP avec metadonnees libres complexes
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
