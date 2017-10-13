@@ -89,6 +89,7 @@ Fonctionnalité: Recherche une archive unit existante
 
   Scénario: SRC1 - Recherche une archive unit avec un intervalle de temps sur plusieurs tenants
     Etant donné les tests effectués sur le tenant 0
+    Et les tests effectués sur le contrat id ContratTNR
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_SRC1_DATES_EXTREMES_OBJETS.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
