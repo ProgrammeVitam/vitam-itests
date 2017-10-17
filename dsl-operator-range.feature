@@ -8,7 +8,7 @@ Fonctionnalité: DSL test opérateur range
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
-    Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS
+    Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
   Scénario: Dsl operator $range test sur date au format YYYY-MM-DD : gte/lte, gt/lt, gte/lt, gt/lte sur valeur exacte du champ
     Etant donné les tests effectués sur le tenant 0
