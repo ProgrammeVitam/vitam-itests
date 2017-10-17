@@ -8,7 +8,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
 
   Scénario: Import de contrat de type contract Entree
     Etant donné un contract nommé data/contracts/referential_contracts_for_tnr_ok.json
-    Alors j'importe ce contrat de type ENTRY_CONTRACTS
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
 
   Scénario: Import de contrat de type contract accès
     Etant donné un contract nommé data/contracts/contrats_acces_ok.json
@@ -16,7 +16,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
 
   Scénario: Tentative d'import KO d'un contrat d'entrée déjà existant
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
-    Alors j'importe ce contrat incorrect de type ENTRY_CONTRACTS
+    Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS
 
 
   Scénario: Tentative d'import KO d'un contrat d'accès déjà existant
@@ -24,7 +24,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
 
   Scénario: CONTRACTS -recherche d'un contrat d'entree
-    Quand je cherche un contrat de type ENTRY_CONTRACTS et nommé ArchivalAgreement0
+    Quand je cherche un contrat de type INGEST_CONTRACTS et nommé ArchivalAgreement0
     Alors le contrat existe
     Et les métadonnées du contrat sont
       | Name        | ArchivalAgreement0 |
@@ -48,9 +48,9 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
 
   Scénario: CONTRACTS - recherche de contrats d'entrée ordonnés par Name (desc)
     Etant donné un contract nommé data/contracts/referential_contracts_ok_sort.json
-    Alors j'importe ce contrat de type ENTRY_CONTRACTS
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
     Quand j'utilise le fichier de requête suivant data/queries/select_ingest_contract_order_name_desc.json
-    Et je recherche les données dans le référentiel ENTRY_CONTRACTS
+    Et je recherche les données dans le référentiel INGEST_CONTRACTS
     Et les metadonnées sont
       | Name        | ZimbabweArchivalAgreement0Test |
       | Identifier        | IC- |
@@ -65,12 +65,12 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
 
   Scénario: Scénario: Tentative d'import de contrat d'entrée ko (nom manquant)
     Etant donné un contract nommé data/contracts/ko_referential_contracts_INVALID_MissingName.json
-    Alors j'importe ce contrat incorrect de type ENTRY_CONTRACTS
+    Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS
     
   Scénario: Scénario: Tentative d'import de contrat d'entrée ko (fichier xml)
     Etant donné un contract nommé data/contracts/ko_referential_contracts.xml
-    Alors j'importe ce contrat incorrect de type ENTRY_CONTRACTS
+    Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS
 
   Scénario: Scénario: Tentative d'import de contrat d'entrée ko (Id du plan parent est incorrect)
     Etant donné un contract nommé data/contracts/referential_contracts_unknowID_ko.json
-    Alors j'importe ce contrat incorrect de type ENTRY_CONTRACTS
+    Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS

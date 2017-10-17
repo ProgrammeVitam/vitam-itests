@@ -9,7 +9,7 @@ Fonctionnalité: uploader des fichier SIP
   # Je m'assure que les contracts d'entrée sont bient importés
   Scénario: Import de contrat de type contract Entree
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
-    Alors j'importe ce contrat sans échec de type ENTRY_CONTRACTS
+    Alors j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
   Scénario: Test des différentes étapes OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
@@ -373,7 +373,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un profil nommé data/profiles/profil_ok.rng
     Et je rattache un ficher à ce profil d'archivage
     Etant donné un contract nommé data/contracts/contract_with_profil.json
-    Alors j'importe ce contrat de type ENTRY_CONTRACTS
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_468.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO

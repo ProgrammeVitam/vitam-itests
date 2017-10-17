@@ -8,7 +8,7 @@ Fonctionnalité: DSL test sur les graphes avec root et avec exactdepth
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
-    Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS
+    Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
       
 ### TESTS on exactdepth 0
 

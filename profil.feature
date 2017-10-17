@@ -8,7 +8,7 @@ Fonctionnalité: Tests d'imports et de recherches de profils
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
-    Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS
+    Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
   Scénario: Import de  profil au format XSD
     Etant donné un profil nommé data/profiles/profiles_for_tnr_xsd_ok.json

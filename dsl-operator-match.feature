@@ -8,7 +8,7 @@ Fonctionnalité: DSL test opérateur match
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
-    Et j'importe ce contrat sans échec de type ENTRY_CONTRACTS
+    Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
   Scénario: Dsl operator $match $match_all $match_phrase $match_phrase_prefix sur des valeurs de type string not analyzed dans elasticsearch
     Etant donné les tests effectués sur le tenant 0
