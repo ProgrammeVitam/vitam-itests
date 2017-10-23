@@ -306,7 +306,7 @@ Fonctionnalité: DSL test opérateur eq
         # En simplifiant l'équation le résultat doit être :
         # a AND b AND c OR (d OR e)
         Quand j'utilise la requête suivante
-""""
+"""
       {
       	"$roots": [],
       	"$query": [{
@@ -368,6 +368,6 @@ Fonctionnalité: DSL test opérateur eq
       		"$fields": {}
       	}
       }
-      """"
+      """
       Et je recherche les unités archivistiques
       Alors le nombre de résultat est 1
