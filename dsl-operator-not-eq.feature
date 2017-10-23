@@ -290,3 +290,84 @@ Fonctionnalité: DSL test opérateur eq
       Et j'utilise dans la requête le paramètre VALUE avec la valeur 1950-05-31T19:17:53
       Et je recherche les unités archivistiques
       Alors le nombre de résultat est 18
+
+
+      Scénario: Dsl operator $not sur $and, $or, $match et $eq
+        Etant donné les tests effectués sur le tenant 0
+        Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
+        Quand je télécharge le SIP
+        Alors le statut final du journal des opérations est OK
+        # La requête est formulée comme telle :
+        # NOT(NOT(a AND b AND c) OR NOT(d OR e))
+        # Soit en notation JSON :
+        # NOT(OR(NOT(AND(a,b,c)),NOT(OR(d,e))))
+        # Le JSON ne permettant pas d'avoir deux fois la même clé au même niveau (ici on a deux fois NOT dans le premier OR)
+        # La requête a été reformulée en ajoutant un OR inutile avant le 2ème NOT
+        # En simplifiant l'équation le résultat doit être :
+        # a AND b AND c OR (d OR e)
+        Quand j'utilise la requête suivante
+""""
+      {
+      	"$roots": [],
+      	"$query": [{
+      		"$and": [{
+      				"$in": {
+      					"#operations": [
+      						"Operation-Id"
+      					]
+      				}
+      			},
+      			{
+      				"$not": [{
+      					"$or": [{
+      							"$not": [{
+      								"$and": [{
+      										"$match": {
+      											"Title": "dossier_5"
+      										}
+      									},
+      									{
+      										"$match": {
+      											"Description": "Interdum"
+      										}
+      									},
+      									{
+      										"$eq": {
+      											"DescriptionLevel": "RecordGrp"
+      										}
+      									}
+      								]
+      							}]
+      						},
+      						{
+      							"$or": [{
+      								"$not": [{
+      									"$or": [{
+      											"$eq": {
+      												"#min": "1"
+      											}
+      										},
+      										{
+      											"$eq": {
+      												"#min": "62"
+      											}
+      										}
+      									]
+      								}]
+      							}]
+
+      						}
+      					]
+      				}]
+      			}
+      		],
+      		"$depth": 20
+      	}],
+      	"$filter": {},
+      	"$projection": {
+      		"$fields": {}
+      	}
+      }
+      """"
+      Et je recherche les unités archivistiques
+      Alors le nombre de résultat est 1
