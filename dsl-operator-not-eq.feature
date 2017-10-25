@@ -49,12 +49,12 @@ Fonctionnalité: DSL test opérateur eq
     Et j'utilise dans la requête le paramètre PARAMETER avec la valeur EveryDataObjectVersion
     Et j'utilise dans la requête le paramètre VALUE avec la valeur false
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
-    Alors le nombre de résultat est 0
+    Alors le nombre de résultat est 1
     Quand j'utilise le fichier de requête suivant data/queries/select_accesscontracts_dsl_not_eq.json
     Et j'utilise dans la requête le paramètre PARAMETER avec la valeur EveryDataObjectVersion
     Et j'utilise dans la requête le paramètre VALUE avec la valeur true
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
 
     # Type string not analyzed
     Quand j'utilise le fichier de requête suivant data/queries/select_accesscontracts_dsl_not_eq.json
@@ -371,3 +371,47 @@ Fonctionnalité: DSL test opérateur eq
       """
       Et je recherche les unités archivistiques
       Alors le nombre de résultat est 1
+
+      Scénario: Dsl operator $not sur $range $gt $lt
+        Etant donné les tests effectués sur le tenant 0
+        Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
+        Quand je télécharge le SIP
+        Alors le statut final du journal des opérations est OK
+        Quand j'utilise la requête suivante
+      """
+      {
+      "$roots": [],
+      "$query": [{
+        "$and": [{
+            "$in": {
+              "#operations": [
+                "Operation-Id"
+              ]
+            }
+          },
+          {
+            "$not": [{
+              "$or": [
+                {
+                "$range": {
+                     "StartDate": {
+                      "$gt": "2010-09-30T14:06:51",
+                      "$lt": "2016-08-05T09:28:15"
+                     }
+                }
+                }
+              ]
+            }]
+          }
+        ],
+        "$depth": 20
+      }],
+      "$filter": {},
+      "$projection": {
+        "$fields": {}
+      }
+      }
+
+      """
+      Et je recherche les unités archivistiques
+      Alors le nombre de résultat est 13
