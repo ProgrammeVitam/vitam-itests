@@ -1,7 +1,7 @@
 #language: fr
 
 @DslOperatorIn
-Fonctionnalité: Test operateur EXISTS / MISSING du DSL
+Fonctionnalité: Test operateur EXISTS / NOT EXISTS du DSL
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés
   et je charge un contrat d'accès
@@ -95,7 +95,7 @@ Fonctionnalité: Test operateur EXISTS / MISSING du DSL
                "$depth": 0
           },
           {
-               "$missing": "vide",
+               "$not": [{"$exists": "vide"}],
                "$depth": 0
           }
      ],
@@ -157,7 +157,7 @@ Fonctionnalité: Test operateur EXISTS / MISSING du DSL
                "$depth": 0
           },
           {
-               "$missing": "DataInTestTab0.DataInTestTab1.DataInTestTab2.DataInTestTab3",
+               "$not": [{"$exists": "DataInTestTab0.DataInTestTab1.DataInTestTab2.DataInTestTab3"}],
                "$depth": 0
           }
      ],
