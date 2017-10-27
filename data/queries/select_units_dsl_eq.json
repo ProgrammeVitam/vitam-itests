@@ -1,0 +1,27 @@
+{
+		 "$roots": [],
+		 "$query": [
+					{
+							 "$and": [
+										{
+												"$in": {
+														 "#operations": [
+																	"Operation-Id"
+														 ]
+												}
+										},
+										{
+												 "$eq": {
+														"PARAMETER": "VALUE"
+												 }
+										}
+							 ],
+							 "$depth": 20
+					}
+		 ],
+		 "$projection": {
+					"$fields": {
+							 "#id": 1
+					}
+		 }
+}
