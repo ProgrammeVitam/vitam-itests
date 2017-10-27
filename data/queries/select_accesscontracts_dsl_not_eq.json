@@ -1,0 +1,21 @@
+{
+  "$query": {
+    "$and": [
+      {
+        "$match": {
+          "Name": "ContratTNR"
+        }
+      },
+      {
+        "$not": [
+          {
+            "$eq": {
+              "PARAMETER": "VALUE"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "$projection": {}
+}

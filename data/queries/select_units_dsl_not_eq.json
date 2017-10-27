@@ -1,0 +1,33 @@
+{
+	"$roots": [],
+	"$query": [{
+		"$and": [{
+				"$in": {
+					"#operations": [
+						"Operation-Id"
+					]
+				}
+			},
+			{
+				"$not": [{
+					"$or": [{
+							"$eq": {
+								"PARAMETER": "VALUE"
+							}
+						},
+						{
+							"$eq": {
+								"#operations": "NOT_AN_ID"
+							}
+						}
+					]
+				}]
+			}
+		],
+		"$depth": 20
+	}],
+	"$filter": {},
+	"$projection": {
+		"$fields": {}
+	}
+}
