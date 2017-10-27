@@ -341,7 +341,7 @@ Quand j'utilise la requête suivante
         },
         {
           "$match_all": {
-            "Description": "bravo Elementum Alpha"
+            "Description": "bravo echo Alpha"
           }
         }
       ],
@@ -429,7 +429,7 @@ Quand j'utilise la requête suivante
 }
 """
 Et je recherche les unités archivistiques
-Alors le nombre de résultat est 2
+Alors le nombre de résultat est 1
 # Opérateur $match_phrase avec des valeurs à rechercher qui existent dans le désordre
 Quand j'utilise la requête suivante
 """
@@ -535,7 +535,7 @@ Quand j'utilise la requête suivante
 }
 """
 Et je recherche les unités archivistiques
-Alors le nombre de résultat est 1
+Alors le nombre de résultat est 2
 # Opérateur $match_phrase_prefix avec des valeurs dans le bon ordre en début de phrase
 Quand j'utilise la requête suivante
 """
@@ -601,7 +601,7 @@ Quand j'utilise la requête suivante
 }
 """
 Et je recherche les unités archivistiques
-Alors le nombre de résultat est 0
+Alors le nombre de résultat est 1
 # Opérateur $match_phrase_prefix avec des valeurs à rechercher qui existent dans le désordre
 Quand j'utilise la requête suivante
 """
@@ -700,7 +700,6 @@ Quand j'utilise la requête suivante
   				"OPERATOR": {
   					"Addressee.Nationality": "Argentine"
   				}
-  			}
         }
       ],
       "$depth": 20
@@ -730,37 +729,33 @@ Alors le nombre de résultat est 1
 Quand j'utilise la requête suivante
 """
 {
-  "$roots": [],
-  "$query": [
-    {
-      "$and": [
-        {
-          "$in": {
-            "#operations": [
-              "Operation-Id"
-            ]
-          }
-        },
-        {
-  				"OPERATOR": {
-  					"DataString2": "Mon texte data2 3"
-  				}
-  			},
-  			{
-  				"OPERATOR": {
-  					"DataString3.DataString33.DataString332": "Mon texte data332 2"
-  				}
-  			}
-        }
-      ],
-      "$depth": 20
-    }
-  ],
-  "$projection": {
-    "$fields": {
-      "#id": 1
-    }
-  }
+	"$roots": [],
+	"$query": [{
+		"$and": [{
+				"$in": {
+					"#operations": [
+						"Operation-Id"
+					]
+				}
+			},
+			{
+				"$match": {
+					"DataString2": "Mon texte data2 3"
+				}
+			},
+			{
+				"$match": {
+					"DataString3.DataString33.DataString332": "Mon texte data332 2"
+				}
+			}
+		],
+		"$depth": 20
+	}],
+	"$projection": {
+		"$fields": {
+			"#id": 1
+		}
+	}
 }
 """
 Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match
@@ -775,3 +770,70 @@ Alors le nombre de résultat est 1
 Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match_phrase_prefix
 Et je recherche les unités archivistiques
 Alors le nombre de résultat est 1
+
+# Différence entre $match_phrase et $match_phrase_prefix
+Quand j'utilise la requête suivante
+"""
+{
+	"$roots": [],
+	"$query": [{
+		"$and": [{
+				"$in": {
+					"#operations": [
+						"Operation-Id"
+					]
+				}
+			},
+			{
+				"OPERATOR": {
+					"Title": "Archives unité number"
+				}
+			}
+		],
+		"$depth": 20
+	}],
+	"$projection": {
+		"$fields": {
+			"#id": 1
+		}
+	}
+}
+"""
+Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match_phrase
+Et je recherche les unités archivistiques
+Alors le nombre de résultat est 1
+Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match_phrase_prefix
+Et je recherche les unités archivistiques
+Alors le nombre de résultat est 0
+
+# $match_phrase_prefix complétant la fin de l'expression
+Quand j'utilise la requête suivante
+"""
+{
+	"$roots": [],
+	"$query": [{
+		"$and": [{
+				"$in": {
+					"#operations": [
+						"Operation-Id"
+					]
+				}
+			},
+			{
+				"OPERATOR": {
+					"Title": "Archive unité"
+				}
+			}
+		],
+		"$depth": 20
+	}],
+	"$projection": {
+		"$fields": {
+			"#id": 1
+		}
+	}
+}
+"""
+Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match_phrase_prefix
+Et je recherche les unités archivistiques
+Alors le nombre de résultat est 6
