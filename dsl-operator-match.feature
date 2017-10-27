@@ -10,144 +10,6 @@ Fonctionnalité: DSL test opérateur match
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
-  Scénario: Dsl operator $match $match_all $match_phrase $match_phrase_prefix sur des valeurs de type string not analyzed dans elasticsearch
-    Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
-    Quand je télécharge le SIP
-    Quand j'utilise la requête suivante
-  """
-  {
-       "$roots": [],
-       "$query": [
-            {
-                 "$and": [
-                      {
-                          "$in": {
-                               "#operations": [
-                                    "Operation-Id"
-                               ]
-                          }
-                      },
-                      {
-                           "$match": {
-                              "OriginatingAgency.Identifier": "Identifiant numéro deux"
-                           }
-                      }
-                 ],
-                 "$depth": 20
-            }
-       ],
-       "$projection": {
-            "$fields": {
-                 "#id": 1
-            }
-       }
-  }
-  """
-  Et je recherche les unités archivistiques
-  Alors le nombre de résultat est 0
-  # Dsl operator $match_all sur des valeurs de type string not analyzed dans elasticsearch
-  Quand j'utilise la requête suivante
-  """
-  {
-       "$roots": [],
-       "$query": [
-            {
-                 "$and": [
-                      {
-                          "$in": {
-                               "#operations": [
-                                    "Operation-Id"
-                               ]
-                          }
-                      },
-                      {
-                           "$match_all": {
-                              "OriginatingAgency.Identifier": "Identifiant numéro deux"
-                           }
-                      }
-                 ],
-                 "$depth": 20
-            }
-       ],
-       "$projection": {
-            "$fields": {
-                 "#id": 1
-            }
-       }
-  }
-  """
-  Et je recherche les unités archivistiques
-  Alors le nombre de résultat est 0
-  # Dsl operator $match_phrase sur des valeurs de type string not analyzed dans elasticsearch
-  Quand j'utilise la requête suivante
-"""
-{
-     "$roots": [],
-     "$query": [
-          {
-               "$and": [
-                    {
-                        "$in": {
-                             "#operations": [
-                                  "Operation-Id"
-                             ]
-                        }
-                    },
-                    {
-                         "$match_phrase": {
-                            "OriginatingAgency.Identifier": "Identifiant numéro deux"
-                         }
-                    }
-               ],
-               "$depth": 20
-          }
-     ],
-     "$projection": {
-          "$fields": {
-               "#id": 1
-          }
-     }
-}
-"""
-Et je recherche les unités archivistiques
-Alors le nombre de résultat est 0
-# Dsl operator $match_all sur des valeurs de type string not analyzed dans elasticsearch
-Quand j'utilise la requête suivante
-"""
-{
-     "$roots": [],
-     "$query": [
-          {
-               "$and": [
-                    {
-                        "$in": {
-                             "#operations": [
-                                  "Operation-Id"
-                             ]
-                        }
-                    },
-                    {
-                         "$match_phrase_prefix": {
-                            "OriginatingAgency.Identifier": "Identifiant numéro deux"
-                         }
-                    }
-               ],
-               "$depth": 20
-          }
-     ],
-     "$projection": {
-          "$fields": {
-               "#id": 1
-          }
-     }
-}
-"""
-Et je recherche les unités archivistiques
-Alors le nombre de résultat est 0
-
-#######################################
-
 Scénario: Dsl operator $match sur des champs de type string analyzed dans elasticsearch
   Etant donné les tests effectués sur le tenant 0
   Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
@@ -160,13 +22,7 @@ Scénario: Dsl operator $match sur des champs de type string analyzed dans elast
      "$query": [
           {
                "$and": [
-                    {
-                        "$in": {
-                             "#operations": [
-                                  "Operation-Id"
-                             ]
-                        }
-                    },
+                    { "$in": { "#operations": [ "Operation-Id" ] } },
                     {
                         "$match": {
                              "Description": "bravo"
@@ -193,13 +49,7 @@ Quand j'utilise la requête suivante
   "$query": [
     {
       "$and": [
-        {
-          "$in": {
-            "#operations": [
-              "Operation-Id"
-            ]
-          }
-        },
+        { "$in": { "#operations": [ "Operation-Id" ] } },
         {
           "$match": {
             "Description": "bravo Alpha plus d'autres données"
@@ -266,13 +116,7 @@ Scénario: Dsl operator $match_all sur des champs de type string analyzed dans e
      "$query": [
           {
                "$and": [
-                    {
-                        "$in": {
-                             "#operations": [
-                                  "Operation-Id"
-                             ]
-                        }
-                    },
+                    { "$in": { "#operations": [ "Operation-Id" ] } },
                     {
                         "$match_all": {
                              "Description": "bravo"
@@ -341,7 +185,7 @@ Quand j'utilise la requête suivante
         },
         {
           "$match_all": {
-            "Description": "bravo echo Alpha"
+            "Description": "bravo lacinia Alpha"
           }
         }
       ],
@@ -503,7 +347,7 @@ Scénario: Dsl operator $match_phrase_prefix sur des champs de type string analy
 Etant donné les tests effectués sur le tenant 0
 Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
 Quand je télécharge le SIP
-# Opérateur $match_phrase_prefix avec des valeurs dans le bon ordre en début de phrase mais une de ces valeurs présente dans une autre AU
+# Opérateur $match_phrase_prefix avec des valeurs dans le bon ordre sans completion
 Quand j'utilise la requête suivante
 """
 {
@@ -520,40 +364,7 @@ Quand j'utilise la requête suivante
         },
         {
           "$match_phrase_prefix": {
-            "Description": "Alpha bravo"
-          }
-        }
-      ],
-      "$depth": 20
-    }
-  ],
-  "$projection": {
-    "$fields": {
-      "#id": 1
-    }
-  }
-}
-"""
-Et je recherche les unités archivistiques
-Alors le nombre de résultat est 2
-# Opérateur $match_phrase_prefix avec des valeurs dans le bon ordre en début de phrase
-Quand j'utilise la requête suivante
-"""
-{
-  "$roots": [],
-  "$query": [
-    {
-      "$and": [
-        {
-          "$in": {
-            "#operations": [
-              "Operation-Id"
-            ]
-          }
-        },
-        {
-          "$match_phrase_prefix": {
-            "Description": "Alpha bravo, charlie"
+            "Description": "Alpha bravo charlie"
           }
         }
       ],
@@ -569,7 +380,7 @@ Quand j'utilise la requête suivante
 """
 Et je recherche les unités archivistiques
 Alors le nombre de résultat est 1
-# Opérateur $match_phrase_prefix avec des valeurs dans le bon ordre en milieu de phrase
+# Opérateur $match_phrase_prefix avec des valeurs dans le bon ordre avec completion
 Quand j'utilise la requête suivante
 """
 {
@@ -586,7 +397,7 @@ Quand j'utilise la requête suivante
         },
         {
           "$match_phrase_prefix": {
-            "Description": "charlie delta"
+            "Description": "Alpha bravo char"
           }
         }
       ],
@@ -602,7 +413,7 @@ Quand j'utilise la requête suivante
 """
 Et je recherche les unités archivistiques
 Alors le nombre de résultat est 1
-# Opérateur $match_phrase_prefix avec des valeurs à rechercher qui existent dans le désordre
+# Opérateur $match_phrase_prefix avec des valeurs dans le mauvais ordre sans completion
 Quand j'utilise la requête suivante
 """
 {
@@ -619,7 +430,7 @@ Quand j'utilise la requête suivante
         },
         {
           "$match_phrase_prefix": {
-            "Description": "bravo Alpha"
+            "Description": "bravo Alpha charlie"
           }
         }
       ],
@@ -635,7 +446,7 @@ Quand j'utilise la requête suivante
 """
 Et je recherche les unités archivistiques
 Alors le nombre de résultat est 0
-# Opérateur $match_phrase avec des valeurs à rechercher qui existent dans l'ordre mais avec des termes entre les deux
+# Opérateur $match_phrase_prefix avec des valeurs dans le mauvais ordre avec completion
 Quand j'utilise la requête suivante
 """
 {
@@ -652,7 +463,7 @@ Quand j'utilise la requête suivante
         },
         {
           "$match_phrase_prefix": {
-            "Description": "bravo delta"
+            "Description": "bravo Alpha char"
           }
         }
       ],
@@ -668,7 +479,72 @@ Quand j'utilise la requête suivante
 """
 Et je recherche les unités archivistiques
 Alors le nombre de résultat est 0
-
+# Opérateur $match_phrase_prefix avec des valeurs dans le bon ordre mais avec mot manquant sans completion
+Quand j'utilise la requête suivante
+"""
+{
+  "$roots": [],
+  "$query": [
+    {
+      "$and": [
+        {
+          "$in": {
+            "#operations": [
+              "Operation-Id"
+            ]
+          }
+        },
+        {
+          "$match_phrase_prefix": {
+            "Description": "Alpha charlie"
+          }
+        }
+      ],
+      "$depth": 20
+    }
+  ],
+  "$projection": {
+    "$fields": {
+      "#id": 1
+    }
+  }
+}
+"""
+Et je recherche les unités archivistiques
+Alors le nombre de résultat est 0
+# Opérateur $match_phrase_prefix avec des valeurs dans le bon ordre mais avec mot manquant avec completion
+Quand j'utilise la requête suivante
+"""
+{
+  "$roots": [],
+  "$query": [
+    {
+      "$and": [
+        {
+          "$in": {
+            "#operations": [
+              "Operation-Id"
+            ]
+          }
+        },
+        {
+          "$match_phrase_prefix": {
+            "Description": "Alpha char"
+          }
+        }
+      ],
+      "$depth": 20
+    }
+  ],
+  "$projection": {
+    "$fields": {
+      "#id": 1
+    }
+  }
+}
+"""
+Et je recherche les unités archivistiques
+Alors le nombre de résultat est 0
 
 #################
 
@@ -684,22 +560,12 @@ Quand j'utilise la requête suivante
   "$query": [
     {
       "$and": [
+        { "$in": { "#operations": [ "Operation-Id"] } },
         {
-          "$in": {
-            "#operations": [
-              "Operation-Id"
-            ]
-          }
+          "OPERATOR": { "Descriptions.en": "tango" }
         },
         {
-  				"OPERATOR": {
-  					"Descriptions.en": "tango"
-  				}
-  			},
-  			{
-  				"OPERATOR": {
-  					"Addressee.Nationality": "Argentine"
-  				}
+          "OPERATOR": { "Addressee.Nationality": "Argentine" }
         }
       ],
       "$depth": 20
@@ -729,33 +595,28 @@ Alors le nombre de résultat est 1
 Quand j'utilise la requête suivante
 """
 {
-	"$roots": [],
-	"$query": [{
-		"$and": [{
-				"$in": {
-					"#operations": [
-						"Operation-Id"
-					]
-				}
-			},
-			{
-				"$match": {
-					"DataString2": "Mon texte data2 3"
-				}
-			},
-			{
-				"$match": {
-					"DataString3.DataString33.DataString332": "Mon texte data332 2"
-				}
-			}
-		],
-		"$depth": 20
-	}],
-	"$projection": {
-		"$fields": {
-			"#id": 1
-		}
-	}
+  "$roots": [],
+  "$query": [
+    {
+      "$and": [
+        {
+          "$in": { "#operations": [ "Operation-Id" ] }
+        },
+        {
+          "OPERATOR": { "DataString2": "Mon texte data2 3" }
+        },
+        {
+          "OPERATOR": { "DataString3.DataString33.DataString332": "Mon texte data332 2" }
+        }
+      ],
+      "$depth": 20
+    }
+  ],
+  "$projection": {
+    "$fields": {
+      "#id": 1
+    }
+  }
 }
 """
 Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match
@@ -770,70 +631,3 @@ Alors le nombre de résultat est 1
 Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match_phrase_prefix
 Et je recherche les unités archivistiques
 Alors le nombre de résultat est 1
-
-# Différence entre $match_phrase et $match_phrase_prefix
-Quand j'utilise la requête suivante
-"""
-{
-	"$roots": [],
-	"$query": [{
-		"$and": [{
-				"$in": {
-					"#operations": [
-						"Operation-Id"
-					]
-				}
-			},
-			{
-				"OPERATOR": {
-					"Title": "Archives unité number"
-				}
-			}
-		],
-		"$depth": 20
-	}],
-	"$projection": {
-		"$fields": {
-			"#id": 1
-		}
-	}
-}
-"""
-Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match_phrase
-Et je recherche les unités archivistiques
-Alors le nombre de résultat est 1
-Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match_phrase_prefix
-Et je recherche les unités archivistiques
-Alors le nombre de résultat est 0
-
-# $match_phrase_prefix complétant la fin de l'expression
-Quand j'utilise la requête suivante
-"""
-{
-	"$roots": [],
-	"$query": [{
-		"$and": [{
-				"$in": {
-					"#operations": [
-						"Operation-Id"
-					]
-				}
-			},
-			{
-				"OPERATOR": {
-					"Title": "Archive unité"
-				}
-			}
-		],
-		"$depth": 20
-	}],
-	"$projection": {
-		"$fields": {
-			"#id": 1
-		}
-	}
-}
-"""
-Et j'utilise dans la requête le paramètre OPERATOR avec la valeur $match_phrase_prefix
-Et je recherche les unités archivistiques
-Alors le nombre de résultat est 6
