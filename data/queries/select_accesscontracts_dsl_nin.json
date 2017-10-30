@@ -7,8 +7,10 @@
         }
       },
       {
-        "$eq": {
-          "PARAMETER": "VALUE"
+        "$nin": {
+          "PARAMETER": [
+            VALUES
+          ]
         }
       }
     ]
