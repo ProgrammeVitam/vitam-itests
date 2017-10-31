@@ -7,7 +7,7 @@
         }
       },
       {
-        "$eq": {
+        "$ne": {
           "PARAMETER": "VALUE"
         }
       }
