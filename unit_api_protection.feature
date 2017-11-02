@@ -23,7 +23,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 		        "Description": "Rectorat de Seine-Et-Marne"
 			}}]}
@@ -34,7 +34,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_id" : "toto_id"
 			}}]}
@@ -45,7 +45,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_mgt" : "{\"AccessRule\": [{ \"EndDate\":\"14/05/1987\"}] }"
 			}}]}
@@ -56,7 +56,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_og" : ""
 			}}]}
@@ -68,7 +68,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_ops" : [ ]
 			}}]}
@@ -79,7 +79,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_unitType" : ""
 			}}]}
@@ -91,7 +91,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_tenant " : ""
 			}}]}
@@ -103,7 +103,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_max " : ""
 			}}]}
@@ -115,7 +115,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_min " : ""
 			}}]}
@@ -127,7 +127,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_up" : ""
 			}}]}
@@ -139,7 +139,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_nbc " : ""
 			}}]}
@@ -151,7 +151,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_us" : ""
 			}}]}
@@ -163,7 +163,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$set": {
 				"_uds" : ""
 			}}]}
@@ -175,7 +175,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_id']}]}
 """
     Et le statut de la requete est Bad Request
@@ -185,7 +185,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_og']}]}
 """
     Et le statut de la requete est Bad Request
@@ -195,7 +195,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['ops']}]}
 """
 
@@ -204,7 +204,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_unitType']}]}
 """
     Et le statut de la requete est Bad Request
@@ -214,7 +214,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_tenant']}]}
 """
     Et le statut de la requete est Bad Request
@@ -224,7 +224,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_max']}]}
 """
     Et le statut de la requete est Bad Request
@@ -234,7 +234,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_min']}]}
 """
     Et le statut de la requete est Bad Request
@@ -244,7 +244,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_up']}]}
 """
     Et le statut de la requete est Bad Request
@@ -254,7 +254,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_nbc']}]}
 """
     Et le statut de la requete est Bad Request
@@ -264,7 +264,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_us']}]}
 """
     Et le statut de la requete est Bad Request
@@ -274,7 +274,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Quand je modifie l'unité archivistique avec la requete
 """
-{"$query": [],"$filter": {},"$action": [
+{"$action": [
 		{"$unset": ['_uds']}]}
 """
     Et le statut de la requete est Bad Request

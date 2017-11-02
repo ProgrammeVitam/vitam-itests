@@ -36,7 +36,7 @@ Fonctionnalité: DSL test sur les graphes sans root et avec depth
     Et les metadonnées sont
       | Title            | Archive unit ID0301 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot_default_depth.json
-    Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0401
+    Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
     Et les metadonnées sont

@@ -1,7 +1,7 @@
 # language: fr
 
 @DslGraphRootNODEExactdepth
-Fonctionnalité: DSL test sur les graphes avec root étant un noeud intermédiaire de l'arborescence et avec exactdepth
+Fonctionnalité: DSL test sur les graphes avec root étant un noeud intermédiaire de l'arborescence et avec exactdepth (opérateur non supporté)
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
     Etant donné les tests effectués sur le tenant 0
@@ -26,28 +26,32 @@ Fonctionnalité: DSL test sur les graphes avec root étant un noeud intermédiai
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0401
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 0
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0501
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 0
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0501 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0501 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0601
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 0
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 0
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
 
 ### TESTS on exactdepth 1
 
@@ -60,34 +64,39 @@ Fonctionnalité: DSL test sur les graphes avec root étant un noeud intermédiai
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0401
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0501
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0601
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0601 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0601 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0701
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
 
 ### TESTS on exactdepth 2
 
@@ -100,40 +109,46 @@ Fonctionnalité: DSL test sur les graphes avec root étant un noeud intermédiai
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0401
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0501
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0601
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0701
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0701 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0701 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0801
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
       
 ### TESTS on exactdepth -1
       
@@ -146,28 +161,32 @@ Fonctionnalité: DSL test sur les graphes avec root étant un noeud intermédiai
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0301
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0401
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0401 |   
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0401 |   
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0501
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0601
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
       
 ### TESTS on exactdepth -2
       
@@ -180,31 +199,36 @@ Fonctionnalité: DSL test sur les graphes avec root étant un noeud intermédiai
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0201
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0301
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0301 |   
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0301 |   
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0401
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0   
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0   
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0501
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_exactdepth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0501
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0601
     Et j'utilise dans la requête le paramètre EXACTDEPTH avec la valeur -2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
