@@ -163,6 +163,8 @@ Fonctionnalité: Recherche une archive unit existante
 	      | Title            | BAD0431E2C5E80E5BD42D547A3ED59665555.odt |
 
 
+
+  # A Valider avec Gaelle
   Scénario: US 2216 / CAS OK = import SIP OK et métadonnées de l'objet physique OK
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
@@ -180,16 +182,17 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les groupes d'objets des unités archivistiques
     Alors les metadonnées sont
-	      | #qualifiers.PhysicalMaster.versions.0.DataObjectVersion                      | PhysicalMaster_1    |
-	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Height.value        | 21                  |
-	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Height.unit         | centimetre          |
-	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Length.value        | 29.7                |
-	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Length.unit         | centimetre          |
-	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Weight.value        | 1                   |
-	      | #qualifiers.PhysicalMaster.versions.0.PhysicalDimensions.Weight.unit         | kilogram            |
-	      | #qualifiers.BinaryMaster.versions.0.DataObjectVersion                        | BinaryMaster_1      |
-	      | #qualifiers.BinaryMaster.versions.0.FileInfo.Filename                        | Filename0           |
-	      | #qualifiers.BinaryMaster.versions.0.FormatIdentification.FormatId            | fmt/18              |
+      | #qualifiers.0.versions.0.DataObjectVersion                      | PhysicalMaster_1    |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Height.value        | 21                  |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Height.unit         | centimetre          |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Length.value        | 29.7                |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Length.unit         | centimetre          |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Weight.value        | 1                   |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Weight.unit         | kilogram            |
+      | #qualifiers.1.versions.0.DataObjectVersion                        | BinaryMaster_1      |
+      | #qualifiers.1.versions.0.FileInfo.Filename                        | Filename0           |
+      | #qualifiers.1.versions.0.FormatIdentification.FormatId            | fmt/18              |
+
 
   Scénario: Access SORT - Recherche de plusieurs archive unit ordonées dans l'ordre inverse des OrignatingSystemId
     Etant donné les tests effectués sur le tenant 0
