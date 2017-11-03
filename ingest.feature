@@ -415,3 +415,43 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
+
+  Scénario: Test SIP (#3335)  - AU déclare un Objet à la place du GOT 
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_INVALID_URI.zip
+    Quand je télécharge le SIP
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, STP_INGEST_CONTROL_SIP sont KO
+
+  Scénario: Test SIP (#3335)  - Manifest déclare moins d'objets binaires que dans le folder content
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_INFERIOR_BDO.zip
+    Quand je télécharge le SIP
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, STP_INGEST_CONTROL_SIP sont KO
+
+  Scénario: Test SIP (#3335)  - Manifest déclare plus d'objets binaires que dans le folder content
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SUPERIOR_BDO.zip
+    Quand je télécharge le SIP
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, STP_INGEST_CONTROL_SIP sont KO
+
+  Scénario: Test SIP (#3335)  - Manifest déclare un BinaryMaster dans un Objet physique
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BinaryInPhysical.zip
+    Quand je télécharge le SIP
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+
+  Scénario: Test SIP (#3335)  - Manifest déclare un PhysicalMaster dans un Objet binaire
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_PhysicalInBinary.zip
+    Quand je télécharge le SIP
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+
+  Scénario: Test SIP (#3335)  - Manifest déclare un mauvais DataObjectVersion (BinaryMaster_One)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_WRONG_USAGE_VERSION.zip
+    Quand je télécharge le SIP
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+
+  Scénario: Test SIP (#3335)  - Manifest déclare une URI vide
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_EmptyUri.zip
+    Quand je télécharge le SIP
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+    
+  Scénario: Test SIP (#3335)  - Manifest déclare un PhysicalId vide
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_EmptyPhysicalId.zip
+    Quand je télécharge le SIP
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
