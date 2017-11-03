@@ -164,7 +164,7 @@ Fonctionnalité: Recherche une archive unit existante
 
 
 
-  # A Valider avec Gaelle
+
   Scénario: US 2216 / CAS OK = import SIP OK et métadonnées de l'objet physique OK
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
