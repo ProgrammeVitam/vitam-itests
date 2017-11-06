@@ -5,7 +5,7 @@
                "$or": [
                     {
                          "$match": {
-                              "Title": "ağaç"
+                              "Title": "Boğaziçi"
                          }
                     }
                ],
