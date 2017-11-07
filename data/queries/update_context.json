@@ -1,13 +1,25 @@
 {
   "$action": [
-       {
-            "$push": {
-                 "Permissions.0.AccessContracts": {
-                      "$each": [
-                           "AC-000001"
-                      ]
-                 }
-            }
-       }
+    {
+      "$set": {
+        "Permissions": [
+          {
+            "_tenant": 0,
+            "AccessContracts": [],
+            "IngestContracts": []
+          },
+          {
+            "_tenant": 1,
+            "AccessContracts": [],
+            "IngestContracts": []
+          },
+          {
+            "_tenant": 2,
+            "AccessContracts": [],
+            "IngestContracts": []
+          }
+        ]
+      }
+    }
   ]
 }
