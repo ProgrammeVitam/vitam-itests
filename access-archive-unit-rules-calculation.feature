@@ -17,8 +17,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -38,8 +37,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -57,8 +55,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -76,8 +73,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -96,8 +92,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -116,8 +111,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1

@@ -28,8 +28,7 @@ Fonctionnalité: Test operateur WILDWARD du DSL
                     {
                         "$wildcard" : { "DescriptionLevel": "*"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -52,8 +51,7 @@ Fonctionnalité: Test operateur WILDWARD du DSL
                     {
                         "$wildcard" : { "DescriptionLevel": "Item"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -77,8 +75,7 @@ Fonctionnalité: Test operateur WILDWARD du DSL
                     {
                         "$wildcard" : { "DescriptionLevel": "It*"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -101,8 +98,7 @@ Fonctionnalité: Test operateur WILDWARD du DSL
                     {
                         "$wildcard" : { "DescriptionLevel": "*em"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -125,8 +121,7 @@ Fonctionnalité: Test operateur WILDWARD du DSL
                     {
                         "$wildcard" : { "DescriptionLevel": "I*m"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -149,8 +144,7 @@ Fonctionnalité: Test operateur WILDWARD du DSL
                     {
                         "$wildcard" : { "DescriptionLevel": "te"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -173,8 +167,7 @@ Fonctionnalité: Test operateur WILDWARD du DSL
                     {
                         "$wildcard" : { "DescriptionLevel": "*I?e*m*"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -197,8 +190,7 @@ Fonctionnalité: Test operateur WILDWARD du DSL
                     {
                         "$wildcard" : { "DescriptionLevel": "?fffff*"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {

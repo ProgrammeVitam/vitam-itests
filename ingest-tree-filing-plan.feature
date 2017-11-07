@@ -44,7 +44,7 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Alors le statut final du journal des opérations est OK
     Et j'utilise la requête suivante
 """
-  { "$roots": [], "$query": [{"$and":[{"$eq":{"Title":"RattachementUnitTnrTitle"}}], "$depth": 0}], "$projection": {}}
+  { "$roots": [], "$query": [{"$and":[{"$eq":{"Title":"RattachementUnitTnrTitle"}}]}], "$projection": {}}
 
 """
     Et je recherche une unité archivistique et je recupère son id
@@ -56,7 +56,7 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
   Scénario: Ratachement d'une unit de  plan  à une unit de sip
     Quand j'utilise la requête suivante
 """
-  { "$roots": [], "$query": [{"$and":[{"$eq":{"Title":"RattachementUnitTnrTitle"}}], "$depth": 0}], "$projection": {}}
+  { "$roots": [], "$query": [{"$and":[{"$eq":{"Title":"RattachementUnitTnrTitle"}}]}], "$projection": {}}
 
 """
     Et je recherche une unité archivistique et je recupère son id

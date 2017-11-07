@@ -24,18 +24,21 @@ Fonctionnalité: DSL test sur les graphes avec root étant un noeud feuille de l
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_default_depth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0901
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0101
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_default_depth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0901
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0801
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_root_default_depth.json
     Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Archive unit ID0901
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0201
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 0
 
 ### TESTS on depth 0
 
