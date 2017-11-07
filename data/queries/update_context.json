@@ -1,23 +1,13 @@
 {
-    "$query": {
-         "$and": [
-              {
-                   "$eq": {
-                        "Permissions._tenant": 0
-                   }
-              }
-         ]
-    },
-    "$filter": {},
-    "$action": [
-         {
-              "$push": {
-                   "Permissions.0.AccessContracts": {
-                        "$each": [
-                             "AC-000001"
-                        ]
-                   }
-              }
-         }
-    ]
+  "$action": [
+       {
+            "$push": {
+                 "Permissions.0.AccessContracts": {
+                      "$each": [
+                           "AC-000001"
+                      ]
+                 }
+            }
+       }
+  ]
 }
