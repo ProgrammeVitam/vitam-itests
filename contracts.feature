@@ -36,15 +36,15 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Et les métadonnées du contrat sont
       | Name        | AccessContract0 |
       | Description | Contrat Acces 0 |
-      
+
   Scénario: ACCESS_CONTRACTS - recherche de contrats d'accès ordonnés par Name (desc)
     Etant donné un contract nommé data/contracts/contrats_acces_ok_sort.json
     Alors j'importe ce contrat de type ACCESS_CONTRACTS
     Quand j'utilise le fichier de requête suivant data/queries/select_access_contract_order_name_desc.json
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
     Et les metadonnées sont
-      | Name        | Zimbabwe - Air Zimbabwe  |
-      | Identifier        | AC- |
+      | Name       | Zimbabwe - Air Zimbabwe |
+      | Identifier | AC-                     |
 
   Scénario: CONTRACTS - recherche de contrats d'entrée ordonnés par Name (desc)
     Etant donné un contract nommé data/contracts/referential_contracts_ok_sort.json
@@ -52,8 +52,8 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Quand j'utilise le fichier de requête suivant data/queries/select_ingest_contract_order_name_desc.json
     Et je recherche les données dans le référentiel INGEST_CONTRACTS
     Et les metadonnées sont
-      | Name        | ZimbabweArchivalAgreement0Test |
-      | Identifier        | IC- |
+      | Name       | ZimbabweArchivalAgreement  |
+      | Identifier | ZimbabweArchivalAgreement0 |
 
   Scénario: Tentative d'import de contrat d'accès ko (nom manquant)
     Etant donné un contract nommé data/contracts/ko_contrat_acces_name_manquant.json
@@ -66,7 +66,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
   Scénario: Scénario: Tentative d'import de contrat d'entrée ko (nom manquant)
     Etant donné un contract nommé data/contracts/ko_referential_contracts_INVALID_MissingName.json
     Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS
-    
+
   Scénario: Scénario: Tentative d'import de contrat d'entrée ko (fichier xml)
     Etant donné un contract nommé data/contracts/ko_referential_contracts.xml
     Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS
