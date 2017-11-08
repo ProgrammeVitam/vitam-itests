@@ -21,4 +21,4 @@ Fonctionnalité: Vérifier les messages d'erreur
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/DIGEST_INVALIDE.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.INVALIDE.KO
+    Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.INVALID.KO
