@@ -28,8 +28,7 @@ Scénario: Dsl operator $match sur des champs de type string analyzed dans elast
                              "Description": "bravo"
                         }
                     }
-               ],
-               "$depth": 20
+               ]
           }
      ],
      "$projection": {
@@ -55,8 +54,7 @@ Quand j'utilise la requête suivante
             "Description": "bravo Alpha plus d'autres données"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -88,8 +86,7 @@ Quand j'utilise la requête suivante
             "Description": "motinconnu autremotinconnu"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -122,8 +119,7 @@ Scénario: Dsl operator $match_all sur des champs de type string analyzed dans e
                              "Description": "bravo"
                         }
                     }
-               ],
-               "$depth": 20
+               ]
           }
      ],
      "$projection": {
@@ -155,8 +151,7 @@ Quand j'utilise la requête suivante
             "Description": "bravo Alpha plus d'autres données"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -188,8 +183,7 @@ Quand j'utilise la requête suivante
             "Description": "bravo lacinia Alpha"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -221,8 +215,7 @@ Quand j'utilise la requête suivante
             "Description": "motinconnu autremotinconnu"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -261,8 +254,7 @@ Quand j'utilise la requête suivante
             "Description": "charlie delta"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -294,8 +286,7 @@ Quand j'utilise la requête suivante
             "Description": "bravo Alpha"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -327,8 +318,7 @@ Quand j'utilise la requête suivante
             "Description": "bravo delta"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -367,8 +357,7 @@ Quand j'utilise la requête suivante
             "Description": "Alpha bravo charlie"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -400,8 +389,7 @@ Quand j'utilise la requête suivante
             "Description": "Alpha bravo char"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -433,8 +421,7 @@ Quand j'utilise la requête suivante
             "Description": "bravo Alpha charlie"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -466,8 +453,7 @@ Quand j'utilise la requête suivante
             "Description": "bravo Alpha char"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -499,8 +485,7 @@ Quand j'utilise la requête suivante
             "Description": "Alpha charlie"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -532,8 +517,7 @@ Quand j'utilise la requête suivante
             "Description": "Alpha char"
           }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -567,8 +551,7 @@ Quand j'utilise la requête suivante
         {
           "OPERATOR": { "Addressee.Nationality": "Argentine" }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {
@@ -608,8 +591,7 @@ Quand j'utilise la requête suivante
         {
           "OPERATOR": { "DataString3.DataString33.DataString332": "Mon texte data332 2" }
         }
-      ],
-      "$depth": 20
+      ]
     }
   ],
   "$projection": {

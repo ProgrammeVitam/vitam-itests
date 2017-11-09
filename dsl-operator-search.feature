@@ -27,8 +27,7 @@ Fonctionnalité: Test operateur SEARCH du DSL
                     {
                         "$search" : { "Description": "Faire cuire les courgettes"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -49,8 +48,7 @@ Fonctionnalité: Test operateur SEARCH du DSL
                     {
                         "$search" : { "Description": "abracadabra"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -71,8 +69,7 @@ Fonctionnalité: Test operateur SEARCH du DSL
                     {
                         "$search" : { "Description": "\"Faire cuire les courgettes\""}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -93,8 +90,7 @@ Fonctionnalité: Test operateur SEARCH du DSL
                     {
                         "$search" : { "Description": "\"Faire cuire les courgettes\" abracadabra"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -115,8 +111,7 @@ Fonctionnalité: Test operateur SEARCH du DSL
                     {
                         "$search" : { "Description": "\"Faire cuire les courgettes\" + abracadabra"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -137,8 +132,7 @@ Fonctionnalité: Test operateur SEARCH du DSL
                     {
                         "$search" : { "Description": "\"Faire cuire les courgettes\" + -abracadabra"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {

@@ -6,8 +6,7 @@
 				"#operations": [
 					"Operation-Id"
 				]
-			},
-      		"$depth": 0
+			}
 		}
 	],
 	"$filter": {},

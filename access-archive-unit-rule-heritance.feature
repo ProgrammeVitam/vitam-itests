@@ -17,8 +17,7 @@ Fonctionnalité: Calcul des règles de gestion
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -37,8 +36,7 @@ Fonctionnalité: Calcul des règles de gestion
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -56,8 +54,7 @@ Fonctionnalité: Calcul des règles de gestion
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -77,8 +74,7 @@ Fonctionnalité: Calcul des règles de gestion
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -96,8 +92,7 @@ Fonctionnalité: Calcul des règles de gestion
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -116,8 +111,7 @@ Fonctionnalité: Calcul des règles de gestion
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -145,8 +139,7 @@ Fonctionnalité: Calcul des règles de gestion
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 20}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1

@@ -29,8 +29,7 @@ Fonctionnalité: Test operateur EXISTS / NOT EXISTS du DSL
                               ]
                          }
                     }
-               ],
-               "$depth": 0
+               ]
           },
           {
                "$exists": "vide",
@@ -60,8 +59,7 @@ Fonctionnalité: Test operateur EXISTS / NOT EXISTS du DSL
                               ]
                          }
                     }
-               ],
-               "$depth": 0
+               ]
           },
           {
                "$exists": "Title",
@@ -91,8 +89,7 @@ Fonctionnalité: Test operateur EXISTS / NOT EXISTS du DSL
                               ]
                          }
                     }
-               ],
-               "$depth": 0
+               ]
           },
           {
                "$not": [{"$exists": "vide"}],
@@ -122,8 +119,7 @@ Fonctionnalité: Test operateur EXISTS / NOT EXISTS du DSL
                               ]
                          }
                     }
-               ],
-               "$depth": 0
+               ]
           },
           {
                "$exists": "DataInTestTab0.DataInTestTab1.DataInTestTab2.DataInTestTab3",
@@ -153,8 +149,7 @@ Fonctionnalité: Test operateur EXISTS / NOT EXISTS du DSL
                               ]
                          }
                     }
-               ],
-               "$depth": 0
+               ]
           },
           {
                "$not": [{"$exists": "DataInTestTab0.DataInTestTab1.DataInTestTab2.DataInTestTab3"}],
@@ -184,8 +179,7 @@ Fonctionnalité: Test operateur EXISTS / NOT EXISTS du DSL
                               ]
                          }
                     }
-               ],
-               "$depth": 0
+               ]
           },
           {
                "$exists": "DataInTestTab0.DataInTestTab1",

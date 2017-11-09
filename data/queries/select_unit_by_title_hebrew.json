@@ -2,14 +2,20 @@
      "$roots": [],
      "$query": [
           {
-               "$or": [
+               "$and": [
+               		{
+               			"$in": {
+							"#operations": [
+								"Operation-Id"
+							]
+						}
+					},
                     {
                          "$match": {
                               "Title": "סירה"
                          }
                     }
-               ],
-               "$depth": 20
+               ]
           }
      ],
      "$filter": {

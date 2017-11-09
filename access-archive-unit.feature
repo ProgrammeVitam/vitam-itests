@@ -140,8 +140,7 @@ Fonctionnalité: Recherche une archive unit existante
 						"Description": "17"
 					}
 				}
-			],
-			"$depth": 20
+			]
 		}
 	],
 	"$filter": {
@@ -173,8 +172,7 @@ Fonctionnalité: Recherche une archive unit existante
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Sed blandit mi dolor"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Sed blandit mi dolor"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "TransactedDate": 1, "#id": 1, "Title": 1, "#object": 1, "DescriptionLevel": 1, "EndDate": 1, "StartDate": 1

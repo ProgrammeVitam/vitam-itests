@@ -52,31 +52,35 @@ Fonctionnalité: DSL test sur les graphes sans root et avec depth
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0101
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 0
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0101 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0101 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0201
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 0
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0201 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0201 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0301
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 0
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0301 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0301 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 0
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0901 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0901 |
 
 ### TESTS on depth 1
 
@@ -88,31 +92,35 @@ Fonctionnalité: DSL test sur les graphes sans root et avec depth
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0101
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0101 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0101 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0201
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0201 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0201 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0301
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0301 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0301 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0901 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0901 |
 
 ### TESTS on depth 2
    
@@ -124,38 +132,43 @@ Fonctionnalité: DSL test sur les graphes sans root et avec depth
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0101
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0101 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0101 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0201
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0201 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0201 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0301
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0301 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0301 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0401
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0401 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0401 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 2
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0901 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0901 |
 
 ### TESTS on depth 3
       
@@ -167,45 +180,51 @@ Fonctionnalité: DSL test sur les graphes sans root et avec depth
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0101
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 3
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0101 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0101 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0201
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 3
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0201 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0201 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0301
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 3
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0301 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0301 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0401
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 3
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0401 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0401 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0501
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 3
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0501 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0501 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur 3
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0901 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0901 |
 
 ### TESTS on depth -1
       
@@ -217,22 +236,25 @@ Fonctionnalité: DSL test sur les graphes sans root et avec depth
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0101
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur -1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0101 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0101 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0201
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur -1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0201 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0201 |
     Quand j'utilise le fichier de requête suivant data/queries/dsl-graph/select_by_title_dsl_noroot.json
     Et j'utilise dans la requête le paramètre SEDA-ID-UNIT avec la valeur ID0901
     Et j'utilise dans la requête le paramètre DEPTH avec la valeur -1
-    Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
-    Et les metadonnées sont
-      | Title            | Archive unit ID0901 |
+    Alors le statut de select résultat est Bad Request
+#    Et je recherche les unités archivistiques
+#    Alors le nombre de résultat est 1
+#    Et les metadonnées sont
+#      | Title            | Archive unit ID0901 |
 

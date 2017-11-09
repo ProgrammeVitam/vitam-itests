@@ -18,8 +18,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"1_Saint Denis Université"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"1_Saint Denis Université"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -39,8 +38,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"2_Front Populaire"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"2_Front Populaire"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -64,8 +62,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"3_Gallieni"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"3_Gallieni"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -85,8 +82,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"4_ Porte de Clignancourt"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"4_ Porte de Clignancourt"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -110,8 +106,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"5_Bobigny"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"5_Bobigny"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -131,8 +126,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"6_Pré Saint Gervais"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"6_Pré Saint Gervais"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -156,8 +150,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Saint Denis Basilique"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Saint Denis Basilique"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -177,8 +170,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Porte de la Chapelle"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Porte de la Chapelle"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -202,8 +194,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Gambetta"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Gambetta"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -226,8 +217,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Simplon"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Simplon"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -250,8 +240,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Eglise de Pantin"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Eglise de Pantin"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -293,8 +282,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Place des Fêtes"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Place des Fêtes"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -320,8 +308,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Danube"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Danube"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -347,8 +334,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Carrefour Pleyel"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Carrefour Pleyel"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -375,8 +361,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Marx Dormoy"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Marx Dormoy"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -402,8 +387,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Père Lachaise"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Père Lachaise"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -430,8 +414,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Château Rouge"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Château Rouge"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -457,8 +440,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Porte de Pantin"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Porte de Pantin"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -505,8 +487,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Botzaris"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Botzaris"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -536,8 +517,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	  Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Saint-Lazare"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Saint-Lazare"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -565,8 +545,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	  Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"République"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"République"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -592,8 +571,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Gare du Nord"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Gare du Nord"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -619,8 +597,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Stalingrad.txt"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Stalingrad.txt"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -666,8 +643,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Buttes-Chaumont"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Buttes-Chaumont"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -697,8 +673,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Montparnasse.txt"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Montparnasse.txt"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -722,8 +697,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Réaumur"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Réaumur"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1,
@@ -753,8 +727,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Bolivar.txt"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Bolivar.txt"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1
@@ -784,8 +757,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Quand j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Pereire.txt"}},{"$in":{"#operations":["Operation-Id"]}}],
-      "$depth": 0}],
+  "$query": [{"$and":[{"$eq":{"Title":"Pereire.txt"}},{"$in":{"#operations":["Operation-Id"]}}]}],
   "$projection": {
   "$fields": {
     "$rules": 1

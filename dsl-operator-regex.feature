@@ -28,8 +28,7 @@ Fonctionnalité: Test operateur REGEX du DSL
                     {
                         "$regex" : { "DescriptionLevel": ".*"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -52,8 +51,7 @@ Fonctionnalité: Test operateur REGEX du DSL
                     {
                         "$regex" : { "DescriptionLevel": "Item"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -77,8 +75,7 @@ Fonctionnalité: Test operateur REGEX du DSL
                     {
                         "$regex" : { "DescriptionLevel": "It.*"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -101,8 +98,7 @@ Fonctionnalité: Test operateur REGEX du DSL
                     {
                         "$regex" : { "DescriptionLevel": ".*em"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -126,8 +122,7 @@ Fonctionnalité: Test operateur REGEX du DSL
                     {
                         "$regex" : { "DescriptionLevel": "te"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -150,8 +145,7 @@ Fonctionnalité: Test operateur REGEX du DSL
                     {
                         "$regex" : { "DescriptionLevel": "[I][t](chaine inconnue)?em"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {
@@ -174,8 +168,7 @@ Fonctionnalité: Test operateur REGEX du DSL
                     {
                         "$regex" : { "DescriptionLevel": "[0-9]+truc"}
                     }
-               ],
-               "$depth": 0
+               ]
           }
      ],
      "$projection": {

@@ -10,8 +10,7 @@
 						]
 					}
 				}
-			],
-         "$depth": 20
+			]
 		},
 		{
 			"$match": { "Description" : "Description" },

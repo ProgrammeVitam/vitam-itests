@@ -14,8 +14,7 @@
                 "Description": "descriptiondesipunique"
               }
             }
-          ],
-      "$depth": 20
+          ]
     }
   ],
   "$filter": {

@@ -360,8 +360,7 @@ Fonctionnalité: DSL test opérateur eq
       					]
       				}]
       			}
-      		],
-      		"$depth": 20
+      		]
       	}],
       	"$filter": {},
       	"$projection": {
@@ -403,8 +402,7 @@ Fonctionnalité: DSL test opérateur eq
               ]
             }]
           }
-        ],
-        "$depth": 20
+        ]
       }],
       "$filter": {},
       "$projection": {

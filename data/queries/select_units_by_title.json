@@ -13,8 +13,7 @@
 				{
 					"$eq": { "Title" : "Fichier 2 nouveau jeu de test" }
 				}
-			],
-      			"$depth": 20
+			]
 		}
 	],
 	"$filter": {},
