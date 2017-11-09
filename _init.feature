@@ -39,38 +39,3 @@ Fonctionnalité: initialisation
     Etant donné les tests effectués sur le tenant 2
     Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
     Alors j'importe les service producteurs
-
-  Scénario: Scénario 3 import des services producteurs
-    Etant donné les tests effectués sur le tenant 3
-    Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
-    Alors j'importe les service producteurs
-
-  Scénario: Scénario 4 import des services producteurs
-    Etant donné les tests effectués sur le tenant 4
-    Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
-    Alors j'importe les service producteurs
-
-  Scénario: Scénario 5 import des services producteurs
-    Etant donné les tests effectués sur le tenant 5
-    Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
-    Alors j'importe les service producteurs
-
-  Scénario: Scénario 6 import des services producteurs
-    Etant donné les tests effectués sur le tenant 6
-    Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
-    Alors j'importe les service producteurs
-
-  Scénario: Scénario 7 import des services producteurs
-    Etant donné les tests effectués sur le tenant 7
-    Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
-    Alors j'importe les service producteurs
-
-  Scénario: Scénario 8 import des services producteurs
-    Etant donné les tests effectués sur le tenant 8
-    Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
-    Alors j'importe les service producteurs
-
-  Scénario: Scénario 9 import des services producteurs
-    Etant donné les tests effectués sur le tenant 9
-    Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
-    Alors j'importe les service producteurs
