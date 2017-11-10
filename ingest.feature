@@ -44,7 +44,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_mauvais_format.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements CHECK_SEDA, STP_INGEST_CONTROL_SIP sont KO
+    Et les statuts des événements CHECK_SEDA.NO_FILE, STP_INGEST_CONTROL_SIP sont KO
 
   Scénario: Arborescence rateau
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau.zip
@@ -56,7 +56,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_non_conforme_seda.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements CHECK_SEDA, STP_INGEST_CONTROL_SIP sont KO
+    Et les statuts des événements CHECK_SEDA.NOT_XSD_VALID, STP_INGEST_CONTROL_SIP sont KO
 
   Scénario: Nombre d'objets supérieurs à celui déclaré dans le bordereau
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_OBJT_nombresup_SEDA.zip
@@ -76,13 +76,12 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY sont KO
-    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY est CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY.CHECK_CONSISTANCY_ORPHAN_OBJECT.KO
 
   Scénario: Bordereau absent
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_absent.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_SEDA est KO
+    Et le statut de l'événement CHECK_SEDA.NO_FILE est KO
 
   Scénario: Contrôle sur une empreinte SHA-512
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_EMPRT_SHA256_2.zip
@@ -142,7 +141,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_xmlKO_sansobjet.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_SEDA sont KO
+    Et les statuts des événements STP_INGEST_CONTROL_SIP, CHECK_SEDA.NOT_XML_FILE sont KO
 
   Scénario: SIP sans objet
     Etant donné un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_sans_objet.zip
@@ -263,7 +262,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2_OBJT_declarent_le_GO.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements CHECK_SEDA, STP_INGEST_CONTROL_SIP sont KO
+    Et les statuts des événements CHECK_SEDA.NOT_XSD_VALID, STP_INGEST_CONTROL_SIP sont KO
 
   Scénario: SIP avec un fichier sans extension
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_FILES_sans_extention.zip
@@ -311,13 +310,13 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_DEUX_Contents.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_SEDA est KO
+    Et le statut de l'événement CHECK_SEDA.CONTAINER_FORMAT.DIRECTORY est KO
 
   Scénario: test multi manifest in SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_DEUX-Manifest.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_SEDA est KO
+    Et le statut de l'événement CHECK_SEDA.CONTAINER_FORMAT.FILE est KO
 
   Scénario: test reject SIP unit declare Binary Data Object reference to OG
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_1986_unit_declare_IDobjet_au_lieu_IDGOT.zip
@@ -353,7 +352,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2216_CA2_non_conforme_SEDA.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_SEDA est KO
+    Et le statut de l'événement CHECK_SEDA.NOT_XSD_VALID est KO
 
   Scénario: Test SIP with invalid version on physical object KO (US 2216)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2216_CA3_Usages_invalide.zip
