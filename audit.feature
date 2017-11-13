@@ -1,13 +1,19 @@
 # language: fr
 
 @Audit
-Fonctionnalité: Audit de l'existence des objets
+Fonctionnalité: Audit 
   Contexte: Avant de lancer cette suite de test, je présuppose que un contrat d'accès est chargé.
     Etant donné les tests effectués sur le contrat id contrat_EveryOriginatingAgency_true
   
-  Scénario: contrôler l'existence d'objet en Service producteur
+  Scénario: contrôler l'existence d'objet par Service producteur
     Etant donné les tests effectués sur le tenant 0
-    Quand je veux faire l'audit des objets du service producteur "ABCDEFG"
-    Quand je veux faire l'audit des objets de tenant 0
+    Quand je veux faire un audit sur l'existence des objets par service producteur "ABCDEFG"
     Alors le réultat de l'audit est succès
+
+  Scénario: contrôler l'intégrité d'objet par Service producteur
+    Etant donné les tests effectués sur le tenant 0
+    Quand je veux faire un audit sur l'intégrité des objets par service producteur "ABCDEFG"
+    Alors le réultat de l'audit est succès
+
+
 
