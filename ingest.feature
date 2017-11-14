@@ -454,3 +454,13 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_EmptyPhysicalId.zip
     Quand je télécharge le SIP
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+
+
+
+
+  Scénario: Test SIP - Manifest avec un maximum de métadonnées
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/all-metadata.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est WARNING
+    Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME, PROCESS_SIP_UNITARY sont WARNING
+
