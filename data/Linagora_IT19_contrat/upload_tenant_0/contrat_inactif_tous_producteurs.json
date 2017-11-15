@@ -1,5 +1,6 @@
 [
 	{
+		"Identifier":"contrat_inactif_tous_producteurs",
 		"Name":"contrat_inactif_tous_producteurs",
 		"Description":"Contrat permettant de faire des opérations pour tous les services producteurs et sur tous les usages",
 		"Status":"INACTIVE",

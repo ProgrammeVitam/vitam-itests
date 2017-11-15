@@ -1,6 +1,7 @@
 [
 	{
 		"Name":"contrat_producteur1",
+		"Identifier":"contrat_producteur1",
 		"Description":"Contrat permettant de faire des opérations pour tous les services producteurs et sur tous les usages",
 		"Status":"ACTIVE",
 		"OriginatingAgencies":["producteur1"],
