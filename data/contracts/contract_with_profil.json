@@ -1,13 +1,14 @@
 [
 {
     "Name":"ArchivalAgreementWithProfil",
+    "Identifier":"ArchivalAgreementWithProfil",
     "Description":"Contrat With Profil",
     "Status" : "ACTIVE",
     "LastUpdate":"10/12/2016",
     "CreationDate":"10/12/2016",
     "ActivationDate":"10/12/2016",
     "DeactivationDate":"10/12/2016",
-    "ArchiveProfiles" : ["PROFIL-TNR"]
+    "ArchiveProfiles" : ["PROFIL_TNR_RNG"]
   }
 
 ]
