@@ -367,6 +367,7 @@ Fonctionnalité: uploader des fichier SIP
     Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY est KO
 
   Scénario: Test SIP with profil KO (US 468, US_2725 and US_2557)
+    Etant donné les tests effectués sur le tenant 1
     Etant donné un profil nommé data/profiles/profiles_for_tnr_rng_ok.json
     Alors je fais un import du profile d'archivage
     Etant donné un profil nommé data/profiles/profil_ok.rng
@@ -380,16 +381,16 @@ Fonctionnalité: uploader des fichier SIP
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
       | evDetData        | Title\\\\\" invalid; must be equal to \\\\\\"Versement de la matrice cadastrale num\\\\u00E9rique |
-      | obIdIn           | Matrice cadastrale num\\u00E9rique.                                                               |
-      | agIdOrig         | DGFIP                                                                                             |
 
 
   Scénario: Test SIP with profil OK (US 468 and US_2557)
+    Etant donné les tests effectués sur le tenant 1
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_468.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
 
   Scénario: Test SIP avec cycle KO (US 2754)
+    Etant donné les tests effectués sur le tenant 0
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_CYCLE.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
@@ -415,7 +416,7 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
 
-  Scénario: Test SIP (#3335)  - AU déclare un Objet à la place du GOT 
+  Scénario: Test SIP (#3335)  - AU déclare un Objet à la place du GOT
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_INVALID_URI.zip
     Quand je télécharge le SIP
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, STP_INGEST_CONTROL_SIP sont KO
@@ -449,7 +450,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_EmptyUri.zip
     Quand je télécharge le SIP
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
-    
+
   Scénario: Test SIP (#3335)  - Manifest déclare un PhysicalId vide
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_EmptyPhysicalId.zip
     Quand je télécharge le SIP

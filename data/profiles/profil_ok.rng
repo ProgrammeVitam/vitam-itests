@@ -1085,7 +1085,7 @@
 
               <rng:optional>
                 <rng:element name="ArchivalProfile">
-                  <rng:value type="token">PROFIL-TNR</rng:value>
+                  <rng:value type="token">PROFIL_TNR_RNG</rng:value>
                 </rng:element>
               </rng:optional>
           <rng:optional>
