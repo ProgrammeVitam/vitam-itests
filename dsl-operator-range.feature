@@ -1,7 +1,7 @@
 # language: fr
 
 @DslOperatorRange
-Fonctionnalité: DSL test opérateur range
+Fonctionnalité: DSL test opérateur range sur métadonnées libres et SEDA
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
     Etant donné les tests effectués sur le tenant 0
@@ -16,7 +16,7 @@ Fonctionnalité: DSL test opérateur range
     Quand je télécharge le SIP
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_date_yyyy-mm-dd_lte_gte.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_date_yyyy-mm-dd_lt_gt.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
@@ -33,7 +33,7 @@ Fonctionnalité: DSL test opérateur range
     Quand je télécharge le SIP
 		Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_date_full_lte_gte.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
 		Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_date_full_lt_gt.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
@@ -53,13 +53,13 @@ Fonctionnalité: DSL test opérateur range
     Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_date_full_lte_gte_array.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_date_full_lte_gte_sub_object.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_date_full_lte_gte_array_of_array.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     
   Scénario: Dsl operator $range test sur number entier : gte/lte, gt/lt, gte/lt, gt/lte sur entier, max < min, tableau, sous-objet, tableau de tableau, entier négatif
     Etant donné les tests effectués sur le tenant 0
@@ -99,7 +99,7 @@ Fonctionnalité: DSL test opérateur range
     Quand je télécharge le SIP
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_decimal_lte_gte.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le nombre de résultat est 1
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_decimal_lt_gt.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
@@ -111,7 +111,7 @@ Fonctionnalité: DSL test opérateur range
     Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_decimal_lte_inf_gte.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le nombre de résultat est 1
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_decimal_lte_gte_array.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
@@ -120,7 +120,7 @@ Fonctionnalité: DSL test opérateur range
     Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_decimal_lte_gte_array_of_array.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 0
+    Alors le nombre de résultat est 1
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_decimal_lte_gte_neg.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
@@ -131,7 +131,7 @@ Fonctionnalité: DSL test opérateur range
     Quand je télécharge le SIP
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_boolean_lte_gte.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_boolean_lt_gt.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
@@ -143,13 +143,13 @@ Fonctionnalité: DSL test opérateur range
     Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_boolean_lte_gte_array.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_boolean_lte_gte_sub_object.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_boolean_lte_gte_array_of_array.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
 
   Scénario: Dsl operator $range test sur string : gte/lte, gt/lt, gte/lt, gt/lte sur string, tableau, sous-objet, tableau de tableau
     Etant donné les tests effectués sur le tenant 0
