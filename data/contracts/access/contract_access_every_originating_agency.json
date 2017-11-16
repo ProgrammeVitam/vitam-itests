@@ -1,6 +1,7 @@
 [
 	{
 		"Name":"contrat_EveryOriginatingAgency_true",
+		"Identifier":"contrat_EveryOriginatingAgency_true",
 		"Description":"Contrat permettant de faire des opérations pour tous les services producteurs (futurs inclus)",
 		"Status":"ACTIVE",
 		"OriginatingAgencies":["test"],

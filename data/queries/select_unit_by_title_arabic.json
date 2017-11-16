@@ -2,7 +2,14 @@
      "$roots": [],
      "$query": [
           {
-               "$or": [
+               "$and": [
+               		{
+               			"$in": {
+							"#operations": [
+								"Operation-Id"
+							]
+						}
+					},
                     {
                          "$match": {
                               "Title": "شجرة"

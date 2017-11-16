@@ -1,5 +1,6 @@
 [
     {
+        "Identifier":"SIA_archives_nationales",
         "Name":"SIA archives nationales",
         "Description":"Contrat d'accès - SIA archives nationales",
         "Status" : "ACTIVE",
@@ -10,6 +11,7 @@
         "OriginatingAgencies":["FRAAA","BBBBB","CCCCC","Vitam", "FRAN_NP_009913", "FRAN_NP_009941", "FRAN_NP_050500", "FRAN_NP_050770",  "FRAN_NP_050758", "FRAN_NP_050056", "FRAN_NP_005568", "ABCDEFG", "OAIAJJAZ", "ZAJFKNNDSC", "Service_producteur", "SOC_ARCHEO_TOURRAINE", "EEEEEE", "FRAN_NP_009734", "FRAN_NP_050392", "RATP", "ASP", "FRAN_NP_050313", "FRAN_NP_051314","producteur1","producteur2"]
     },
     {
+        "Identifier":"Societe_archeologique_de_Touraine",
         "Name":"Societe archeologique de Touraine",
         "Description":"Contrat d'accès - Société archéologique de Touraine",
         "Status" : "ACTIVE",
@@ -20,6 +22,7 @@
         "OriginatingAgencies":["FRAAA","BBBBB","CCCCC"]
     },
     {
+        "Identifier":"Air_France",
         "Name":"Air France",
         "Description":"Contrat d'accès - Air France",
         "Status" : "INACTIVE",
@@ -30,6 +33,7 @@
         "OriginatingAgencies":["FRAAA","BBBBB","CCCCC"]
     },
 	{
+        "Identifier":"AccessContract0",
         "Name":"AccessContract0",
         "Description":"Contrat Acces 0",
         "Status" : "INACTIVE",
