@@ -15,10 +15,10 @@ Fonctionnalité: Tests d'imports et de recherches de contexte (entrée et accès
     Alors j'importe ce contexte en échec
 
   Scénario: Update de contextes
-    Etant donné un contexte nommé My_Context_5
+    Etant donné un contexte nommé My_Context_i8
     Et un fichier requete nommé data/queries/update_context.json
-    Alors je modifie le contexte nommé My_Context_5
-    Et je recherche un contexte nommé My_Context_5
+    Alors je modifie le contexte nommé My_Context_i8
+    Et je recherche un contexte nommé My_Context_i8
     Alors  les métadonnées du context sont
-      | Name        | My_Context_5                                                                                                                                                                                                          |
-      | Permissions | [{"_tenant":0,"AccessContracts":[],"IngestContracts":[]},{"_tenant":1,"AccessContracts":[],"IngestContracts":[]},{"_tenant":2,"AccessContracts":[],"IngestContracts":[]}] |
+      | Name        | My_Context_i8                                                                                                                                                                                                          |
+      | Permissions | [{"#tenant":0},{"#tenant":1},{"#tenant":2}] |
