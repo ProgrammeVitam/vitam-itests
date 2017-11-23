@@ -166,7 +166,7 @@ Fonctionnalité: Recherche une archive unit existante
 
   Scénario: US 2216 / CAS OK = import SIP OK et métadonnées de l'objet physique OK
     Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
     Quand j'utilise la requête suivante
@@ -213,7 +213,7 @@ Fonctionnalité: Recherche une archive unit existante
   Scénario: Access EveryOriginatingAgency OK - Recherche d'une archive avec un contrat acceptant tous les services producteurs
     Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id contrat_EveryOriginatingAgency_true
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
@@ -223,7 +223,7 @@ Fonctionnalité: Recherche une archive unit existante
   Scénario: Access EveryOriginatingAgency KO - Recherche d'une archive avec un contrat n'acceptant pas tous les services producteurs
     Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id contrat_EveryOriginatingAgency_false
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
