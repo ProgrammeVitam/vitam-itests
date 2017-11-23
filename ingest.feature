@@ -279,8 +279,8 @@ Fonctionnalité: uploader des fichier SIP
   Scénario: SIP avec un fichier dont l'extension contient un caractère spécial
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_FILE_extension_caractere_special.zip
     Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est FATAL
-    Et les statuts des événements STP_OG_CHECK_AND_TRANSFORME, CHECK_DIGEST sont FATAL
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements STP_UPLOAD_SIP, PROCESS_SIP_UNITARY sont KO
 
   Scénario: SIP avec empreinte KO - Retour ATR doit être OK
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_Empreinte_test_ATR.zip

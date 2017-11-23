@@ -44,7 +44,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
     Et les metadonnées sont
       | Name       | Zimbabwe - Air Zimbabwe |
-      | Identifier | AC-                     |
+      | Identifier | Zimbabwe_Air_Zimbabwe   |
 
   Scénario: CONTRACTS - recherche de contrats d'entrée ordonnés par Name (desc)
     Etant donné un contract nommé data/contracts/referential_contracts_ok_sort.json

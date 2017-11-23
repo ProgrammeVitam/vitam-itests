@@ -4,7 +4,7 @@
 Fonctionnalité: Tests d'imports et de recherches de profils
 
   Contexte: un profil ne doit etre importé q'une seule fois. je pre-suppose que ce feature ne sera executé qu'une seule fois.
-    Etant donné les tests effectués sur le tenant 0
+    Etant donné les tests effectués sur le tenant 1
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
