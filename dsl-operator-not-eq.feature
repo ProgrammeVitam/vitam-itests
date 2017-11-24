@@ -10,7 +10,7 @@ Fonctionnalité: DSL test opérateur eq
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
-  Scénario: Dsl operator $eq sur les contrats d'accès
+  Scénario: Dsl operator $not $eq sur les contrats d'accès
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
     Quand je télécharge le SIP
@@ -49,12 +49,12 @@ Fonctionnalité: DSL test opérateur eq
     Et j'utilise dans la requête le paramètre PARAMETER avec la valeur EveryDataObjectVersion
     Et j'utilise dans la requête le paramètre VALUE avec la valeur false
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/select_accesscontracts_dsl_not_eq.json
     Et j'utilise dans la requête le paramètre PARAMETER avec la valeur EveryDataObjectVersion
     Et j'utilise dans la requête le paramètre VALUE avec la valeur true
     Et je recherche les données dans le référentiel ACCESS_CONTRACTS
-    Alors le nombre de résultat est 0
+    Alors le nombre de résultat est 1
 
     # Type string not analyzed
     Quand j'utilise le fichier de requête suivant data/queries/select_accesscontracts_dsl_not_eq.json
