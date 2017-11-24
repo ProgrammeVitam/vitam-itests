@@ -12,7 +12,7 @@ Fonctionnalité: Recherche dans le journal des opérations
 
   Scénario: Upload d'un SIP et vérification du contenu du champ "evDetData"
     Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
     Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
     Et je recherche les journaux d'opération
@@ -21,7 +21,7 @@ Fonctionnalité: Recherche dans le journal des opérations
 
   Scénario: Upload d'un SIP et récupération du logbook ordonné par type de process : UPDATE (desc) / INGEST (asc) 
     Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
@@ -58,7 +58,7 @@ Fonctionnalité: Recherche dans le journal des opérations
   Scénario: Upload d'un SIP en passant d'identifiant de transaction et vérification du contenu du champ "evIdAppSession"
       Etant donné les tests effectués sur le tenant 0
       Et les tests effectués avec l'identifiant de transaction APP_SESSION_ID
-      Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
+      Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
       Quand je télécharge le SIP
       Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
       Et je recherche les journaux d'opération

@@ -7,6 +7,7 @@ Fonctionnalité: initialisation
 
     Etant donné les tests effectués sur le tenant 0
     Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
+    Etant donné les jeux de tests réinitialisés
     Alors j'importe les service producteurs
     Et j'importe le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES
     Et j'importe le fichier nommé data/rules/jeu_donnees_KO_regles_CSV.csv dans le référentiel RULES
