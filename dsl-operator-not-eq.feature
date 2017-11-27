@@ -12,9 +12,7 @@ Fonctionnalité: DSL test opérateur eq
 
   Scénario: Dsl operator $eq sur les contrats d'accès
     Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
-    Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est OK
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
 
     # Type strict_date_optional_time
     Quand j'utilise le fichier de requête suivant data/queries/select_accesscontracts_dsl_not_eq.json
@@ -82,9 +80,7 @@ Fonctionnalité: DSL test opérateur eq
 
     Scénario: Dsl operator $eq sur les unités archivistiques
       Etant donné les tests effectués sur le tenant 0
-      Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
-      Quand je télécharge le SIP
-      Alors le statut final du journal des opérations est OK
+      Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
 
       # Type strict_date_optional_time
       Quand j'utilise le fichier de requête suivant data/queries/select_units_dsl_not_eq.json
@@ -294,9 +290,7 @@ Fonctionnalité: DSL test opérateur eq
 
       Scénario: Dsl operator $not sur $and, $or, $match et $eq
         Etant donné les tests effectués sur le tenant 0
-        Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
-        Quand je télécharge le SIP
-        Alors le statut final du journal des opérations est OK
+        Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
         # La requête est formulée comme telle :
         # NOT(NOT(a AND b AND c) OR NOT(d OR e))
         # Soit en notation JSON :
@@ -373,9 +367,7 @@ Fonctionnalité: DSL test opérateur eq
 
       Scénario: Dsl operator $not sur $range $gt $lt
         Etant donné les tests effectués sur le tenant 0
-        Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
-        Quand je télécharge le SIP
-        Alors le statut final du journal des opérations est OK
+        Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_match.zip
         Quand j'utilise la requête suivante
       """
       {
