@@ -13,9 +13,8 @@ Fonctionnalité: Test operateur WILDWARD du DSL
 
   Scénario: Test opérateur $wildcard
     Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes.zip
-    Quand je télécharge le SIP
-    Alors le statut final du journal des opérations est OK
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes.zip
+    
 # Recherche complète *
     Quand j'utilise la requête suivante
 """
