@@ -11,13 +11,11 @@ Fonctionnalité: Recherche une archive unit existante
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
   Scénario: Recherche une archive unit avec les règles héritées(CA1)
-    Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/US_1069/1069_CA1.zip
-    Quand je télécharge le SIP
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU14"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -25,19 +23,17 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-	|inheritedRule.StorageRule.R1.{{unit:AU1}}.path | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]] |
-	|inheritedRule.StorageRule.R3.{{unit:AU3}}.path | [["{{unit:AU3}}","{{unit:AU4}}"]] |
-	|inheritedRule.StorageRule.R4.{{unit:AU4}}.path | [["{{unit:AU4}}"]] |
+	|inheritedRule.StorageRule.R1.{{unit:AU11}}.path | [["{{unit:AU11}}","{{unit:AU12}}","{{unit:AU13}}","{{unit:AU14}}"]] |
+	|inheritedRule.StorageRule.R3.{{unit:AU13}}.path | [["{{unit:AU13}}","{{unit:AU14}}"]] |
+	|inheritedRule.StorageRule.R4.{{unit:AU14}}.path | [["{{unit:AU14}}"]] |
 
 
   Scénario: Recherche une archive unit avec les règles héritées(CA2)
-    Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/US_1069/1069_CA2.zip
-    Quand je télécharge le SIP
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU24"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -45,17 +41,15 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-	|inheritedRule.StorageRule.R1.{{unit:AU4}}.path | [["{{unit:AU4}}"]] |
+	|inheritedRule.StorageRule.R1.{{unit:AU24}}.path | [["{{unit:AU24}}"]] |
 
 
   Scénario: Recherche une archive unit avec les règles héritées(CA3)
-    Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/US_1069/1069_CA3.zip
-    Quand je télécharge le SIP
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU34"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -63,17 +57,15 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-	|inheritedRule.StorageRule.R1.{{unit:AU4}}.path | [["{{unit:AU4}}"]] |
+	|inheritedRule.StorageRule.R1.{{unit:AU34}}.path | [["{{unit:AU34}}"]] |
 
 
   Scénario: Recherche une archive unit avec les règles héritées(CA4)
-    Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/US_1069/1069_CA4_corrige.zip
-    Quand je télécharge le SIP
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU44"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -81,18 +73,16 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-	|inheritedRule.StorageRule.R1.{{unit:AU1}}.path | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]] |
-	|inheritedRule.StorageRule.R5.{{unit:AU5}}.path | [["{{unit:AU5}}","{{unit:AU3}}","{{unit:AU4}}"]] |
+	|inheritedRule.StorageRule.R1.{{unit:AU41}}.path | [["{{unit:AU41}}","{{unit:AU42}}","{{unit:AU43}}","{{unit:AU44}}"]] |
+	|inheritedRule.StorageRule.R5.{{unit:AU45}}.path | [["{{unit:AU45}}","{{unit:AU43}}","{{unit:AU44}}"]] |
 
 
   Scénario: Recherche une archive unit avec les règles héritées(CA5)
-    Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/US_1069/1069_CA5_corrige.zip
-    Quand je télécharge le SIP
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU54"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -100,18 +90,16 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-	|inheritedRule.StorageRule.R1.{{unit:AU1}}.path | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"]] |
-	|inheritedRule.StorageRule.R1.{{unit:AU5}}.path | [["{{unit:AU5}}","{{unit:AU3}}","{{unit:AU4}}"]] |
+	|inheritedRule.StorageRule.R1.{{unit:AU51}}.path | [["{{unit:AU51}}","{{unit:AU52}}","{{unit:AU53}}","{{unit:AU54}}"]] |
+	|inheritedRule.StorageRule.R1.{{unit:AU55}}.path | [["{{unit:AU55}}","{{unit:AU53}}","{{unit:AU54}}"]] |
 
 
   Scénario: Recherche une archive unit avec les règles héritées(CA6)
-    Etant donné les tests effectués sur le tenant 0
-    Et un fichier SIP nommé data/SIP_OK/US_1069/1069_CA6.zip
-    Quand je télécharge le SIP
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"AU4"}},{"$in":{"#operations":["Operation-Id"]}}]}],
+  "$query": [{"$and":[{"$eq":{"Title":"AU64"}},{"$in":{"#operations":["Operation-Id"]}}]}],
     "$projection": {
     "$fields": {
       "$rules": 1
@@ -119,4 +107,4 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | inheritedRule.StorageRule.R1.{{unit:AU1}}.path | [["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}"],["{{unit:AU1}}","{{unit:AU2}}","{{unit:AU4}}"]] |
+      | inheritedRule.StorageRule.R1.{{unit:AU61}}.path | [["{{unit:AU61}}","{{unit:AU62}}","{{unit:AU63}}","{{unit:AU64}}"],["{{unit:AU61}}","{{unit:AU62}}","{{unit:AU64}}"]] |
