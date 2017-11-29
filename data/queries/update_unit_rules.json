@@ -1,0 +1,13 @@
+{
+  "$action": [
+    {
+      "$set": {
+        "#management.DisseminationRule": [
+          {
+            "Rule": "DIS-00003"
+          }
+        ]
+      }
+    }
+  ]
+}

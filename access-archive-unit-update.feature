@@ -22,3 +22,15 @@ Fonctionnalité: Mise à jour d'une unité archivistique
     Quand j'utilise le fichier de requête suivant data/queries/update_unit_title_description.json
     Et je modifie les unités archivistiques
     Alors le nombre de résultat est 1
+
+  Scénario: UPDATE2 : vérifier la bonne modification des rêgles de gestion
+    Etant donné les tests effectués sur le tenant 0
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_RULES_COMPLEXE_COMPLETE.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est OK
+    Et j'utilise le fichier de requête suivant data/queries/select_unit_by_title_pere_lachaise.json
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 1
+    Quand j'utilise le fichier de requête suivant data/queries/update_unit_rules.json
+    Et je modifie les unités archivistiques
+    Alors le nombre de résultat est 1
