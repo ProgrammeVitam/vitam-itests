@@ -336,6 +336,14 @@ Fonctionnalité: uploader des fichier SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_HEADER.CHECK_CONTRACT_INGEST, STP_INGEST_CONTROL_SIP sont KO
 
+  @CheckHeaderWithoutOriginatingAgency
+  Scénario: Test SIP without originating agency KO
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_WHITOUT_ORIGINATING_AGENCY.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_HEADER, CHECK_HEADER.CHECK_AGENT, STP_INGEST_CONTROL_SIP, PROCESS_SIP_UNITARY sont KO
+
+
   Scénario: Test SIP with empty title KO (US 1791)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_TITLE_VIDE.zip
     Quand je télécharge le SIP
