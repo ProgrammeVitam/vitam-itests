@@ -1,0 +1,22 @@
+[
+	{	"Identifier":"sameNameProfil0",
+		"Name":"sameNameProfil",
+		"Description":"same Name Profil",
+		"Status":"ACTIVE",
+		"Format":"RNG",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
+	},
+	{	"Identifier":"sameNameProfil1",
+		"Name":"sameNameProfil",
+		"Description":"Recherche de profil RNG",
+		"Status":"ACTIVE",
+		"Format":"RNG",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
+	}
+]

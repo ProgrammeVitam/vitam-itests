@@ -16,6 +16,11 @@ Fonctionnalité: Tests d'imports et de recherches de profils
     Etant donné un profil nommé data/profiles/profile_ok.xsd
     Et je rattache un ficher à ce profil d'archivage
 
+  Scénario: Import de deux profil de même noms
+    Etant donné un profil nommé data/profiles/two_name_profiles_ok.json
+    Alors je fais un import du profile d'archivage
+
+
   Scénario: Recherche de profil XSD
     Quand je cherche un profil nommé profilTrnXsd
     Alors le profil existe

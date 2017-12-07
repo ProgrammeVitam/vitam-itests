@@ -1,0 +1,23 @@
+[
+	{
+		"Name":"sameNAmeIngestContract",
+		"Identifier":"sameNAmeIngestContract0",
+		"Description":"Test same NAmeIngest Contract",
+		"Status" : "ACTIVE",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
+	},
+	{
+		"Name":"sameNAmeIngestContract",
+		"Identifier":"sameNAmeIngestContract0",
+		"Description":"same NAme IngestContract",
+		"Status" : "ACTIVE",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
+	}
+
+]
