@@ -55,7 +55,8 @@ Fonctionnalité: Recherche dans le journal des opérations
   Scénario: Upload d'un SIP en passant d'identifiant de transaction et vérification du contenu du champ "evIdAppSession"
       Etant donné les tests effectués sur le tenant 0
       Et les tests effectués avec l'identifiant de transaction APP_SESSION_ID
-      Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
+      Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
+      Quand je télécharge le SIP
       Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
       Et je recherche les journaux d'opération
       Alors les metadonnées sont
