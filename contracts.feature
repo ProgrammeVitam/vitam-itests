@@ -74,3 +74,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
   Scénario: Scénario: Tentative d'import de contrat d'entrée ko (Id du plan parent est incorrect)
     Etant donné un contract nommé data/contracts/referential_contracts_unknowID_ko.json
     Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS
+
+  Scénario: Scénario: Tentative d'import de contrat d'entrée ko (JSON contenant des contenus HTML toxiques)
+    Etant donné un contract nommé data/contracts/JSON_HTML.json
+    Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
