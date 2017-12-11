@@ -139,7 +139,7 @@ Fonctionnalité: Test offset limit
   },
   "$filter": {
     "$orderby": {
-      "Name": 1
+      "Identifier": 1
     },
     "$offset": 0,
     "$limit": 2
@@ -169,7 +169,7 @@ Fonctionnalité: Test offset limit
   },
   "$filter": {
     "$orderby": {
-      "Name": 1
+      "Identifier": 1
     },
     "$offset": 1,
     "$limit": 1
@@ -197,7 +197,7 @@ Fonctionnalité: Test offset limit
   },
   "$filter": {
     "$orderby": {
-      "Name": 1
+      "Identifier": 1
     },
     "$offset": 200,
     "$limit": 1
