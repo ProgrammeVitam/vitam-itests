@@ -16,6 +16,8 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VIRUS_code2.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
+    Et le journal des opérations ne contient pas de statut FATAL
+    Et le journal des opérations est cohérent
     Et le statut de l'événement SANITY_CHECK_SIP est KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
@@ -24,6 +26,7 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est OK
+    Et le journal des opérations est cohérent
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
     Et le fichier ATR contient 7 unités archivistiques
@@ -46,6 +49,8 @@ Fonctionnalité: uploader des fichier SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_CYCLE.zip
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
+    Et le journal des opérations ne contient pas de statut FATAL
+    Et le journal des opérations est cohérent
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
     Et le fichier ATR contient 3 balises de type Event
