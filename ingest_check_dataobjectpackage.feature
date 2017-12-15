@@ -40,7 +40,6 @@ Fonctionnalité: uploader des fichiers SIP
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION est KO
-    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION.BDO_DATAOBJECTIONVERSION_PHYSICALMASTER.KO
 
   Scénario: Test SIP (#3335)  - Manifest déclare un BinaryMaster dans un Objet physique
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BinaryInPhysical.zip
