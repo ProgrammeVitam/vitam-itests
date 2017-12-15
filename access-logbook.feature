@@ -41,15 +41,16 @@ Fonctionnalité: Recherche dans le journal des opérations
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_title.json
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
       | Title            | Fichier 2 nouveau jeu de test |
     Quand je recherche le JCV de l'unité archivistique dont le titre est Fichier 2 nouveau jeu de test
-    Alors les statuts de JCV des événements LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Fichier 2 nouveau jeu de test
-    Alors les statuts de JCV des événements LFC.CHECK_CONSISTENCY, LFC.CHECK_DIGEST, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OBJ_STORAGE, LFC.OG_METADATA_INDEXATION sont OK
+    Alors les statuts des événements LFC.CHECK_CONSISTENCY, LFC.CHECK_DIGEST, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OBJ_STORAGE, LFC.OG_METADATA_INDEXATION sont OK
 
 
   Scénario: Upload d'un SIP en passant d'identifiant de transaction et vérification du contenu du champ "evIdAppSession"

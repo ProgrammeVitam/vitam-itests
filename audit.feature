@@ -11,6 +11,7 @@ Fonctionnalité: Audit
   Scénario: Initial : Ingest du sip d'audit
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_audit.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
 
   Scénario: contrôler l'existence d'objet par Service producteur

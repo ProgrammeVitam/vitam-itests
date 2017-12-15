@@ -14,16 +14,19 @@ Fonctionnalité: uploader des fichiers SIP
   Scénario: SIP au mauvais format
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_Mauvais_Format.pdf
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
 
   Scénario: Test virus
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VIRUS_code2.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement SANITY_CHECK_SIP est KO
 
   Scénario: SIP avec un fichier dont l'extension contient un caractère spécial
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_FILE_extension_caractere_special.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements STP_UPLOAD_SIP, PROCESS_SIP_UNITARY sont KO
