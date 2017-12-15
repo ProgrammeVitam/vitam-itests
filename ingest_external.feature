@@ -1,7 +1,7 @@
 # language: fr
 
 @Ingest_External
-Fonctionnalité: uploader des fichier SIP
+Fonctionnalité: uploader des fichiers SIP
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
 
   Contexte:

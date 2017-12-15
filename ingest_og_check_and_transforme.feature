@@ -1,7 +1,7 @@
 # language: fr
 
 @Ingest_OG_CHECK_AND_TRANSFORME
-Fonctionnalité: uploader des fichier SIP - OG_CHECK_AND_TRANSFORME
+Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
 
   Contexte:

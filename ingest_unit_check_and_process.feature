@@ -1,7 +1,7 @@
 # language: fr
 
 @Ingest_UNIT_CHECK_AND_PROCESS
-Fonctionnalité: uploader des fichier SIP - UNIT_CHECK_AND_PROCESS
+Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
 
   Contexte:
