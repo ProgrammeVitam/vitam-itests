@@ -30,13 +30,13 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
 
-    Scénario: Test SIP with invalid date KO (US 1791)
-      Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_RG-STARTDATE_AN9000.zip
-      Quand je télécharge le SIP
-      Alors le statut final du journal des opérations est KO
-      Et les statuts des événements CHECK_UNIT_SCHEMA, STP_UNIT_CHECK_AND_PROCESS sont KO
-      Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.KO
-      Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
+  Scénario: Test SIP with invalid date KO (US 1791)
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_RG-STARTDATE_AN9000.zip
+    Quand je télécharge le SIP
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_UNIT_SCHEMA, STP_UNIT_CHECK_AND_PROCESS sont KO
+    Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.KO
+    Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
 
 ##### UNITS_RULES_COMPUTE #####
 
