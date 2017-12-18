@@ -44,7 +44,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DIGEST, STP_OG_CHECK_AND_TRANSFORME sont KO
-    Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.INVALID.KO
+    Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.KO
     Et l'outcome détail de l'événement STP_OG_CHECK_AND_TRANSFORME est STP_OG_CHECK_AND_TRANSFORME.KO
 
   Scénario: Empreinte vide
@@ -52,7 +52,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Quand je télécharge le SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DIGEST, STP_OG_CHECK_AND_TRANSFORME sont KO
-    Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.EMPTY.KO
+    Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.KO
     Et l'outcome détail de l'événement STP_OG_CHECK_AND_TRANSFORME est STP_OG_CHECK_AND_TRANSFORME.KO
 
 ##### OG_OBJECTS_FORMAT_CHECK
