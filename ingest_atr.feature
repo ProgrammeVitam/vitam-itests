@@ -15,8 +15,9 @@ Fonctionnalité: uploader des fichier SIP
   Scénario: Test virus
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VIRUS_code2.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et le journal des opérations ne contient pas de statut FATAL
+    Et le journal ne contient pas de statut FATAL
     Et le journal des opérations est cohérent
     Et le statut de l'événement SANITY_CHECK_SIP est KO
     Quand je télécharge son fichier ATR
@@ -25,6 +26,7 @@ Fonctionnalité: uploader des fichier SIP
   Scénario: Test ATR OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et le journal des opérations est cohérent
     Quand je télécharge son fichier ATR
@@ -37,6 +39,7 @@ Fonctionnalité: uploader des fichier SIP
   Scénario: Test ATR OK with physical
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
@@ -48,8 +51,9 @@ Fonctionnalité: uploader des fichier SIP
   Scénario: Test ATR KO
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_CYCLE.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et le journal des opérations ne contient pas de statut FATAL
+    Et le journal ne contient pas de statut FATAL
     Et le journal des opérations est cohérent
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO

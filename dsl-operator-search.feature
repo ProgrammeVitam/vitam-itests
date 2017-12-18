@@ -15,6 +15,7 @@ Fonctionnalité: Test operateur SEARCH du DSL
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes_search.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Quand j'utilise la requête suivante
 """

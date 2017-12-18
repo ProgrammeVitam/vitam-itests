@@ -14,82 +14,96 @@ Fonctionnalité: uploader des fichiers SIP
   Scénario: Test des différentes étapes OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_UNIT_CHECK_AND_PROCESS, STP_STORAGE_AVAILABILITY_CHECK, OG_METADATA_INDEXATION, OBJ_STORAGE, STP_INGEST_FINALISATION, ATR_NOTIFICATION, ACCESSION_REGISTRATION sont OK
 
   Scénario: Archive Unit déclare fils avant père
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_desunitsdeclare_1unitfilsavantpere.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_OBJ_STORING, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Title en alphabets différents
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_test_differentes_langues.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Arborescence rateau
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_INGEST_CONTROL_SIP, STP_UNIT_METADATA, STP_UNIT_STORING, OBJ_STORAGE sont OK
 
   Scénario: Objet sans GOT
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_MANIFESTE-OBJET-SANS-GOT.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements OG_METADATA_INDEXATION, STP_OBJ_STORING, STP_OG_STORING, UNIT_METADATA_INDEXATION, STP_UNIT_STORING sont OK
 
   Scénario: Enregistrement d'une archive physique
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ArchivesPhysiques.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_OBJ_STORING, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: SIP au format TAR
     Etant donné un fichier SIP nommé data/SIP_OK/TAR/OK_SIP_2_GO.tar
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et le statut de l'événement CHECK_CONTAINER est OK
 
   Scénario: SIP au format TAR GZ
     Etant donné un fichier SIP nommé data/SIP_OK/TAR/OK_SIP_2_GO.tar.gz
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et le statut de l'événement CHECK_CONTAINER est OK
 
   Scénario: SIP au format TAR BZ2
     Etant donné un fichier SIP nommé data/SIP_OK/TAR/OK_SIP_2_GO.tar.bz2
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et le statut de l'événement CHECK_CONTAINER est OK
 
   Scénario: Test de l'indexation d'une arborescence complexe
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_OBJ_STORING, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: Test de l'indexation d'une archive ayant une description multi-valuée
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP-multivalue.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_OBJ_STORING, STP_OG_STORING, OG_METADATA_INDEXATION, STP_UNIT_STORING, UNIT_METADATA_INDEXATION sont OK
 
   Scénario: SIP avec empreinte KO - Retour ATR doit être OK
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_Empreinte_test_ATR.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements STP_INGEST_FINALISATION, ATR_NOTIFICATION sont OK
 
   Scénario: Test SIP avec metadonnees libres complexes
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
 
   Scénario: Test SIP - Manifest avec un maximum de métadonnées
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/all-metadata.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est WARNING
     Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME, PROCESS_SIP_UNITARY sont WARNING

@@ -53,6 +53,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et les tests effectués sur le contrat id contrat_modification_autorisees
     Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
     Et je recherche les unités archivistiques pour trouver l'unite OriginatingSystemId_00
@@ -67,6 +68,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et les tests effectués sur le contrat id contrat_modification_interdites
     Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_having_title_description.json
     Et je recherche les unités archivistiques pour trouver l'unite OriginatingSystemId_00
@@ -92,6 +94,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et les tests effectués sur le contrat id ContratTNR
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_SRC1_DATES_EXTREMES_OBJETS.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Quand  j'utilise le fichier de requête suivant data/queries/select_dates_extremes_src1.json
     Et je recherche les unités archivistiques
@@ -194,6 +197,7 @@ Fonctionnalité: Recherche une archive unit existante
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE_SORT.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_order_description_desc.json
     Et je recherche les unités archivistiques

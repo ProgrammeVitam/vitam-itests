@@ -16,6 +16,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
 
   Scénario: SIP avec une empreinte MD5
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP-test-md5.zip
+    Quand je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements CHECK_DIGEST, STP_OG_CHECK_AND_TRANSFORME sont OK
     Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.OK
@@ -28,6 +29,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
 
   Scénario: Contrôle sur une empreinte SHA-512
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_EMPRT_SHA256_2.zip
+    Quand je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements CHECK_DIGEST, STP_OG_CHECK_AND_TRANSFORME sont OK
     Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.OK
@@ -40,6 +42,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
 
   Scénario: SIP avec un fichier sans extension
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_FILES_sans_extention.zip
+    Quand je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_OG_CHECK_AND_TRANSFORME, OG_OBJECTS_FORMAT_CHECK sont OK
     Et l'outcome détail de l'événement OG_OBJECTS_FORMAT_CHECK est OG_OBJECTS_FORMAT_CHECK.OK
@@ -55,6 +58,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
   Scénario: Empreinte invalide
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_empreinte_KO.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DIGEST, STP_OG_CHECK_AND_TRANSFORME sont KO
     Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.KO
@@ -99,6 +103,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
   Scénario: Empreinte vide
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/DIGEST_VIDE.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DIGEST, STP_OG_CHECK_AND_TRANSFORME sont KO
     Et l'outcome détail de l'événement CHECK_DIGEST est CHECK_DIGEST.KO
@@ -114,6 +119,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
   Scénario: Contrôles sur les formats
     Etant donné un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_FORMAT_Varies.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est WARNING
     Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME sont WARNING
     Et l'outcome détail de l'événement OG_OBJECTS_FORMAT_CHECK est OG_OBJECTS_FORMAT_CHECK.WARNING
@@ -124,10 +130,10 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Alors les statuts de JCV des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est WARNING
     # Il y a 1 occurence de ces événements
 
-
   Scénario: Test PUID incohérents
     Etant donné un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_FORMT_PUID-incoherent.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est WARNING
     Et les statuts des événements STP_OG_CHECK_AND_TRANSFORME, OG_OBJECTS_FORMAT_CHECK sont WARNING
     Et l'outcome détail de l'événement STP_OG_CHECK_AND_TRANSFORME est STP_OG_CHECK_AND_TRANSFORME.WARNING
@@ -138,11 +144,13 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Alors les statuts de JCV des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est WARNING
     # Il y a 2 occurences de ces événements en warning et 1 en ok
 
+
 ### KO
 
   Scénario: Format inconnnu
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_FORMT_INCONNU.zip
     Quand je télécharge le SIP
+    Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME sont KO
     Et l'outcome détail de l'événement OG_OBJECTS_FORMAT_CHECK est OG_OBJECTS_FORMAT_CHECK.KO
