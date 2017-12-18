@@ -33,10 +33,3 @@ Fonctionnalité: initialisation
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
-
-  # FIXME When IHM import agencies is possible from IHM, remove all Scénarios bellow
-
-  Scénario: Scénario 2 import des services producteurs
-    Etant donné les tests effectués sur le tenant 2
-    Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
-    Alors j'importe les service producteurs
