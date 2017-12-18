@@ -32,8 +32,8 @@ Fonctionnalité: Recherche une archive unit existante
     Et les tests effectués sur le tenant 1
     Alors j'importe ce contrat sans échec de type ACCESS_CONTRACTS
 
-  Scénario: US2230 --  chercher une unité archivistique nommée “Galliéni”, en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un autre tenant “contrat_tous_producteurs”
-    Etant donné les tests effectués sur le tenant 2
+  Scénario: US2230 --  chercher une unité archivistique nommée “Galliéni”, en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un autre tenant “contrat_tous_producteur”
+    Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id contrat_tous_producteur
     Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
