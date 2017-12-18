@@ -278,3 +278,46 @@ Fonctionnalité: Unit : Test  de protection  d'api
 		{"$unset": ['_uds']}]}
 """
     Et le statut de la requete est Bad Request
+
+  Scénario: KO_UPDATE_UNIT__sp : Vérifier la non modification de _sp
+    Etant donné les tests effectués sur le tenant 0
+    Quand je modifie l'unité archivistique avec la requete
+"""
+{"$action": [
+		{"$set": {
+				"_sp" : ""
+			}}]}
+"""
+    Et le statut de la requete est Bad Request
+
+
+  Scénario: KO_UPDATE_UNIT__sps : Vérifier la non modification de _sps
+    Etant donné les tests effectués sur le tenant 0
+    Quand je modifie l'unité archivistique avec la requete
+"""
+{"$action": [
+		{"$set": {
+				"_sps" : ""
+			}}]}
+"""
+    Et le statut de la requete est Bad Request
+
+
+  Scénario: KO_UPDATE_UNIT_unset__sp : Vérifier le non unset  de _sp
+    Etant donné les tests effectués sur le tenant 0
+    Quand je modifie l'unité archivistique avec la requete
+"""
+{"$action": [
+		{"$unset": ['_sp']}]}
+"""
+    Et le statut de la requete est Bad Request
+
+
+  Scénario: KO_UPDATE_UNIT_unset__sps :Vérifier le non unset de _sps
+    Etant donné les tests effectués sur le tenant 0
+    Quand je modifie l'unité archivistique avec la requete
+"""
+{"$action": [
+		{"$unset": ['_sps']}]}
+"""
+    Et le statut de la requete est Bad Request
