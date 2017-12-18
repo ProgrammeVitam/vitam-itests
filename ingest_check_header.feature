@@ -5,7 +5,7 @@ Fonctionnalité: uploader des fichiers SIP
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
 
   Contexte:
-    Etant donné les tests effectués sur le tenant 0
+    Etant donné les tests effectués sur le tenant 1
   # Je m'assure que les contracts d'entrée sont bient importés
 
   Scénario: Importer le profile
