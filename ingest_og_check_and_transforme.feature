@@ -120,7 +120,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Et l'outcome détail de l'événement STP_OG_CHECK_AND_TRANSFORME est STP_OG_CHECK_AND_TRANSFORME.WARNING
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est WARNING
-    Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Integer rutrum condimentum
+    Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Historique de la station Gambetta
     Alors les statuts de JCV des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est WARNING
     # Il y a 1 occurence de ces événements
 
@@ -134,7 +134,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Et l'outcome détail de l'événement OG_OBJECTS_FORMAT_CHECK est OG_OBJECTS_FORMAT_CHECK.WARNING
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est WARNING
-    Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Integer rutrum condimentum
+    Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Recommandation de 2012 du CCSDS for Space Data System Practices - Reference Model for an Open Archival Information System (OAIS)
     Alors les statuts de JCV des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est WARNING
     # Il y a 2 occurences de ces événements en warning et 1 en ok
 
@@ -150,4 +150,4 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
     Et le fichier ATR contient les valeurs STP_OG_CHECK_AND_TRANSFORME, OG_OBJECTS_FORMAT_CHECK, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT.UNKNOWN
-    Et le fichier ATR contient 4 balises de type Event
+    Et le fichier ATR contient 10 balises de type Event
