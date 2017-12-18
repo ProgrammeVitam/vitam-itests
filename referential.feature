@@ -45,6 +45,11 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Alors les metadonnées sont
       | Code           | 409                                     |
 
+  Scénario: Vérification et import des règles contenant des contenus HTML toxiques
+    Quand j'importe le fichier nommé data/rules/CSV_HTML.csv dans le référentiel RULES
+    Alors les metadonnées sont
+      | Code           | 400
+
   Scénario: Vérification et import des règles OK, recherche par id OK
     Quand je vérifie le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES                                |
     Quand j'utilise le fichier de requête suivant data/queries/select_rule_by_id.json 
