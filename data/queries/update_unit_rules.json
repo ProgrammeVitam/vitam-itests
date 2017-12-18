@@ -2,7 +2,7 @@
   "$action": [
     {
       "$set": {
-        "#management.DisseminationRule": [
+        "#management.DisseminationRule.Rules": [
           {
             "Rule": "DIS-00003"
           }
