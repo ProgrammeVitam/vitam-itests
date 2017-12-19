@@ -24,7 +24,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Sensibilisation API
-    Alors les statuts de JCV des événements LFC.CHECK_DIGEST, LFC.CHECK_DIGEST.CALC_CHECK est OK
+    Alors les statuts des événements LFC.CHECK_DIGEST, LFC.CHECK_DIGEST.CALC_CHECK est OK
     # Il y a 4 occurences de ces événements
 
   Scénario: Contrôle sur une empreinte SHA-512
@@ -37,7 +37,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est la nouvelle newsletter de vitam
-    Alors les statuts de JCV des événements LFC.CHECK_DIGEST, LFC.CHECK_DIGEST.CALC_CHECK est OK
+    Alors les statuts des événements LFC.CHECK_DIGEST, LFC.CHECK_DIGEST.CALC_CHECK est OK
     # Il y a 1 occurence de ces événements
 
   Scénario: SIP avec un fichier sans extension
@@ -50,7 +50,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Integer rutrum condimentum
-    Alors les statuts de JCV des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est OK
+    Alors les statuts des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est OK
     # Il y a 1 occurence de ces événements
 
 ### KO
@@ -127,7 +127,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est WARNING
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Historique de la station Gambetta
-    Alors les statuts de JCV des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est WARNING
+    Alors les statuts des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est WARNING
     # Il y a 1 occurence de ces événements
 
   Scénario: Test PUID incohérents
@@ -141,7 +141,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est WARNING
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Recommandation de 2012 du CCSDS for Space Data System Practices - Reference Model for an Open Archival Information System (OAIS)
-    Alors les statuts de JCV des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est WARNING
+    Alors les statuts des événements LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT,LFC.OG_OBJECTS_FORMAT_CHECK est WARNING
     # Il y a 2 occurences de ces événements en warning et 1 en ok
 
 

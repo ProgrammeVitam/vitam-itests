@@ -22,7 +22,7 @@ Fonctionnalité: uploader des fichiers SIP
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont OK
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est ArchiveUnit Contenant un BinaryMaster et un\n                        TextContent
-    Alors le statuts de JCV de l'événement LFC.CHECK_MANIFEST est OK
+    Alors le statuts de l'événement LFC.CHECK_MANIFEST est OK
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
 
