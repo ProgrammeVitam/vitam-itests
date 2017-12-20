@@ -311,8 +311,8 @@ Fonctionnalité: Test offset limit
   "$projection": {}
 }
 """
-    Et je recherche les données dans le référentiel ACCESSION_REGISTERS
-    Alors le nombre de résultat est 2
+    Et je recherche les registres de fond
+    Alors le nombre de registres de fond est 2
 
 # Recherche offset / limit AccessionRegister *
     Quand j'utilise la requête suivante
@@ -333,8 +333,8 @@ Fonctionnalité: Test offset limit
   "$projection": {}
 }
 """
-    Et je recherche les données dans le référentiel ACCESSION_REGISTERS
-    Alors le nombre de résultat est 1
+    Et je recherche les registres de fond
+    Alors le nombre de registres de fond est 1 
 
 # Recherche offset / limit AccessionRegister *
     Quand j'utilise la requête suivante
@@ -355,5 +355,6 @@ Fonctionnalité: Test offset limit
   "$projection": {}
 }
 """
-    Et je recherche les données dans le référentiel ACCESSION_REGISTERS
-    Alors le nombre de résultat est 0
+    Et je recherche les registres de fond
+    Alors le nombre de registres de fond est 0
+    

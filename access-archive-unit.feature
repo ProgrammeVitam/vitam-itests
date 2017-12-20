@@ -83,8 +83,8 @@ Fonctionnalité: Recherche une archive unit existante
     Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
     Et j'utilise le fichier de requête suivant data/queries/select_accession_register_by_id.json
-    Et je recherche les détails des registres de fond pour le service producteur producteur1
-    Alors les metadonnées sont
+    Et je recherche les détails des registres de fond pour le service producteur Vitam
+    Alors les metadonnées pour le détail du registre de fond sont
       | OriginatingAgency        | producteur1              |
     Quand j'utilise le fichier de requête suivant data/queries/select_Gallieni.json
     Alors le nombre de résultat est 1
