@@ -161,11 +161,11 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Quand je télécharge le plan
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.KO
+    Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.EMPTY_REQUIRED_FIELD.KO
 
   Scénario: import d'un plan avec balise title vide (bug 3941)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_Arbre_empty_title.zip
     Quand je télécharge l'arbre
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.KO
+    Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.EMPTY_REQUIRED_FIELD.KO
