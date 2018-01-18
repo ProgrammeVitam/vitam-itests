@@ -24,7 +24,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, LFC.CHECK_UNIT_SCHEMA.EMPTY_REQUIRED_FIELD.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, CHECK_UNIT_SCHEMA.EMPTY_REQUIRED_FIELD.KO
 
   Scénario: Test SIP avec date invalide KO (US 1791)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_Endate_anterieur_Started.zip
@@ -36,7 +36,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, LFC.CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
 
   Scénario: Test SIP with invalid date KO (US 1791)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_RG-STARTDATE_AN9000.zip
@@ -48,7 +48,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, LFC.CHECK_UNIT_SCHEMA.RULE_DATE_FORMAT.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, CHECK_UNIT_SCHEMA.RULE_DATE_FORMAT.KO
 
 ##### UNITS_RULES_COMPUTE #####
 
