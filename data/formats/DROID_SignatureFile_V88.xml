@@ -34142,9 +34142,6 @@
             Name="Synchronized Multimedia Integration Language" PUID="fmt/205">
             <Extension>smil</Extension>
         </FileFormat>
-        <FileFormat ID="932" Name="Structured Query Language Data" PUID="fmt/206">
-            <Extension>sql</Extension>
-        </FileFormat>
         <FileFormat ID="933" Name="Obsidium Project File" PUID="fmt/207">
             <Extension>opf</Extension>
         </FileFormat>
