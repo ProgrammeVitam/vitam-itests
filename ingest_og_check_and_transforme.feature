@@ -170,5 +170,5 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Et l'outcome détail de l'événement STP_OG_CHECK_AND_TRANSFORME est STP_OG_CHECK_AND_TRANSFORME.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_OG_CHECK_AND_TRANSFORME, OG_OBJECTS_FORMAT_CHECK, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT.KO_FORMAT_UNCHARTED
+    Et le fichier ATR contient les valeurs STP_OG_CHECK_AND_TRANSFORME, OG_OBJECTS_FORMAT_CHECK, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT.UNCHARTED
     Et le fichier ATR contient 4 balises de type Event
