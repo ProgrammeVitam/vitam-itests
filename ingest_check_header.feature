@@ -29,6 +29,7 @@ Fonctionnalité: uploader des fichiers SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_HEADER, CHECK_HEADER.CHECK_AGENT, STP_INGEST_CONTROL_SIP, PROCESS_SIP_UNITARY sont KO
+    Et l'outcome détail de l'événement CHECK_HEADER.CHECK_AGENT est CHECK_HEADER.CHECK_AGENT.EMPTY_REQUIRED_FIELD.KO
 
   Scénario: OriginatingAgency absent
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_REGISTRE.zip
@@ -147,6 +148,7 @@ Fonctionnalité: uploader des fichiers SIP
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
+    Alors le statut de l'événement CHECK_HEADER.CHECK_ARCHIVEPROFILE est KO
     Et j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
