@@ -18,6 +18,13 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
     Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS
 
+  Scénario: Import de deux contrats d'ingest de même noms
+    Etant donné un contract nommé data/contracts/two_same_name_ingest_contracts.json
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
+
+  Scénario:Import de deux contrats d'accès de même noms
+    Etant donné un contract nommé data/contracts/two_same_name_access_contracts.json
+    Alors j'importe ce contrat de type ACCESS_CONTRACTS
 
   Scénario: Tentative d'import KO d'un contrat d'accès déjà existant
     Etant donné un contract nommé data/contracts/contrats_acces_ok.json
