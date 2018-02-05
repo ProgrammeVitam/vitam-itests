@@ -70,4 +70,7 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Et les metadonnées sont
       | RuleId           | APP-1069004                            |
 
-
+  Scénario: Vérification et import des services producteurs OK
+    Quand je vérifie le fichier nommé data/agencies/agencies_init.csv pour le référentiel AGENCIES
+    Alors les metadonnées sont
+      | Code           | 200                                     |
