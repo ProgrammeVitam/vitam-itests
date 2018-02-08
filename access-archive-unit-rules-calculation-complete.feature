@@ -239,7 +239,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.path.array[][]                | [["{{unit:Eglise de Pantin}}"]] |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.StartDate           | "2000-01-01" |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.EndDate             | "2010-01-01" |
-	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.ClassificationLevel | "Secret D\u00E9fense" |
+	| inheritedRule.ClassificationRule.ClassificationLevel | "Secret D\u00E9fense" |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.ClassificationOwner | "RATP" |
 
   Scénario: Recherche une archive unit avec les règles héritées 12 (Place des Fêtes) : régles héritées(ACC-00003, DIS-00001) sur unit qui ajoute une règle (ACC-00001)
@@ -422,7 +422,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.path.array[][]                 | [["{{unit:Eglise de Pantin}}","{{unit:Porte de Pantin}}"]] |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.StartDate            | "2000-01-01" |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.EndDate              | "2010-01-01" |
-	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.ClassificationLevel  | "Secret D\u00E9fense" |
+	| inheritedRule.ClassificationRule.ClassificationLevel  | "Secret D\u00E9fense" |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.ClassificationOwner  | "RATP" |
 	| #management.AccessRule.Inheritance.PreventRulesId.array[]                                   | "ACC-00002" |
 
@@ -563,7 +563,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.path.array[][]                | [["{{unit:Eglise de Pantin}}","{{unit:Porte de Pantin}}","{{unit:Stalingrad.txt}}"]] |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.StartDate           | "2000-01-01" |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.EndDate             | "2010-01-01" |
-	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.ClassificationLevel | "Secret D\u00E9fense" |
+	| inheritedRule.ClassificationRule.ClassificationLevel | "Secret D\u00E9fense" |
 	| inheritedRule.ClassificationRule.CLASS-00001.{{unit:Eglise de Pantin}}.ClassificationOwner | "RATP" |
 
 
