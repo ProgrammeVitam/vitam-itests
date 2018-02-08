@@ -277,7 +277,7 @@ Fonctionnalité: Recherche une archive unit existante
   Scénario: Recherche avancée d’archives – recherche KO par date, le format de date étant invalide (API)
     Etant donné les tests effectués sur le tenant 0
     Quand  j'utilise le fichier de requête suivant data/queries/select_dates_extremes_src_mauvais_format.json
-    Alors le statut de select résultat est Method Not Allowed
+    Alors le statut de select résultat est Precondition Failed
 
   Scénario: Recherche avancée d’archives – recherche OK sur des titres dans des alphabets différents (API)
     Etant donné les tests effectués sur le tenant 0
