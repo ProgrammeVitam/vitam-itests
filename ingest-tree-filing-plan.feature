@@ -24,6 +24,12 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
 
+  Scénario: Télécharger un plan mauvais classification level
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_plan_classification_Level.zip
+    Quand je télécharge le plan
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+
 ### Rattachement Unit
 
   Scénario: Rattachement d'une unit de sip à une unit de  sip
