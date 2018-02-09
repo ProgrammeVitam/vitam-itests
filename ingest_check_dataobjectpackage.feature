@@ -46,6 +46,20 @@ Fonctionnalité: uploader des fichiers SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
 
+  Scénario: SIP KO déclarant un usage avec un tiret
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_USAGE_VERSION_TIRET.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+
+  Scénario: SIP KO déclarant un usage eet une version non séparés par un underscore
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VERSION_USAGE_VERSION_ATTACHES.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+
   Scénario: Test SIP with invalid version on physical object KO (US 2216)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2216_CA3_Usages_invalide.zip
     Quand je télécharge le SIP
@@ -73,6 +87,21 @@ Fonctionnalité: uploader des fichiers SIP
     Et je recherche le journal des opérations
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
     Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION.INVALID_DATAOBJECTVERSION.KO
+
+Scénario: SIP déclarant un numéro de version écrit en lettres
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VERSION_LETTRES.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION.INVALID_DATAOBJECTVERSION.KO
+
+Scénario: SIP déclarant un numéro de version ayant une virgule
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VERSION_VIRGULE.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION.INVALID_DATAOBJECTVERSION.KO
+
 
   Scénario: Test SIP (#3335)  - Manifest déclare une URI vide
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_EmptyUri.zip
