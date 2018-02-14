@@ -48,7 +48,7 @@ Fonctionnalité: Recherche dans le journal des opérations
     Alors les metadonnées sont
       | Title            | Fichier 2 nouveau jeu de test |
     Quand je recherche le JCV de l'unité archivistique dont le titre est Fichier 2 nouveau jeu de test
-    Alors les statuts des événements LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est Fichier 2 nouveau jeu de test
     Alors les statuts des événements LFC.CHECK_CONSISTENCY, LFC.CHECK_DIGEST, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OBJ_STORAGE, LFC.OG_METADATA_INDEXATION sont OK
 
