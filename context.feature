@@ -4,7 +4,7 @@
 Fonctionnalité: Tests d'imports et de recherches de contexte (entrée et accès)
 
   Contexte: Avant de lancer cette suite de test, je verifie qu'au moins un contrat est uploadé.
-    Etant donné les tests effectués sur le tenant 0
+    Etant donné les tests effectués sur le tenant 1
 
   Scénario: Import de contexte OK
     Etant donné un fichier contexte nommé data/contexts/contexts_empty.json
