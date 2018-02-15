@@ -66,7 +66,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient 2 unités archivistiques
     Et le fichier ATR contient 2 objets binaires
     Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit racines non dotées de règles, mais avec un ManagementMetadata doté de règles
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES-racines-multiples-regle-MM.zip
@@ -80,7 +80,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient 2 unités archivistiques
     Et le fichier ATR contient 2 objets binaires
     Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit racines dotées de règles, mais avec un ManagementMetadata sans règle
@@ -95,7 +95,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient 2 unités archivistiques
     Et le fichier ATR contient 2 objets binaires
     Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit qui est à la racine de DescriptiveMetadata qui partage la même règle que le ManagementMetadata mais avec des StartDate différentes
@@ -110,7 +110,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient 5 unités archivistiques
     Et le fichier ATR contient 2 objets binaires
     Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit qui est à la racine de DescriptiveMetadata sans règle, mais avec des règles définies au niveau du bloc ManagementMetadata
@@ -125,7 +125,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient 5 unités archivistiques
     Et le fichier ATR contient 2 objets binaires
     Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit qui est à la racine de DescriptiveMetadata, sans qu'aucune règle ne soit définie au niveau du bloc ManagementMetadata
@@ -140,7 +140,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient 5 unités archivistiques
     Et le fichier ATR contient 2 objets binaires
     Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit qui n'est pas à la racine du bloc DescriptiveMetadata
@@ -155,7 +155,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient 5 unités archivistiques
     Et le fichier ATR contient 2 objets binaires
     Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: SIP dont la règle de gestion du bloc ManagementMetadata s'applique aux deux racines
@@ -170,7 +170,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient 7 unités archivistiques
     Et le fichier ATR contient 1 objets binaires
     Quand je recherche le JCV de l'unité archivistique dont le titre est AU1 Racine002
-    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION, LFC.UNIT_METADATA_STORAGE sont OK
+    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
 ### KO
