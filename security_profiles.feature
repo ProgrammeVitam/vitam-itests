@@ -3,7 +3,8 @@
 @SecurityProfile
 Fonctionnalité: Tests d'imports, de recherches et de MAJ des profiles de sécurité
 
-  Etant donné les tests effectués sur le tenant 1
+  Contexte:
+    Etant donné les tests effectués sur le tenant 1
 
   Scénario: Import de profile de sécurité OK
     Etant donné un profile de sécurité nommé data/security_profiles/security_profile_ok.json

@@ -1,10 +1,12 @@
 [
   {
+    "Identifier": "TNR_SEC_PROFILE_OK_1",
     "Name": "TNR_SEC_PROFILE_OK_1",
     "FullAccess" : true,
     "Permissions": []
   },
   {
+    "Identifier": "TNR_SEC_PROFILE_OK_2",
     "Name": "TNR_SEC_PROFILE_OK_2",
     "FullAccess": false,
     "Permissions": [
