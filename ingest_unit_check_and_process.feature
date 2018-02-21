@@ -181,12 +181,12 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont KO
-    Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.KO
+    Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.UNKNOWN.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Et l'outcome détail de l'événement PROCESS_SIP_UNITARY est PROCESS_SIP_UNITARY.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, LFC.UNITS_RULES_COMPUTE.UNKNOWN.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, UNITS_RULES_COMPUTE.UNKNOWN.KO
 
   Scénario: SIP KO sur la tâche RULES_COMPUTE pour une catégorie de règle déclarant un identifiant de règle d'une autre catégorie
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_RULES_regle-incoherente-categorie.zip
@@ -194,11 +194,11 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont KO
-    Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.KO
+    Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.UNKNOWN.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, LFC.UNITS_RULES_COMPUTE.UNKNOWN.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, UNITS_RULES_COMPUTE.UNKNOWN.KO
 
   Scénario: SIP avec une catégorie de règle ayant un refNonRuleId déclarant un id de règle n'étant pas de la même catégorie
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_RefNonRuleId_ayant_un_ID_de_regle_dune_autre_categorie_que_la_sienne.zip
@@ -206,11 +206,11 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont KO
-    Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.KO
+    Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.REF_INCONSISTENCY.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, LFC.UNITS_RULES_COMPUTE.REF_INCONSISTENCY.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, UNITS_RULES_COMPUTE.REF_INCONSISTENCY.KO
 
   Scénario: SIP avec classification level KO
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_Classification_Level_Wrong.zip
