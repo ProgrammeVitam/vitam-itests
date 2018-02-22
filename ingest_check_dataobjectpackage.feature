@@ -190,6 +190,24 @@ Scénario: SIP déclarant un numéro de version ayant une virgule
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
     Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_WRONG_ATTACHMENT.KO
 
+  ##### Attach AU to existing GOT #####
+
+  Scénario: Rattachement d'une archiveunit de sip à un groupe d'objet existant OK
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Quand j'utilise le fichier de requête suivant data/queries/select_units_having_object_group.json
+    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur RattachementUnitTnrTitle
+    Et je recherche une unité archivistique ayant un groupe d'objets et je recupère son id et son objet
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_attachment_to_existing_GOT.zip
+    Et je construit le SIP de rattachement au groupe d'objet existant avec le template
+    Et je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est WARNING
+    Et les statuts des événements STP_OG_CHECK_AND_TRANSFORME, STP_OBJ_STORING sont WARNING
+    Et les statuts des événements STP_SANITY_CHECK_SIP, CHECK_SEDA, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_OBJECTNUMBER, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST, STP_UNIT_CHECK_AND_PROCESS, STP_STORAGE_AVAILABILITY_CHECK, UNIT_METADATA_INDEXATION, STP_UPDATE_OBJECT_GROUP, OBJECT_GROUP_UPDATE, COMMIT_LIFE_CYCLE_OBJECT_GROUP,OG_METADATA_STORAGE, STP_INGEST_FINALISATION, ATR_NOTIFICATION, ACCESSION_REGISTRATION sont OK
+
   Scénario: Test SIP avec GOT rattachement KO (US 2754)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_WRONG_ATTACHMENT_GOT.zip
     Quand je télécharge le SIP
