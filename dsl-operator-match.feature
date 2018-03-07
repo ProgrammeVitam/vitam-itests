@@ -37,7 +37,7 @@ Scénario: Dsl operator $match sur des champs de type string analyzed dans elast
 }
 """
 Et je recherche les unités archivistiques
-Alors le nombre de résultat est 3
+Alors le nombre de résultat est 2
 # Opérateur $match sur deux termes étant accolé dans 3AU et "Alpha" étant présent dans une autre AU
 Quand j'utilise la requête suivante
 """
@@ -63,7 +63,7 @@ Quand j'utilise la requête suivante
 }
 """
 Et je recherche les unités archivistiques
-Alors le nombre de résultat est 4
+Alors le nombre de résultat est 3
 # Opérateur $match avec des valeurs à rechercher qui n'existent pas
 Quand j'utilise la requête suivante
 """
@@ -126,7 +126,7 @@ Scénario: Dsl operator $match_all sur des champs de type string analyzed dans e
 }
 """
   Et je recherche les unités archivistiques
-  Alors le nombre de résultat est 3
+  Alors le nombre de résultat est 2
   # Opérateur $match_all sur deux termes dans le désordre, accolés dans 3AU et "Alpha" étant présent dans une autre AU
   Quand j'utilise la requête suivante
 """
@@ -245,7 +245,7 @@ Scénario: Dsl operator $match_phrase sur des champs de type string analyzed dan
         },
         {
           "$match_phrase": {
-            "Description": "charlie delta"
+            "Description_.fr": "charlie delta"
           }
         }
       ]
@@ -346,7 +346,7 @@ Scénario: Dsl operator $match_phrase_prefix sur des champs de type string analy
         },
         {
           "$match_phrase_prefix": {
-            "Description": "Alpha bravo charlie"
+            "Description_.fr": "Alpha bravo charlie"
           }
         }
       ]
@@ -378,7 +378,7 @@ Scénario: Dsl operator $match_phrase_prefix sur des champs de type string analy
         },
         {
           "$match_phrase_prefix": {
-            "Description": "Alpha bravo char"
+            "Description_.fr": "Alpha bravo char"
           }
         }
       ]
@@ -536,7 +536,7 @@ Scénario: Dsl operator $match* sur des champs de type string analyzed dans elas
       "$and": [
         { "$in": { "#operations": [ "Operation-Id"] } },
         {
-          "OPERATOR": { "Descriptions.en": "tango" }
+          "OPERATOR": { "Description_.en": "tango" }
         },
         {
           "OPERATOR": { "Addressee.Nationality": "Argentine" }
