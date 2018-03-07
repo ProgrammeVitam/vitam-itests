@@ -28,7 +28,19 @@ Fonctionnalité: Tests d'imports, de recherches et de MAJ des profiles de sécur
 
   Scénario: MAJ du profile de sécurité
     Etant donné un profile de sécurité ayant pour nom TNR_SEC_PROFILE_OK_2
-    Quand je modifie le profile de sécurité avec le fichier de requête suivant data/queries/update_security_profile.json
+    Quand je modifie le profile de sécurité avec le fichier de requête suivant data/queries/update_security_profile.json le statut de la requête est 200
     Alors le profile de sécurité ne contient pas la permission units:read
     Alors le profile de sécurité contient la permission contexts:read
 
+  Scénario: MAJ du profile de sécurité unset permissions et fullaccess KO
+    Etant donné un profile de sécurité ayant pour nom TNR_SEC_PROFILE_OK_2
+    Quand je modifie le profile de sécurité avec le fichier de requête suivant data/queries/update/ko/update_unset_permissions_fullaccess.json le statut de la requête est 400
+
+  Scénario: MAJ du profile de sécurité unset identifier KO
+    Etant donné un profile de sécurité ayant pour nom TNR_SEC_PROFILE_OK_2
+    Quand je modifie le profile de sécurité avec le fichier de requête suivant data/queries/update/ko/update_unset_identifier.json le statut de la requête est 400
+
+
+  Scénario: MAJ du profile de sécurité fake attribute KO
+    Etant donné un profile de sécurité ayant pour nom TNR_SEC_PROFILE_OK_2
+    Quand je modifie le profile de sécurité avec le fichier de requête suivant data/queries/update/ko/update_set_fake_attribute.json le statut de la requête est 400

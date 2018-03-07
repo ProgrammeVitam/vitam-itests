@@ -43,7 +43,7 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
       | Code           | 400                                     |
     Quand j'importe le fichier nommé data/rules/jeu_donnees_KO_regles_CSV.csv dans le référentiel RULES
     Alors les metadonnées sont
-      | Code           | 409                                     |
+      | Code           | 400                                     |
 
   Scénario: Vérification et import des règles contenant des contenus HTML toxiques
     Quand j'importe le fichier nommé data/rules/CSV_HTML.csv dans le référentiel RULES
