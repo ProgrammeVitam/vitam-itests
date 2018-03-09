@@ -31,6 +31,41 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Alors le statut final du journal des opérations est KO
 
 ### Rattachement Unit
+### for this scenario the key:value will be #id:id of existing unit (why? because with id we are sure to find only one result. else ingest perhaps will be KO)
+  Scénario: Rattachement d'une unit à une autre existante par rapport à la valeur valide d'un de ses champs #id OK
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Quand j'utilise le fichier de requête suivant data/queries/select_units_by_title_parameters.json
+    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur RattachementUnitTnrTitle
+    Et je recherche une unité archivistique et je recupère son id
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/Attachement_SIP_key_value.zip
+    Et j'utilise le template et construit un sip de rattachement avec comme nom et valeur de métadonnée #id et ID
+    Et je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+
+  Scénario: Rattachement d'une unit à une autre existante par rapport à la valeur non valide d'un de ses champs #id KO
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/Attachement_SIP_key_value.zip
+    Et j'utilise le template et construit un sip de rattachement avec comme nom et valeur de métadonnée #id et FakeGUID
+    Et je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+
+  Scénario: Rattachement d'une unit par rapport à la valeur d'un des champs qui retourne plusieurs unit KO
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_Multiple_AU.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est WARNING
+    Quand j'utilise le fichier de requête suivant data/queries/select_units_by_title_parameters.json
+    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur RattachementUnitTnrTitle
+    Et je recherche une unité archivistique et je recupère son id
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/Attachement_SIP_key_value.zip
+    Et j'utilise le template et construit un sip de rattachement avec comme nom et valeur de métadonnée DescriptionLevel et RecordGrp
+    Et je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
 
   Scénario: Rattachement d'une unit de sip à une unit de  sip
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
