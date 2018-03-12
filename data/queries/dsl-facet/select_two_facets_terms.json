@@ -1,0 +1,39 @@
+{
+	"$roots": [],
+	"$query": [
+		{
+			"$in": {
+				"#operations": [
+					"Operation-Id"
+				]
+			}
+		}
+	],
+	"$filter": {
+		"$offset": 0,
+		"$limit": 1
+	},
+	"$projection": {
+		"$fields": {
+			"#id": 1,
+			"Title": 1,
+			"DescriptionLevel": 1
+		}
+	},
+	"$facets": [
+		{
+			"$name": "NAME_FACET_1",
+			"$terms": {
+				"$field": "FIELD_FACET_1",
+				"$size": SIZE_FACET_1
+			}
+		},
+		{
+			"$name": "NAME_FACET_2",
+			"$terms": {
+				"$field": "FIELD_FACET_2",
+				"$size": SIZE_FACET_2
+			}
+		}
+	]
+}
