@@ -15,3 +15,8 @@ Fonctionnalité: vérifier la cohérence des journaux (Opération, LFC unit, LFC
     Alors je verifie que la strategie contient le rapport de cohérence
             | Nom              | valeur    |
             | ofre par default | default |
+
+  Scénario: Mise à jour du contextes pour désactivier le controle OK
+    Et les tests effectués sur le tenant 1
+    Etant donné  un fichier requete nommé data/queries/update/ok/update_context_enable_control_false.json
+    Alors je modifie le contexte dont l'identifiant est CT-000001 le statut de la requête est 200

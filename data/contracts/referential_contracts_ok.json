@@ -28,6 +28,16 @@
 		"CreationDate":"10/12/2016",
 		"ActivationDate":"10/12/2016",
 		"DeactivationDate":"10/12/2016"
+	},
+	{
+		"Name":"IngestContractNotInContext",
+		"Identifier":"IngestContractNotInContext",
+		"Description":"Contrat Vitam 0",
+		"Status" : "ACTIVE",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
 	}
 
 ]

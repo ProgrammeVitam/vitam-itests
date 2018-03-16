@@ -86,14 +86,14 @@ Fonctionnalité: uploader des fichiers SIP
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est KO
-    Et l'outcome détail de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est CHECK_HEADER.CHECK_CONTRACT_INGEST.UNKNOWN.KO
+    Et l'outcome détail de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est CHECK_HEADER.CHECK_CONTRACT_INGEST.CONTRACT_UNKNOWN.KO
 
   Scénario: Tester un contrat existant mais inactif
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/2194_IC_INACTIVE.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est KO
-    Et l'outcome détail de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est CHECK_HEADER.CHECK_CONTRACT_INGEST.INACTIVE.KO
+    Et l'outcome détail de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est CHECK_HEADER.CHECK_CONTRACT_INGEST.CONTRACT_INACTIVE.KO
 
 ##### CHECK_HEADER.CHECK_IC_AP_RELATION #####
 
@@ -101,15 +101,10 @@ Fonctionnalité: uploader des fichiers SIP
 
   Scénario: Test SIP with profil OK (US 468 and US_2557)
     Etant donné les tests effectués sur le tenant 1
-    Etant donné un profil nommé data/profiles/profiles_for_tnr_rng_ok.json
-    Alors je fais un import du profile d'archivage
-    Etant donné un profil nommé data/profiles/profil_ok.rng
-    Et je rattache un ficher à ce profil d'archivage
-    Etant donné un contract nommé data/contracts/contract_with_profil.json
-    Alors j'importe ce contrat de type INGEST_CONTRACTS
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_468.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
     Et les statuts des événements CHECK_HEADER.CHECK_IC_AP_RELATION, CHECK_HEADER.CHECK_ARCHIVEPROFILE sont OK
 
 ### KO
@@ -153,4 +148,13 @@ Fonctionnalité: uploader des fichiers SIP
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
       | evDetData        | Title\\\\\" invalid; must be equal to \\\\\\"Versement de la matrice cadastrale num\\\\u00E9rique |
-      
+
+### Test ingest with contract not in the context
+  Scénario: Tester un import en déclarant un contrat d'entrée qui n'existe pas dans le contexte applicatif
+    Etant donné les tests effectués sur le tenant 1
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_Contract_Not_IN_CONTEXT.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_HEADER.CHECK_CONTRACT_INGEST sont KO
+    Et l'outcome détail de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est CHECK_HEADER.CHECK_CONTRACT_INGEST.CONTRACT_NOT_IN_CONTEXT.KO
