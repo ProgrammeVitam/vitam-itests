@@ -1,0 +1,9 @@
+{
+  "$action": [
+    {
+      "$set": {
+        "EnableControl": false
+      }
+    }
+  ]
+}

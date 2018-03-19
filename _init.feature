@@ -31,3 +31,17 @@ Fonctionnalité: initialisation
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
+
+  Scénario: Scénario importer un profil d'archivage et un contrat d'entrée qui déclare ce profil
+    Etant donné les tests effectués sur le tenant 1
+    Et un profil nommé data/profiles/profiles_for_tnr_rng_ok.json
+    Alors je fais un import du profile d'archivage
+    Etant donné un profil nommé data/profiles/profil_ok.rng
+    Et je rattache un ficher à ce profil d'archivage
+    Etant donné un contract nommé data/contracts/contract_with_profil.json
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
+
+  Scénario: Mise à jour du contextes avec les bons contrats d'accès et d'entrée OK
+    Et les tests effectués sur le tenant 1
+    Etant donné  un fichier requete nommé data/queries/update/ok/update_context_enable_control_true.json
+    Alors je modifie le contexte dont l'identifiant est CT-000001 le statut de la requête est 200
