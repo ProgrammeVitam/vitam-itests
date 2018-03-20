@@ -70,7 +70,6 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Et le fichier ATR contient 1 balise de type ArchivalAgreement
     Et le fichier ATR contient 1 balise de type DataObjectPackage
     Et le fichier ATR contient 1 balise de type ManagementMetadata
-    Et le fichier ATR contient 1 balise de type ReplyOutcome
     Et le fichier ATR contient 1 balise de type Operation
     Et le fichier ATR contient 4 balises de type Event
     Et le fichier ATR contient 4 balises de type EventTypeCode
@@ -79,10 +78,9 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Et le fichier ATR contient 4 balises de type Outcome
     Et le fichier ATR contient 4 balises de type OutcomeDetail
     Et le fichier ATR contient 4 balises de type OutcomeDetailMessage
-    Et le fichier ATR contient 1 balises de type ArchiveUnitList
+    Et le fichier ATR contient 1 balises de type DescriptiveMetadata
     Et le fichier ATR contient 1 balises de type ArchiveUnit
     Et le fichier ATR contient 1 balises de type SystemId
-    Et le fichier ATR contient 1 balises de type DataObjectList
     Et le fichier ATR contient 1 balises de type DataObjectGroup
     Et le fichier ATR contient 1 balises de type BinaryDataObject
     Et le fichier ATR contient 1 balises de type DataObjectSystemId
