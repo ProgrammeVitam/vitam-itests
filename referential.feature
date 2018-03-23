@@ -49,6 +49,14 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Quand j'importe le fichier nommé data/rules/CSV_HTML.csv dans le référentiel RULES
     Alors les metadonnées sont
       | Code           | 400                                     |
+      
+  Scénario: Vérification et import des règles KO avec ligne vide
+    Quand je vérifie le fichier nommé data/rules/jeu_donnees_KO_regles_CSV_empty_line.csv pour le référentiel RULES
+    Alors les metadonnées sont
+      | Code           | 400                                     |
+    Quand j'importe le fichier nommé data/rules/jeu_donnees_KO_regles_CSV_empty_line.csv dans le référentiel RULES
+    Alors les metadonnées sont
+      | Code           | 400                                     |
 
   Scénario: Vérification et import des règles OK, recherche par id OK
     Quand je vérifie le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES                                |
