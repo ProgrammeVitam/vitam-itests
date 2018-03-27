@@ -19,6 +19,7 @@ Fonctionnalité: Test facet
 		Et j'utilise dans la requête le paramètre NAME_FACET avec la valeur facet_desclevel
 		Et j'utilise dans la requête le paramètre FIELD_FACET avec la valeur DescriptionLevel
 		Et j'utilise dans la requête le paramètre SIZE_FACET avec la valeur 5
+		Et j'utilise dans la requête le paramètre ORDER_FACET avec la valeur ASC
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
     Et le résultat pour la facet facet_desclevel contient 31 valeurs RecordGrp
@@ -31,6 +32,7 @@ Fonctionnalité: Test facet
 		Et j'utilise dans la requête le paramètre NAME_FACET avec la valeur facet_desclevel
 		Et j'utilise dans la requête le paramètre FIELD_FACET avec la valeur DescriptionLevel
 		Et j'utilise dans la requête le paramètre SIZE_FACET avec la valeur 1
+		Et j'utilise dans la requête le paramètre ORDER_FACET avec la valeur ASC
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
     Et le résultat pour la facet facet_desclevel contient 31 valeurs RecordGrp
@@ -43,6 +45,7 @@ Fonctionnalité: Test facet
 		Et j'utilise dans la requête le paramètre NAME_FACET avec la valeur facet_storagerule
 		Et j'utilise dans la requête le paramètre FIELD_FACET avec la valeur #management.AccessRule.Rules.Rule
 		Et j'utilise dans la requête le paramètre SIZE_FACET avec la valeur 3
+		Et j'utilise dans la requête le paramètre ORDER_FACET avec la valeur ASC
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
     Et le résultat pour la facet facet_storagerule contient 7 valeurs ACC-00002
@@ -57,9 +60,11 @@ Fonctionnalité: Test facet
 		Et j'utilise dans la requête le paramètre NAME_FACET_1 avec la valeur facet_tag
 		Et j'utilise dans la requête le paramètre FIELD_FACET_1 avec la valeur Tag
 		Et j'utilise dans la requête le paramètre SIZE_FACET_1 avec la valeur 3
+		Et j'utilise dans la requête le paramètre ORDER_FACET_1 avec la valeur ASC
 		Et j'utilise dans la requête le paramètre NAME_FACET_2 avec la valeur facet_keyword_content
 		Et j'utilise dans la requête le paramètre FIELD_FACET_2 avec la valeur Keyword.KeywordContent
 		Et j'utilise dans la requête le paramètre SIZE_FACET_2 avec la valeur 3
+		Et j'utilise dans la requête le paramètre ORDER_FACET_2 avec la valeur ASC
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
     Et le résultat pour la facet facet_tag contient 15 valeurs Brantes (Vaucluse, France)
