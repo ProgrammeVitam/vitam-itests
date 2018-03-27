@@ -5,12 +5,12 @@ VITAM Itests
 
 .. section-numbering::
 
-.. image:: LogoVitamGrand2.png
+.. image:: logo_vitam.png
         :alt: Logo Vitam (Bêta)
         :align: center
 
-Le projet Vita Itests
-=====================
+Le projet Vitam Itests
+======================
 
 Il a pour objectif :
 
