@@ -25,7 +25,8 @@
 			"$name": "NAME_FACET",
 			"$terms": {
 				"$field": "FIELD_FACET",
-				"$size": SIZE_FACET
+				"$size": SIZE_FACET,
+				"$order": "ORDER_FACET"
 			}
 		}
 	]

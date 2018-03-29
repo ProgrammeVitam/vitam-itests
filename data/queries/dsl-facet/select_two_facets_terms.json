@@ -25,14 +25,16 @@
 			"$name": "NAME_FACET_1",
 			"$terms": {
 				"$field": "FIELD_FACET_1",
-				"$size": SIZE_FACET_1
+				"$size": SIZE_FACET_1,
+				"$order": "ORDER_FACET_1"
 			}
 		},
 		{
 			"$name": "NAME_FACET_2",
 			"$terms": {
 				"$field": "FIELD_FACET_2",
-				"$size": SIZE_FACET_2
+				"$size": SIZE_FACET_2,
+				"$order": "ORDER_FACET_2"
 			}
 		}
 	]
