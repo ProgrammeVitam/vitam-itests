@@ -18,94 +18,56 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Et les statuts des événements STP_OP_SECURISATION, OP_SECURISATION_TIMESTAMP, OP_SECURISATION_STORAGE sont OK
 
   #### AU Ingest ####
-  Scénario: Test audit d'une AU
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
-    Quand je télécharge le SIP
-    Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est OK
-    Quand j'utilise le fichier de requête suivant data/queries/select_units_having_object_group.json
-    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur RattachementUnitTnrTitle
-    Et je recherche une unité archivistique ayant un groupe d'objets et je recupère son id et son objet
+  Scénario: Test d'audit sans securisation
     # Audit without traceability
-    Quand je réalise un audit de traçabilité de l'unité
-    Alors le journal d'opération de l'audit de traçabilité a pour statut WARNING
-    # Audit with traceability
-    Quand on lance la traçabilité des journaux de cycles de vie
-    Quand je réalise un audit de traçabilité de l'unité
-    Alors le journal d'opération de l'audit de traçabilité a pour statut OK
-
-  #### AU Update ####
-  Scénario: Test audit d'une AU après MAJ
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
-    Quand j'utilise le fichier de requête suivant data/queries/select_units_having_object_group.json
-    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur RattachementUnitTnrTitle
-    Et je recherche une unité archivistique ayant un groupe d'objets et je recupère son id et son objet
-    # Audit with traceability
-    Quand on lance la traçabilité des journaux de cycles de vie
-    Quand je réalise un audit de traçabilité de l'unité
-    Alors le journal d'opération de l'audit de traçabilité a pour statut OK
-    # MAJ de l'AU
     Quand j'utilise la requête suivante
 """
 {
-  "$action": [
-    { "$set": { "Title": "New Title" } }
-  ]
+  "$roots": [],
+  "$query": [
+    {
+
+          "$eq": {
+            "Title": "BAD0431E2C5E80E5BD42D547A3ED596444446.odt"
+          }
+
+    }
+  ],
+  "$projection": {
+  }
 }
 """
-    Et je modifie les unités archivistiques
-    Alors le nombre de résultat est 1
-    # Audit sans traçabilité
-    Quand je réalise un audit de traçabilité de l'unité
-    Alors le journal d'opération de l'audit de traçabilité a pour statut WARNING
-    # Audit avec traçabilité
-    Quand on lance la traçabilité des journaux de cycles de vie
-    Quand je réalise un audit de traçabilité de l'unité
-    Alors le journal d'opération de l'audit de traçabilité a pour statut OK
-
-  #### GOT Ingest ####
-  Scénario: Test audit d'un GOT
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
-    Quand je télécharge le SIP
-    Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est OK
-    Quand j'utilise le fichier de requête suivant data/queries/select_units_having_object_group.json
-    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur RattachementUnitTnrTitle
-    Et je recherche une unité archivistique ayant un groupe d'objets et je recupère son id et son objet
-    # Audit without traceability
-    Quand je réalise un audit de traçabilité de l'objet group
-    Alors le journal d'opération de l'audit de traçabilité a pour statut WARNING
-    # Audit with traceability
-    Quand on lance la traçabilité des journaux de cycles de vie
-    Quand je réalise un audit de traçabilité de l'objet group
-    Alors le journal d'opération de l'audit de traçabilité a pour statut OK
-
-  ##### GOT Update : Attach AU to existing GOT ####
-  Scénario: Test audit d'un GOT suite à son rattachement
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
-    Quand je télécharge le SIP
-    Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est OK
-    Quand j'utilise le fichier de requête suivant data/queries/select_units_having_object_group.json
-    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur RattachementUnitTnrTitle
-    Et je recherche une unité archivistique ayant un groupe d'objets et je recupère son id et son objet
-    # Audit with traceability
-    Quand on lance la traçabilité des journaux de cycles de vie
-    Quand je réalise un audit de traçabilité de l'objet group
-    Alors le journal d'opération de l'audit de traçabilité a pour statut OK
-    # Attach AU to existing GOT
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_attachment_to_existing_GOT.zip
-    Et je construit le SIP de rattachement au groupe d'objet existant avec le template
-    Et je télécharge le SIP
+    Et je réalise un audit de traçabilité de la requete
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est WARNING
-    # Audit without traceability
-    Quand je réalise un audit de traçabilité de l'objet group
-    Alors le journal d'opération de l'audit de traçabilité a pour statut WARNING
-    # Audit with traceability
+    Et l'outcome détail de l'événement EVIDENCE_AUDIT_FINALIZE est EVIDENCE_AUDIT_FINALIZE.WARNING
+
+  #### GOT Ingest ####
+  Scénario: Test d'audit avec securisation
+        # Audit avec traçabilité
     Quand on lance la traçabilité des journaux de cycles de vie
-    Quand je réalise un audit de traçabilité de l'objet group
-    Alors le journal d'opération de l'audit de traçabilité a pour statut OK
+    Et j'utilise la requête suivante
+  """
+{
+  "$roots": [],
+  "$query": [
+    {
+
+          "$eq": {
+            "Title": "BAD0431E2C5E80E5BD42D547A3ED596444446.odt"
+          }
+
+    }
+  ],
+  "$projection": {
+  }
+}
+"""
+    Et je réalise un audit de traçabilité de la requete
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Et l'outcome détail de l'événement EVIDENCE_AUDIT_FINALIZE est EVIDENCE_AUDIT_FINALIZE.OK
