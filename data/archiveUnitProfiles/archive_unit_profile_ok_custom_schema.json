@@ -1,0 +1,13 @@
+[
+	{
+		"Identifier":"AUP_CUSTOM_SCHEMA",
+		"Name":"ArchiveUnitProfileWithCustomSchemaTNR",
+		"Description":"Test d'import d'un document type avec schéma",
+		"Status":"ACTIVE",
+		"ControlSchema":"{\r\n  \"$schema\": \"http:\/\/vitam-json-schema.org\/draft-04\/schema#\",\r\n  \"id\": \"http:\/\/example.com\/root.json\",\r\n  \"type\": \"object\",\r\n  \"additionalProperties\": true,\r\n  \"properties\": {\r\n    \"_id\": {\r\n      \"type\": \"string\"\r\n    },\r\n    \"_og\": {\r\n      \"type\": \"string\"\r\n    },\r\n    \"DescriptionLevel\": {\r\n      \"type\": \"string\",\r\n      \"enum\": [\r\n        \"Item\",\r\n        \"SubGrp\",\r\n        \"File\"\r\n      ]\r\n    },\r\n    \"Title\": {\r\n      \"description\": \"All TitleGroup\",\r\n      \"type\": [\r\n        \"string\",\r\n        \"array\",\r\n        \"number\"\r\n      ],\r\n      \"minLength\": 1,\r\n      \"minItems\": 1\r\n    }\r\n  }\r\n}",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
+	}
+]

@@ -223,3 +223,48 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
     Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_CLASSIFICATION_LEVEL.KO, LFC.CHECK_CLASSIFICATION_LEVEL.KO
+
+
+    ##### CHECK_ARCHIVE_UNIT_PROFILE #####
+
+### OK
+
+  Scénario: Test SIP ayant un document type (archive unit profile)
+    Etant donné les tests effectués sur le tenant 1
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_AU_with_archive_unit_profile.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Et les statuts des événements CHECK_ARCHIVE_UNIT_PROFILE, STP_UNIT_CHECK_AND_PROCESS sont OK
+    Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.OK
+    Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
+    Quand je télécharge son fichier ATR
+    Alors l'état final du fichier ATR est OK
+
+### KO
+
+  Scénario: Test SIP ayant un document type non existant
+    Etant donné les tests effectués sur le tenant 1
+    Et un fichier SIP nommé data/SIP_KO/ZIP/KO_AU_with_wrong_archive_unit_profile.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_ARCHIVE_UNIT_PROFILE, STP_UNIT_CHECK_AND_PROCESS sont KO
+    Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.PROFILE_NOT_FOUND.KO
+    Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
+    Quand je télécharge son fichier ATR
+    Alors l'état final du fichier ATR est KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.PROFILE_NOT_FOUND.KO
+
+  Scénario: Test SIP ne respectant pas le schéma de son document type
+    Etant donné les tests effectués sur le tenant 1
+    Et un fichier SIP nommé data/SIP_KO/ZIP/KO_AU_with_incorrect_AUP_Schema.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et les statuts des événements CHECK_ARCHIVE_UNIT_PROFILE, STP_UNIT_CHECK_AND_PROCESS sont KO
+    Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.INVALID_UNIT.KO
+    Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
+    Quand je télécharge son fichier ATR
+    Alors l'état final du fichier ATR est KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.INVALID_UNIT.KO
