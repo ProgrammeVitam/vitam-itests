@@ -74,3 +74,33 @@ Fonctionnalité: Test facet
     Et le résultat pour la facet facet_keyword_content contient 7 valeurs Saint-Léger-du-Ventoux (Vaucluse, France)
     Et le résultat pour la facet facet_keyword_content contient 4 valeurs plantation
     
+
+  Scénario: Test 1 facets filters : Title_ langs 2 facetsResults 
+    Etant donné les tests effectués sur le tenant 0
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/FRAD084_ReboisementVentoux.zip
+    Quand j'utilise le fichier de requête suivant data/queries/dsl-facet/select_one_facets_filters_two_queries.json
+		Et j'utilise dans la requête le paramètre NAME_FACET avec la valeur title_langs
+		Et j'utilise dans la requête le paramètre NAME_FILTER_QUERY_1 avec la valeur Title_fr
+		Et j'utilise dans la requête le paramètre FIELD_FILTER_QUERY_1 avec la valeur Title_.fr
+		Et j'utilise dans la requête le paramètre NAME_FILTER_QUERY_2 avec la valeur Title_en
+		Et j'utilise dans la requête le paramètre FIELD_FILTER_QUERY_2 avec la valeur Title_.en
+		Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 1
+    Et le résultat pour la facet title_langs contient 4 valeurs Title_fr
+    Et le résultat pour la facet title_langs contient 3 valeurs Title_en
+    
+
+  Scénario: Test 1 facets filters : #management rules 2 facetsResults 
+    Etant donné les tests effectués sur le tenant 0
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_COMPLEXE_COMPLETE.zip
+    Quand j'utilise le fichier de requête suivant data/queries/dsl-facet/select_one_facets_filters_two_queries.json
+		Et j'utilise dans la requête le paramètre NAME_FACET avec la valeur title_langs
+		Et j'utilise dans la requête le paramètre NAME_FILTER_QUERY_1 avec la valeur UnitWithStorageRule
+		Et j'utilise dans la requête le paramètre FIELD_FILTER_QUERY_1 avec la valeur #management.StorageRule.Rules.Rule
+		Et j'utilise dans la requête le paramètre NAME_FILTER_QUERY_2 avec la valeur UnitWithAccessRules
+		Et j'utilise dans la requête le paramètre FIELD_FILTER_QUERY_2 avec la valeur #management.AccessRule.Rules.Rule
+		Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 1
+    Et le résultat pour la facet title_langs contient 2 valeurs UnitWithStorageRule
+    Et le résultat pour la facet title_langs contient 17 valeurs UnitWithAccessRules
+    

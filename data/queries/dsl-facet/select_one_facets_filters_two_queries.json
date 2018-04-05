@@ -1,0 +1,44 @@
+{
+	"$roots": [],
+	"$query": [
+		{
+			"$in": {
+				"#operations": [
+					"Operation-Id"
+				]
+			}
+		}
+	],
+	"$filter": {
+		"$offset": 0,
+		"$limit": 1
+	},
+	"$projection": {
+		"$fields": {
+			"#id": 1,
+			"Title": 1,
+			"DescriptionLevel": 1
+		}
+	},
+	"$facets": [
+		{
+			"$name": "NAME_FACET",
+			"$filters": {
+				"$query_filters": [
+					{
+						"$name": "NAME_FILTER_QUERY_1",
+						"$query": {
+							"$exists": "FIELD_FILTER_QUERY_1"
+						}
+					},
+					{
+						"$name": "NAME_FILTER_QUERY_2",
+						"$query": {
+							"$exists": "FIELD_FILTER_QUERY_2"
+						}
+					}
+				]
+			}
+		}
+	]
+}
