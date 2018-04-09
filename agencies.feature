@@ -12,7 +12,7 @@ Fonctionnalité: Tests d'imports et de recherches de services producteurs
 
   Scénario: Recherche de service producteur
     Quand je cherche un service producteur nommé agencyTNR
-    Alors le service producteur exite
+    Alors le service producteur existe
     Et les métadonnées du service sont
       | Name        | agencyTNR            |
       | Description | une description de service agent TNR0001 |
