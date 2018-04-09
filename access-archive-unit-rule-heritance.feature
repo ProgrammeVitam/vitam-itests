@@ -249,23 +249,28 @@ Fonctionnalité: Calcul des règles de gestion
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | inheritedRule.StorageRule.R1.{{unit:AU3}}.path            | [["{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"],["{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]]                                  |
+      | inheritedRule.StorageRule.R1.{{unit:AU3}}.path            | ["{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"]                     |
+      | inheritedRule.StorageRule.R1.{{unit:AU3}}.path            | ["{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]                     |
       | inheritedRule.StorageRule.R1.{{unit:AU3}}.StartDate       | "2110-01-01"                                                       |
       | inheritedRule.StorageRule.R1.{{unit:AU3}}.FinalAction     | "RestrictAccess"                                                   |
       | inheritedRule.StorageRule.R1.{{unit:AU3}}.EndDate         | "2111-01-01"                                                       |
-      | inheritedRule.StorageRule.R2.{{unit:AU2}}.path            | [["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"],["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]]                   |
+      | inheritedRule.StorageRule.R2.{{unit:AU2}}.path            | ["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"]      |
+      | inheritedRule.StorageRule.R2.{{unit:AU2}}.path            | ["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]      |
       | inheritedRule.StorageRule.R2.{{unit:AU2}}.StartDate       | "2018-01-01"                                                       |
       | inheritedRule.StorageRule.R2.{{unit:AU2}}.FinalAction     | "RestrictAccess"                                                   |
       | inheritedRule.StorageRule.R2.{{unit:AU2}}.EndDate         | "2020-01-01"                                                       |
-      | inheritedRule.StorageRule.R3.{{unit:AU3}}.path            | [["{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"],["{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]]                                  |
+      | inheritedRule.StorageRule.R3.{{unit:AU3}}.path            | ["{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"]                     |
+      | inheritedRule.StorageRule.R3.{{unit:AU3}}.path            | ["{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]                     |
       | inheritedRule.StorageRule.R3.{{unit:AU3}}.StartDate       | "2020-01-01"                                                       |
       | inheritedRule.StorageRule.R3.{{unit:AU3}}.FinalAction     | "RestrictAccess"                                                   |
       | inheritedRule.StorageRule.R3.{{unit:AU3}}.EndDate         | "2023-01-01"                                                       |
-      | inheritedRule.StorageRule.R6.{{unit:AU1}}.path            | [["{{unit:AU1}}","{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"],["{{unit:AU1}}","{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]]                   |
+      | inheritedRule.StorageRule.R6.{{unit:AU1}}.path            | ["{{unit:AU1}}","{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"]      |
+      | inheritedRule.StorageRule.R6.{{unit:AU1}}.path            | ["{{unit:AU1}}","{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]      |
       | inheritedRule.StorageRule.R6.{{unit:AU1}}.StartDate       | "2021-01-01"                                                       |
       | inheritedRule.StorageRule.R6.{{unit:AU1}}.FinalAction     | "RestrictAccess"                                                   |
       | inheritedRule.StorageRule.R6.{{unit:AU1}}.EndDate         | "2027-01-01"                                                       |
-      | inheritedRule.StorageRule.R6.{{unit:AU2}}.path            | [["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"],["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]]                   |
+      | inheritedRule.StorageRule.R6.{{unit:AU2}}.path            | ["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU4}}","{{unit:AU6}}"]      |
+      | inheritedRule.StorageRule.R6.{{unit:AU2}}.path            | ["{{unit:AU2}}","{{unit:AU3}}","{{unit:AU5}}","{{unit:AU6}}"]      |
       | inheritedRule.StorageRule.R6.{{unit:AU2}}.StartDate       | "2021-01-01"                                                       |
       | inheritedRule.StorageRule.R6.{{unit:AU2}}.FinalAction     | "RestrictAccess"                                                   |
       | inheritedRule.StorageRule.R6.{{unit:AU2}}.EndDate         | "2027-01-01"                                                       |

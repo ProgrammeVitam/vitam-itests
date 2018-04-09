@@ -5,8 +5,9 @@
       "$or": [
         {
           "$and": [
+            { "$in": { "#operations": [ "Operation-Id" ] } },
             {
-              "$match": {
+              "$match_phrase": {
                 "Title": "SRC2_TITLE_DESC_UNITS_Rectorat"
               }
             },
@@ -19,8 +20,9 @@
         },
         {
           "$and": [
+            { "$in": { "#operations": [ "Operation-Id" ] } },
             {
-              "$match": {
+              "$match_phrase": {
                 "Title": "SRC2_TITLE_DESC_UNITS_Rectorat"
               }
             },
