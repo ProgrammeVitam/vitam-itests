@@ -107,4 +107,5 @@ Fonctionnalité: Recherche une archive unit existante
 """
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
-      | inheritedRule.StorageRule.R1.{{unit:AU61}}.path | [["{{unit:AU61}}","{{unit:AU62}}","{{unit:AU63}}","{{unit:AU64}}"],["{{unit:AU61}}","{{unit:AU62}}","{{unit:AU64}}"]] |
+      | inheritedRule.StorageRule.R1.{{unit:AU61}}.path | ["{{unit:AU61}}","{{unit:AU62}}","{{unit:AU63}}","{{unit:AU64}}"] |
+      | inheritedRule.StorageRule.R1.{{unit:AU61}}.path | ["{{unit:AU61}}","{{unit:AU62}}","{{unit:AU64}}"] |
