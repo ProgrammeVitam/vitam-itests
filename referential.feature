@@ -6,6 +6,8 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
   Contexte: Avant de lancer cette suite de test, je présuppose que les données de référentiel sont vides pour le tenant 1 (et pour tous les tenants dans le cas des formats). Les référentiels possibles sont FORMATS et RULES
     Etant donné les tests effectués sur le tenant 1
 
+
+## Formats
   Scénario: Vérification et import des formats KO
     Quand je vérifie le fichier nommé data/formats/DROID_SignatureFile_KO.xml pour le référentiel FORMATS
     Alors les metadonnées sont
@@ -37,6 +39,8 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
       | PUID           | "fmt/14"                                                     |
       | Name           | Acrobat PDF 1.0 - Portable Document Format |
       
+
+## Rules
   Scénario: Vérification et import des règles KO
     Quand je vérifie le fichier nommé data/rules/jeu_donnees_KO_regles_CSV.csv pour le référentiel RULES
     Alors les metadonnées sont
@@ -77,8 +81,3 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Alors le nombre de résultat est 6
     Et les metadonnées sont
       | RuleId           | APP-1069004                            |
-
-  Scénario: Vérification et import des services producteurs OK
-    Quand je vérifie le fichier nommé data/agencies/agencies_init.csv pour le référentiel AGENCIES
-    Alors les metadonnées sont
-      | Code           | 200                                     |
