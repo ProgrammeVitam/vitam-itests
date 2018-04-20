@@ -38,7 +38,7 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Et les metadonnées sont
       | PUID           | "fmt/14"                                                     |
       | Name           | Acrobat PDF 1.0 - Portable Document Format |
-      
+
 
 ## Rules
   Scénario: Vérification et import des règles KO
