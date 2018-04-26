@@ -32,7 +32,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_UNIT_SCHEMA, STP_UNIT_CHECK_AND_PROCESS sont KO
-    Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
+    Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.CONSISTENCY.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO

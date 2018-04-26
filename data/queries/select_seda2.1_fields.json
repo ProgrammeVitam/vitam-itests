@@ -180,16 +180,6 @@
         },
         {
           "$eq": {
-            "#management.AcquisitionInformation": "AcquisitionInformation0"
-          }
-        },
-        {
-          "$eq": {
-            "#management.LegalStatus": "Private Archive"
-          }
-        },
-        {
-          "$eq": {
             "#management.StorageRule.FinalAction": "Transfer"
           }
         },
