@@ -9,7 +9,8 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
   Scénario: Tentative d'import de  service producteur (fichier csv)
     Etant donné un fichier de service producteur nommé data/agencies/agencies.csv
     Alors j'importe les services producteurs
-
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
   Scénario: Recherche de service producteur
     Quand je cherche un service producteur nommé agencyTNR
     Alors le service producteur existe

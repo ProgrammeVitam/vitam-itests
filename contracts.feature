@@ -17,6 +17,8 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
   Scénario: Tentative d'import KO d'un contrat d'entrée déjà existant
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
     Alors j'importe ce contrat incorrect de type INGEST_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
 
   Scénario: Import de deux contrats d'ingest de même noms
     Etant donné un contract nommé data/contracts/two_same_name_ingest_contracts.json
@@ -29,6 +31,8 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
   Scénario: Tentative d'import KO d'un contrat d'accès déjà existant
     Etant donné un contract nommé data/contracts/contrats_acces_ok.json
     Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
 
   Scénario: CONTRACTS -recherche d'un contrat d'entree
     Quand je cherche un contrat de type INGEST_CONTRACTS et nommé ArchivalAgreement0
