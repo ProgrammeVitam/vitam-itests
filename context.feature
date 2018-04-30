@@ -21,7 +21,7 @@ Fonctionnalité: Tests d'imports et de recherches de contexte (entrée et accès
     Et je recherche un contexte nommé My_Context_i8
     Alors  les métadonnées du context sont
       | Name        | My_Context_i8                                                                                                                                                                                                          |
-      | Permissions | [{"#tenant":0},{"#tenant":1},{"#tenant":2}] |
+      | Permissions | [{"tenant":0},{"tenant":1},{"tenant":2}] |
 
   Scénario: Mise à jour du contextes unset security profile KO
     Etant donné un contexte nommé My_Context_i8
