@@ -66,8 +66,30 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
       | Name       | ZimbabweArchivalAgreement  |
       | Identifier | ZimbabweArchivalAgreement0 |
 
+  Scénario: ACCESS_CONTRACTS - Ajout d'un noeud inaccessible
+    Etant donné un contract nommé data/contracts/access/contract_acces_nodes.json
+    Alors j'importe ce contrat de type ACCESS_CONTRACTS
+    Et les tests effectués sur le contrat id ACForNodeOperations
+    Et un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau_MD_complexes.zip
+    Alors je télécharge le SIP
+    Quand j'utilise le fichier de requête suivant data/queries/select_units_by_title_parameters.json
+    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur dossier_1
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 1
+    Quand je recherche une unité archivistique et je recupère son id
+    Et je cherche un contrat de type ACCESS_CONTRACTS et nommé ACForNodeOperations
+    Et j'utilise le fichier de requête suivant data/queries/update/ok/update_contract_add_excluded_node.json
+    Et j'utilise dans la requête le paramètre EXCLUDED_NODE_PARAM avec l'id
+    Et je modifie un contrat d'accès et le statut de la requête est 200
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_title_parameters.json
+    Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur dossier_1
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 0
+
+
   Scénario: Tentative d'import de contrat d'accès ko (nom manquant)
-    Etant donné un contract nommé data/contracts/ko_contrat_acces_name_manquant.json
+    Etant donné les tests effectués sur le contrat id ContratTNR
+    Et un contract nommé data/contracts/ko_contrat_acces_name_manquant.json
     Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
 
   Scénario: Tentative d'import de contrat d'accès ko (fichier xml)

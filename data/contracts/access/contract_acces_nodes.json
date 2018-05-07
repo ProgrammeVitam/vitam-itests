@@ -1,0 +1,14 @@
+[
+	{
+		"Identifier":"ACForNodeOperations",
+		"Name":"ACForNodeOperations",
+		"Description":"Contrat d'accès pour opérations sur noeuds",
+		"Status":"ACTIVE",
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016",
+		"EveryOriginatingAgency": true,
+		"WritingPermission": true
+	}
+]
