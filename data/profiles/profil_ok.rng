@@ -1119,6 +1119,10 @@
             </rng:element><!-- fin de StorageRule -->
           </rng:optional>
           
+          <rng:element name="OriginatingAgencyIdentifier">
+            <rng:value>DGFIP</rng:value>
+          </rng:element>
+          
           <!-- AppraisalRule -->
           <rng:element name="AppraisalRule">
             <rng:group>
@@ -1134,10 +1138,7 @@
               <rng:value type="token">Keep</rng:value>
             </rng:element>
           </rng:element><!-- fin de AppraisalRule -->
-          
-          <rng:element name="OriginatingAgencyIdentifier">
-            <rng:value>DGFIP</rng:value>
-          </rng:element>
+                    
         </rng:element>
       </rng:element>
       
