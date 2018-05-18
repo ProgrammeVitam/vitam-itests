@@ -13,8 +13,7 @@ Fonctionnalité: Tests d'imports, de recherches et de MAJ des profiles de sécur
   Scénario: Import de profile de sécurité KO, car il est en mode FullAccess (toutes permissions) et qu'il définit des permissions unitaires
     Etant donné un profile de sécurité nommé data/security_profiles/security_profile_ko_permissions_with_full_access.json
     Alors j'importe ce profile de sécurité en échec
-    Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est KO
+
 
   Scénario: Vérifier que le profile de sécurité a toutes les permissions
     Etant donné un profile de sécurité ayant pour nom TNR_SEC_PROFILE_OK_1
