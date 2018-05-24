@@ -61,5 +61,5 @@ Fonctionnalité: uploader des fichier SIP
     Et le fichier ATR contient les valeurs STP_INGEST_CONTROL_SIP.KO, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_LOOP.KO, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_LOOP.KO
     Et le fichier ATR contient la  chaîne de caractères
 """
-{"evDetTechData":"Cycle : [ID24, ID22, ID20, ID18, ID16, ID14, ID12, ID10, ID8, ID6, ID24]"}
+"evDetTechData":"Cycle : [ID24, ID22, ID20, ID18, ID16, ID14, ID12, ID10, ID8, ID6, ID24]"
 """
