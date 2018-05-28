@@ -257,7 +257,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.PROFILE_NOT_FOUND.KO
     Et le fichier ATR contient la  chaîne de caractères
 """
-{"evDetTechData":"Archive Unit Profile not found"}
+"evDetTechData":"Archive Unit Profile not found"
 """
 
   Scénario: Test SIP ne respectant pas le schéma de son document type
