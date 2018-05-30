@@ -17,10 +17,10 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_OP_SECURISATION, OP_SECURISATION_TIMESTAMP, OP_SECURISATION_STORAGE sont OK
 
-  #### AU Ingest ####
+
   Scénario: Test d'audit sans securisation
-    # Audit without traceability
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
+    # Audit without traceability (forced new ingest)
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/3_UNITS_2_GOTS.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
@@ -30,15 +30,12 @@ Fonctionnalité: Génération journal des opérations sécurisé
   "$roots": [],
   "$query": [
     {
-
-          "$eq": {
-            "Title": "BAD0431E2C5E80E5BD42D547A3ED596444446.odt"
-          }
-
-    }
-  ],
-  "$projection": {
-  }
+      "$and": [
+        { "$in": { "#operations": [ "Operation-Id" ] } },
+        { "$exists" : "Title" }
+      ]
+    }],
+    "$projection": { }
 }
 """
     Et je réalise un audit de traçabilité de la requete
@@ -46,28 +43,28 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Alors le statut final du journal des opérations est WARNING
     Et l'outcome détail de l'événement EVIDENCE_AUDIT_FINALIZE est EVIDENCE_AUDIT_FINALIZE.WARNING
 
-  #### GOT Ingest ####
+
   Scénario: Test d'audit avec securisation
-        # Audit avec traçabilité
-    Quand on lance la traçabilité des journaux de cycles de vie
+    # Audit with traceability (already ingested file in _prepareTraceability.feature, at least 5 minutes ago)
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/3_UNITS_2_GOTS.zip
+    Quand on lance la traçabilité des journaux de cycles de vie des unités archivistiques
+    Et on lance la traçabilité des journaux de cycles de vie des groupes d'objets
     Et j'utilise la requête suivante
-  """
+"""
 {
   "$roots": [],
   "$query": [
     {
-
-          "$eq": {
-            "Title": "BAD0431E2C5E80E5BD42D547A3ED596444446.odt"
-          }
-
-    }
-  ],
-  "$projection": {
-  }
+      "$and": [
+        { "$in": { "#operations": [ "Operation-Id" ] } },
+        { "$exists" : "Title" }
+      ]
+    }],
+    "$projection": { }
 }
 """
     Et je réalise un audit de traçabilité de la requete
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et l'outcome détail de l'événement EVIDENCE_AUDIT_FINALIZE est EVIDENCE_AUDIT_FINALIZE.OK
+
