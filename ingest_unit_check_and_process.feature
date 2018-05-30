@@ -36,7 +36,7 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, CHECK_UNIT_SCHEMA.CONSISTENCY.KO
 
   Scénario: Test SIP with invalid date KO (US 1791)
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_1791_SIP_RG-STARTDATE_AN9000.zip
@@ -194,11 +194,11 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont KO
-    Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.UNKNOWN.KO
+    Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.CONSISTENCY.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, UNITS_RULES_COMPUTE.UNKNOWN.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, UNITS_RULES_COMPUTE.CONSISTENCY.KO
 
   Scénario: SIP avec une catégorie de règle ayant un refNonRuleId déclarant un id de règle n'étant pas de la même catégorie
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_RefNonRuleId_ayant_un_ID_de_regle_dune_autre_categorie_que_la_sienne.zip
