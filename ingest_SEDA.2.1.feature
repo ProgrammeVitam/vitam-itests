@@ -21,7 +21,7 @@ Fonctionnalité: SEDA 2.1
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est monSIP
-    Alors les statuts des événements LFC.UNIT_METADATA_INDEXATION est OK
+    Alors les statuts des événements LFC.OG_METADATA_INDEXATION est OK
     Quand j'utilise le fichier de requête suivant data/queries/select_seda2.1_fields.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
