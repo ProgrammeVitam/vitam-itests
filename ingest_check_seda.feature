@@ -28,7 +28,7 @@ Fonctionnalité: uploader des fichiers SIP
     Alors le statut final du journal des opérations est KO
     Et le statut de l'événement CHECK_SEDA est KO
     Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.CONTAINER_FORMAT.FILE.KO
-    
+
 ##### CHECK_SEDA.NO_FILE #####
 
   Scénario: Bordereau mauvais format
@@ -64,8 +64,8 @@ Fonctionnalité: uploader des fichiers SIP
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et les statuts des événements CHECK_SEDA, STP_INGEST_CONTROL_SIP sont KO
-    Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.NOT_XSD_VALID.KO
+    Et les statuts des événements CHECK_UNIT_SCHEMA, STP_UNIT_CHECK_AND_PROCESS sont KO
+    Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
 
   Scénario: Manifest avec deux objets qui déclarent le GO
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_2_OBJT_declarent_le_GO.zip
