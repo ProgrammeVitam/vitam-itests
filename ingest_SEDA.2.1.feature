@@ -28,9 +28,9 @@ Fonctionnalité: SEDA 2.1
     Quand j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
-      | evDetData        |     "evDetData": "{\n  \"EvDetailReq\" : \"SIP SEDA 2.1\",\n  \"EvDateTimeReq\" : \"2016-10-18T14:52:27\",\n  \"ArchivalAgreement\" : \"ArchivalAgreement0\",\n  \"ServiceLevel\" : null,\n  \"AcquisitionInformation\" : \"AcquisitionInformation0\",\n  \"LegalStatus\" : \"Private Archive\"\n}" |
+      | evDetData        |     "{\n  \"EvDetailReq\" : \"SIP SEDA 2.1\",\n  \"EvDateTimeReq\" : \"2016-10-18T14:52:27\",\n  \"ArchivalAgreement\" : \"ArchivalAgreement0\",\n  \"ServiceLevel\" : null,\n  \"AcquisitionInformation\" : \"AcquisitionInformation0\",\n  \"LegalStatus\" : \"Private Archive\"\n}" |
     Et j'utilise le fichier de requête suivant data/queries/select_accession_register_by_id.json
-    Et je recherche les détails des registres de fond pour le service producteur Vitam
+    Et je recherche les détails des registres de fond pour le service producteur FRAN_NP_009913
     Alors les metadonnées pour le détail du registre de fond sont
       | LegalStatus                    | Private Archive                      |
       | AcquisitionInformation         | AcquisitionInformation0              |
