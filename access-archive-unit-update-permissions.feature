@@ -55,4 +55,4 @@ Fonctionnalité: Vérification du respect des permissions liées à la mise à j
             "Description": "Rectorat de Seine-Et-Marne"
         }}]}
 """
-    Et le statut de la requete est Internal Server Error
+    Et le statut de la requete est Unauthorized
