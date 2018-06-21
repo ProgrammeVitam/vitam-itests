@@ -1,7 +1,7 @@
 [
   {
     "Name": "My_Context_1",
-    "Status": true,
+    "Status":"ACTIVE",
     "SecurityProfile": "admin-security-profile",
     "Permissions": [
       {
@@ -18,7 +18,7 @@
   },
   {
     "Name": "My_Context_2",
-    "Status": false,
+    "Status":"INACTIVE",
     "SecurityProfile": "admin-security-profile",
     "Permissions": [
       {

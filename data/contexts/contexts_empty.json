@@ -1,7 +1,7 @@
 [
   {
     "Name": "My_Context_i8",
-    "Status": true,
+    "Status":"INACTIVE",
     "SecurityProfile": "admin-security-profile",
     "Permissions": [
       {
@@ -18,7 +18,7 @@
   },
   {
     "Name": "My_Context_86",
-    "Status": false,
+    "Status":"INACTIVE",
     "SecurityProfile": "admin-security-profile",
     "Permissions": [
       {
