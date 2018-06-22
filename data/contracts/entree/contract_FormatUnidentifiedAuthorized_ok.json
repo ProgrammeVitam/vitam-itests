@@ -1,0 +1,16 @@
+[{
+		"Name": "Accepte_les_objets_non_identifies",
+		"Identifier": "Accepte_les_objets_non_identifies",
+		"Description": "Ce contrat accepte tous les objets dont le format n'est pas identifié",
+		"Status": "ACTIVE",
+		"FormatUnidentifiedAuthorized": true
+	},
+	{
+		"Name": "Rejette_les_objets_non_identifies",
+		"Identifier": "Rejette_les_objets_non_identifies",
+		"Description": "Ce contrat rejette tous les objets dont le format n'est pas identifié",
+		"Status": "ACTIVE",
+		"FormatUnidentifiedAuthorized": false
+	}
+
+]
