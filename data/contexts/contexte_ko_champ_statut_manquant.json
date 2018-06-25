@@ -1,0 +1,16 @@
+[
+
+  {
+
+    "Name": "Contexte_KO_Champ_Statut_manquant",
+    "Permissions": [
+      {
+
+        "_tenant": 7,
+        "AccessContracts": ["AC-000001"],
+        "IngestContracts": ["IC-000001"]
+      }
+ ],
+    "SecurityProfile": "admin-security-profile"
+ }
+ ]
