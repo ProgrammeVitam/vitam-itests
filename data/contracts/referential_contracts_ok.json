@@ -46,6 +46,17 @@
 		"CreationDate":"10/12/2016",
 		"ActivationDate":"10/12/2016",
 		"DeactivationDate":"10/12/2016"
+	},
+	{
+		"Name":"IC-000001",
+		"Identifier":"IC-000001",
+		"Description":"Contrat pour assurer la compatibilité entre les différents jeux de tests",
+		"Status" : "ACTIVE",
+		"MasterMandatory": false,
+		"EveryDataObjectVersion": true,
+		"LastUpdate":"10/12/2016",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"10/12/2016",
+		"DeactivationDate":"10/12/2016"
 	}
-
 ]
