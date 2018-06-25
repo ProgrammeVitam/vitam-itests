@@ -1,9 +1,7 @@
 [
 
   {
-
-    
-    "Status": true,
+    "Status": "INACTIVE",
     "Permissions": [],
     "SecurityProfile": "admin-security-profile"
  }
