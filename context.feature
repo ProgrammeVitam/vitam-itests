@@ -10,9 +10,37 @@ Fonctionnalité: Tests d'imports et de recherches de contexte (entrée et accès
     Etant donné un fichier contexte nommé data/contexts/contexts_empty.json
     Alors j'importe ce contexte en succès
 
-  Scénario: Import de contexte KO, car il contient contrat d'entrée ou contrat d'acceès invalide
+  Scénario: Import de contexte KO, car il contient contrat d'entrée ou contrat d'accès invalide
     Etant donné un fichier contexte nommé data/contexts/contexts_error.json
     Alors j'importe ce contexte en échec
+
+  Scénario: Import de contexte KO,car il est au mauvais format(pdf)
+      Etant donné un fichier contexte nommé data/contexts/context_ko.pdf
+      Alors j'importe ce contexte en échec
+
+  Scénario: Import de contexte KO,car il a un champ inconnu
+      Etant donné un fichier contexte nommé data/contexts/contexte_ko_champ_inconnu.json
+      Alors j'importe ce contexte en échec
+
+  Scénario: Import de contexte KO,car il y a injection de Html
+      Etant donné un fichier contexte nommé data/contexts/contexte_ko_injection_Html.json
+      Alors j'importe ce contexte en échec
+
+ Scénario: Import de contexte KO,car il y a un champ name manquant
+      Etant donné un fichier contexte nommé data/contexts/contexte_ko_champ_name_manquant.json
+      Alors j'importe ce contexte en échec
+
+ Scénario: Import de contexte KO,car il y a un champ name manquant
+       Etant donné un fichier contexte nommé data/contexts/contexte_ko_champ_name_vide.json
+       Alors j'importe ce contexte en échec
+
+ Scénario: Import de contexte KO,car il y a un champ statut manquant
+       Etant donné un fichier contexte nommé data/contexts/contexte_ko_champ_statut_manquant.json
+       Alors j'importe ce contexte en échec
+
+  Scénario: Import de contexte KO,car il y a un champ statut manquant
+        Etant donné un fichier contexte nommé data/contexts/contexte_ko_champ_statut_vide.json
+        Alors j'importe ce contexte en échec
 
   Scénario: Mise à jour du contextes OK
     Etant donné un contexte nommé My_Context_i8
