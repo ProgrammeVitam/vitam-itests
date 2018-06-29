@@ -44,8 +44,8 @@ Fonctionnalité: uploader des fichiers SIP
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_SEDA est KO
-    Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.NO_FILE.KO
+    Et le statut de l'événement MANIFEST_FILE_NAME_CHECK est KO
+    Et l'outcome détail de l'événement MANIFEST_FILE_NAME_CHECK est MANIFEST_FILE_NAME_CHECK.KO
 
 ##### CHECK_SEDA.NOT_XML_FILE #####
 
