@@ -37,15 +37,15 @@ Fonctionnalité: uploader des fichiers SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_SEDA, STP_INGEST_CONTROL_SIP sont KO
-    Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.NO_FILE.KO
+    Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.NOT_XML_FILE.KO
 
   Scénario: Bordereau absent
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_absent.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et le statut de l'événement CHECK_SEDA est KO
-    Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.NO_FILE.KO
+    Et le statut de l'événement MANIFEST_FILE_NAME_CHECK est KO
+    Et l'outcome détail de l'événement MANIFEST_FILE_NAME_CHECK est MANIFEST_FILE_NAME_CHECK.KO
 
 ##### CHECK_SEDA.NOT_XML_FILE #####
 

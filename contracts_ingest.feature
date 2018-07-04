@@ -116,3 +116,14 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Alors le nombre de résultat est 1
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
+
+  Scénario: Import de contrat avec un minimum d'informations
+    Etant donné un contract nommé data/contracts/entree/contract_minimal.json
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
+    Quand je cherche un contrat de type INGEST_CONTRACTS et nommé Minimal_contract_with_the_less_fields_as_possible
+    Alors le contrat existe
+    Et les métadonnées du contrat sont
+      | Status                 | INACTIVE    |
+      | CheckParentLink        | INACTIVE    |
+      | MasterMandatory        | true        |
+      | EveryDataObjectVersion | false       |
