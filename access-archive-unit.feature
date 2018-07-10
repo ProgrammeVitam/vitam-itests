@@ -183,11 +183,11 @@ Fonctionnalité: Recherche une archive unit existante
     Et je recherche les groupes d'objets des unités archivistiques
     Alors les metadonnées sont
       | #qualifiers.0.versions.0.DataObjectVersion                      | PhysicalMaster_1    |
-      | #qualifiers.0.versions.0.PhysicalDimensions.Height.value        | 21                  |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Height.dValue        | 21                  |
       | #qualifiers.0.versions.0.PhysicalDimensions.Height.unit         | centimetre          |
-      | #qualifiers.0.versions.0.PhysicalDimensions.Length.value        | 29.7                |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Length.dValue        | 29.7                |
       | #qualifiers.0.versions.0.PhysicalDimensions.Length.unit         | centimetre          |
-      | #qualifiers.0.versions.0.PhysicalDimensions.Weight.value        | 1                   |
+      | #qualifiers.0.versions.0.PhysicalDimensions.Weight.dValue        | 1                   |
       | #qualifiers.0.versions.0.PhysicalDimensions.Weight.unit         | kilogram            |
       | #qualifiers.1.versions.0.DataObjectVersion                        | BinaryMaster_1      |
       | #qualifiers.1.versions.0.FileInfo.Filename                        | Filename0           |
