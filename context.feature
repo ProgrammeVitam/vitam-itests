@@ -42,12 +42,20 @@ Fonctionnalité: Tests d'imports et de recherches de contexte (entrée et accès
         Etant donné un fichier contexte nommé data/contexts/contexte_ko_champ_statut_vide.json
         Alors j'importe ce contexte en échec
 
+#TNR ajoutés le 26/07/2018
+
+  Scénario: Import de contexte KO,car il y a un objet qui n’existe pas dans Vitam
+    Etant donné un fichier contexte nommé data/contexts/Contexte_KO_objet_inexistant.json
+    Alors j'importe ce contexte en échec
+
+##############################################################################################
+
   Scénario: Mise à jour du contextes OK
     Etant donné un contexte nommé My_Context_i8
     Et un fichier requete nommé data/queries/update_context.json
     Alors je modifie le contexte nommé My_Context_i8 le statut de la requête est 200
     Et je recherche un contexte nommé My_Context_i8
-    Alors  les métadonnées du context sont
+    Alors les métadonnées du context sont
       | Name        | My_Context_i8                                                                                                                                                                                                          |
       | Permissions | [{"tenant":0},{"tenant":1},{"tenant":2}] |
 
@@ -80,3 +88,6 @@ Fonctionnalité: Tests d'imports et de recherches de contexte (entrée et accès
     Etant donné un contexte nommé My_Context_i8
     Et un fichier requete nommé data/queries/update/ko/update_set_fake_attribute.json
     Alors je modifie le contexte nommé My_Context_i8 le statut de la requête est 400
+
+
+

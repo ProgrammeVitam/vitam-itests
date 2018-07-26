@@ -1,0 +1,22 @@
+[
+
+  {
+
+    "Name": "Contexte_OK_TC",
+
+    "Status": true,
+
+    "Permissions": [
+
+      {
+
+        "AccessContracts": ["contrat_producteur1"],
+
+        "IngestContracts": ["ghffhfg"]
+
+      }
+
+ ],
+    "SecurityProfile": "admin-security-profile"
+ }
+ ]
