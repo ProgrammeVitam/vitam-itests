@@ -1,0 +1,119 @@
+{
+  "StorageRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Place des Fêtes}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}" ] ]
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Copy"
+    }, {
+      "UnitId" : "{{unit:Place des Fêtes}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Transfer"
+    } ]
+  },
+  "AppraisalRule" : {
+    "Rules" : [ ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Keep"
+    }, {
+      "UnitId" : "{{unit:Place des Fêtes}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Destroy"
+    } ]
+  },
+  "DisseminationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Rule" : "DIS-00001",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2025-01-01"
+    } ],
+    "Properties" : [ ]
+  },
+  "ReuseRule" : {
+    "Rules" : [ ],
+    "Properties" : [ ]
+  },
+  "ClassificationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Rule" : "CLASS-00001",
+      "StartDate" : "2015-06-03",
+      "EndDate" : "2025-06-03"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "PropertyName" : "ClassificationAudience",
+      "PropertyValue" : "ClassificationAudience0"
+    }, {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "PropertyName" : "ClassificationLevel",
+      "PropertyValue" : "Confidentiel Défense"
+    }, {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "PropertyName" : "ClassificationOwner",
+      "PropertyValue" : "ClassificationOwner0"
+    }, {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "PropertyName" : "ClassificationReassessingDate",
+      "PropertyValue" : "2016-06-03"
+    }, {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "PropertyName" : "NeedReassessingAuthorization",
+      "PropertyValue" : true
+    } ]
+  },
+  "AccessRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Place des Fêtes}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}" ] ],
+      "Rule" : "ACC-00001",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2000-01-01"
+    }, {
+      "UnitId" : "{{unit:Botzaris}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}" ] ],
+      "Rule" : "ACC-00003",
+      "StartDate" : "2002-01-01",
+      "EndDate" : "2027-01-01"
+    }, {
+      "UnitId" : "{{unit:Danube}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Botzaris}}", "{{unit:Danube}}" ] ],
+      "Rule" : "ACC-00036",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2100-01-01"
+    } ],
+    "Properties" : [ ]
+  }
+}

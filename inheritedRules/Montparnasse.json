@@ -1,0 +1,133 @@
+{
+  "StorageRule" : {
+    "Rules" : [ ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:Saint-Lazare}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Copy"
+    } ]
+  },
+  "AppraisalRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Marx Dormoy}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}" ] ],
+      "Rule" : "APP-00002",
+      "StartDate" : "2002-01-01",
+      "EndDate" : "2007-01-01"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:Saint-Lazare}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Destroy"
+    } ]
+  },
+  "DisseminationRule" : {
+    "Rules" : [ ],
+    "Properties" : [ ]
+  },
+  "ReuseRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Carrefour Pleyel}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Carrefour Pleyel}}" ] ],
+      "Rule" : "REU-00001",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2010-01-01"
+    } ],
+    "Properties" : [ ]
+  },
+  "ClassificationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "Rule" : "CLASS-00001",
+      "StartDate" : "2015-06-03",
+      "EndDate" : "2025-06-03"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "Rule" : "CLASS-00001",
+      "StartDate" : "2015-06-03",
+      "EndDate" : "2025-06-03"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "ClassificationAudience",
+      "PropertyValue" : "ClassificationAudience0"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "ClassificationAudience",
+      "PropertyValue" : "ClassificationAudience0"
+    }, {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "ClassificationLevel",
+      "PropertyValue" : "Confidentiel Défense"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "ClassificationLevel",
+      "PropertyValue" : "Confidentiel Défense"
+    }, {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "ClassificationOwner",
+      "PropertyValue" : "ClassificationOwner0"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "ClassificationOwner",
+      "PropertyValue" : "ClassificationOwner0"
+    }, {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "ClassificationReassessingDate",
+      "PropertyValue" : "2016-06-03"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "ClassificationReassessingDate",
+      "PropertyValue" : "2016-06-03"
+    }, {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "NeedReassessingAuthorization",
+      "PropertyValue" : true
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "NeedReassessingAuthorization",
+      "PropertyValue" : true
+    } ]
+  },
+  "AccessRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Porte de la Chapelle}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}" ] ],
+      "Rule" : "ACC-00002",
+      "StartDate" : "2002-01-01",
+      "EndDate" : "2027-01-01"
+    } ],
+    "Properties" : [ ]
+  }
+}

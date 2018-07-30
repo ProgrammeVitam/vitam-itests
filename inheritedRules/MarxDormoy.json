@@ -1,0 +1,96 @@
+{
+  "StorageRule" : {
+    "Rules" : [ ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Copy"
+    } ]
+  },
+  "AppraisalRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Marx Dormoy}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}" ] ],
+      "Rule" : "APP-00002",
+      "StartDate" : "2002-01-01",
+      "EndDate" : "2007-01-01"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:Marx Dormoy}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Destroy"
+    } ]
+  },
+  "DisseminationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Marx Dormoy}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}" ] ],
+      "Rule" : "DIS-00002",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2075-01-01"
+    } ],
+    "Properties" : [ ]
+  },
+  "ReuseRule" : {
+    "Rules" : [ ],
+    "Properties" : [ ]
+  },
+  "ClassificationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "Rule" : "CLASS-00001",
+      "StartDate" : "2015-06-03",
+      "EndDate" : "2025-06-03"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "ClassificationAudience",
+      "PropertyValue" : "ClassificationAudience0"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "ClassificationLevel",
+      "PropertyValue" : "Confidentiel Défense"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "ClassificationOwner",
+      "PropertyValue" : "ClassificationOwner0"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "ClassificationReassessingDate",
+      "PropertyValue" : "2016-06-03"
+    }, {
+      "UnitId" : "{{unit:2_Front Populaire (ligne 12)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}" ] ],
+      "PropertyName" : "NeedReassessingAuthorization",
+      "PropertyValue" : true
+    } ]
+  },
+  "AccessRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Porte de la Chapelle}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}" ] ],
+      "Rule" : "ACC-00002",
+      "StartDate" : "2002-01-01",
+      "EndDate" : "2027-01-01"
+    } ],
+    "Properties" : [ ]
+  }
+}

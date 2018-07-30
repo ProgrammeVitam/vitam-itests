@@ -1,0 +1,86 @@
+{
+  "StorageRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ]
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Transfer"
+    } ]
+  },
+  "AppraisalRule" : {
+    "Rules" : [ ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Keep"
+    } ]
+  },
+  "DisseminationRule" : {
+    "Rules" : [ ],
+    "Properties" : [ ]
+  },
+  "ReuseRule" : {
+    "Rules" : [ ],
+    "Properties" : [ ]
+  },
+  "ClassificationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "Rule" : "CLASS-00001",
+      "StartDate" : "2015-06-03",
+      "EndDate" : "2025-06-03"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "PropertyName" : "ClassificationAudience",
+      "PropertyValue" : "ClassificationAudience0"
+    }, {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "PropertyName" : "ClassificationLevel",
+      "PropertyValue" : "Confidentiel Défense"
+    }, {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "PropertyName" : "ClassificationOwner",
+      "PropertyValue" : "ClassificationOwner0"
+    }, {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "PropertyName" : "ClassificationReassessingDate",
+      "PropertyValue" : "2016-06-03"
+    }, {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "PropertyName" : "NeedReassessingAuthorization",
+      "PropertyValue" : true
+    } ]
+  },
+  "AccessRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ],
+      "Rule" : "ACC-00002",
+      "StartDate" : "2002-01-01",
+      "EndDate" : "2027-01-01"
+    } ],
+    "Properties" : [ ]
+  }
+}
