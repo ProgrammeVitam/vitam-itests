@@ -1,7 +1,7 @@
 [
-	{ 	"Identifier":"AUP_IDENTIFIER",
-		"Name":"ArchiveUnitProfile",
-		"Description":"Test d'import d'un document type",
+	{ 	"Identifier":"AUP_IDENTIFIER_0",
+		"Name":"NameForTest",
+		"Description":"<h1>Bonjour</h1>",
 		"Status":"ACTIVE",
 		"ControlSchema":"{}",
 		"LastUpdate":"10/12/2016",
