@@ -1,10 +1,6 @@
 {
   "StorageRule" : {
     "Rules" : [ {
-      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
-      "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Eglise de Pantin}}", "{{unit:5_Bobigny (ligne 5)}}" ] ]
-    }, {
       "UnitId" : "{{unit:Eglise de Pantin}}",
       "OriginatingAgency" : "RATP",
       "Paths" : [ [ "{{unit:Eglise de Pantin}}" ] ],

@@ -1,10 +1,6 @@
 {
   "StorageRule" : {
-    "Rules" : [ {
-      "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
-      "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:5_Bobigny (ligne 5)}}" ] ]
-    } ],
+    "Rules" : [ ],
     "Properties" : [ {
       "UnitId" : "{{unit:5_Bobigny (ligne 5)}}",
       "OriginatingAgency" : "RATP",

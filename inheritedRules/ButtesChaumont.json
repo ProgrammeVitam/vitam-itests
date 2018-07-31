@@ -1,10 +1,6 @@
 {
   "StorageRule" : {
-    "Rules" : [ {
-      "UnitId" : "{{unit:Place des Fêtes}}",
-      "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}" ] ]
-    } ],
+    "Rules" : [ ],
     "Properties" : [ {
       "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
       "OriginatingAgency" : "RATP",
@@ -39,7 +35,7 @@
     "Rules" : [ {
       "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
       "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
       "Rule" : "DIS-00001",
       "StartDate" : "2000-01-01",
       "EndDate" : "2025-01-01"
@@ -54,7 +50,7 @@
     "Rules" : [ {
       "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
       "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
       "Rule" : "CLASS-00001",
       "StartDate" : "2015-06-03",
       "EndDate" : "2025-06-03"
@@ -62,31 +58,31 @@
     "Properties" : [ {
       "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
       "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
       "PropertyName" : "ClassificationAudience",
       "PropertyValue" : "ClassificationAudience0"
     }, {
       "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
       "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
       "PropertyName" : "ClassificationLevel",
       "PropertyValue" : "Confidentiel Défense"
     }, {
       "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
       "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
       "PropertyName" : "ClassificationOwner",
       "PropertyValue" : "ClassificationOwner0"
     }, {
       "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
       "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
       "PropertyName" : "ClassificationReassessingDate",
       "PropertyValue" : "2016-06-03"
     }, {
       "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
       "OriginatingAgency" : "RATP",
-      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Paths" : [ [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ], [ "{{unit:Buttes-Chaumont}}", "{{unit:Botzaris}}", "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
       "PropertyName" : "NeedReassessingAuthorization",
       "PropertyValue" : true
     } ]
