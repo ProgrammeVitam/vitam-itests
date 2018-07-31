@@ -1,0 +1,103 @@
+{
+  "StorageRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Carrefour Pleyel}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}" ] ],
+      "Rule" : "STO-00001",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2001-01-01"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:Carrefour Pleyel}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Copy"
+    } ]
+  },
+  "AppraisalRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Carrefour Pleyel}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}" ] ],
+      "Rule" : "APP-00001",
+      "StartDate" : "2001-01-01",
+      "EndDate" : "2081-01-01"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:Carrefour Pleyel}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Destroy"
+    } ]
+  },
+  "DisseminationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Carrefour Pleyel}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}" ] ],
+      "Rule" : "DIS-00001",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2025-01-01"
+    } ],
+    "Properties" : [ ]
+  },
+  "ReuseRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:Carrefour Pleyel}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}" ] ],
+      "Rule" : "REU-00001",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2010-01-01"
+    } ],
+    "Properties" : [ ]
+  },
+  "ClassificationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "Rule" : "CLASS-00001",
+      "StartDate" : "2015-06-03",
+      "EndDate" : "2025-06-03"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "ClassificationAudience",
+      "PropertyValue" : "ClassificationAudience0"
+    }, {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "ClassificationLevel",
+      "PropertyValue" : "Confidentiel Défense"
+    }, {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "ClassificationOwner",
+      "PropertyValue" : "ClassificationOwner0"
+    }, {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "ClassificationReassessingDate",
+      "PropertyValue" : "2016-06-03"
+    }, {
+      "UnitId" : "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}" ] ],
+      "PropertyName" : "NeedReassessingAuthorization",
+      "PropertyValue" : true
+    } ]
+  },
+  "AccessRule" : {
+    "Rules" : [ ],
+    "Properties" : [ ]
+  }
+}

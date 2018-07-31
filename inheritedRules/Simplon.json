@@ -1,0 +1,89 @@
+{
+  "StorageRule" : {
+    "Rules" : [ ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Copy"
+    } ]
+  },
+  "AppraisalRule" : {
+    "Rules" : [ ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "PropertyName" : "FinalAction",
+      "PropertyValue" : "Keep"
+    } ]
+  },
+  "DisseminationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "Rule" : "DIS-00001",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2025-01-01"
+    } ],
+    "Properties" : [ ]
+  },
+  "ReuseRule" : {
+    "Rules" : [ ],
+    "Properties" : [ ]
+  },
+  "ClassificationRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "Rule" : "CLASS-00001",
+      "StartDate" : "2015-06-03",
+      "EndDate" : "2025-06-03"
+    } ],
+    "Properties" : [ {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "PropertyName" : "ClassificationAudience",
+      "PropertyValue" : "ClassificationAudience0"
+    }, {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "PropertyName" : "ClassificationLevel",
+      "PropertyValue" : "Confidentiel Défense"
+    }, {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "PropertyName" : "ClassificationOwner",
+      "PropertyValue" : "ClassificationOwner0"
+    }, {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "PropertyName" : "ClassificationReassessingDate",
+      "PropertyValue" : "2016-06-03"
+    }, {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "PropertyName" : "NeedReassessingAuthorization",
+      "PropertyValue" : true
+    } ]
+  },
+  "AccessRule" : {
+    "Rules" : [ {
+      "UnitId" : "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}" ] ],
+      "Rule" : "ACC-00002",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2025-01-01"
+    } ],
+    "Properties" : [ ]
+  }
+}
