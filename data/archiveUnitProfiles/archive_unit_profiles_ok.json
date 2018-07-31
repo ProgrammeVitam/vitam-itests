@@ -1,6 +1,6 @@
 [
 	{ 	"Identifier":"AUP_IDENTIFIER",
-		"Name":"ArchiveUnitProfileTNR",
+		"Name":"ArchiveUnitProfile",
 		"Description":"Test d'import d'un document type",
 		"Status":"ACTIVE",
 		"ControlSchema":"{ \"$schema\": \"http:\/\/vitam-json-schema.org\/draft-04\/schema#\", \"id\": \"http:\/\/example.com\/root.json\", \"type\": \"object\", \"properties\": { \"_id\": { \"type\": \"string\" } } }",
