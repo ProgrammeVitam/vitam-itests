@@ -10,7 +10,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
-  Scénario: Recherche une archive unit avec les règles héritées(CA1)
+  Scénario: Recherche une archive unit avec les règles héritées(CA1) (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
@@ -28,7 +28,7 @@ Fonctionnalité: Recherche une archive unit existante
 	|inheritedRule.StorageRule.R4.{{unit:AU14}}.path | [["{{unit:AU14}}"]] |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées(CA2)
+  Scénario: Recherche une archive unit avec les règles héritées(CA2) (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
@@ -44,7 +44,7 @@ Fonctionnalité: Recherche une archive unit existante
 	|inheritedRule.StorageRule.R1.{{unit:AU24}}.path | [["{{unit:AU24}}"]] |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées(CA3)
+  Scénario: Recherche une archive unit avec les règles héritées(CA3) (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
@@ -60,7 +60,7 @@ Fonctionnalité: Recherche une archive unit existante
 	|inheritedRule.StorageRule.R1.{{unit:AU34}}.path | [["{{unit:AU34}}"]] |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées(CA4)
+  Scénario: Recherche une archive unit avec les règles héritées(CA4) (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
@@ -77,7 +77,7 @@ Fonctionnalité: Recherche une archive unit existante
 	|inheritedRule.StorageRule.R5.{{unit:AU45}}.path | [["{{unit:AU45}}","{{unit:AU43}}","{{unit:AU44}}"]] |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées(CA5)
+  Scénario: Recherche une archive unit avec les règles héritées(CA5) (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
@@ -94,7 +94,7 @@ Fonctionnalité: Recherche une archive unit existante
 	|inheritedRule.StorageRule.R1.{{unit:AU55}}.path | [["{{unit:AU55}}","{{unit:AU53}}","{{unit:AU54}}"]] |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées(CA6)
+  Scénario: Recherche une archive unit avec les règles héritées(CA6) (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_ENDDATE_COMPUTE.zip
     Et j'utilise la requête suivante
 """
