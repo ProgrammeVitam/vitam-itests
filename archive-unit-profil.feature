@@ -15,10 +15,10 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Alors je fais un import du document type
 
   Scénario: Recherche de document type
-    Quand je cherche un document type nommé ArchiveUnitProfileTNR
+    Quand je cherche un document type nommé ArchiveUnitProfile
     Alors le document type existe
     Et les métadonnées du document type sont
-      | Name        | ArchiveUnitProfileTNR            |
+      | Name        | ArchiveUnitProfile               |
       | Description | Test d'import d'un document type |
 
 ################################################################################################################
@@ -28,7 +28,7 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Alors j'importe ce document type en échec
     Et je recherche le journal des opérations
     Alors les metadonnées sont
-      | evDetData        | "{ "Duplicate Field" : "The archive unit profile name ArchiveUnitProfileTNR already exists in database" } " |
+      | evDetData        | "{ "Duplicate Field" : "The archive unit profile name ArchiveUnitProfile already exists in database" } " |
 
   Scénario: Tentative d'import KO d'un document type avec un champ obligatoire manquant
     Etant donné un document type nommé data/archiveUnitProfiles/document_type_KO_Champsrequisvides.json
@@ -68,8 +68,8 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Alors je fais un import du document type
 
   Scénario: Recherche de document type avec schéma
-    Quand je cherche un document type nommé ArchiveUnitProfileWithCustomSchemaTNR
+    Quand je cherche un document type nommé ArchiveUnitProfileWithCustomSchema
     Alors le document type existe
     Et les métadonnées du document type sont
-      | Name        | ArchiveUnitProfileWithCustomSchemaTNR        |
+      | Name        | ArchiveUnitProfileWithCustomSchema           |
       | Description | Test d'import d'un document type avec schéma |
