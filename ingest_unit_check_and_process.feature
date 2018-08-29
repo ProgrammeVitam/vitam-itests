@@ -250,11 +250,11 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_ARCHIVE_UNIT_PROFILE, STP_UNIT_CHECK_AND_PROCESS sont KO
-    Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.PROFILE_NOT_FOUND.KO
+    Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.NOT_FOUND.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.PROFILE_NOT_FOUND.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.NOT_FOUND.KO
     Et le fichier ATR contient la  chaîne de caractères
 """
 "evDetTechData":"Archive Unit Profile not found"
@@ -267,8 +267,8 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_ARCHIVE_UNIT_PROFILE, STP_UNIT_CHECK_AND_PROCESS sont KO
-    Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.INVALID_UNIT.KO
+    Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.NOT_AU_JSON_VALID.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
-    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.INVALID_UNIT.KO
+    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.NOT_AU_JSON_VALID.KO
