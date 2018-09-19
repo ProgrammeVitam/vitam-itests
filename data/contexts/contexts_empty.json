@@ -1,5 +1,6 @@
 [
   {
+    "Identifier": "CONTEXT_OK_1",
     "Name": "My_Context_i8",
     "Status":"ACTIVE",
     "SecurityProfile": "admin-security-profile",
@@ -17,6 +18,7 @@
     ]
   },
   {
+    "Identifier": "CONTEXT_OK_2",
     "Name": "My_Context_86",
     "Status":"INACTIVE",
     "SecurityProfile": "admin-security-profile",
