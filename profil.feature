@@ -12,13 +12,13 @@ Fonctionnalité: Tests d'imports et de recherches de profils
 
   Scénario: Import de  profil au format XSD
     Etant donné un profil nommé data/profiles/profiles_for_tnr_xsd_ok.json
-    Alors je fais un import du profile d'archivage
+    Alors j'importe le profile d'archivage
     Etant donné un profil nommé data/profiles/profile_ok.xsd
     Et je rattache un ficher à ce profil d'archivage
 
   Scénario: Import de deux profil de même noms
     Etant donné un profil nommé data/profiles/two_name_profiles_ok.json
-    Alors je fais un import du profile d'archivage
+    Alors j'importe le profile d'archivage
 
 
   Scénario: Recherche de profil XSD
