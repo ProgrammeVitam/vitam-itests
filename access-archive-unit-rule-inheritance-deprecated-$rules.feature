@@ -1,7 +1,7 @@
 # language: fr
 
 @AccessArchiveUnit
-Fonctionnalité: Calcul des règles de gestion
+Fonctionnalité: Calcul des règles de gestion via $rules (déprécié)
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
     Etant donné les tests effectués sur le tenant 0
@@ -10,7 +10,7 @@ Fonctionnalité: Calcul des règles de gestion
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
-  Scénario: Recherche une archive unit avec les règles héritées en cas de la prévention d'héritage (PreventInheritance item_1066_CA1)
+  Scénario: Recherche une archive unit avec les règles héritées en cas de la prévention d'héritage (PreventInheritance item_1066_CA1)  (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_PREVENT_INHERITANCE.zip
     Et j'utilise la requête suivante
 """
@@ -27,7 +27,7 @@ Fonctionnalité: Calcul des règles de gestion
 	| inheritedRule.StorageRule.R4.{{unit:AU14}}.path        | [["{{unit:AU14}}"]]                                                 |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées en cas de la prévention d'héritage (PreventInheritance item_1066_CA3)
+  Scénario: Recherche une archive unit avec les règles héritées en cas de la prévention d'héritage (PreventInheritance item_1066_CA3)  (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_PREVENT_INHERITANCE.zip
     Et j'utilise la requête suivante
 """
@@ -43,7 +43,7 @@ Fonctionnalité: Calcul des règles de gestion
 	| inheritedRule.StorageRule.R4.{{unit:AU34}}.path        | [["{{unit:AU34}}"]]                                                 |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées en cas de la prévention d'héritage (PreventInheritance item_1066_CA4)
+  Scénario: Recherche une archive unit avec les règles héritées en cas de la prévention d'héritage (PreventInheritance item_1066_CA4)  (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_PREVENT_INHERITANCE.zip
     Et j'utilise la requête suivante
 """
@@ -61,7 +61,7 @@ Fonctionnalité: Calcul des règles de gestion
 	| inheritedRule.StorageRule.R4.{{unit:AU44}}.path        | [["{{unit:AU44}}"]]                                                 |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées en cas de l'exclusion d'héritage (RefNonRuleId item_2093_CA1)
+  Scénario: Recherche une archive unit avec les règles héritées en cas de l'exclusion d'héritage (RefNonRuleId item_2093_CA1)  (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_REFNONRULEID.zip
     Et j'utilise la requête suivante
 """
@@ -77,7 +77,7 @@ Fonctionnalité: Calcul des règles de gestion
 	| inheritedRule.StorageRule.R2.{{unit:AU12}}.path        | [["{{unit:AU12}}","{{unit:AU13}}","{{unit:AU14}}"]]    |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées en cas de l'exclusion d'héritage (RefNonRuleId item_2093_CA4)
+  Scénario: Recherche une archive unit avec les règles héritées en cas de l'exclusion d'héritage (RefNonRuleId item_2093_CA4) (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_REFNONRULEID.zip
     Et j'utilise la requête suivante
 """
@@ -94,7 +94,7 @@ Fonctionnalité: Calcul des règles de gestion
 	| inheritedRule.StorageRule.R2.{{unit:AU42}}.path        | [["{{unit:AU42}}","{{unit:AU43}}","{{unit:AU44}}"]]                   |
 
 
-  Scénario: Recherche une archive unit avec les règles héritées en cas de l'exclusion d'héritage (RefNonRuleId item_2093_CA5)
+  Scénario: Recherche une archive unit avec les règles héritées en cas de l'exclusion d'héritage (RefNonRuleId item_2093_CA5) (déprécié)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_REFNONRULEID.zip
     Et j'utilise la requête suivante
 """
