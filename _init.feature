@@ -35,11 +35,11 @@ Fonctionnalité: initialisation
   Scénario: Scénario importer un profil d'archivage et un contrat d'entrée qui déclare ce profil
     Etant donné les tests effectués sur le tenant 1
     Et un profil nommé data/profiles/profiles_for_tnr_rng_ok.json
-    Alors je fais un import du profile d'archivage
+    Alors j'importe le profile d'archivage sans échec
     Etant donné un profil nommé data/profiles/profil_ok.rng
-    Et je rattache un ficher à ce profil d'archivage
+    Et je rattache un ficher à ce profil d'archivage sans échec
     Etant donné un contract nommé data/contracts/contract_with_profil.json
-    Alors j'importe ce contrat de type INGEST_CONTRACTS
+    Alors j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
   Scénario: Mise à jour du contextes avec les bons contrats d'accès et d'entrée OK
     Et les tests effectués sur le tenant 1
