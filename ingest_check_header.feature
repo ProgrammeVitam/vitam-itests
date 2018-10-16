@@ -10,7 +10,7 @@ Fonctionnalité: uploader des fichiers SIP
 
   Scénario: Importer le profile
     Etant donné un profil nommé data/profiles/PR_2194.json
-    Alors j'importe le profile d'archivage
+    Alors je fais un import du profile d'archivage
 
   Scénario: Import de contrat de type contract Entree
     Etant donné un contract nommé data/contracts/contract_acces_TNR.json
