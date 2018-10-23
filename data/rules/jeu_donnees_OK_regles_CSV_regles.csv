@@ -3,6 +3,12 @@ APP-00001,AppraisalRule,Dossier individuel d’agent civil,"Durée de conservati
 L’échéance est calculée à partir de la date de naissance de l’agent",80,Year
 APP-00002,AppraisalRule,Offres non retenues des marchés,"Durée de conservation des offres non retenues des marchés publics
 L’échéance est calculée à partir de la date de notification du marché au titulaire",5,Year
+APP-09002,AppraisalRule,Elimination - Offres non retenues des marchés,"Elimination - Durée de conservation des offres non retenues des marchés publics
+L’échéance est calculée à partir de la date de notification du marché au titulaire",5,YEAR
+APP-09048,AppraisalRule,Elimination - Ouverture des stations SNCF,Elimination - L’échéance est calculée à partir de la date d’annonce de la fermeture,1,YEAR
+APP-09049,AppraisalRule,Elimination - Ouverture des stations SNCF Gare d’Austerlitz,Elimination - L’échéance est calculée à partir de la date d’annonce de la fermeture,1,YEAR
+APP-09050,AppraisalRule,Elimination - Ouverture des stations SNCF Gare de Lyon,Elimination - L’échéance est calculée à partir de la date d’annonce de la fermeture,1,YEAR
+APP-09051,AppraisalRule,Elimination - Ouverture des stations RATP,Elimination - L’échéance est calculée à partir de la date d’annonce de la fermeture,1,YEAR
 ACC-00001,AccessRule,Libre communicabilité,Délai de communicabilité applicable par défaut,0,Year
 ACC-00002,AccessRule,Communicabilité des informations portant atteinte au secret des délibérations du gouvernement et des autorités responsables relevant du pouvoir exécutif (date du document le plus récent dans le dossier),"Durée de communicabilité applicable aux informations portant atteinte au secret des délibérations du gouvernement et des autorités responsables relevant du pouvoir exécutif
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",25,Year

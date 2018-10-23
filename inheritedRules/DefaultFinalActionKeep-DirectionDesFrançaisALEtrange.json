@@ -1,0 +1,38 @@
+{
+  "StorageRule": {
+    "Rules": [],
+    "Properties": []
+  },
+  "AppraisalRule": {
+    "Rules": [],
+    "Properties": [
+      {
+        "UnitId": "{{unit:Direction_des_français_à_l'étranger}}",
+        "OriginatingAgency": "RATP",
+        "Paths": [
+          [
+            "{{unit:Direction_des_français_à_l'étranger}}"
+          ]
+        ],
+        "PropertyName": "FinalAction",
+        "PropertyValue": "Keep"
+      }
+    ]
+  },
+  "DisseminationRule": {
+    "Rules": [],
+    "Properties": []
+  },
+  "ReuseRule": {
+    "Rules": [],
+    "Properties": []
+  },
+  "ClassificationRule": {
+    "Rules": [],
+    "Properties": []
+  },
+  "AccessRule": {
+    "Rules": [],
+    "Properties": []
+  }
+}

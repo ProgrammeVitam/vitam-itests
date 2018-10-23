@@ -1,0 +1,38 @@
+{
+  "StorageRule": {
+    "Rules": [],
+    "Properties": []
+  },
+  "AppraisalRule": {
+    "Rules": [],
+    "Properties": [
+      {
+        "UnitId": "{{unit:Service économique}}",
+        "OriginatingAgency": "Vitam",
+        "Paths": [
+          [
+            "{{unit:Service économique}}"
+          ]
+        ],
+        "PropertyName": "FinalAction",
+        "PropertyValue": "Keep"
+      }
+    ]
+  },
+  "DisseminationRule": {
+    "Rules": [],
+    "Properties": []
+  },
+  "ReuseRule": {
+    "Rules": [],
+    "Properties": []
+  },
+  "ClassificationRule": {
+    "Rules": [],
+    "Properties": []
+  },
+  "AccessRule": {
+    "Rules": [],
+    "Properties": []
+  }
+}
