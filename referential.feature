@@ -78,6 +78,6 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
       | RuleId           | APP-00001                             |
     Quand j'utilise le fichier de requête suivant data/queries/select_rule_by_type_order_by_id.json 
     Et je recherche les données dans le référentiel RULES
-    Alors le nombre de résultat est 6
+    Alors le nombre de résultat est 11
     Et les metadonnées sont
       | RuleId           | APP-1069004                            |
