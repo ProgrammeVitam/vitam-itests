@@ -41,7 +41,7 @@ Fonctionnalité: Import de vocabulaire externe dans l'ontologie
     Et le statut final du journal des opérations est KO
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import de l'ontologie
 
-#
+#  Bug  a crrer
 #  Scénario: Vérification et import d'une ontologie avec un 2 identifiants identiques et de casses différentes
 #    Etant donné un fichier ontologie nommé data/ontology/ko_ontology_voc_ext_same_identifier_different_casse.json
 #    Quand j'importe l'ontologie
@@ -93,6 +93,8 @@ Fonctionnalité: Import de vocabulaire externe dans l'ontologie
     Alors les metadonnées sont
       | Code | 412 |
 
+    #depend de la configuration de la plateforme
+
 #  Scénario: Vérification et import d'une ontologie avec un champ interne défini comme externe
 #    Etant donné un fichier ontologie nommé data/ontology/vitam_ontology.json
 #    Quand j'importe l'ontologie
@@ -121,6 +123,8 @@ Fonctionnalité: Import de vocabulaire externe dans l'ontologie
     Et le statut final du journal des opérations est KO
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import de l'ontologie
 
+
+    # doit etre ok mais  pas de champs blabla
 #  Scénario: Import d'un vocabulaire avec champ json inconnu
 #    Etant donné un fichier ontologie nommé data/ontology/vitam_ontology.json
 #    Quand j'importe l'ontologie
@@ -136,7 +140,8 @@ Fonctionnalité: Import de vocabulaire externe dans l'ontologie
     Quand j'importe l'ontologie
     Alors les metadonnées sont
       | Code | 412 |
-#
+## Bug a créer
+# crée une collection blabla
 #  Scénario: Import d'un vocabulaire avec une collection inconnue
 #    Etant donné un fichier ontologie nommé data/ontology/vitam_ontology.json
 #    Quand j'importe l'ontologie

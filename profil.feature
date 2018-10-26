@@ -15,6 +15,8 @@ Fonctionnalité: Tests d'imports et de recherches de profils
     Alors j'importe le profile d'archivage
     Etant donné un profil nommé data/profiles/profile_ok.xsd
     Et je rattache un ficher à ce profil d'archivage
+    Alors les metadonnées sont
+      | Code | 201 |
 
   Scénario: Import de deux profil de même noms
     Etant donné un profil nommé data/profiles/two_name_profiles_ok.json
