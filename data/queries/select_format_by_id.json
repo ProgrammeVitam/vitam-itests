@@ -8,7 +8,8 @@
 		"$fields": {
 			"#id": 1,
 			"PUID": 1,
-			"Name": 1
+			"Name": 1,
+            "VersionPronom": 1
 		}
 	},
 	"$filter": {}

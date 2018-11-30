@@ -1,0 +1,9 @@
+{
+	"$query": {
+		"$eq": {
+			"PUID": "fmt/1217"
+		}
+	},
+	"$projection": {},
+	"$filter": {}
+}
