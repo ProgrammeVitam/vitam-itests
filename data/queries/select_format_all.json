@@ -1,0 +1,9 @@
+{
+	"$query": { "$ne": { "PUID": "ANY" } },
+	"$projection": {
+		"$fields": {
+			"#id": 1
+		}
+	},
+	"$filter": {}
+}
