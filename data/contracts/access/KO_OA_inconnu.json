@@ -1,0 +1,14 @@
+[
+	{
+		"Name":"Contrat_KO OA_Inconnu",
+		"Description":"Contrat avec un Service Producteur inconnu du Référentiel du Service Agents",
+		"Status":"ACTIVE",
+		"OriginatingAgencies":["FRAN_NP_559196"],
+		"DataObjectVersion": ["PhysicalMaster", "BinaryMaster", "Dissemination", "Thumbnail", "TextContent"],
+		"LastUpdate":"15/09/1992",
+		"CreationDate":"10/12/2016",
+		"ActivationDate":"14/06/1969",
+		"DeactivationDate":"10/12/2016",
+		"WritingPermission": true
+	}
+]
