@@ -1,24 +1,156 @@
 # language: fr
 
 @Contacts
-Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès)
+Fonctionnalité: Tests d'imports et de recherches de contrats accès
 
   Contexte: Avant de lancer cette suite de test, je verifie qu'au moins un contrat est uploadé.
     Etant donné les tests effectués sur le tenant 0
 
+################################
+
+# Import d'un contrat d'accès OK
+
   Scénario: Import de contrat de type contract accès
     Etant donné un contract nommé data/contracts/contrats_acces_ok.json
-    Alors j'importe ce contrat de type ACCESS_CONTRACTS
+    Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+	# # test OK (test KO IHM recette incorrect ajout) corrigé
+
+# Ajout au TNR
+
+
+# Import d'un contrat d'accès KO
+
+# Ajout au TNR
 
   Scénario:Import de deux contrats d'accès de même noms
     Etant donné un contract nommé data/contracts/two_same_name_access_contracts.json
-    Alors j'importe ce contrat de type ACCESS_CONTRACTS
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+	# test OK (test KO IHM recette incorrect ajout) corrigé
 
   Scénario: Tentative d'import KO d'un contrat d'accès déjà existant
     Etant donné un contract nommé data/contracts/contrats_acces_ok.json
-    Alors j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
+	# test OK IHM recette
+
+# Cas du cahier de recette complétés
+
+
+  Scénario:Import d'un contrat d'accès avec un Service Producteur inconnu de Vitam
+    Etant donné un contract nommé data/contracts/access/KO_OA_inconnu.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    # test OK IHM recette
+
+
+  Scénario:Import d'un contrat d'accès avec une valeur qui fait référence à un objet qui n’existe pas dans Vitam
+    Etant donné un contract nommé data/contracts/access/KO_Contrat_acces_originatingagencie_unknown.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    # test OK IHM recette
+
+
+################################################### OK sur pour test
+
+# Ajout au cahier de recette
+
+
+  Scénario: Import d'un contrat d'accès dont la structure json n'est pas valide
+    Etant donné un contract nommé data/contracts/access/KO_contrat_access_JSON_ne_correspond_pas_au_modele_attendu.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    # test OK IHM recette / local
+
+  Scénario: Import d'un contrat d'accès avec un champ obligatoire absent
+    Etant donné un contract nommé data/contracts/access/KO_contrat_acces_absence_champ_name.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    # test OK IHM recette / local
+
+  Scénario: Import d'un contrat d'accès avec un champ supplémentaire
+    Etant donné un contract nommé data/contracts/access/KO_contrat_acces_champ_supplementaire.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    # test OK IHM recette / local
+
+  Scénario: Import d'un contrat d'accès contenant des contenus HTML toxiques
+    Etant donné un contract nommé data/contracts/access/KO_contrat_acces_HTML.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+     # test OK IHM recette / local
+
+  Scénario: Import d'un contrat d'accès déclarant un Status dont la valeur n’est ni ACTIVE ni INACTIVE
+    Etant donné un contract nommé data/contracts/access/KO_Contrat_acces_Statut_errone.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+     # test OK IHM recette / local
+
+  Scénario: Import d'un contrat d'accès déclarant une Agency inexistante dans le système
+    Etant donné un contract nommé data/contracts/access/KO_Contrat_acces_originatingagencie_unknown.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du contrat d'accès : au moins un service agent est inconnu
+    Et le champ 'evDetData' de l'évenement final est : Agency not found" : "Error while validating contract (Contrat_Acces_Par-Defaut), RootUnits (testlalalal) not found in database
+     # test OK IHM recette / local
+
+
+  Scénario: Import d'un contrat d'accès déclarant un ExcludedRootsUnit inexistant dans le système
+    Etant donné un contract nommé data/contracts/access/KO_contrat_acces_noeud_inaccesible_inconnu.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du contrat d'accès : erreur lors de la validation du contrat d'accès
+    Et le champ 'evDetData' de l'évenement final est : "Validation error" : "Error while validating contract (Contrat d'acc\u00E8s permettant de d\u00E9clarer un noeud inaccessible), RootUnits (165fd4g6df4g6df4gfd65g4d6f4gd6g45f) not found in database"
+    # test OK IHM recette / local
+
+  Scénario: Import d'un contrat d'accès déclarant un WrintingPermission dont la valeur n’est ni TRUE ni FALSE
+    Etant donné un contract nommé data/contracts/access/KO_erreur_valeur_champ-WritingPermission.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    # test OK IHM recette local
+
+  Scénario: Import d'un contrat d'accès déclarant un EveryOriginatingAgency dont la valeur n’est ni TRUE ni FALSE
+    Etant donné un contract nommé data/contracts/access/KO_erreur_valeur_champ-EveryOriginatingAgency.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    # test OK IHM recette /local
+
+  Scénario: Import d'un contrat d'accès déclarant un AccessLog dont la valeur n’est ni TRUE ni FALSE
+    Etant donné un contract nommé data/contracts/access/KO_contrat_acces_accesslog_vide.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    # test OK IHM recette / local
+
+  Scénario: Import d'un contrat d'accès déclarant une date au mauvais format
+    Etant donné un contract nommé data/contracts/access/KO_contrat_acces_date_mauvais_format.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du contrat d'accès : au moins un des champs obligatoires n'est pas renseigné
+    Et le champ 'evDetData' de l'évenement final est : Mandatory Fields" : "The field deactivationdate is mandatory
+# # test OK IHM recette / local
+
+
+  Scénario: Import d'un contrat d'accès déclarant un usage inexistant dans le système
+    Etant donné un contract nommé data/contracts/access/KO_contrat_acces_usage_inexistant.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    # test OK IHM recette /local
+
+  Scénario: Import d'un contrat d'accès déclarant un EveryOriginatingAgency à TRUE et une Agency dans la métadonnée correspondante
+    Etant donné un contract nommé data/contracts/access/KO_Contrat_acces_originatingagencie_unknown.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du contrat d'accès : au moins un service agent est inconnu
+    Et le champ 'evDetData' de l'évenement final est : "Agency not found" : "Error while validating contract (Contrat_Acces_Par-Defaut), RootUnits (testlalalal) not found in database"
+    # test OK IHM recette /local
+
+  Scénario: Import d'un contrat d'accès déclarant un EveryDataObjectVersion à TRUE et un usage dans la métadonnée correspondante
+    Etant donné un contract nommé data/contracts/access/KO_EveryDataObjectVersion_TRUE_champ_complete.json
+    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    # test OK IHM recette / local
+
+
+#######################################
+
+# Recherche d'un contrat d'accès
+
 
   Scénario: ACCESS_CONTRACTS - recherche d'un contrat d'accès
     Quand je cherche un contrat de type ACCESS_CONTRACTS et nommé AccessContract0
@@ -26,15 +158,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Et les métadonnées du contrat sont
       | Name        | AccessContract0 |
       | Description | Contrat Acces 0 |
-
-  Scénario: ACCESS_CONTRACTS - recherche de contrats d'accès ordonnés par Name (desc)
-    Etant donné un contract nommé data/contracts/contrats_acces_ok_sort.json
-    Alors j'importe ce contrat de type ACCESS_CONTRACTS
-    Quand j'utilise le fichier de requête suivant data/queries/select_access_contract_order_name_desc.json
-    Et je recherche les données dans le référentiel ACCESS_CONTRACTS
-    Et les metadonnées sont
-      | Name       | Zimbabwe - Air Zimbabwe |
-      | Identifier | Zimbabwe_Air_Zimbabwe   |
+  #test OK IHM recette
 
   Scénario: ACCESS_CONTRACTS - Ajout d'un noeud inaccessible
     Etant donné un contract nommé data/contracts/access/contract_acces_nodes.json
@@ -55,3 +179,17 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
     Et j'utilise dans la requête le paramètre TITLE_PARAM avec la valeur dossier_1
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
+	# test KO IHM recette / ko local
+
+
+  Scénario: ACCESS_CONTRACTS - recherche de contrats d'accès ordonnés par Name (desc)
+    Etant donné un contract nommé data/contracts/contrats_acces_ok_sort.json
+    Alors j'importe ce contrat de type ACCESS_CONTRACTS
+    Quand j'utilise le fichier de requête suivant data/queries/select_access_contract_order_name_desc.json
+    Et je recherche les données dans le référentiel ACCESS_CONTRACTS
+    Et les metadonnées sont
+      | Name       | Zimbabwe - Air Zimbabwe |
+      | Identifier | Zimbabwe_Air_Zimbabwe   |
+	# test KO IHM recette / Ko local
+
+############################################
