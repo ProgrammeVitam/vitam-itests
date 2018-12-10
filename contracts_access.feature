@@ -12,7 +12,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats accès
 
   Scénario: Import de contrat de type contract accès
     Etant donné un contract nommé data/contracts/contrats_acces_ok.json
-    Quand j'importe ce contrat incorrect de type ACCESS_CONTRACTS
+    Quand j'importe ce contrat de type ACCESS_CONTRACTS
 
 	# # test OK (test KO IHM recette incorrect ajout) corrigé
 # Ko master (correction changement alors >> quand
