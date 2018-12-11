@@ -1,0 +1,8 @@
+[
+	{
+		"Name":"ArchivalProfile inconnu KO",
+		"Description":"ArchivalProfile inconnu",
+		"Status" : "ACTIVE",
+		"ArchiveProfiles": ["toto"]
+	}
+]
