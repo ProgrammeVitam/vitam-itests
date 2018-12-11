@@ -1,7 +1,7 @@
 [
     {
-        "Identifier":"sameNAmeAccessContract0",
-        "Name":"sameNAmeAccessContract",
+        "Identifier":"sameNAmeAccessContract0E",
+        "Name":"sameNAmeAccessContractL",
         "Description":"Contrat d'accès - SIA archives nationales",
         "Status" : "ACTIVE",
         "LastUpdate":"10/12/2016",
@@ -11,8 +11,8 @@
         "OriginatingAgencies":["FRAAA","BBBBB"]
     },
     {
-        "Identifier":"sameNAmeAccessContract1",
-        "Name":"sameNAmeAccessContract",
+        "Identifier":"sameNAmeAccessContract1L",
+        "Name":"sameNAmeAccessContractL",
         "Description":"Contrat d'accès - Société archéologique de Touraine",
         "Status" : "ACTIVE",
         "LastUpdate":"10/12/2016",
