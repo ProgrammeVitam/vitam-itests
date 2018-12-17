@@ -222,16 +222,6 @@ Scénario: Import d’un contrat d’entrée dont le EveryFormatType a pour vale
     Etant donné un contract nommé data/contracts/entree/contract_EveryFormatType_ko_5.json
     Quand j'importe ce contrat incorrect de type INGEST_CONTRACTS
 #test OK IHM recette / ok local
-    
-  Scénario: Import de contrat avec un minimum d'informations
-    Etant donné un contract nommé data/contracts/entree/contract_minimal.json
-    Alors j'importe ce contrat de type INGEST_CONTRACTS
-    Quand je cherche un contrat de type INGEST_CONTRACTS et nommé Minimal_contract_with_the_less_fields_as_possible
-    Alors le contrat existe
-    Et les métadonnées du contrat sont
-      | Name        | ArchivalAgreement0 |
-      | Description | Contrat Vitam 0    |
-#test OK IHM recette / ok local
 
   Scénario: CONTRACTS - recherche de contrats d'entrée ordonnés par Name (desc)
     Etant donné un contract nommé data/contracts/referential_contracts_ok_sort.json
