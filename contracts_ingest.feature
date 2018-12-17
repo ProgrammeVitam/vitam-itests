@@ -47,11 +47,11 @@ Scénario: import OK de contrats d'entrée avec le champ FormatUnidentifiedAutho
     Alors le statut final du journal des opérations est OK
 #test KO IHM recette / OK local
 
-Scénario: import OK de contrats d'entrée avec le champ EveryFormatType et FormatType corrects
+  Scénario: import OK de contrats d'entrée avec le champ EveryFormatType et FormatType corrects
     Etant donné un contract nommé data/contracts/entree/contract_EveryFormatType_ok.json
-    Quand j'importe ce contrat de type INGEST_CONTRACTS
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
     Quand j'utilise le fichier de requête suivant data/queries/select_ingest_contract_by_parameter.json
-    Et j'utilise dans la requête le paramètre PARAMETER avec la valeur IdentifierOK_contract_EveryFormatType.json
+    Et j'utilise dans la requête le paramètre PARAMETER avec la valeur Identifier
     Et j'utilise dans la requête le paramètre VALUE avec la valeur Accepte_tous_les_formats
     Et je recherche les données dans le référentiel INGEST_CONTRACTS
     Alors le nombre de résultat est 1
@@ -62,7 +62,6 @@ Scénario: import OK de contrats d'entrée avec le champ EveryFormatType et Form
     Alors le nombre de résultat est 1
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
-#test KO IHM recette / KO local
 
   Scénario: Import de contrat avec un minimum d'informations
     Etant donné un contract nommé data/contracts/entree/contract_minimal.json
@@ -87,20 +86,7 @@ Scénario: import OK de contrats d'entrée avec le champ EveryFormatType et Form
 
   Scénario: Import de deux contrats d'ingest de même noms
     Etant donné un contract nommé data/contracts/two_same_name_ingest_contracts.json
-    Quand j'importe ce contrat incorrect de type INGEST_CONTRACTS
-  #test OK IHM recette / OK / KO local
-
-  # Cas du cahier recette complétés 
-
-Scénario: Import d’un contrat d’entrée injection HTML 
-    Etant donné un contract nommé data/contracts/entree/KO_Contrat_entree_injectionHTML.json
-    Quand j'importe ce contrat incorrect de type INGEST_CONTRACTS
-     #test OK IHM recette / OK local
-
-Scénario: Import d'un contrat d'entrée avec le champ "Tous les formats" TRUE mais qui comprend une liste des formats autorisés remplie
-    Etant donné un contract nommé data/contracts/entree/KO_contract_EveryFormatType_1.json
-    Quand j'importe ce contrat incorrect de type INGEST_CONTRACTS
-#test OK IHM recette / OK local
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
 
 Scénario: Import d'un contrat d'entrée avec le champ "Tous les formats" en FALSE et une liste de format non conforme
     Etant donné un contract nommé data/contracts/entree/KO_contract_FormatType_unknown.json
