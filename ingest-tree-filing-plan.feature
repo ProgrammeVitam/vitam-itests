@@ -52,6 +52,7 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Et je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.NOT_FOUND_ATTACHMENT.KO
 
   Scénario: Rattachement d'une unit par rapport à la valeur d'un des champs qui retourne plusieurs unit KO
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_Multiple_AU.zip
@@ -66,6 +67,7 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Et je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.TOO_MANY_FOUND_ATTACHMENT.KO
 
   Scénario: Rattachement d'une unit de sip à une unit de  sip
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
@@ -124,6 +126,7 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Et je télécharge le plan
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.INVALID_GUID_ATTACHMENT.KO
 
   Scénario: Rattachement d'une unit de plan à une unit de plan
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_plan.zip
@@ -168,6 +171,7 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Et je télécharge l'arbre
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.INVALID_GUID_ATTACHMENT.KO
 
   Scénario: Rattachement d'une unit d'arbre à une unit de plan
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_plan.zip
@@ -182,6 +186,7 @@ Avant de lancer cette suite de test, je présuppose que les règles de gestions 
     Et je télécharge l'arbre
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.UNAUTHORIZED_ATTACHMENT.KO
 
   Scénario: Rattachement d'une unit d'arbre à une unit d'arbre
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_arbre.zip
