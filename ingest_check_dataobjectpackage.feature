@@ -53,7 +53,7 @@ Fonctionnalité: uploader des fichiers SIP
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, STP_INGEST_CONTROL_SIP sont KO
 
-  Scénario: SIP KO déclarant un usage eet une version non séparés par un underscore
+  Scénario: SIP KO déclarant un usage et une version non séparés par un underscore
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VERSION_USAGE_VERSION_ATTACHES.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
@@ -188,11 +188,11 @@ Scénario: SIP déclarant un numéro de version ayant une virgule
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
-    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_WRONG_ATTACHMENT.KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.NOT_FOUND_ATTACHMENT.KO
 
   ##### Attach AU to existing GOT #####
 
-  Scénario: Rattachement d'une archiveunit de sip à un groupe d'objet existant OK
+  Scénario: Rattachement d'une unité archivistique de sip à un groupe d'objet existant OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_Rattachement_SIP.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
@@ -214,7 +214,7 @@ Scénario: SIP déclarant un numéro de version ayant une virgule
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
-    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_WRONG_ATTACHMENT.KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.NOT_FOUND_ATTACHMENT.KO
 
   Scénario: Test SIP avec SystemID n'étant pas un GUID
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SystemID_not_a_GUID.zip
@@ -222,7 +222,7 @@ Scénario: SIP déclarant un numéro de version ayant une virgule
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
-    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_WRONG_ATTACHMENT.KO
+    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.INVALID_GUID_ATTACHMENT.KO
 
 ##### CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY #####
 
