@@ -13,17 +13,6 @@ Fonctionnalité: Tests d'imports et de recherches de contrats (entrée et accès
 
 ######################
 
-Scénario: Import d’un contrat d’entrée champ « Formats non identifiés autorisés » à TRUE
-    Etant donné un contract nommé data/contracts/entree/OK_contracts_FormatUnidentifiedAuthorized_ok.json
-    Quand j'importe ce contrat de type INGEST_CONTRACTS
-#test KO IHM recette / KO local
-
-Scénario: Import d'un contrat d'entrée avec le champ « Formats non identifiés autorisés » à FALSE
-    Etant donné un contract nommé data/contracts/entree/OK_contracts_FormatUnidentifiedAuthorized_ok.json
-    Quand j'importe ce contrat de type INGEST_CONTRACTS
-    #Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du contrat d'entrée
-#test KO IHM recette / Ko local
-
 Scénario: Import d'un contrat d'entrée avec le champ « Formats non identifiés autorisés » champ absent
     Etant donné un contract nommé data/contracts/entree/OK_contract_FormatUnidentifiedAuthorized_absent.json
     Quand j'importe ce contrat de type INGEST_CONTRACTS
