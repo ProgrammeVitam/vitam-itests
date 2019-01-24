@@ -17,8 +17,7 @@
         "ActionDetail": [
           {
             "Type": "GENERATE",
-            "Values": {
-              "Extension": "GIF"
+            "Values": {              "Extension": "GIF"
             }
           }
         ]

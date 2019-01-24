@@ -9,7 +9,7 @@
     "MetadataFilter": null,
     "GriffinByFormat": [
       {
-        "FormatList": [""],
+        "FormatList": [],
         "GriffinIdentifier": "GRI-000001",
         "Timeout": 2000,
         "MaxSize": 10000000,
