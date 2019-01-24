@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FFSignatureFile DateCreated="2018-09-17T12:54:53" Version="94" xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile">
+    <InternalSignatureCollection>
+    </InternalSignatureCollection>
+    <FileFormatCollection>
+        <FileFormat ID="163" MIMEType="text/plain"
+            Name="Plain Text File" PUID="x-fmt/111">
+            <Extension>txt</Extension>
+        </FileFormat>
+    </FileFormatCollection>
+</FFSignatureFile>
