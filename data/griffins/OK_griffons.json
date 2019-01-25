@@ -31,5 +31,23 @@
     "LastUpdate": "2018-11-20T15:34:21.542",
     "ExecutableName": "imagemagick-griffin",
     "ExecutableVersion": "V1.0.0"
+  },
+  {
+    "Identifier": "GRI-000002",
+    "Name": "Griffon ImageMagick",
+    "Description": "TEST my dear",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
+    "ExecutableName": "imagemagick-griffin",
+    "ExecutableVersion": "V1.0.0"
+  },
+  {
+    "Identifier": "GRI-000005",
+    "Name": "Griffon ImageMagick",
+    "Description": "TEST my dear",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
+    "ExecutableName": "imagemagick-griffin",
+    "ExecutableVersion": "V1.0.0"
   }
 ]

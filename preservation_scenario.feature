@@ -97,11 +97,15 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Alors les metadonnées sont
       | Code | 412 |
 
-  Scénario: Identifiant doublons
+  Scénario: Identifiants doublons
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_same_identifier.json
     Alors les metadonnées sont
       | Code | 400 |
 
+  Scénario: Mauvais format
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_format.pdf
+    Alors les metadonnées sont
+      | Code | 400 |
 
   Scénario: Champ inconnu
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_unknown_json_field.json
@@ -109,46 +113,118 @@ Fonctionnalité: Import du referentiel scénario de preservation
 #      | Code | 412 |
     Et le statut final du journal des opérations est OK
 
-#  KO_scenario_absent_field_actionList.json
-#  KO_scenario_absent_field_defaultGriffin_actionDetail.json.json
-#  KO_scenario_absent_field_defaultGriffin_args.json.json
-#  KO_scenario_absent_field_defaultGriffin_debug.json.json
-#  KO_scenario_absent_field_defaultGriffin_griffinIdentifier.json.json
-#  KO_scenario_absent_field_defaultGriffin_maxSize.json.json
-#  KO_scenario_absent_field_defaultGriffin_timeout.json.json
-#  KO_scenario_absent_field_defaultGriffin_type.json.json
-#  KO_scenario_absent_field_griffinByFormat.json
-#  KO_scenario_absent_field_griffinByFormat_actionDetail.json.json
-#  KO_scenario_absent_field_griffinByFormat_args.json
-#  KO_scenario_absent_field_griffinByFormat_debug.json.json
-#  KO_scenario_absent_field_griffinByFormat_formatList.json.json
-#  KO_scenario_absent_field_griffinByFormat_griffinIdentifier.json.json
-#  KO_scenario_absent_field_griffinByFormat_maxSize.json.json
-#  KO_scenario_absent_field_griffinByFormat_timeout.json.json
-#  KO_scenario_absent_field_griffinByFormat_type.json
-#  KO_scenario_absent_field_identifier.json
-#  KO_scenario_absent_field_name.json
-#  KO_scenario_absent_value_actionList.json
-#  KO_scenario_absent_value_defaultFormat_actionDetail.json
-#  KO_scenario_absent_value_defaultFormat_debug.json
-#  KO_scenario_absent_value_defaultFormat_griffinIdentifier.json
-#  KO_scenario_absent_value_defaultFormat_maxSize.json
-#  KO_scenario_absent_value_defaultFormat_timeout.json
-#  KO_scenario_absent_value_defaultFormat_type.json
-#  KO_scenario_absent_value_formatList.json
-#  KO_scenario_absent_value_griffinByFormat_actionDetail.json
-#  KO_scenario_absent_value_griffinByFormat_debug.json
-#  KO_scenario_absent_value_griffinByFormat_griffinIdentifier.json
-#  KO_scenario_absent_value_griffinByFormat_maxSize.json
-#  KO_scenario_absent_value_griffinByFormat_timeout.json
-#  KO_scenario_absent_value_griffinByFormat_type.json
-#  KO_scenario_absent_value_identifier.json
-#  KO_scenario_absent_value_name.json
-#  KO_scenario_false_type_creationDate.json
+  Scénario: Validation KO_scenario_absent_field_defaultGriffin_actionDetail
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_defaultGriffin_actionDetail.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+
+  Scénario: Validation KO_scenario_absent_field_defaultGriffin_debug
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_defaultGriffin_debug.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid scenario  for  : 'PSC-000001' : ['defaultGriffin.debug':ne peut pas \u00EAtre nul
+
+  Scénario: Validation KO_scenario_absent_field_defaultGriffin_griffinIdentifier
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_defaultGriffin_griffinIdentifier.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid scenario  for  : 'PSC-000001' : ['defaultGriffin.griffinIdentifier':ne peut pas \u00EAtre vide
+
+  Scénario: Validation
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_defaultGriffin_maxSize.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_defaultGriffin_timeout.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_defaultGriffin_type.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_actionDetail.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_debug.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_formatList.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_griffinIdentifier.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_maxSize.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_timeout.json.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_type.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_identifier.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_name.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_actionList.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_defaultFormat_actionDetail.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_defaultFormat_debug.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_defaultFormat_griffinIdentifier.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_defaultFormat_maxSize.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_defaultFormat_timeout.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_defaultFormat_type.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_formatList.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_griffinByFormat_actionDetail.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_griffinByFormat_debug.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_griffinByFormat_griffinIdentifier.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_griffinByFormat_maxSize.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_griffinByFormat_timeout.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_griffinByFormat_type.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_identifier.json
+    Alors les metadonnées sont
+      | Code | 400 |
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_value_name.json
+  Alors les metadonnées sont
+    | Code | 400 |
+#    KO_scenario_false_type_creationDate.json
 #  KO_scenario_false_type_debug.json
 #  KO_scenario_false_type_maxSize.json
 #  KO_scenario_false_type_timeout.json
-#  KO_scenario_format.pdf
+#
 
 #  KO_scenario_unknown_value_defaultGriffin_griffinIdentifier.json
 #  KO_scenario_unknown_value_defaultGriffin_type.json
