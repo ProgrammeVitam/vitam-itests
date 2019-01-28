@@ -123,14 +123,14 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Alors les metadonnées sont
       | Code | 400 |
     Et le statut final du journal des opérations est KO
-    Et le champ 'evDetData' de l'évenement final est : Invalid scenario  for  : 'PSC-000001' : ['defaultGriffin.debug':ne peut pas \u00EAtre nul
+    #Et le champ 'evDetData' de l'évenement final est : Invalid scenario  for  : 'PSC-000001' : ['defaultGriffin.debug':ne peut pas \u00EAtre nul
 
   Scénario: Validation KO_scenario_absent_field_defaultGriffin_griffinIdentifier
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_defaultGriffin_griffinIdentifier.json.json
     Alors les metadonnées sont
       | Code | 400 |
     Et le statut final du journal des opérations est KO
-    Et le champ 'evDetData' de l'évenement final est : Invalid scenario  for  : 'PSC-000001' : ['defaultGriffin.griffinIdentifier':ne peut pas \u00EAtre vide
+    #Et le champ 'evDetData' de l'évenement final est : Invalid scenario  for  : 'PSC-000001' : ['defaultGriffin.griffinIdentifier':ne peut pas \u00EAtre vide
 
   Scénario: Validation
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_defaultGriffin_maxSize.json.json
