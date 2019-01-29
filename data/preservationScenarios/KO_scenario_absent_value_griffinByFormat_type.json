@@ -16,7 +16,7 @@
         "Debug":true,
         "ActionDetail": [
           {
-            "Type": "",
+            "Type": null,
             "Values": {
               "Extension": "GIF",
               "Args": [
