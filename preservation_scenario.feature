@@ -190,12 +190,12 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Et le statut final du journal des opérations est KO
     Et le champ 'evDetData' de l'évenement final est : Invalid scenario  for  : 'PSC-000001' : ['defaultGriffin.actionDetail[0].type' : this field can not be null
 
-  Scénario: Validation absent field griffin by format
-    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat.json
+  Scénario: Validation absent field griffin by format and no default griffin
+    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_and_no_default.json
     Alors les metadonnées sont
       | Code | 400 |
     Et le statut final du journal des opérations est KO
-    Et le champ 'evDetData' de l'évenement final est : Invalid scenario  for  : 'PSC-000001' : ['griffinByFormat' : this field can not be empty
+    Et le champ 'evDetData' de l'évenement final est : Invalid scenario for : 'PSC-000001' : at least one griffin must be defined (griffin by format or default griffin)
 
   Scénario: Validation absent field griffin by format actiondetail
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_absent_field_griffinByFormat_actionDetail.json.json
