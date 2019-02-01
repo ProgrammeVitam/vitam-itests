@@ -1,6 +1,6 @@
 [
   {
-    "identifier":"GRIFFIN1",
+    "Identifier":"GRIFFIN1",
     "ExecutableVersion":"V1",
     "ExecutableName":"imagemagick-griffin",
     "Description":"Griffon KO ne contenant pas le champ obligatoire Name.",

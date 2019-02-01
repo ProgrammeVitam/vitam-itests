@@ -11,7 +11,6 @@ Fonctionnalité: Import du referentiel griffons
     Alors les metadonnées sont
       | Code | 201 |
     Et le statut final du journal des opérations est OK
-    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des griffons
 
 
   Scénario: import avec mis à jour intitulé
@@ -71,6 +70,8 @@ Fonctionnalité: Import du referentiel griffons
     Quand j'importe le griffon nommé data/griffins/KO_griffons_same_identifier.json
     Alors les metadonnées sont
       | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Duplicate griffin : 'GRIFFIN1'
 
   Scénario: import griffons json invalide
     Quand j'importe le griffon nommé data/griffins/KO_griffons_invalid_json.json
@@ -106,33 +107,47 @@ Fonctionnalité: Import du referentiel griffons
     Quand j'importe le griffon nommé data/griffins/KO_griffons_false_type_creationDate.json
     Alors les metadonnées sont
       | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid date
 
   Scénario: import griffons valeur name absent
     Quand j'importe le griffon nommé data/griffins/KO_griffons_absent_value_name.json
     Alors les metadonnées sont
       | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid griffin for  : 'GRIFFIN1' : ['name' : this field can not be empty
 
   Scénario: import griffons identifier valeur absente
     Quand j'importe le griffon nommé data/griffins/KO_griffons_absent_value_identifier.json
     Alors les metadonnées sont
       | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid griffin for  : 'null' : ['identifier' : this field can not be empty
 
   Scénario: import griffons champ Name absent
     Quand j'importe le griffon nommé data/griffins/KO_griffons_absent_field_name.json
     Alors les metadonnées sont
       | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid griffin for  : 'GRIFFIN1' : ['name' : this field can not be empty
 
   Scénario: import griffons champ identifier absent
     Quand j'importe le griffon nommé data/griffins/KO_griffons_absent_field_identifier.json
     Alors les metadonnées sont
       | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid griffin for  : 'null' : ['identifier' : this field can not be empty
 
   Scénario: import griffons champ executable version absent
     Quand j'importe le griffon nommé data/griffins/KO_griffons_absent_field_ExecutableVersion.json
     Alors les metadonnées sont
       | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid griffin for  : 'GRIFFIN1' : ['executableVersion' : this field can not be empty
 
   Scénario: import griffons champ executable name absent
     Quand j'importe le griffon nommé data/griffins/KO_griffons_absent_field_ExecutableName.json
     Alors les metadonnées sont
       | Code | 400 |
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : Invalid griffin for  : 'GRIFFIN1' : ['executableName' : this field can not be empty
