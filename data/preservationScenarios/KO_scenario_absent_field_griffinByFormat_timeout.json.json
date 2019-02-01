@@ -11,6 +11,7 @@
       {
         "FormatList": ["fmt/43"],
         "GriffinIdentifier": "GRI-000001",
+        "MaxSize": 10000000,
         "Debug":true,
         "ActionDetail": [
           {
