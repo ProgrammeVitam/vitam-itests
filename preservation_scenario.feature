@@ -11,13 +11,13 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Alors les metadonnées sont
       | Code | 201 |
     Et le statut final du journal des opérations est OK
-    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scenarios de preservation
+    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scénarios de préservation
 
 
   Scénario: import avec mise à jour intitulé
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/OK_scenario_maj_liste.json
     Et le statut final du journal des opérations est OK
-    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scenarios de preservation
+    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scénarios de préservation
     Quand je cherche le scénario de preservation nommé PSC-000001
     Alors les metadonnées sont
       | Name | Tranformation en PNG - BLABLA |
@@ -25,14 +25,14 @@ Fonctionnalité: Import du referentiel scénario de preservation
   Scénario: import avec mise à 1 seul scénario
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/OK_scenario_maj_1scenario.json
     Et le statut final du journal des opérations est OK
-    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scenarios de preservation
+    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scénarios de préservation
     Et le scénario de preservation nommé PSC-000005 n'existe pas
     Et le scénario de preservation nommé PSC-000003 n'existe pas
 
   Scénario: import avec mise à 4 scénarios
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/OK_scenario_maj_4scenarios.json
     Et le statut final du journal des opérations est OK
-    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scenarios de preservation
+    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scénarios de préservation
     Quand je cherche le scénario de preservation nommé PSC-000005
     Alors les metadonnées sont
       | Name | Tranformation en PNG |
