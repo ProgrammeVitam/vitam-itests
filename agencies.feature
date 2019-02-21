@@ -22,7 +22,8 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des services agents
-    Et le champ 'evDetData' de l'évenement final est : Import agency error > File invalid -- lack of column Identifier
+    Et le champ 'evDetData' de l'évenement final est : Import agency error > Invalid CSV File
+
 
     Scénario: Import d'un fichier de services agents avec de mauvais séparateur
     Etant donné un fichier de service producteur nommé data/agencies/KO_agencies_mauvais_separateur.csv
@@ -30,14 +31,16 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des services agents
-    Et le champ 'evDetData' de l'évenement final est : "agencyCheck" : "Import agency error > Invalid CSV File"
+    Et le champ 'evDetData' de l'évenement final est : Import agency error > File invalid -- lack of column Identifier
 
-    Scénario: Import d'un fichier de services agents non encodé en UTF8
-    Etant donnée un fichier de service producteur nommé data/agencies/KO_agencies_init_pas_UTF8.csv
-    Quand j'importe les services producteurs sans échec
-    Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est KO
+
+    #Scénario: Import d'un fichier de services agents non encodé en UTF8
+    #Etant donnée un fichier de service producteur nommé data/agencies/KO_agencies_init_pas_UTF8.csv
+    #Quand j'importe les services producteurs sans échec
+    #Et je recherche le journal des opérations
+    #Alors le statut final du journal des opérations est KO
     #KO sera corrigé par le bugs
+
 
     Scénario: Import d'un fichier avec suppression d'un service producteur utilisé dans le système
     Etant donnée un fichier de service producteur nommé data/agencies/agencies_init_description.csv
@@ -51,6 +54,7 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Et l'outcome détail de l'événement IMPORT_AGENCIES est IMPORT_AGENCIES.DELETION.KO
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des services agents : des services agents supprimés sont présents dans le référentiel des services agents
     Et le champ 'evDetData' de l'évenement final est : \"Agencies \":\"VitamTNR\"
+
 
 # Controle de l'existence d'un service agent
 
@@ -67,6 +71,7 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
 
+
     Scénario: Contrôle de l'existence des services agents - Service producteur et versant absents du référentiel
     Etant donné un fichier de service producteur nommé data/agencies/agencies_init_description.csv
     Et j'importe les services producteurs
@@ -79,6 +84,7 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Et l'outcome détail de l'événement CHECK_HEADER.CHECK_AGENT est CHECK_HEADER.CHECK_AGENT.UNKNOWN.KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
+
 
     Scénario: Contrôle de l'existence des services agents - Service producteur inexistant & service versant existant
     Etant donné un fichier de service producteur nommé data/agencies/agencies_init_description.csv
@@ -93,6 +99,7 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
 
+
 # Recherche d'un service producteur
 
     Scénario: Recherche de service producteur
@@ -100,4 +107,4 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Alors le service producteur existe
     Et les métadonnées du service sont
     | Name        | agencyTNR            |
-    | Description | une description de service agent TNR0001 |
+    | Description | une description de service agent TNR0002 |
