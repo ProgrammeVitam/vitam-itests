@@ -103,8 +103,8 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
 # Recherche d'un service producteur
 
     Scénario: Recherche de service producteur
-    Quand je cherche un service producteur nommé agencyTNR
+    Quand je cherche un service producteur nommé VitamTNR
     Alors le service producteur existe
     Et les métadonnées du service sont
-    | Name        | agencyTNR            |
-    | Description | une description de service agent TNR0002 |
+    | Name        | VitamTNR            |
+    | Description | une description de service agent VitamTNR |
