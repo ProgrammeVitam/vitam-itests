@@ -9,8 +9,8 @@ Fonctionnalité: initialisation
     Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
     Etant donné les jeux de tests réinitialisés
     Alors j'importe les services producteurs sans échec
-    Et j'importe le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES
-    Et j'importe le fichier nommé data/rules/jeu_donnees_KO_regles_CSV.csv dans le référentiel RULES
+    Et j'importe le fichier nommé data/rules/rules_ok.csv pour le référentiel RULES
+    Et j'importe le fichier nommé data/rules/rules_ko_empty_line.csv dans le référentiel RULES
     Et un contract nommé data/contracts/contract_acces_TNR.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
@@ -23,8 +23,8 @@ Fonctionnalité: initialisation
 
   Scénario: Scénario 1 import des regles des getions et formats et des ...
     Et les tests effectués sur le tenant 1
-    Et j'importe le fichier nommé data/rules/jeu_donnees_OK_regles_CSV_regles.csv pour le référentiel RULES
-    Et j'importe le fichier nommé data/rules/jeu_donnees_KO_regles_CSV.csv dans le référentiel RULES
+    Et j'importe le fichier nommé data/rules/rules_ok.csv pour le référentiel RULES
+    Et j'importe le fichier nommé data/rules/rules_ko_empty_line.csv dans le référentiel RULES
     Et j'importe le fichier nommé data/formats/DROID_SignatureFile_V94.xml dans le référentiel FORMATS
     Et un contract nommé data/contracts/contract_acces_TNR_tenant_1.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
