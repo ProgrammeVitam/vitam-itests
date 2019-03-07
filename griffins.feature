@@ -108,7 +108,7 @@ Fonctionnalité: Import du referentiel griffons
     Alors les metadonnées sont
       | Code | 400 |
     Et le statut final du journal des opérations est KO
-    Et le champ 'evDetData' de l'évenement final est : Invalid date
+    Et le champ 'evDetData' de l'évenement final est : GRIFFIN1 Invalid CreationDate : 10 décembre 16
 
   Scénario: import griffons valeur name absent
     Quand j'importe le griffon nommé data/griffins/KO_griffons_absent_value_name.json
