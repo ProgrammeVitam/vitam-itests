@@ -1,0 +1,19 @@
+{
+    "$roots": [],
+    "$query": [
+        {
+            "$in": {
+                "#operations": [
+                    "Operation-Id"
+                ]
+            }
+        }
+    ],
+    "$action": [
+        {
+            "$set": {
+                "MyBoolean": "MyBoolean correspond à une chaîne de caractères textuels"
+            }
+        }
+    ]
+}

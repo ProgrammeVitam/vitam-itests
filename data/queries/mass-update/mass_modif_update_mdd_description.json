@@ -1,0 +1,23 @@
+{
+  "$roots": [],
+  "$query": [
+       {
+          "$in": {
+          "#operations": [
+              "Operation-Id"
+          ]
+      }
+  }
+  ],
+  "$action": [
+      { 
+        "$setregex": {
+          "$target": "Description",
+          "$controlPattern": "Cette unité de description bloque",
+          "$updatePattern": "Cette unité de description modifié par le passage des TNR bloque"
+        }
+      }
+    ],
+"$threshold": 10000
+
+}

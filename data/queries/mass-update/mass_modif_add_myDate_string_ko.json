@@ -1,0 +1,20 @@
+{
+    "$roots": [],
+    "$query": [
+        {
+            "$in": {
+                "#operations": [
+                    "Operation-Id"
+                ]
+            }
+        }
+    ],
+    "$action": [
+        {
+            "$set": {
+                "MyDate": "MyDate correspond à une chaîne de caractères textuels"
+            }
+        }
+    ],
+    "$threshold": 10000
+}

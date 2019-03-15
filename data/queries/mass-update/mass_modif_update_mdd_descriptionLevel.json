@@ -1,0 +1,22 @@
+{
+    "$roots": [],
+    "$query": [
+        {
+            "$in": {
+                "#operations": [
+                    "Operation-Id"
+                ]
+            }
+        }
+    ],
+    "$action": [
+        {
+            "$setregex": {
+              "$target": "Description",
+              "$controlPattern": "RecordGrp",
+              "$updatePattern": "Item"
+            }
+          }
+    ],
+    "$threshold": 10000
+}

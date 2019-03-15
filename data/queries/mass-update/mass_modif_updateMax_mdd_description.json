@@ -1,0 +1,24 @@
+{
+        "$roots": [],
+        "$query": [
+             {
+                "$in": {
+                "#operations": [
+                    "Operation-Id"
+                ]
+            }
+        }
+        ],
+        "$action": [
+            { 
+              "$setregex": {
+                "$target": "Description",
+                "$controlPattern": "Cette unité de description doit hériter",
+                "$updatePattern": "Cette unité de description hérite"
+              }
+            }
+          ],
+      "$threshold": 5
+    
+  
+   }

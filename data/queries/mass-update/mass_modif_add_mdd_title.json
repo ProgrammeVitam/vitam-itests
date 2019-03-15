@@ -1,0 +1,16 @@
+{
+    "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+            "Operation-Id"
+        ]
+      }
+    } ],
+    "$action": [ {
+      "$set": {
+       "Titre": "TNR - Factures"
+        }
+    } ],
+      "$threshold": 10000
+  }
