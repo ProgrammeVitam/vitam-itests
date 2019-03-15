@@ -1,0 +1,23 @@
+{
+    "$roots": [],
+    "$query": [
+        {
+            "$in": {
+                "#operations": [
+                    "Operation-Id"
+                ]
+            }
+        }
+    ],
+    "$action": [
+        {
+            "$set": {
+                "MyBoolean": [
+                    "MyBoolean [Array 1]",
+                    "MyBoolean [Array 2]"
+                ]
+            }
+        }
+    ],
+    "$threshold": 10000
+}

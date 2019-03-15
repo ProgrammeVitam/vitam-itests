@@ -1,0 +1,20 @@
+{
+  "$roots": [],
+  "$query": [
+    {
+      "$in": {
+        "#operations": [
+          "Operation-Id"
+        ]
+      }
+    }
+  ],
+  "$action": [
+    {
+      "$set": {
+        "OtherMetadata.Writer.BirthName": "Glace"
+      }
+    }
+  ],
+  "$threshold": 10000
+}

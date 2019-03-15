@@ -1,0 +1,20 @@
+{
+    "$roots": [],
+    "$query": [
+        {
+            "$in": {
+                "#operations": [
+                    "Operation-Id"
+                ]
+            }
+        }
+    ],
+    "$action": [
+        {
+            "$set": {
+                "MyBoolean": "2016/10/12"
+            }
+        }
+    ],
+    "$threshold": 10000
+}

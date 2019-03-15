@@ -1,0 +1,16 @@
+{
+    "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+          "Operation-Id"
+        ]
+      }
+    } ],
+    "$action": [ {
+      "$set": {
+       "MyText": "TNR - Régie autonome des transports parisiens"
+        }
+    } ],
+      "$threshold": 10000
+  }
