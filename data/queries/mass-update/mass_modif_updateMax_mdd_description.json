@@ -1,24 +1,27 @@
 {
-        "$roots": [],
-        "$query": [
-             {
-                "$in": {
-                "#operations": [
-                    "Operation-Id"
-                ]
-            }
+  "$roots": [],
+  "$query": [
+    {
+      "$and": [
+        {
+          "$in": {
+            "#operations": [
+              "Operation-Id"
+            ]
+          }
+        },
+        {"$match_phrase": {
+          "Description": "Cette unité de description doit hériter"
         }
-        ],
-        "$action": [
-            { 
-              "$setregex": {
-                "$target": "Description",
-                "$controlPattern": "Cette unité de description doit hériter",
-                "$updatePattern": "Cette unité de description hérite"
-              }
-            }
-          ],
-      "$threshold": 5
-    
-  
-   }
+        }
+      ]
+    }],
+  "$action": [{
+    "$setregex": {
+      "$target": "Description",
+      "$controlPattern": "Cette unité de description doit hériter",
+      "$updatePattern": "Cette unité de description hérite"
+    }
+  }],
+  "$threshold": 5
+}
