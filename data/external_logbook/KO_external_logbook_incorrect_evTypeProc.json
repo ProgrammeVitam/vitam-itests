@@ -1,0 +1,23 @@
+{
+    "eventIdentifier": "REPLACE_ME",
+    "parentEventIdentifier": null,
+    "eventType": "EXTERNAL_RANDOM_OPERATION",
+    "eventDateTime": "2019-02-11T14:23:42.006",
+    "eventDetailData": "",
+    "eventIdentifierProcess": "REPLACE_ME",
+    "eventTypeProcess": "AUDIT",
+    "outcome": "STARTED",
+    "outcomeDetail": "EXTERNAL_RANDOM_OPERATION.STARTED",
+    "outcomeDetailMessage": "External Random Operation Started",
+    "agentIdentifier": "{\"Name\":\"vitam-env-int-external-01.vitam-env\",\"Role\":\"ingest-external\",\"ServerId\":1051058113,\"SiteId\":1,\"GlobalPlatformId\":245751745}",
+    "agentIdentifierApplication": "CT-000001",
+    "agentIdentifierPersonae": null,
+    "agentIdentifierApplicationSession": "MyApplicationId-ChangeIt",
+    "eventIdentifierRequest": "REPLACE_ME",
+    "agIdExt": null,
+    "rightsStatementIdentifier": null,
+    "objectIdentifier": "REPLACE_ME",
+    "objectIdentifierRequest": null,
+    "objectIdentifierIncome": "Testing the external logbook insertion",
+    "events": []
+}
