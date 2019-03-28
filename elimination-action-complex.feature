@@ -356,7 +356,7 @@ Fonctionnalité: Test workflow d'analyse de l'élimination multi services produc
       "$projection": {}}
     """
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 7
+    Alors le nombre de résultat est 10
 
     Quand j'utilise la requête suivante
     """
@@ -451,7 +451,7 @@ Fonctionnalité: Test workflow d'analyse de l'élimination multi services produc
       "$projection": {}}
     """
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 7
+    Alors le nombre de résultat est 10
 
     Quand j'utilise la requête suivante
     """

@@ -10,7 +10,7 @@ Fonctionnalité: Import du referentiel griffons
     Quand j'importe le griffon nommé data/griffins/OK_griffons_referentiel.json
     Alors les metadonnées sont
       | Code | 201 |
-    Et le statut final du journal des opérations est OK
+    Et le statut final du journal des opérations est WARNING
 
 
   Scénario: import avec mis à jour intitulé
@@ -52,7 +52,7 @@ Fonctionnalité: Import du referentiel griffons
 
   Scénario: import 4 griffons avec 1 mis à jour
     Quand j'importe le griffon nommé data/griffins/OK_griffons.json
-    Alors le statut final du journal des opérations est OK
+    Alors le statut final du journal des opérations est WARNING
     Quand je cherche le griffon nommé GRI-000001
     Et les metadonnées sont
         | Description | TEST my dear |
