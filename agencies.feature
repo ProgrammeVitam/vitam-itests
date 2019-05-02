@@ -55,6 +55,16 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des services agents : des services agents supprimés sont présents dans le référentiel des services agents
     Et le champ 'evDetData' de l'évenement final est : \"Agencies \":\"VitamTNR\"
 
+    Scénario: Import d'un fichier avec suppression d'un service producteur non utilisé dans le système
+    Etant donnée un fichier de service producteur nommé data/agencies/agencies_init_description.csv
+    Quand j'importe les services producteurs sans échec
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Etant donnée un fichier de service producteur nommé data/agencies/agencies_init_delete_unused_agencies.csv
+    Quand j'importe les services producteurs sans échec
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+
 
 # Controle de l'existence d'un service agent
 
