@@ -19,3 +19,19 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Et les métadonnées du service sont
       | Name        | agencyTNR            |
       | Description | une description de service agent TNR0001 |
+
+# Import d'un fichier de service producteur - Cas de suppression non utilisés d'agencies
+
+    Scénario: Import d'un fichier avec suppression d'un service producteur non utilisé dans le système
+    Etant donnée un fichier de service producteur nommé data/agencies/agencies.csv
+    Quand j'importe les services producteurs sans échec
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Etant donnée un fichier de service producteur nommé data/agencies/agencies_init_delete_unused_agencies.csv
+    Quand j'importe les services producteurs sans échec
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+
+
+
+    
