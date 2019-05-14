@@ -27,7 +27,7 @@
 
 
             Scénario: Import d'un fichier qui n'est pas au format csv
-            Quand je vérifie le fichier nommé data/rules/rules_ko_mauvais_format.pdf
+            Quand je vérifie le fichier nommé data/rules/rules_ko_mauvais_format.pdf dans le référentiel RULES
             Alors les metadonnées sont
             | Code | 400 |
 
@@ -98,7 +98,7 @@
 
 
             Scénario: Import d'un fichier avec un mauvais séparateur
-            Quand je vérifie le fichier nommé data/rules/rules_ko_mauvais_separateur.csvpour le référentiel RULES
+            Quand je vérifie le fichier nommé data/rules/rules_ko_mauvais_separateur.csv pour le référentiel RULES
             Alors les metadonnées sont
             | Code | 400 |
             Quand j'importe le fichier nommé data/rules/rules_ko_mauvais_separateur.csv dans le référentiel RULES
