@@ -5,13 +5,14 @@ Fonctionnalité: Import du referentiel griffons
 
   Contexte: Avant de lancer cette suite de test, je vérifie que je suis bien sur le tenant d'administration
     Etant donné les tests effectués sur le tenant 1
+    Et j'importe le preservation Scenario nommé data/remove_all.json
+    Et j'importe le griffon nommé data/remove_all.json
 
   Scénario: import griffons a deux éléments
     Quand j'importe le griffon nommé data/griffins/OK_griffons_referentiel.json
     Alors les metadonnées sont
       | Code | 201 |
-    Et le statut final du journal des opérations est WARNING
-
+    Et le statut final du journal des opérations est OK
 
   Scénario: import avec mis à jour intitulé
     Quand j'importe le griffon nommé data/griffins/OK_griffons_maj_intitule.json
@@ -19,7 +20,6 @@ Fonctionnalité: Import du referentiel griffons
     Quand je cherche le griffon nommé GRI-000001
     Et les metadonnées sont
       | Name        | ImageMagick BLABLA |
-
 
   Scénario: import avec mis à jour version
     Quand j'importe le griffon nommé data/griffins/OK_griffons_maj_executableVersion.json

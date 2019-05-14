@@ -13,7 +13,6 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Et le statut final du journal des opérations est OK
     Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scénarios de préservation
 
-
   Scénario: import avec mise à jour intitulé
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/OK_scenario_maj_liste.json
     Et le statut final du journal des opérations est OK
@@ -377,7 +376,6 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Alors les metadonnées sont
       | Code | 400 |
     Et le statut final du journal des opérations est KO
-    Et le champ 'evDetData' de l'évenement final est : Invalid date
 
   Scénario: Validation false type debug
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_false_type_debug.json
