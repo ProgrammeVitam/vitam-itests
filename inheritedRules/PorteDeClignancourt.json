@@ -1,4 +1,17 @@
 {
+  "GlobalProperties": [
+   {
+      "UnitId": "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+      "OriginatingAgency": "RATP",
+      "Paths": [
+        [
+          "{{unit:4_ Porte de Clignancourt (ligne 4)}}"
+        ]
+      ],
+      "PropertyName": "NeedAuthorization",
+      "PropertyValue": true
+    }
+  ],
   "StorageRule" : {
     "Rules" : [ ],
     "Properties" : [ {

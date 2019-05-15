@@ -1,4 +1,17 @@
 {
+  "GlobalProperties": [
+  {
+    "UnitId": "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+    "OriginatingAgency": "RATP",
+    "Paths": [
+      [
+       "{{unit:Danube}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}"
+      ]
+    ],
+    "PropertyName": "NeedAuthorization",
+    "PropertyValue": true
+   }
+  ],
   "StorageRule" : {
     "Rules" : [ ],
     "Properties" : [ {

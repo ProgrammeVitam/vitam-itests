@@ -1,4 +1,17 @@
 {
+  "GlobalProperties": [
+ {
+      "UnitId": "{{unit:1_Saint Denis Université (ligne 13)}}",
+      "OriginatingAgency": "RATP",
+      "Paths": [
+        [
+          "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}"
+        ]
+      ],
+      "PropertyName": "NeedAuthorization",
+      "PropertyValue": true
+    }
+  ],
   "StorageRule" : {
     "Rules" : [ {
       "UnitId" : "{{unit:Carrefour Pleyel}}",
