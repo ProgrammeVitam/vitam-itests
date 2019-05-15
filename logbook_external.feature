@@ -14,9 +14,13 @@ Fonctionnalité: vérifier la possibilité d'intégrer des journaux depuis l'ext
     Alors le statut final du journal des opérations est OK
     Et le champ 'evTypeProc' de l'évenement final est : EXTERNAL
     Et le champ 'outMessg' de l'évenement final est : External Random operation succeeded
-    Et le champ 'outDetail' de l'évenement final est : EXTERNAL_RANDOM_OPERATION.OK
+    Et le champ 'outDetail' de l'évenement final est : EXT_RANDOM_OPERATION.OK
     
   Scénario: Test d'insertion d'un journal d'opération externe KO (evTypeProc est incorrect)
     Etant donnée un fichier de logbook operation nommé data/external_logbook/KO_external_logbook_incorrect_evTypeProc.json
     Et j'importe un journal d'opération incorrect
+    
+  Scénario: Test d'insertion d'un journal d'opération externe KO (evTypeProc est incorrect)
+    Etant donnée un fichier de logbook operation nommé data/external_logbook/KO_external_logbook_incorrect_evType.json
+    Et j'importe un journal d'opération incorrect    
     

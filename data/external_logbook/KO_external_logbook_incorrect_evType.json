@@ -1,11 +1,11 @@
 {
     "eventIdentifier": "REPLACE_ME",
     "parentEventIdentifier": null,
-    "eventType": "EXT_RANDOM_OPERATION",
+    "eventType": "EXTERNAL_RANDOM_OPERATION",
     "eventDateTime": "2019-02-11T14:23:42.006",
     "eventDetailData": "",
     "eventIdentifierProcess": "REPLACE_ME",
-    "eventTypeProcess": "AUDIT",
+    "eventTypeProcess": "EXTERNAL_LOGBOOK",
     "outcome": "STARTED",
     "outcomeDetail": "EXTERNAL_RANDOM_OPERATION.STARTED",
     "outcomeDetailMessage": "External Random Operation Started",
