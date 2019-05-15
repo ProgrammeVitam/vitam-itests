@@ -1,4 +1,17 @@
 {
+  "GlobalProperties": [
+ {
+    "UnitId": "{{unit:5_Bobigny (ligne 5)}}",
+    "OriginatingAgency": "RATP",
+    "Paths": [
+      [
+        "{{unit:5_Bobigny (ligne 5)}}"
+      ]
+    ],
+    "PropertyName": "NeedAuthorization",
+    "PropertyValue": true
+   }
+ ],
   "StorageRule" : {
     "Rules" : [ ],
     "Properties" : [ {

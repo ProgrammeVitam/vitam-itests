@@ -1,4 +1,17 @@
 {
+  "GlobalProperties": [
+  {
+    "UnitId": "{{unit:5_Bobigny (ligne 5)}}",
+    "OriginatingAgency": "RATP",
+    "Paths": [
+      [
+        "{{unit:Porte de Pantin}}", "{{unit:Eglise de Pantin}}", "{{unit:5_Bobigny (ligne 5)}}"
+      ]
+    ],
+    "PropertyName": "NeedAuthorization",
+    "PropertyValue": true
+   }
+  ],
   "StorageRule" : {
     "Rules" : [ {
       "UnitId" : "{{unit:Eglise de Pantin}}",

@@ -1,4 +1,17 @@
 {
+  "GlobalProperties": [
+  {
+      "UnitId": "{{unit:3_Gallieni (ligne 3)}}",
+      "OriginatingAgency": "RATP",
+      "Paths": [
+        [
+          "{{unit:3_Gallieni (ligne 3)}}"
+        ]
+      ],
+      "PropertyName": "NeedAuthorization",
+      "PropertyValue": true
+    }
+ ],
   "StorageRule" : {
     "Rules" : [ ],
     "Properties" : [ {

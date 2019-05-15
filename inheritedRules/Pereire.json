@@ -1,4 +1,28 @@
 {
+  "GlobalProperties": [
+  {
+    "UnitId": "{{unit:3_Gallieni (ligne 3)}}",
+    "OriginatingAgency": "RATP",
+    "Paths": [
+      [
+        "{{unit:Pereire.txt}}", "{{unit:Réaumur}}", "{{unit:République}}", "{{unit:Père Lachaise}}", "{{unit:Gambetta}}", "{{unit:3_Gallieni (ligne 3)}}"
+      ]
+    ],
+    "PropertyName": "NeedAuthorization",
+    "PropertyValue": true
+   },
+   {
+    "UnitId": "{{unit:4_ Porte de Clignancourt (ligne 4)}}",
+    "OriginatingAgency": "RATP",
+    "Paths": [
+      [
+        "{{unit:Pereire.txt}}", "{{unit:Réaumur}}", "{{unit:Gare du Nord}}", "{{unit:Château Rouge}}", "{{unit:Simplon}}", "{{unit:4_ Porte de Clignancourt (ligne 4)}}"
+      ]
+    ],
+    "PropertyName": "NeedAuthorization",
+    "PropertyValue": true
+   }
+  ],
   "StorageRule" : {
     "Rules" : [ ],
     "Properties" : [ {

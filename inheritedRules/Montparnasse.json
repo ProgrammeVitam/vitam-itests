@@ -1,4 +1,28 @@
 {
+  "GlobalProperties": [
+ {
+    "UnitId": "{{unit:1_Saint Denis Université (ligne 13)}}",
+    "OriginatingAgency": "RATP",
+    "Paths": [
+      [
+       "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Carrefour Pleyel}}", "{{unit:Saint Denis Basilique}}", "{{unit:1_Saint Denis Université (ligne 13)}}"
+      ]
+    ],
+    "PropertyName": "NeedAuthorization",
+    "PropertyValue": true
+  },
+  {
+    "UnitId": "{{unit:2_Front Populaire (ligne 12)}}",
+    "OriginatingAgency": "RATP",
+    "Paths": [
+      [
+        "{{unit:Montparnasse.txt}}", "{{unit:Saint-Lazare}}", "{{unit:Marx Dormoy}}", "{{unit:Porte de la Chapelle}}", "{{unit:2_Front Populaire (ligne 12)}}"
+      ]
+    ],
+    "PropertyName": "NeedAuthorization",
+    "PropertyValue": true
+  }
+  ],
   "StorageRule" : {
     "Rules" : [ ],
     "Properties" : [ {
