@@ -5,8 +5,7 @@ Fonctionnalité: Import du referentiel griffons
 
   Contexte: Avant de lancer cette suite de test, je vérifie que je suis bien sur le tenant d'administration
     Etant donné les tests effectués sur le tenant 1
-    Et j'importe le preservation Scenario nommé data/remove_all.json
-    Et j'importe le griffon nommé data/remove_all.json
+    Et je supprimme les griffons et les scénario de préservation sur tout les tenants
 
   Scénario: import griffons a deux éléments
     Quand j'importe le griffon nommé data/griffins/OK_griffons_referentiel.json
