@@ -12,9 +12,7 @@ Fonctionnalité: vérifier la cohérence des journaux (Opération, LFC unit, LFC
 
   Scénario: Test de vérification de cohérence des logbook
     Quand je lance le test de cohérence des journaux
-    Alors je verifie que la strategie contient le rapport de cohérence
-            | Nom              | valeur    |
-            | ofre par default | default |
+    Alors je verifie que le rapport du test de cohérence des journaux ne contient pas d'erreur
 
   Scénario: Mise à jour du contextes pour désactivier le controle OK
     Et les tests effectués sur le tenant 1
