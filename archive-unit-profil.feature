@@ -34,7 +34,7 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Quand je fais un import du document type
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et le champ 'outMessg' de l'évenement final est : Échec de l'import du profil d'unité archivistique: au moins un des champs obligatoires n'est pas renseigné
+    Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du profil d'unité archivistique: au moins un des champs obligatoires n'est pas renseigné
     Et le champ 'evDetData' de l'évenement final est : "Mandatory Fields" : "The field Name is mandatory,The field ControlSchema is mandatory"
 
 
@@ -111,7 +111,7 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Quand je fais un import du document type
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et le champ 'outMessg' de l'évenement final est : Échec de l'import du profil d'unité archivistique: schéma JSON non valide
+    Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du profil d'unité archivistique: schéma JSON non valide
     #Et le champ 'evDetData' de l'évenement final est : "Invalid JSON schema"" : "The field ControlSchema is not a json schema"
 #le comportement sur la comparaison de evDetData est différent sur ce cham : utilisation de prettyPtint
 
@@ -121,5 +121,5 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Quand je fais un import du document type
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
-    Et le champ 'outMessg' de l'évenement final est : Échec de l'import du profil d'unité archivistique: schéma JSON non valide
+    Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du profil d'unité archivistique: schéma JSON non valide
   #  Et le champ 'evDetData' de l'évenement final est : "Invalid JSON schema"" : "The field ControlSchema is not a json schema"
