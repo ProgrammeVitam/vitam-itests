@@ -5,7 +5,7 @@ Fonctionnalité: Import du referentiel scénario de preservation
 
   Contexte: Avant de lancer cette suite de test, je vérifie que je suis bien sur le tenant d'administration
     Etant donné les tests effectués sur le tenant 0
-    Et je supprime les griffons et les scénario de préservation sur tout les tenants
+    Et je supprime les griffons et les scénarios de préservation sur tous les tenants
     Et j'importe le griffon nommé data/griffins/OK_griffons_referentiel.json
 
   Scénario: import des scénario  a deux éléments
@@ -37,7 +37,6 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Quand je cherche le scénario de preservation nommé PSC-000005
     Alors les metadonnées sont
       | Name | Tranformation en PNG |
-
 
   Scénario: Injection html default griffin args
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_defaultGriffin_args.json
@@ -94,11 +93,6 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Alors les metadonnées sont
     | Code | 412 |
 
-#  Scénario: Injection html default griffin by format identifier
-#    Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_griffinByFormat_griffinIdentifier.json
-#    Alors les metadonnées sont
-#    | Code | 412 |
-
   Scénario: Injection html default griffin by format maxsize
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_griffinByFormat_maxSize.json
     Alors les metadonnées sont
@@ -124,7 +118,6 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Alors les metadonnées sont
       | Code | 412 |
 
-
   Scénario: Invalid  Json
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_invalid_json.json
     Alors les metadonnées sont
@@ -137,8 +130,6 @@ Fonctionnalité: Import du referentiel scénario de preservation
 
   Scénario: Champ inconnu
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_unknown_json_field.json
-#    Alors les metadonnées sont
-#      | Code | 412 |
     Et le statut final du journal des opérations est OK
 
   Scénario: Validation absent field griffin by format and no default griffin
