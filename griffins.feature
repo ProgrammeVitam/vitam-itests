@@ -48,7 +48,6 @@ Fonctionnalité: Import du referentiel griffons
     Et les metadonnées sont
         | Name | Griffon 3 : Griffon Jhove |
 
-
   Scénario: import 4 griffons avec 1 mis à jour
     Quand j'importe le griffon nommé data/griffins/OK_griffons.json
     Alors le statut final du journal des opérations est OK
