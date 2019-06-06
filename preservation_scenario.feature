@@ -4,9 +4,10 @@
 Fonctionnalité: Import du referentiel scénario de preservation
 
   Contexte: Avant de lancer cette suite de test, je vérifie que je suis bien sur le tenant d'administration
-    Etant donné les tests effectués sur le tenant 0
+    Etant donné les tests effectués sur le tenant 1
     Et je supprime les griffons et les scénarios de préservation sur tous les tenants
     Et j'importe le griffon nommé data/griffins/OK_griffons_referentiel.json
+    Etant donné les tests effectués sur le tenant 0
 
   Scénario: import des scénario  a deux éléments
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/OK_scenario_liste.json
