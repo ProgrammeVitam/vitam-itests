@@ -11,7 +11,7 @@ Fonctionnalité: uploader des fichier et verifier qu'ils sont sauvegardés dans 
 
   Scénario: Test de stockage
     Etant donné un fichier nommé data/SIP_OK/ZIP/OK-RULES.zip
-    Quand je sauvegarde le fichier dans la strategie defaults
+    Quand je sauvegarde le fichier dans la strategie default
     Alors le fichier est bien stocké dans les strategies suivantes
       | Nom              | valeur    |
       | ofre par default | default |
