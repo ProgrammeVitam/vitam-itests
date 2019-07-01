@@ -2,7 +2,7 @@
   {
     "Identifier": "AcquiredDate",
     "SedaField": "AcquiredDate",
-	"blablaField": "AcquiredDate",
+    "blablaField": "AcquiredDate",
     "Description": "Mapping : unit-es-mapping.json. Références : ARKMS.DateAcquired",
     "Type": "DATE",
     "Origin": "INTERNAL",
@@ -170,7 +170,9 @@
       "IngestContract",
       "Ontology",
       "Profile",
-      "SecurityProfile"
+      "SecurityProfile",
+      "Griffin",
+      "PreservationScenario"
     ]
   },
   {
@@ -287,7 +289,9 @@
       "ArchiveUnitProfile",
       "IngestContract",
       "Ontology",
-      "Profile"
+      "Profile",
+      "Griffin",
+      "PreservationScenario"
     ]
   },
   {
@@ -395,7 +399,7 @@
     "Identifier": "GpsAltitude",
     "SedaField": "GpsAltitude",
     "Description": "Mapping : unit-es-mapping.json",
-    "Type": "KEYWORD",
+    "Type": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Altitude",
     "Collections": [
@@ -631,6 +635,28 @@
     "ShortName": "Activité",
     "Collections": [
       "Unit"
+    ]
+  },
+  {
+    "Identifier": "ExecutableName",
+    "SedaField": "ExecutableName",
+    "Description": "Mapping : griffin-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : ExecutableName.",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "ExecutableName",
+    "Collections": [
+      "Griffin"
+    ]
+  },
+  {
+    "Identifier": "ExecutableVersion",
+    "SedaField": "ExecutableVersion",
+    "Description": "Mapping : griffin-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : ExecutableVersion.",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "ExecutableVersion",
+    "Collections": [
+      "Griffin"
     ]
   },
   {
@@ -904,7 +930,8 @@
     "ShortName": "Type",
     "Collections": [
       "Unit",
-      "Ontology"
+      "Ontology",
+      "PreservationScenario"
     ]
   },
   {
@@ -1214,7 +1241,9 @@
       "Ontology",
       "Profile",
       "FileRules",
-      "LogbookOperation"
+      "LogbookOperation",
+      "Griffin",
+      "PreservationScenario"
     ]
   },
   {
@@ -1297,7 +1326,21 @@
       "Profile",
       "FileRules",
       "SecurityProfile",
-      "LogbookOperation"
+      "LogbookOperation",
+      "Griffin",
+      "PreservationScenario"
+    ]
+  },
+  {
+   "Identifier": "_av",
+   "ApiField": "_av",
+   "Description": "Version interne de l’enregistrement décrit.",
+   "Type": "LONG",
+   "Origin": "INTERNAL",
+   "ShortName": "Version",
+    "Collections": [
+     "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -1567,7 +1610,9 @@
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du groupe d'objets",
     "Collections": [
-      "ObjectGroup"
+      "ObjectGroup",
+      "Griffin",
+      "PreservationScenario"
     ]
   },
   {
@@ -1624,7 +1669,9 @@
       "IngestContract",
       "Ontology",
       "Profile",
-      "FileRules"
+      "FileRules",
+      "Griffin",
+      "PreservationScenario"
     ]
   },
   {
@@ -1690,7 +1737,9 @@
       "Context",
       "IngestContract",
       "Ontology",
-      "Profile"
+      "Profile",
+      "Griffin",
+      "PreservationScenario"
     ]
   },
   {
@@ -1708,7 +1757,9 @@
       "FileFormat",
       "IngestContract",
       "Profile",
-      "SecurityProfile"
+      "SecurityProfile",
+      "Griffin",
+      "PreservationScenario"
     ]
   },
   {
@@ -1789,6 +1840,83 @@
     "Collections": [
       "AccessionRegisterDetail",
       "AccessionRegisterSummary"
+    ]
+  },
+  {
+    "Identifier": "ActionList",
+    "SedaField": "ActionList",
+    "Description": "Mapping : preservationscenario-es-mapping.json",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "ActionList",
+    "Collections": [
+      "PreservationScenario"
+    ]
+  },
+  {
+    "Identifier": "FormatList",
+    "SedaField": "FormatList",
+    "Description": "Mapping : preservationscenario-es-mapping.json",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "FormatList",
+    "Collections": [
+      "PreservationScenario"
+    ]
+  },
+  {
+    "Identifier": "GriffinIdentifier",
+    "SedaField": "GriffinIdentifier",
+    "Description": "Mapping : preservationscenario-es-mapping.json",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "GriffinIdentifier",
+    "Collections": [
+      "PreservationScenario"
+    ]
+  },
+  {
+    "Identifier": "Timeout",
+    "SedaField": "Timeout",
+    "Description": "Mapping : preservationscenario-es-mapping.json",
+    "Type": "LONG",
+    "Origin": "INTERNAL",
+    "ShortName": "Timeout",
+    "Collections": [
+      "PreservationScenario"
+    ]
+  },
+  {
+    "Identifier": "MaxSize",
+    "SedaField": "MaxSize",
+    "Description": "Mapping : preservationscenario-es-mapping.json",
+    "Type": "LONG",
+    "Origin": "INTERNAL",
+    "ShortName": "MaxSize",
+    "Collections": [
+      "PreservationScenario"
+    ]
+  },
+  {
+    "Identifier": "Debug",
+    "SedaField": "Debug",
+    "Description": "Mapping : preservationscenario-es-mapping.json",
+    "Type": "BOOLEAN",
+    "Origin": "INTERNAL",
+    "ShortName": "Debug",
+    "Collections": [
+      "PreservationScenario"
+    ]
+  },
+  {
+    "Identifier": "Args",
+    "SedaField": "Args",
+    "Description": "Mapping : preservationscenario-es-mapping.json",
+    "Type": "TEXT",
+    "Origin": "INTERNAL",
+    "ShortName": "Extension",
+    "Collections": [
+      "PreservationScenario"
     ]
   },
   {
@@ -2045,7 +2173,8 @@
     "Origin": "INTERNAL",
     "ShortName": "Extension(s)",
     "Collections": [
-      "FileFormat"
+      "FileFormat",
+      "PreservationScenario"
     ]
   },
   {
@@ -2797,6 +2926,39 @@
     "Type": "KEYWORD",
     "Origin": "INTERNAL",
     "ShortName": "ParentUnitId",
+    "Collections": [
+      "Unit"
+    ]
+  },
+  {
+    "Identifier": "OriginatingAgenciesInConflict",
+    "ApiField": "OriginatingAgenciesInConflict",
+    "Description": "Mapping : unit-es-mapping.json. Services producteurs en conflit",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "OriginatingAgenciesInConflict",
+    "Collections": [
+      "Unit"
+    ]
+  },
+  {
+    "Identifier": "_sedaVersion",
+    "ApiField": "#sedaVersion",
+    "Description": "Mapping : unit-es-mapping.json",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "_sedaVersion",
+    "Collections": [
+      "Unit"
+    ]
+  },
+  {
+    "Identifier": "_implementationVersion",
+    "ApiField": "#implementationVersion",
+    "Description": "Mapping : unit-es-mapping.json",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "_implementationVersion",
     "Collections": [
       "Unit"
     ]
