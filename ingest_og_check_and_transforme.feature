@@ -177,7 +177,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
     Et le fichier ATR contient les valeurs STP_OG_CHECK_AND_TRANSFORME, OG_OBJECTS_FORMAT_CHECK, LFC.OG_OBJECTS_FORMAT_CHECK, LFC.OG_OBJECTS_FORMAT_CHECK.FILE_FORMAT.UNCHARTED
     Et le fichier ATR contient 4 balises de type Event
     Etant donné les tests effectués sur le tenant 1
-    Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_V94.xml dans le référentiel FORMATS
+    Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_V95.xml dans le référentiel FORMATS
     Alors les metadonnées sont
       | Code           | 201                                     |
     Etant donné les tests effectués sur le tenant 0
