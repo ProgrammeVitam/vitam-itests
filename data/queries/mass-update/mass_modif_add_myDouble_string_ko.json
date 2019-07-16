@@ -1,0 +1,16 @@
+{
+  "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+            "Operation-Id"
+        ]
+      }
+    } ],
+  "$action": [
+    {
+      "$set": { "MyDouble": "MyDouble correspond à une chaîne de caractères textuels" }
+      }
+  ],
+      "$threshold": 10000
+}

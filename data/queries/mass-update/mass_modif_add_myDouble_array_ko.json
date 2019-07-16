@@ -1,0 +1,16 @@
+{
+  "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+          "Operation-Id"
+        ]
+      }
+    } ],
+  "$action": [
+    {
+      "$set": { "MyDouble": ["MyDouble [Array 1]", "MyDouble [Array 2]"] }
+      }
+  ],
+      "$threshold": 10000
+}
