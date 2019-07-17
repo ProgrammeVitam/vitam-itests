@@ -42,13 +42,15 @@ Fonctionnalité: Modifier en masse des métadonnées descriptives d'une AU
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est OK
 
-    Scénario: Modifier une chaine de caractère dans une métadonnée descriptive - Titre
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_char_title_description.json
-      Et je lance la mise à jour de masse des units
-      Alors le statut final du journal des opérations est OK
-
     Scénario: Modifier une métadonnée descriptive - DescriptionLevel  KO
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_descriptionLevel_ko.json
+      Et je lance la mise à jour de masse des units
+      Alors le statut final du journal des opérations est KO
+      ## il faut tester également que les modifications sont présentes dans le JCV des AU
+
+    Scénario: Modifier une métadonnée descriptive sans avoir les droit de modification - KO
+      Et les tests effectués sur le contrat id contrat_modification_interdites
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_description.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est KO
       ## il faut tester également que les modifications sont présentes dans le JCV des AU

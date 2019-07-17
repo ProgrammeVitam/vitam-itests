@@ -97,4 +97,4 @@ Fonctionnalité: Ajouter en masse des métadonnées descriptives d'une AU
     Scénario: Ajouter une métadonnée descriptive - MyDouble Cas 6 : [MyDouble = "40"]
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_add_myDouble_stringNumber_ko.json
       Et je lance la mise à jour de masse des units
-      Alors le statut final du journal des opérations est KO
+      Alors le statut final du journal des opérations est ok

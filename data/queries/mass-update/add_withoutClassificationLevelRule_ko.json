@@ -1,0 +1,30 @@
+{
+ "dslRequest": {
+  "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+          "aeeaaaaabghfj4pcaaot2alipmg3dgyaaaaq"
+        ]
+      }
+    } ],
+   "$threshold": 10000
+ },
+ "ruleActions": {
+   "add": [
+       {
+       "ClassificationRule": {
+         "ClassificationOwner": "Vitam"
+       }
+     }
+   ],
+   "update": [
+   ],
+   "delete": [
+   ],
+   "addOrUpdateMetadata" : {
+},
+"deleteMetadata": {
+}
+ }
+}

@@ -17,3 +17,8 @@ Fonctionnalité: Supprimer en masse des métadonnées descriptives d'une AU
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_delete_title_mdd_ko.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est KO
+
+    Scénario: Supprimer la métadonnée descriptive Description (champ facultatif) et modifier la métadonnée descriptive Titre (champ obligatoire)
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_delete_update_DesciptionTitle_mdd_ko.json
+      Et je lance la mise à jour de masse des units
+      Alors le statut final du journal des opérations est KO
