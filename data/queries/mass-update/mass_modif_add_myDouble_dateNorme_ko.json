@@ -1,26 +1,9 @@
-@access_external = https://int.env.programmevitam.fr/access-external
-@tenant = 7
-@accessContrat = AC-000001
-@guid = aeaqaaaaamha2624ab5iialhty3rliiaaaaq
-
-### Ajout KO champ MyDouble avec mauvais type
-# cas 3 : MyDouble = date [cas 1 : date normée]
-# prérequis : avoir importé l'ontologie et avoir importé le SIP SIP_MD_masse.zip, avoir un contrat d'accès autorisant toutes les modifications sur le périmètre du service producteur
-# lancer le test
-
-
-POST https://int.env.programmevitam.fr/access-external/v1/units
-Accept: application/json
-Content-Type: application/json
-X-Tenant-Id: 7
-X-Access-Contract-Id: AC-000001
-
 {
   "$roots": [],
     "$query": [ {
       "$in": {
         "#operations": [
-          "aeeaaaaaa6hfj4pcaaot2aliplo5fsiaaaaq"
+          "Operation-Id"
         ]
       }
     } ],
@@ -31,8 +14,3 @@ X-Access-Contract-Id: AC-000001
   ],
       "$threshold": 10000
 }
-
-// Attendu : 
-# Entrée KO dans le JDO
-# Les AU concernées n'ont pas le champ correspondant avec la valeur correspondante dans Mongo
-# Pas d'entrée dans le JCV des AU concernées

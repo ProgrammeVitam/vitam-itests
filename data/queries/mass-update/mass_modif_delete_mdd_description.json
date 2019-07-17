@@ -9,7 +9,7 @@
   } ],
   "$action": [
     {
-      "$set": { "Description": "" }
+      "$unset": ["Description"]
     }
   ],
   "$threshold": 10000
