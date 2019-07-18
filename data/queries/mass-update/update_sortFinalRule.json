@@ -1,0 +1,34 @@
+{
+ "dslRequest": {
+  "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+            "Operation-Id"
+        ]
+      }
+    } ],
+   "$threshold": 10000
+ },
+ "ruleActions": {
+   "add": [
+   ],
+   "update": [
+    {
+        "AppraisalRule": {
+          "Rules": [
+            {
+                "FinalAction": "Destroy"
+              }
+          ]
+        }
+      }
+   ],
+   "delete": [
+   ],
+   "addOrUpdateMetadata" : {
+},
+"deleteMetadata": {
+}
+ }
+}
