@@ -21,14 +21,6 @@ Fonctionnalité: Tests d'import et de recherche de documents type
       | Description | Test d'import d'un document type |
 
 
-    Scénario: Import d'un document type déjà existant - KO
-    Etant donné un document type nommé data/archiveUnitProfiles/aup_ok.json
-    Quand je fais un import du document type
-    Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est KO
-    Et le champ 'evDetData' de l'évenement final est : "Duplicate Field" : "The archive unit profile identifier AUP_IDENTIFIER already exists in database"
-
-
     Scénario: Import d'un document type avec un champ obligatoire manquant - KO
     Etant donné un document type nommé data/archiveUnitProfiles/aup_ko_champs_requis_vides.json
     Quand je fais un import du document type
@@ -123,3 +115,15 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Alors le statut final du journal des opérations est KO
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du profil d'unité archivistique: schéma JSON non valide
   #  Et le champ 'evDetData' de l'évenement final est : "Invalid JSON schema"" : "The field ControlSchema is not a json schema"
+
+    # do this test on a tenant that does not allow same identifier
+    Scénario: Import d'un document type déjà existant - KO
+    Etant donné les tests effectués sur le tenant 0
+    Etant donné un document type nommé data/archiveUnitProfiles/aup_ok.json
+    Alors je fais un import du document type
+    Et le statut final du journal des opérations est OK
+    Etant donné un document type nommé data/archiveUnitProfiles/aup_ok.json
+    Quand je fais un import du document type
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : "Duplicate Field" : "The archive unit profile identifier AUP_IDENTIFIER already exists in database"
