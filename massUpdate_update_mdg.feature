@@ -7,6 +7,8 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
       Etant donné les tests effectués sur le tenant 0
       Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_MODIFICATION_MASSE.zip
 
+## ajouter l'AU et son entrée au panier
+
   Scénario: Modifier le RuleId dans une même catégorie de règle
     Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_sameCategogyRuleId.json
     Et je lance la mise à jour de masse des units
@@ -21,3 +23,5 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
     Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_finalActionRule.json
     Et je lance la mise à jour de masse des units
     Alors le statut final du journal des opérations est WARNING
+
+

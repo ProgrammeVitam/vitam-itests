@@ -1,0 +1,27 @@
+{
+  "$roots": ["{{guid}}"],
+  "$query": [
+       {
+            "$and": [
+                 {
+                      "$in": {
+                           "#operations": [
+                                "Operation-Id"
+                           ]
+                      }
+                 }, 
+                 {
+                   "$eq": {
+                     "Title": "TitreAU"
+                  }
+                 }
+            ]
+       }
+  ],
+  "$projection": {
+       "$fields": {
+            "#id": 1,
+            "Title": 1
+       }
+  }
+}

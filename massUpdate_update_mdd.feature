@@ -10,47 +10,47 @@ Fonctionnalité: Modifier en masse des métadonnées descriptives d'une AU
   ### Modifier ###
 
     Scénario: Modifier une métadonnée descriptive - Titre
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_title.json
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_title.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est OK
 
     Scénario: Modifier une métadonnée descriptive - Description
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_description.json
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_description.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est OK
         ## il faut tester également que les modifications sont présentes dans le JCV des AU
 
     Scénario: Modifier une métadonnée descriptive - Dates
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_dates.json
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_dates.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est OK
       ## il faut tester également que les modifications sont présentes dans le JCV des AU
 
     Scénario: Modifier une métadonnée descriptive - DescriptionLevel
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_descriptionLevel.json
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_descriptionLevel.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est OK
       ## il faut tester également que les modifications sont présentes dans le JCV des AU
 
     Scénario: Modifier une métadonnée descriptive - Titre avec un nombre maximum de modification (5)
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_updateMax_mdd_description.json
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/updateMax_mdd_description.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est OK
 
     Scénario: Modifier plusieurs métadonnée descriptive - Titre et Description
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_title_description.json
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_title_description.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est OK
 
     Scénario: Modifier une métadonnée descriptive - DescriptionLevel  KO
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_descriptionLevel_ko.json
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_descriptionLevel_ko.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est KO
       ## il faut tester également que les modifications sont présentes dans le JCV des AU
 
     Scénario: Modifier une métadonnée descriptive sans avoir les droit de modification - KO
       Et les tests effectués sur le contrat id contrat_modification_interdites
-      Quand j'utilise le fichier de requête suivant data/queries/mass-update/mass_modif_update_mdd_description.json
+      Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_description.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est KO
       ## il faut tester également que les modifications sont présentes dans le JCV des AU

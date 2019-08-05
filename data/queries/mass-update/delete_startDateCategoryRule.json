@@ -20,7 +20,7 @@
             "AccessRule": {
               "Rules": [
                 {
-                  "Rule": "ACC-00001",
+                  "Rule": "ACC-0000",
                   "StartDate": "2019-07-18T00:00:00.000Z"
                 }
               ]

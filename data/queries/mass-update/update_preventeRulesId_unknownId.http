@@ -1,0 +1,53 @@
+
+@access_external = https://int.env.programmevitam.fr/access-external
+@tenant = 3
+@accessContrat = AC-000001
+## L'AU à ajouter au panier avec sa descendance AU3 Eglise de Pantin et sa descendance
+@guid = aeaqaaaaamhmy76naavsqalminjkc6iaaada
+
+
+#### Supprimer un PreventeInheritance
+
+POST {{access_external}}/v1/units/rules
+Accept: application/json
+Content-Type: application/json
+X-Tenant-Id: {{tenant}}
+X-Access-Contract-Id: {{accessContrat}}
+
+
+{
+  "dslRequest": {
+    "$roots": [],
+    "$query": [
+      {
+        "$or": [
+          {
+            "$eq": {
+              "#id": "{{guid}}"
+            }
+          },
+          {
+            "$eq": {
+              "#allunitups": "{{guid}}"
+            }
+          }
+        ]
+      }
+    ],
+    "$threshold": 10000
+  },
+  "ruleActions": {
+    "add": [
+    ],
+    "update": [
+        {
+       "AccessRule": {
+         "PreventRulesId": ["ACC-38101"]
+       }
+     } 
+    ],
+    "delete": [],
+    "addOrUpdateMetadata": {},
+    "deleteMetadata": {}
+  }
+}

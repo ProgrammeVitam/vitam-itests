@@ -1,0 +1,36 @@
+
+{
+  "dslRequest": {
+    "$roots": [],
+    "$query": [
+      {
+        "$or": [
+          {
+            "$eq": {
+              "#id": "{{guid}}"
+            }
+          },
+          {
+            "$eq": {
+              "#allunitups": "{{guid}}"
+            }
+          }
+        ]
+      }
+    ],
+    "$threshold": 10000
+  },
+  "ruleActions": {
+    "add": [
+      {
+       "AccessRule": {
+         "PreventRulesId": ["ACC-00001"]
+       }
+     }
+    ],
+    "update": [],
+    "delete": [],
+    "addOrUpdateMetadata": {},
+    "deleteMetadata": {}
+  }
+}

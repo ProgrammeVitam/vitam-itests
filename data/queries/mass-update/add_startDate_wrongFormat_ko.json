@@ -1,0 +1,19 @@
+{
+  "$roots": [],
+    "$query": [  {
+          "$in": {
+         "#operations": [
+            "Operation-Id"
+        ]
+      }
+  }
+  ],
+  "$action": [
+    {
+      "$set": {
+        "StartDate": "1999-13-25"
+        }
+    }
+  ],
+  "$threshold": 10000
+}
