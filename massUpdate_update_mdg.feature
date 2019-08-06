@@ -11,17 +11,17 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
 
   Scénario: Modifier le RuleId dans une même catégorie de règle
     Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_sameCategogyRuleId.json
-    Et je lance la mise à jour de masse des units
+    Et je lance la mise à jour de masse des règles de gestion
     Alors le statut final du journal des opérations est WARNING
 
   Scénario: Modifier le RuleId dans une même catégorie de règle en changeant la StartDate
     Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_sameCategogyRuleIdStartDate.json
-    Et je lance la mise à jour de masse des units
+    Et je lance la mise à jour de masse des règles de gestion
     Alors le statut final du journal des opérations est WARNING
 
   Scénario: Modifier le sort final de règles
     Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_finalActionRule.json
-    Et je lance la mise à jour de masse des units
+    Et je lance la mise à jour de masse des règles de gestion
     Alors le statut final du journal des opérations est WARNING
 
 
