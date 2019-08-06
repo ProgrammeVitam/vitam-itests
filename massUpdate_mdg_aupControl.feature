@@ -30,7 +30,7 @@ Fonctionnalité: Mise à jour en masse des métadonnées de gestion avec vérifi
         Et je lance la mise à jour de masse des units
         Alors le statut final du journal des opérations est OK
 
-    Scénario: Modifier un AUP associé à des AU alors que le contrat d'accès utilisé n'a pas les droit d'écriture sur les métadonnées de gestion
+    Scénario: Modifier un AUP associé à des AU alors que le contrat d'accès utilisé n'a pas les droits d'écriture sur les métadonnées de gestion
         Et J'utilise le contrat d'access OnlyDescUpdateAllowed
         Et les données du jeu de test du SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_maj_masse
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_aup_onlyDesUpdateAlloweddContrat_ko
@@ -44,10 +44,11 @@ Fonctionnalité: Mise à jour en masse des métadonnées de gestion avec vérifi
         Alors le statut final du journal des opérations est KO
 
 
-    Scénario: Ajout d'un champ non autorisé - KO
-      Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_Caracteres_Asiatiques.zip
+    Scénario:  Modifier le profil d'unité archivistique des unités archivistiques par un profil d'unité archivistique alors que certaines des unités archivistiques sont non conformes à ce profil d'unité archivistique - Warning
+      Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_Caracteres_Asiatiques.zip
+      Et les données du jeu de test du SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_maj_masse
       Etant donné un document type nommé data/archiveUnitProfiles/aup_ok_masseupdate_schema_masseUpdatejson
       Et je fais un import du document type
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdg_au_nonConforme_aup_ko.json
       Et je lance la mise à jour de masse des units
-      Alors le statut final du journal des opérations est K0
+      Alors le statut final du journal des opérations est WARNING
