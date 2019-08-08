@@ -127,3 +127,9 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et le champ 'evDetData' de l'évenement final est : "Duplicate Field" : "The archive unit profile identifier AUP_IDENTIFIER already exists in database"
+    Etant donné un document type nommé data/archiveUnitProfiles/empty_array.json
+    Alors je fais un import du document type
+    Et le statut final du journal des opérations est OK
+    Etant donné un document type nommé data/archiveUnitProfiles/aup_BASE_CUSTOM_ok.json
+    Alors je fais un import du document type
+    Et le statut final du journal des opérations est OK
