@@ -95,52 +95,52 @@
         },
         {
           "$eq": {
-            "Event.EventDateTime": "2016-06-03T15:28:00"
+            "Event.evDateTime": "2016-06-03T15:28:00"
           }
         },
         {
           "$eq": {
-            "Event.EventIdentifier": "EventIdentifier_content0"
+            "Event.evId": "EventIdentifier_content0"
           }
         },
         {
           "$eq": {
-            "Event.EventTypeCode": "EventTypeCode_content0"
+            "Event.evTypeProc": "EventTypeCode_content0"
           }
         },
         {
           "$eq": {
-            "Event.EventType": "EventType_content0"
+            "Event.evType": "EventType_content0"
           }
         },
         {
           "$eq": {
-            "Event.EventDateTime": "2016-06-03T15:28:00"
+            "Event.evDateTime": "2016-06-03T15:28:00"
           }
         },
         {
           "$eq": {
-            "Event.EventDetail": "EventDetail_content0"
+            "Event.evTypeDetail": "EventDetail_content0"
           }
         },
         {
           "$eq": {
-            "Event.Outcome": "Outcome0"
+            "Event.outcome": "Outcome0"
           }
         },
         {
           "$eq": {
-            "Event.OutcomeDetail": "OutcomeDetail_content0"
+            "Event.outDetail": "OutcomeDetail_content0"
           }
         },
         {
           "$eq": {
-            "Event.OutcomeDetailMessage": "OutcomeDetailMessage_content0"
+            "Event.outMessg": "OutcomeDetailMessage_content0"
           }
         },
         {
           "$eq": {
-            "Event.EventDetailData": "EventDetailData_content0"
+            "Event.evDetData": "EventDetailData_content0"
           }
         },
         {
