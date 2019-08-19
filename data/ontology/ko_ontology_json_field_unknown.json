@@ -689,6 +689,7 @@
     "Origin": "INTERNAL",
     "ShortName": "Algorithme",
     "Collections": [
+      "Unit",
       "ObjectGroup"
     ]
   },
@@ -1385,6 +1386,7 @@
     "Origin": "INTERNAL",
     "ShortName": "Empreinte",
     "Collections": [
+      "Unit",
       "ObjectGroup"
     ]
   },
