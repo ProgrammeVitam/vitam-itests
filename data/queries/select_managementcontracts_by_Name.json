@@ -1,0 +1,12 @@
+{
+  "$query": {
+    "$and": [
+      {
+        "$match": {
+          "Name": "MCNoStorage"
+        }
+      }
+    ]
+  },
+  "$projection": {}
+}
