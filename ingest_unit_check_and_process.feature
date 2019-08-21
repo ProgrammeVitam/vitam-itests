@@ -229,7 +229,6 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
 ### OK
 
   Scénario: Test SIP ayant un document type (archive unit profile)
-    Etant donné les tests effectués sur le tenant 1
     Et un fichier SIP nommé data/SIP_OK/ZIP/OK_AU_with_archive_unit_profile.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
@@ -243,7 +242,6 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
 ### KO
 
   Scénario: Test SIP ayant un document type non existant
-    Etant donné les tests effectués sur le tenant 1
     Et un fichier SIP nommé data/SIP_KO/ZIP/KO_AU_with_wrong_archive_unit_profile.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
@@ -260,7 +258,6 @@ Fonctionnalité: uploader des fichiers SIP - UNIT_CHECK_AND_PROCESS
 """
 
   Scénario: Test SIP ne respectant pas le schéma de son document type
-    Etant donné les tests effectués sur le tenant 1
     Et un fichier SIP nommé data/SIP_KO/ZIP/KO_AU_with_incorrect_AUP_Schema.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
