@@ -88,31 +88,31 @@ Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
 
 # Update Management Contract
 
-  Scénario: MAJ du contrat d'entrèe unset identifier KO
+  Scénario: MAJ du contrat de gestion unset identifier KO
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
     Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion sans stockage
     Quand je modifie un contrat de type MANAGEMENT_CONTRACTS avec le fichier de requête suivant data/queries/update/ko/update_unset_identifier.json le statut de la requête est 400
 
-  Scénario: MAJ du contrat d'entrèe unset status KO
+  Scénario: MAJ du contrat de gestion unset status KO
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
     Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion sans stockage
     Quand je modifie un contrat de type MANAGEMENT_CONTRACTS avec le fichier de requête suivant data/queries/update/ko/update_unset_status.json le statut de la requête est 400
 
-  Scénario: MAJ du contrat d'entrèe unset creation date KO
+  Scénario: MAJ du contrat de gestion unset creation date KO
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
     Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion sans stockage
     Quand je modifie un contrat de type MANAGEMENT_CONTRACTS avec le fichier de requête suivant data/queries/update/ko/update_unset_creationdate.json le statut de la requête est 400
 
-  Scénario: MAJ du contrat d'entrèe set fake attribute KO
+  Scénario: MAJ du contrat de gestion set fake attribute KO
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
     Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion sans stockage
     Quand je modifie un contrat de type MANAGEMENT_CONTRACTS avec le fichier de requête suivant data/queries/update/ko/update_set_fake_attribute.json le statut de la requête est 400
 
-  Scénario: MAJ du contrat d'entrèe set fake status KO
+  Scénario: MAJ du contrat de gestion set fake status KO
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
     Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion sans stockage

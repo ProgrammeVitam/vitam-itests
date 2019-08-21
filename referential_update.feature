@@ -49,3 +49,7 @@ Fonctionnalité: Mise à jour des référentielles
   Scénario: MAJ du contrat d'entrèe set fake status KO
     Et je cherche un contrat de type INGEST_CONTRACTS et nommé ArchivalAgreement0
     Quand je modifie un contrat de type INGEST_CONTRACTS avec le fichier de requête suivant data/queries/update/ko/update_set_fake_status.json le statut de la requête est 400
+
+  Scénario: MAJ du contrat d'entrée set ManagementContractId KO
+    Et je cherche un contrat de type INGEST_CONTRACTS et nommé ArchivalAgreement0
+    Quand je modifie un contrat de type INGEST_CONTRACTS avec le fichier de requête suivant data/queries/update/ko/update_set_unknown_mc.json le statut de la requête est 400
