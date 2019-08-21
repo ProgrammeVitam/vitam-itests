@@ -57,15 +57,15 @@ Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
 ################################
 
 # Recherche de contrats de gestion
-
+  
   Scénario: MANAGEMENT_CONTRACTS - recherche d'un contrat de gestion existant
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
-    Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion avec stockage
+    Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion sans stockage
     Alors le contrat existe
     Et les métadonnées du contrat sont
-      | Identifier | MCDefaultStorageAll |
-      | Name       | Contrat de gestion avec stockage |
+      | Identifier | MCNoStorage |
+      | Name       | Contrat de gestion sans stockage |
 
   Scénario: MANAGEMENT_CONTRACTS - recherche d'un contrat de gestion non existant
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
