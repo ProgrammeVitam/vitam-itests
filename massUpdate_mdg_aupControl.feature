@@ -24,7 +24,7 @@ Fonctionnalité: Mise à jour en masse des métadonnées de gestion avec vérifi
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est OK
 
-    Scénario: Supprimer un AUP associé à des AU – OK
+    Scénario: Modifier un AUP associé à des AU – OK
         #Et les données du jeu de test du SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_maj_masse
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/delete_mdg_au_aup_ok.json
         Et je lance la mise à jour de masse des règles de gestion

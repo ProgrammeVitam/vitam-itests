@@ -9,7 +9,7 @@ Fonctionnalité: supprimer en masse des métadonnées de gestion d'une AU
 
   Scénario: Supprimer une catégorie de règle - RuleId
     Quand j'utilise le fichier de requête suivant data/queries/mass-update/delete_rule_RuleId.json
-    Et je lance la mise à jour de masse des règles de gestion
+    Et je lance la mise à jour de masse des units
     Alors le statut final du journal des opérations est WARNING
 
   Scénario: Supprimer la StartDate d'une catégorie de règle

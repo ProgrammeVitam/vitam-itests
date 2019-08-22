@@ -13,6 +13,8 @@ Fonctionnalité: Modifier en masse des métadonnées descriptives d'une AU
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_title.json
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est OK
+      Quand je recherche le JCV de l'unité archivistique dont le titre est Factures
+
 
     Scénario: Modifier une métadonnée descriptive - Description
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_description.json
@@ -54,3 +56,5 @@ Fonctionnalité: Modifier en masse des métadonnées descriptives d'une AU
       Et je lance la mise à jour de masse des units
       Alors le statut final du journal des opérations est KO
       ## il faut tester également que les modifications sont présentes dans le JCV des AU
+
+

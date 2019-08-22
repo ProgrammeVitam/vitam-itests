@@ -24,8 +24,10 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
 
     Scénario: Ajouter une règle avec un champ inconnu - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_unknownFieldRule_ko.json
-        Et je lance la mise à jour de masse des règles de gestion
-        Alors le statut final du journal des opérations est KO
+        #Et je lance la mise à jour de masse des règles de gestion
+        #Alors le statut final du journal des opérations est KO
+        Alors les metadonnées sont
+            | Code           | 401   |
 
     Scénario: Ajouter une règle avec un refNonRuleId inconnue - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_unknownRefNonRuleIdRule_ko.json
@@ -44,8 +46,10 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
 
     Scénario: Ajouter une catégorie de règle avec PreventInheritance dont la valeur n'est pas conforme - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_fakePreventInheritanceRule_ko.json
-        Et je lance la mise à jour de masse des règles de gestion
-        Alors le statut final du journal des opérations est KO
+        #Et je lance la mise à jour de masse des règles de gestion
+        #Alors le statut final du journal des opérations est KO
+        Alors les metadonnées sont
+           | Code           | 400   |
 
     Scénario: Ajouter une catégorie avec un FinalAction non conforme - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_nonCompliantFinalActionRule_ko.json
