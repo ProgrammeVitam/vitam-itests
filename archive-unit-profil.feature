@@ -24,12 +24,6 @@ Fonctionnalité: Tests d'import et de recherche de documents type
 
 ################################################################################################################
 
-  Scénario: Tentative d'import KO d'un document type déjà existant
-    Etant donné un document type nommé data/archiveUnitProfiles/archive_unit_profiles_ok.json
-    Alors je fais un import du document type
-    Et le statut final du journal des opérations est KO
-    Et le champ 'evDetData' de l'évenement final est : "Duplicate Field" : "The archive unit profile identifier AUP_IDENTIFIER already exists in database"
-
   Scénario: Tentative d'import KO d'un document type avec un champ obligatoire manquant
     Etant donné un document type nommé data/archiveUnitProfiles/document_type_KO_Champsrequisvides.json
     Alors je fais un import du document type
@@ -63,17 +57,18 @@ Fonctionnalité: Tests d'import et de recherche de documents type
 
 
 ###################################################################################################################
-
-################################################################################################################
+  Scénario: Tentative d'import KO d'un document type déjà existant
+    Etant donné les tests effectués sur le tenant 0
+    Etant donné un document type nommé data/archiveUnitProfiles/archive_unit_profiles_ok.json
+    Alors je fais un import du document type
+    Et le statut final du journal des opérations est OK
+    Etant donné un document type nommé data/archiveUnitProfiles/archive_unit_profiles_ok.json
+    Alors je fais un import du document type
+    Et le statut final du journal des opérations est KO
+    Et le champ 'evDetData' de l'évenement final est : "Duplicate Field" : "The archive unit profile identifier AUP_IDENTIFIER already exists in database"
 
   Scénario: Import de document type avec schéma
+    Etant donné les tests effectués sur le tenant 0
     Etant donné un document type nommé data/archiveUnitProfiles/archive_unit_profile_ok_custom_schema.json
     Alors je fais un import du document type
     Et le statut final du journal des opérations est OK
-
-  Scénario: Recherche de document type avec schéma
-    Quand je cherche un document type nommé ArchiveUnitProfileWithCustomSchema
-    Alors le document type existe
-    Et les métadonnées du document type sont
-      | Name        | ArchiveUnitProfileWithCustomSchema           |
-      | Description | Test d'import d'un document type avec schéma |
