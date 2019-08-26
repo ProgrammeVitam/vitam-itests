@@ -22,13 +22,6 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est KO
 
-    Scénario: Ajouter une règle avec un champ inconnu - KO
-        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_unknownFieldRule_ko.json
-        #Et je lance la mise à jour de masse des règles de gestion
-        #Alors le statut final du journal des opérations est KO
-        Alors les metadonnées sont
-            | Code           | 401   |
-
     Scénario: Ajouter une règle avec un refNonRuleId inconnue - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_unknownRefNonRuleIdRule_ko.json
         Et je lance la mise à jour de masse des règles de gestion
