@@ -37,13 +37,6 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est KO
 
-    Scénario: Ajouter une catégorie de règle avec PreventInheritance dont la valeur n'est pas conforme - KO
-        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_fakePreventInheritanceRule_ko.json
-        #Et je lance la mise à jour de masse des règles de gestion
-        #Alors le statut final du journal des opérations est KO
-        Alors les metadonnées sont
-           | Code           | 400   |
-
     Scénario: Ajouter une catégorie avec un FinalAction non conforme - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_nonCompliantFinalActionRule_ko.json
         Et je lance la mise à jour de masse des règles de gestion
@@ -51,11 +44,6 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
 
     Scénario: Ajouter une ClassificationRule avec ClassificationLevel inconnu - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_unknownClassificationLevelRule_ko.json
-        Et je lance la mise à jour de masse des règles de gestion
-        Alors le statut final du journal des opérations est KO
-
-    Scénario: Ajouter une ClassificationRule sans ClassificationLevel - KO
-        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_withoutClassificationLevelRule_ko.json
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est KO
 
@@ -67,21 +55,21 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
     ## ajouter l'AU est sa descendance au panier
     Scénario: Ajouter RefNonRuleId alors qu'un PreventInheritance s'applique déjà sur une catégorie de règle- WARNING
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/select_au_byTitle.json
-        Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre TitreAU Saint Lazare
-        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_refNonRuleId_preventInheritance
+        Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Saint Lazare
+        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_refNonRuleId_preventInheritance.json
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est WARNING
 
     Scénario: Ajouter PreventInheritance alors qu'un RefNonRuleId s'applique déjà sur une catégorie de règle- WARNING
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/select_au_byTitle.json
         Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre TitreAU Saint Lazare
-        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_preventInheritance_refNonRuleId
+        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_preventInheritance_refNonRuleId.json
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est WARNING
 
    Scénario: Ajouter RefNonRuleId alors qu'un RefNonRuleId s'applique déjà sur une catégorie de règle- OK
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/select_au_byTitle.json
         Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre TitreAU Saint Lazare
-        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_refNonRuleId_refNonRuleId
+        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_refNonRuleId_refNonRuleId.json
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est OK
