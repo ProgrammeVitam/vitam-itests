@@ -13,8 +13,8 @@
         {
             "$setregex": {
                 "$target": "Title",
-                "$controlPattern": "Fractures",
-                "$updatePattern": "Factures"
+                "$controlPattern": "Fracture",
+                "$updatePattern": "new_title"
             }
         }
     ],

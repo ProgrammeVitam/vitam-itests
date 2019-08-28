@@ -16,7 +16,7 @@
     "update": [],
     "delete": [],
     "addOrUpdateMetadata": {
-       "ArchiveUnitProfile": "AUP_Mail_MassUpddate"
+       "ArchiveUnitProfile": "AUP-000001"
     },
     "deleteMetadata": {}
   }

@@ -55,7 +55,9 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
     ## ajouter l'AU est sa descendance au panier
     Scénario: Ajouter RefNonRuleId alors qu'un PreventInheritance s'applique déjà sur une catégorie de règle- WARNING
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/select_au_byTitle.json
-        Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Saint Lazare
+        Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Saint-Lazare
+        Et je recherche les unités archivistiques
+        Alors le nombre de résultat est 1
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_refNonRuleId_preventInheritance.json
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est WARNING
@@ -68,8 +70,11 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
         Alors le statut final du journal des opérations est WARNING
 
    Scénario: Ajouter RefNonRuleId alors qu'un RefNonRuleId s'applique déjà sur une catégorie de règle- OK
-        Quand j'utilise le fichier de requête suivant data/queries/mass-update/select_au_byTitle.json
-        Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre TitreAU Saint Lazare
-        Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_refNonRuleId_refNonRuleId.json
-        Et je lance la mise à jour de masse des règles de gestion
-        Alors le statut final du journal des opérations est OK
+       Quand j'utilise le fichier de requête suivant data/queries/mass-update/select_au_byTitle.json
+       Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Saint-Lazare
+       Et je recherche les unités archivistiques
+       Alors le nombre de résultat est 1
+       Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_refNonRuleId_refNonRuleId.json
+       Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Saint-Lazare
+       Et je lance la mise à jour de masse des règles de gestion
+       Alors le statut final du journal des opérations est OK

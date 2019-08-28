@@ -21,7 +21,8 @@
               "OldRule": "APP-00002",
               "Rule": "APP-00001"
             }
-          ]
+          ],
+          "FinalAction": "Destroy"
         }
       }
     ],

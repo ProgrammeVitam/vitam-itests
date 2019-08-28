@@ -1,27 +1,30 @@
 {
-  "$roots": ["{{guid}}"],
+  "$roots": [
+    "{{guid}}"
+  ],
   "$query": [
-       {
-            "$and": [
-                 {
-                      "$in": {
-                           "#operations": [
-                                "Operation-Id"
-                           ]
-                      }
-                 }, 
-                 {
-                   "$eq": {
-                     "Title": "Saint-Lazare"
-                  }
-                 }
+    {
+      "$and": [
+        {
+          "$in": {
+            "#operations": [
+              "Operation-Id"
             ]
-       }
+          }
+        },
+        {
+          "$eq": {
+            "Title": "Saint-Lazare"
+          }
+        }
+      ],
+      "$depth": 0
+    }
   ],
   "$projection": {
-       "$fields": {
-            "#id": 1,
-            "Title": 1
-       }
+    "$fields": {
+      "#id": 1,
+      "Title": 1
+    }
   }
 }
