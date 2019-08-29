@@ -58,12 +58,13 @@ Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
 
 # Recherche de contrats de gestion
   
-  Scénario: MANAGEMENT_CONTRACTS - recherche d'un contrat de gestion existant
+  Scénario: MANAGEMENT_CONTRACTS - recherche d'un contrat de gestion existant par une requête sur le champ Identifier
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
-    Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion sans stockage
-    Alors le contrat existe
-    Et les métadonnées du contrat sont
+    Quand j'utilise le fichier de requête suivant data/queries/select_managementcontracts_by_Identifier.json
+    Et je recherche les données dans le référentiel MANAGEMENT_CONTRACTS
+    Alors le nombre de résultat est 1
+    Et les métadonnées sont
       | Identifier | MCNoStorage |
       | Name       | Contrat de gestion sans stockage |
 
@@ -72,16 +73,6 @@ Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
     Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé FAKE-FAKE-FAKE-FAKE-FAKE
     Alors le contrat n'existe pas
-
-  Scénario: MANAGEMENT_CONTRACTS - recherche d'un contrat de gestion par requête sur le champ Name
-    Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
-    Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
-    Quand j'utilise le fichier de requête suivant data/queries/select_managementcontracts_by_Name.json
-    Et je cherche un contrat de type MANAGEMENT_CONTRACTS et nommé Contrat de gestion avec stockage
-    Alors le contrat existe
-    Et les métadonnées du contrat sont
-      | Identifier | MCNoStorage |
-      | Name       | Contrat de gestion sans stockage |
 
 
 ################################
