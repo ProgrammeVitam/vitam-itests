@@ -2,7 +2,7 @@
   "$query": {
     "$and": [
       {
-        "$match": {
+        "$eq": {
           "Identifier": "MCNoStorage"
         }
       }
