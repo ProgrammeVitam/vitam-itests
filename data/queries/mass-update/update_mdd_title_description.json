@@ -14,7 +14,14 @@
             "$setregex": {
                 "$target": "Title",
                 "$controlPattern": "Fractures",
-                "$updatePattern": "Factures"
+                "$updatePattern": "Radiographie des fractures"
+            }
+        },
+        {
+            "$setregex": {
+                "$target": "Description",
+                "$controlPattern": "le passage des TNR",
+                "$updatePattern": "le passage des TNR de modification en masse"
             }
         }
     ],

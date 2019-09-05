@@ -1,0 +1,30 @@
+{
+ "dslRequest": {
+  "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+            "Operation-Id"
+        ]
+      }
+    } ],
+   "$threshold": 10000
+ },
+ "ruleActions": {
+   "add": [
+       {
+       "DisseminationRule": {
+         "PreventInheritance": "Vrai"
+       }
+     }
+   ],
+   "update": [
+   ],
+   "delete": [
+   ],
+   "addOrUpdateMetadata" : {
+},
+"deleteMetadata": {
+}
+ }
+}

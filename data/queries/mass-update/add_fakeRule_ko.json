@@ -1,0 +1,35 @@
+{
+ "dslRequest": {
+  "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+          "Operation-Id"
+        ]
+      }
+    } ],
+   "$threshold": 10000
+ },
+ "ruleActions": {
+   "add": [
+     {
+       "AccessRule": {
+         "Rules": [
+           {
+             "Rule": "ACC-12345",
+             "StartDate": "2018-11-14T00:00:00.000Z"
+           }
+         ]
+       }
+     }
+   ],
+   "update": [
+   ],
+   "delete": [
+   ],
+   "addOrUpdateMetadata" : {
+},
+"deleteMetadata": {
+}
+ }
+}

@@ -1,0 +1,28 @@
+{
+  "dslRequest": {
+    "$roots": [],
+    "$query": [
+      {
+        "$and":[
+          {
+        "$in": {
+            "#operations": [
+              "Operation-Id"            ]
+          }
+      },
+      { "$eq" : { "ArchiveUnitProfile": "ArchiveUnitProfile" } }
+        ]
+      }
+    ],
+    "$threshold": 10000
+  },
+  "ruleActions": {
+    "add": [],
+    "update": [],
+    "delete": [],
+    "addOrUpdateMetadata": {
+       "ArchiveUnitProfile": "ArchiveUnitProfile"
+    },
+    "deleteMetadata": {}
+  }
+}

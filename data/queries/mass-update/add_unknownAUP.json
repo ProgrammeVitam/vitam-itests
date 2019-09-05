@@ -1,0 +1,23 @@
+{
+  "dslRequest": {
+    "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+          "Operation-Id"
+        ]
+      }
+    } ],
+    "$threshold": 10000
+  },
+  "ruleActions": {
+    "add": [],
+    "update": [],
+    "delete": [],
+    "addOrUpdateMetadata": {
+      "ArchiveUnitProfile": "AUP-020191"
+},
+    "deleteMetadata": {
+    }
+  }
+}

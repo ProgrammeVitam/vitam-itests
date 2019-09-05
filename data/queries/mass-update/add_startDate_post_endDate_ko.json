@@ -1,0 +1,24 @@
+{
+  "$roots": [],
+    "$query": [  {
+          "$in": {
+         "#operations": [
+            "Operation-Id"
+        ]
+      }
+  }
+  ],
+  "$action": [
+    {
+      "$set": {
+        "StartDate": "2020-01-01T08:07:06.487"
+        }
+    },
+    {
+      "$set": {
+        "EndDate": "2019-01-01T08:07:06.487"
+        }
+    }
+  ],
+  "$threshold": 10000
+}

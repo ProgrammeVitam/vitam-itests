@@ -1,0 +1,16 @@
+{
+  "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+            "Operation-Id"
+        ]
+      }
+    } ],
+  "$action": [
+    {
+      "$set": { "DescriptionLevel": "Pièce" }
+      }
+  ],
+      "$threshold": 10000
+}

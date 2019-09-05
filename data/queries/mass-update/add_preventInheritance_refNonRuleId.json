@@ -1,0 +1,37 @@
+
+{
+  "dslRequest": {
+    "$roots": [],
+    "$query": [
+      {
+        "$or": [
+          {
+            "$eq": {
+              "#id": "{{guid}}"
+            }
+          },
+          {
+            "$eq": {
+              "#allunitups": "{{guid}}"
+            }
+          }
+        ]
+      }
+    ],
+    "$threshold": 10000
+  },
+  "ruleActions": {
+    "add": [
+      {
+        "StorageRule": {
+          "PreventInheritance": "true",
+           "FinalAction": "Copy"
+        }
+      }
+    ],
+    "update": [],
+    "delete": [],
+    "addOrUpdateMetadata": {},
+    "deleteMetadata": {}
+  }
+}

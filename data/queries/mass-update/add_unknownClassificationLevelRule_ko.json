@@ -1,0 +1,31 @@
+{
+ "dslRequest": {
+  "$roots": [],
+    "$query": [ {
+      "$in": {
+        "#operations": [
+            "Operation-Id"
+        ]
+      }
+    } ],
+   "$threshold": 10000
+ },
+ "ruleActions": {
+   "add": [
+       {
+       "ClassificationRule": {
+         "ClassificationLevel": "toto",
+         "ClassificationOwner": "Vitam"
+       }
+     }
+   ],
+   "update": [
+   ],
+   "delete": [
+   ],
+   "addOrUpdateMetadata" : {
+},
+"deleteMetadata": {
+}
+ }
+}
