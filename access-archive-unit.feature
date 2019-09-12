@@ -7,9 +7,9 @@ Fonctionnalité: Recherche une archive unit existante
     Etant donné les tests effectués sur le tenant 0
     Et un contract nommé data/contracts/contract_access_every_originating_agency.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
-    Et un contract nommé data/Linagora_IT19_contrat/upload_tenant_0/contrat_modification_autorisees.json
+    Et un contract nommé data/contracts/access/contrat_modification_autorisees.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
-    Et un contract nommé data/Linagora_IT19_contrat/upload_tenant_0/contrat_modification_interdites.json
+    Et un contract nommé data/contracts/access/contrat_modification_interdites.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
 
   Scénario: Import de contrat de type contract accès
@@ -18,24 +18,24 @@ Fonctionnalité: Recherche une archive unit existante
     Alors j'importe ce contrat sans échec de type ACCESS_CONTRACTS
 
   Scénario: Import de contrat de type contract accès
-    Etant donné un contract nommé data/Linagora_IT19_contrat/upload_tenant_0/contrat_inactif_tous_producteurs.json
+    Etant donné un contract nommé data/contracts/access/contrat_inactif_tous_producteurs.json
     Et les tests effectués sur le tenant 1
     Alors j'importe ce contrat sans échec de type ACCESS_CONTRACTS
 
   Scénario: Import de contrat de type contract accès
-    Etant donné un contract nommé data/Linagora_IT19_contrat/upload_tenant_0/contrat_tous_producteur.json
+    Etant donné un contract nommé data/contracts/access/contrat_tous_producteur.json
     Et les tests effectués sur le tenant 1
     Alors j'importe ce contrat sans échec de type ACCESS_CONTRACTS
 
   Scénario: Import de contrat de type contract accès
-    Etant donné un contract nommé data/Linagora_IT19_contrat/upload_tenant_0/contrat_producteur1.json
+    Etant donné un contract nommé data/contracts/access/contrat_producteur1.json
     Et les tests effectués sur le tenant 1
     Alors j'importe ce contrat sans échec de type ACCESS_CONTRACTS
 
   Scénario: US2230 --  chercher une unité archivistique nommée “Galliéni”, en utilisant un identifiant de contrat inconnu sur ce tenant mais connu sur un autre tenant “contrat_tous_producteur”
     Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id contrat_tous_producteur
-    Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
+    Et un fichier SIP nommé data/SIP_OK/ZIP/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
     Et j'utilise le fichier de requête suivant data/queries/select_Gallieni.json
     Alors le statut de select résultat est Unauthorized
@@ -43,7 +43,7 @@ Fonctionnalité: Recherche une archive unit existante
   Scénario: US2230 -- chercher cette même unité, mais en utilisant un contrat inactif “contrat_inactif_tous_producteurs”
     Etant donné les tests effectués sur le tenant 1
     Et les tests effectués sur le contrat id contrat_inactif_tous_producteurs
-    Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
+    Et un fichier SIP nommé data/SIP_OK/ZIP/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
     Et j'utilise le fichier de requête suivant data/queries/select_Gallieni.json
     Alors le statut de select résultat est Unauthorized
@@ -51,7 +51,7 @@ Fonctionnalité: Recherche une archive unit existante
   Scénario: US2232 -- éditer des métadonnées avec succès
     Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id contrat_modification_autorisees
-    Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
+    Et un fichier SIP nommé data/SIP_OK/ZIP/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
@@ -66,7 +66,7 @@ Fonctionnalité: Recherche une archive unit existante
   Scénario: US2232 -- éditer des métadonnées sans succès
     Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id contrat_modification_interdites
-    Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
+    Et un fichier SIP nommé data/SIP_OK/ZIP/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
@@ -80,7 +80,7 @@ Fonctionnalité: Recherche une archive unit existante
   Scénario: US2231 -- Sélectionner le contrat “contrat_producteur1”
     Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id ContratTNR
-    Et un fichier SIP nommé data/Linagora_IT19_contrat/upload_tenant_0/Gallieni_metro_producteur1.zip
+    Et un fichier SIP nommé data/SIP_OK/ZIP/Gallieni_metro_producteur1.zip
     Quand je télécharge le SIP
     Et j'utilise le fichier de requête suivant data/queries/select_accession_register_by_opc.json
     Et je recherche les détails des registres de fond pour le service producteur producteur1
