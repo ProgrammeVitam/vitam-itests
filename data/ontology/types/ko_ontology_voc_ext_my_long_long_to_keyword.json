@@ -3014,6 +3014,17 @@
     ]
   },
   {
+    "Identifier": "ComputeInheritedRulesAtIngest",
+    "ApiField": "ComputeInheritedRulesAtIngest",
+    "Description": "Mapping : ingestcontract-es-mapping.json",
+    "Type": "BOOLEAN",
+    "Origin": "INTERNAL",
+    "ShortName": "Execute ComputedInheritedRules at ingest",
+    "Collections": [
+      "IngestContract"
+    ]
+  },
+  {
     "Identifier": "MaxEndDate",
     "Description": "Date de fin maximale",
     "Type": "DATE",
