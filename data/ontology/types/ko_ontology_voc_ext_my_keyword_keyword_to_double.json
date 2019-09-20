@@ -1657,6 +1657,17 @@
     ]
   },
   {
+    "Identifier": "RuleCategoryToFilter",
+    "ApiField": "RuleCategoryToFilter",
+    "Description": "Mapping : accesscontract-es-mapping.json",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "Liste des catégories de règles à filtrer",
+    "Collections": [
+      "AccessContract"
+    ]
+  },
+  {
     "Identifier": "RootUnits",
     "ApiField": "RootUnits",
     "Description": "Mapping : accesscontract-es-mapping.json",
@@ -2156,6 +2167,17 @@
     "Type": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Formats non identifiés autorisés",
+    "Collections": [
+      "IngestContract"
+    ]
+  },
+  {
+    "Identifier": "ComputeInheritedRulesAtIngest",
+    "ApiField": "ComputeInheritedRulesAtIngest",
+    "Description": "Mapping : ingestcontract-es-mapping.json",
+    "Type": "BOOLEAN",
+    "Origin": "INTERNAL",
+    "ShortName": "Execute ComputedInheritedRules at ingest",
     "Collections": [
       "IngestContract"
     ]
@@ -3011,17 +3033,6 @@
     "ShortName": "validComputedInheritedRules",
     "Collections": [
       "Unit"
-    ]
-  },
-  {
-    "Identifier": "ComputeInheritedRulesAtIngest",
-    "ApiField": "ComputeInheritedRulesAtIngest",
-    "Description": "Mapping : ingestcontract-es-mapping.json",
-    "Type": "BOOLEAN",
-    "Origin": "INTERNAL",
-    "ShortName": "Execute ComputedInheritedRules at ingest",
-    "Collections": [
-      "IngestContract"
     ]
   },
   {
