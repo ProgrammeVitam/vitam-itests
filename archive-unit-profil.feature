@@ -79,7 +79,7 @@ Fonctionnalité: Tests d'import et de recherche de documents type
 
 
     Scénario: Import de document type incluant un schéma de contrôle avec vocabulaire externe - OK
-    Etant donné un document type nommé data/archiveUnitProfiles/aup_ok_notice_schema_voc_ext_all_types.json
+    Etant donné un document type nommé data/archiveUnitProfiles/aup_ok_schemaControl_vocExtAllTypes.json
     Quand je fais un import du document type
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK

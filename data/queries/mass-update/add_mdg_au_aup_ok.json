@@ -1,12 +1,22 @@
 {
   "dslRequest": {
     "$roots": [],
-    "$query": [{
-        "$in": {
-            "#operations": [
-              "Operation-Id"
-            ]
+    "$query": [
+      {
+        "$and": [
+          {
+            "$in": {
+              "#operations": [
+                "Operation-Id"
+              ]
+            }
+          },
+          {
+            "$eq": {
+              "Title": "Reportage sur TF1 pour le TNR"
+            }
           }
+        ]
       }
     ],
     "$threshold": 10000
@@ -16,7 +26,7 @@
     "update": [],
     "delete": [],
     "addOrUpdateMetadata": {
-       "ArchiveUnitProfile": "AUP-000001"
+      "ArchiveUnitProfile": "AUP_Mail_MassUpddate"
     },
     "deleteMetadata": {}
   }
