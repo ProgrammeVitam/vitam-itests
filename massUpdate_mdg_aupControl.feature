@@ -31,6 +31,7 @@ Fonctionnalité: Mise à jour en masse des métadonnées de gestion avec vérifi
     Scénario: Modifier l'AUP associé à des AU alors qu'on n'a pas les droits d'écriture sur les métadonnées de gestion
         Et J'utilise le contrat d'access OnlyDescUpdateAllowed
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_aup_onlyDesUpdateAlloweddContrat_ko.json
+        Et je lance la mise à jour de masse des règles de gestion pour avoir les codes réponses
         Alors les metadonnées sont
               | Code           | 401   |
 
@@ -41,8 +42,7 @@ Fonctionnalité: Mise à jour en masse des métadonnées de gestion avec vérifi
 
 
     Scénario:  Modifier le profil d'unité archivistique des unités archivistiques par un profil d'unité archivistique alors que certaines des unités archivistiques sont non conformes à ce profil d'unité archivistique - Warning
-      Etant donné un document type nommé data/archiveUnitProfiles/aup_ok_masseupdate_schema_masseUpdate.json
-      Et je fais un import du document type
+      Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_maj_masse_aupControl.zip
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdg_au_nonConforme_aup_ko.json
       Et je lance la mise à jour de masse des règles de gestion
-      Alors le statut final du journal des opérations est WARNING
+      Alors le statut final du journal des opérations est OK
