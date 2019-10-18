@@ -2,4 +2,5 @@
 .idea
 vitam-itests.iml
 .project
-
+.directory
+.gitignore
