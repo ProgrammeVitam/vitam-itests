@@ -49,18 +49,16 @@ Scénario: import OK de contrats d'entrée avec le champ FormatUnidentifiedAutho
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
 
-# Should we make a test that work ?
-#  Scénario: Import de contrat avec un minimum d'informations
-#    Etant donné un contract nommé data/contracts/entree/contract_minimal.json
-#    Alors j'importe ce contrat de type INGEST_CONTRACTS
-#    Quand je cherche un contrat de type INGEST_CONTRACTS et nommé Minimal_contract_with_the_less_fields_as_possible
-#    Alors le contrat existe
-#    Et les métadonnées du contrat sont
-#      | Status                 | INACTIVE    |
-#      | CheckParentLink        | INACTIVE    |
-#      | MasterMandatory        | true        |
-#      | EveryDataObjectVersion | false       |
-#test KO IHM recette / KO local
+  Scénario: Import de contrat avec un minimum d'informations
+    Etant donné un contract nommé data/contracts/entree/contract_minimal.json
+    Alors j'importe ce contrat de type INGEST_CONTRACTS
+    Quand je cherche un contrat de type INGEST_CONTRACTS et nommé Minimal_contract_with_the_less_fields_as_possible
+    Alors le contrat existe
+    Et les métadonnées du contrat sont
+      | Status                 | INACTIVE    |
+      | CheckParentLink        | AUTHORIZED  |
+      | MasterMandatory        | true        |
+      | EveryDataObjectVersion | false       |
 
 # Cas KO
 
