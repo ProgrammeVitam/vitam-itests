@@ -1,27 +1,28 @@
-
 {
- "dslRequest": {
-  "$roots": [],
-    "$query": [ {
-      "$in": {
-        "#operations": [
-          "Operation-Id"
-        ]
+  "dslRequest": {
+    "$roots": [],
+    "$query": [
+      {
+        "$in": {
+          "#operations": [
+            "Operation-Id"
+          ]
+        }
       }
-    } ],
-   "$threshold": 10000
- },
- "ruleActions": {
-   "add": [
-   ],
-   "update": [
-   ],
-   "delete": [
-   ],
-   "addOrUpdateMetadata" : {
-      "ArchiveUnitProfile": "AUP_MassUpdate"
-},
-"deleteMetadata": {
-}
- }
+    ],
+    "$threshold": 10000
+  },
+  "ruleActions": {
+    "add": [
+    ],
+    "update": [
+    ],
+    "delete": [
+    ],
+    "addOrUpdateMetadata": {
+      "ArchiveUnitProfile": "AUP_Mail_MassUpddate"
+    },
+    "deleteMetadata": {
+    }
+  }
 }

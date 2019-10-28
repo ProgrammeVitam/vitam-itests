@@ -3,14 +3,14 @@
     "$roots": [],
     "$query": [
       {
-        "$and":[
+        "$and": [
           {
-        "$in": {
-            "#operations": [
-              "Operation-Id"            ]
+            "$in": {
+              "#operations": [
+                "Operation-Id"
+              ]
+            }
           }
-      },
-      { "$eq" : { "ArchiveUnitProfile": "ArchiveUnitProfile" } }
         ]
       }
     ],
@@ -21,7 +21,7 @@
     "update": [],
     "delete": [],
     "addOrUpdateMetadata": {
-       "ArchiveUnitProfile": "ArchiveUnitProfile"
+      "ArchiveUnitProfile": "AUP_Mail_MassUpddate"
     },
     "deleteMetadata": {}
   }
