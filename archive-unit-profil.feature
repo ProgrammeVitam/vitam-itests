@@ -86,7 +86,7 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Et les métadonnées du document type sont
           | Name        | AUP_NoticeAndSchemaTNR           |
           | Description | Ce document type définit le schéma de contrôle d'une unité archivistique incluant un schéma de contrôle avec des vocabulaires externes |
-          #| Fields      | ["_id","_og","ArchiveUnitProfile","DescriptionLevel","Title","MyKeyword","MyText","MyDate","MyBoolean","MyLong","MyDouble","MyGeoPoint","MyEnum"]                                 |
+          #| Fields      | ["ArchiveUnitProfile","DescriptionLevel","Title","MyKeyword","MyText","MyDate","MyBoolean","MyLong","MyDouble","MyGeoPoint","MyEnum"]                                 |
 # comparaison des tableau à intégrer pour que cette épape fonctionne
 
     Scénario: Import de document type incluant un schéma de controle avec vocabulaire externe non référencé dans l'ontologie - KO
