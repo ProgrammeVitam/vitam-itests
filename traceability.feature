@@ -41,7 +41,7 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Et je réalise un audit de traçabilité de la requete
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est WARNING
-    Et l'outcome détail de l'événement EVIDENCE_AUDIT_FINALIZE est EVIDENCE_AUDIT_FINALIZE.WARNING
+    Et l'outcome détail de l'événement EVIDENCE_AUDIT_PREPARE_REPORT est EVIDENCE_AUDIT_PREPARE_REPORT.WARNING
 
 
   Scénario: Test d'audit avec securisation
@@ -66,5 +66,5 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Et je réalise un audit de traçabilité de la requete
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
-    Et l'outcome détail de l'événement EVIDENCE_AUDIT_FINALIZE est EVIDENCE_AUDIT_FINALIZE.OK
+    Et l'outcome détail de l'événement EVIDENCE_AUDIT_PREPARE_REPORT est EVIDENCE_AUDIT_PREPARE_REPORT.OK
 
