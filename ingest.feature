@@ -136,3 +136,21 @@ Fonctionnalité: uploader des fichiers SIP
     Et les statuts des événements OG_OBJECTS_FORMAT_CHECK, STP_OG_CHECK_AND_TRANSFORME, PROCESS_SIP_UNITARY sont WARNING
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est WARNING
+
+  Scénario: Test SIP - Size of binary Object Incorrect
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/sip_incorrect_size.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est WARNING
+    Et les statuts des événements CHECK_SIZE, STP_OG_CHECK_AND_TRANSFORME sont WARNING
+    Quand je télécharge son fichier ATR
+    Alors l'état final du fichier ATR est WARNING
+
+  Scénario: Test SIP - Size of binary Object Missed
+    Etant donné un fichier SIP nommé data/SIP_KO/ZIP/sip_missed_size.zip
+    Quand je télécharge le SIP
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est WARNING
+    Et les statuts des événements CHECK_SIZE, STP_OG_CHECK_AND_TRANSFORME sont WARNING
+    Quand je télécharge son fichier ATR
+    Alors l'état final du fichier ATR est WARNING
