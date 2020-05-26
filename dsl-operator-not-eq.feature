@@ -1,6 +1,7 @@
 # language: fr
 
 @DslOperatorMatch
+  @This
 Fonctionnalité: DSL test opérateur eq
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
