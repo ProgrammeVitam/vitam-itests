@@ -142,7 +142,7 @@ Fonctionnalité: uploader des fichiers SIP
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est WARNING
-    Et les statuts des événements CHECK_SIZE, STP_OG_CHECK_AND_TRANSFORME sont WARNING
+    Et les statuts des événements CHECK_OBJECT_SIZE, STP_OG_CHECK_AND_TRANSFORME sont WARNING
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est WARNING
 
@@ -150,7 +150,7 @@ Fonctionnalité: uploader des fichiers SIP
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/sip_missed_size.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est WARNING
-    Et les statuts des événements CHECK_SIZE, STP_OG_CHECK_AND_TRANSFORME sont WARNING
+    Alors le statut final du journal des opérations est OK
+    Et les statuts des événements CHECK_OBJECT_SIZE, STP_OG_CHECK_AND_TRANSFORME, PROCESS_SIP_UNITARY sont OK
     Quand je télécharge son fichier ATR
-    Alors l'état final du fichier ATR est WARNING
+    Alors l'état final du fichier ATR est OK
