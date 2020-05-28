@@ -1,6 +1,6 @@
 # language: fr
 
-@_init
+@Preservation
 Fonctionnalité: Demo
 
   Contexte: Avant de lancer cette suite de tests, je présuppose qu'un contrat d'accès est chargé.

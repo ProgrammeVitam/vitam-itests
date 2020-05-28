@@ -1,6 +1,7 @@
 # language: fr
 
-@DslGraphRootNODEDepth
+@Dsl
+@DslGraph
 Fonctionnalité: DSL test sur les graphes avec root étant un noeud intermédiaire de l'arborescence et avec depth
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès

@@ -1,6 +1,7 @@
 # language: fr
 
-@ReferentialFormats
+@Formats
+@Referentials
 Fonctionnalité: gestion des données référentielles (vérification, import et recherche)
 
   Contexte: Avant de lancer cette suite de test, je présuppose que le référentiel DROID_SignatureFile_V95 est chargé (_init.feature)
@@ -12,6 +13,7 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
     Alors les metadonnées sont
       | Code           | 400                                     |
 
+  @Light
   Scénario: Vérification et import des formats OK, recherche par id OK, rechercher par name OK
     Quand je vérifie le fichier nommé data/formats/DROID_SignatureFile_V95.xml pour le référentiel FORMATS
     Alors les metadonnées sont

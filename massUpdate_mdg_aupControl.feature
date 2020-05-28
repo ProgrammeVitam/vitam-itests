@@ -1,5 +1,6 @@
 #language: fr
 
+@MassUpdate
 @massUpdateMdgAupControl
 Fonctionnalité: Mise à jour en masse des métadonnées de gestion avec vérification par rapport au profil d'unité archivistique (AUP)
 

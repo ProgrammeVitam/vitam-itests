@@ -1,5 +1,6 @@
 #language: fr
 
+@Dsl
 @DslOperatorIn
 Fonctionnalité: Test operateur EXISTS / NOT EXISTS du DSL
 

@@ -1,6 +1,8 @@
 # language: fr
 
-@AccessArchiveUnitRuleCalculationComplete
+@Access
+@ArchiveUnit
+@RuleCalculationComplete
 Fonctionnalité: Calcul des règles de gestion sur jeu de test complexe complet
 
 Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.

@@ -1,5 +1,6 @@
 # language: fr
 
+@Dsl
 @DslOperatorNE
 Fonctionnalité: DSL test opérateur ne
 

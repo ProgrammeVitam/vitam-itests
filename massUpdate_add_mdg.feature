@@ -1,5 +1,6 @@
 #language: fr
 
+@MassUpdate
 @massUpdateMddGestion
 Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
 
@@ -47,12 +48,12 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est KO
 
+    @Light
     Scénario: Ajouter un RuleId à des AU disposant déjà de règles
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_newRule.json
         Et je lance la mise à jour de masse des règles de gestion
         Alors le statut final du journal des opérations est OK
 
-    ## ajouter l'AU est sa descendance au panier
     Scénario: Ajouter RefNonRuleId alors qu'un PreventInheritance s'applique déjà sur une catégorie de règle- WARNING
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/select_au_byTitle.json
         Et j'utilise dans la requête le GUID de l'unité archivistique pour le titre Saint-Lazare

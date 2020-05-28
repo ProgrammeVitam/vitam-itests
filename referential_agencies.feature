@@ -1,6 +1,7 @@
 # language: fr
 
-@ReferentialAgencies
+@Agencies
+@Referentials
 Fonctionnalité: gestion des données référentielles agencies (vérification, import et recherche)
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les données du référentiel des services agents sont
@@ -9,6 +10,7 @@ Fonctionnalité: gestion des données référentielles agencies (vérification, 
     Etant donné les tests effectués sur le tenant 1
 
 ## Agencies
+  @Light
   Scénario: Vérification et import des services producteurs OK
     Quand je vérifie le fichier nommé data/agencies/agencies_init.csv pour le référentiel AGENCIES
     Alors les metadonnées sont

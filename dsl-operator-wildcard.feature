@@ -1,5 +1,6 @@
 #language: fr
 
+@Dsl
 @DslOperatorWildcard
 Fonctionnalité: Test operateur WILDWARD du DSL
 

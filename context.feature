@@ -1,11 +1,12 @@
 # language: fr
 
-@Contacts
+@Context
 Fonctionnalité: Tests d'imports et de recherches de contexte (entrée et accès)
 
   Contexte: Avant de lancer cette suite de test, je verifie qu'au moins un contrat est uploadé.
     Etant donné les tests effectués sur le tenant 1
 
+  @Light
   Scénario: Import de contexte OK
     Etant donné un fichier contexte nommé data/contexts/contexts_empty.json
     Alors j'importe ce contexte en succès
@@ -41,8 +42,6 @@ Fonctionnalité: Tests d'imports et de recherches de contexte (entrée et accès
   Scénario: Import de contexte KO,car il y a un champ statut manquant
         Etant donné un fichier contexte nommé data/contexts/contexte_ko_champ_statut_vide.json
         Alors j'importe ce contexte en échec
-
-#TNR ajoutés le 26/07/2018
 
   Scénario: Import de contexte KO,car il y a un objet qui n’existe pas dans Vitam
     Etant donné un fichier contexte nommé data/contexts/Contexte_KO_objet_inexistant.json

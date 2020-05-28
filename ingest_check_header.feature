@@ -1,5 +1,6 @@
 # language: fr
 
+@Ingest
 @Ingest_OG_CHECK_HEADER
 Fonctionnalité: uploader des fichiers SIP
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
@@ -22,7 +23,6 @@ Fonctionnalité: uploader des fichiers SIP
 
 ##### CHECK_HEADER.CHECK_AGENT #####
 
-  @CheckHeaderWithoutOriginatingAgency
   Scénario: Test SIP without originating agency KO
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_SIP_WHITOUT_ORIGINATING_AGENCY.zip
     Quand je télécharge le SIP
@@ -58,6 +58,7 @@ Fonctionnalité: uploader des fichiers SIP
 
 ## OK
 
+  @Light
   Scénario: Test upload SIP with valid contract OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
@@ -88,6 +89,7 @@ Fonctionnalité: uploader des fichiers SIP
     Alors le statut de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est KO
     Et l'outcome détail de l'événement CHECK_HEADER.CHECK_CONTRACT_INGEST est CHECK_HEADER.CHECK_CONTRACT_INGEST.CONTRACT_UNKNOWN.KO
 
+  @Light
   Scénario: Tester un contrat existant mais inactif
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/2194_IC_INACTIVE.zip
     Quand je télécharge le SIP

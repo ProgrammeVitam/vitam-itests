@@ -1,6 +1,7 @@
 # language: fr
 
-@Test
+@Security
+@ArchiveUnit
 Fonctionnalité: Unit : Test  de protection  d'api
 
 
@@ -8,6 +9,7 @@ Fonctionnalité: Unit : Test  de protection  d'api
     Etant donné les tests effectués sur le tenant 0
     Et un contract nommé data/contracts/contract_acces_TNR.json
 
+  @Light
   Scénario: Initial
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_SRC2_TITLE_DESC_UNITS_SANS_OBJ.zip

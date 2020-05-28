@@ -1,6 +1,6 @@
 #language: fr
 
-
+@MassUpdate
 Fonctionnalité: Modifier en masse des métadonnées descriptives alors que le contrat d'accès interdit l'accès à un service producteur
 
     Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès

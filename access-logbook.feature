@@ -1,6 +1,7 @@
 # language: fr
 
-@AccessLogbook
+@Access
+@Logbook
 Fonctionnalité: Recherche dans le journal des opérations
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès.
@@ -10,6 +11,7 @@ Fonctionnalité: Recherche dans le journal des opérations
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
+  @Light
   Scénario: Upload d'un SIP et vérification du contenu du champ "evDetData"
     Etant donné les tests effectués sur le tenant 0
     Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip

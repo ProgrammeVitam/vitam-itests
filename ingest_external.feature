@@ -1,11 +1,13 @@
 # language: fr
 
+@Ingest
 @Ingest_External
 Fonctionnalité: uploader des fichiers SIP
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
 
   Contexte:
     Etant donné les tests effectués sur le tenant 0
+
   # Je m'assure que les contracts d'entrée sont bient importés
   Scénario: Import de contrat de type contract Entree
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json

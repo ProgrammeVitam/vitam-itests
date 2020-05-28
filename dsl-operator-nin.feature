@@ -1,5 +1,6 @@
 #language: fr
 
+@Dsl
 @DslOperatorNin
 Fonctionnalité: Test operateur NIN du DSL
 

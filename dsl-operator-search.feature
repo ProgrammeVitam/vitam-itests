@@ -1,5 +1,6 @@
 #language: fr
 
+@Dsl
 @DslOperatorSearch
 Fonctionnalité: Test operateur SEARCH du DSL
 

@@ -1,6 +1,6 @@
 # language: fr
 
-@Referential
+@Referentials
 Fonctionnalité: Mise à jour des référentielles
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les référentiels à mettre à jour existent déjà.

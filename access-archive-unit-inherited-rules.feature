@@ -1,6 +1,7 @@
 # language: fr
 
-@AccessArchiveUnitRuleCalculationComplete
+@ArchiveUnit
+@InheritedRulesCalculationComplete
 Fonctionnalité: Calcul des règles de gestion sur jeu de test complexe complet
 
 Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
@@ -10,6 +11,7 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
+  @Light
   Scénario: Recherche une archive unit avec les règles héritées (1_Saint Denis Université (ligne 13))
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_RULES_EXTRA_COMPLEX.zip
     Quand j'utilise la requête suivante

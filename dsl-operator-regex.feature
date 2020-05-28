@@ -1,5 +1,6 @@
 #language: fr
 
+@Dsl
 @DslOperatorRegex
 Fonctionnalité: Test operateur REGEX du DSL
 

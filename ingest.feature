@@ -6,11 +6,12 @@ Fonctionnalité: uploader des fichiers SIP
 
   Contexte:
     Etant donné les tests effectués sur le tenant 0
-  # Je m'assure que les contracts d'entrée sont bient importés
+
   Scénario: Import de contrat de type contract Entree
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
     Alors j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
+  @Light
   Scénario: Test des différentes étapes OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP
@@ -38,6 +39,7 @@ Fonctionnalité: uploader des fichiers SIP
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
 
+  @Light
   Scénario: Arborescence rateau
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO_rateau.zip
     Quand je télécharge le SIP
@@ -92,6 +94,7 @@ Fonctionnalité: uploader des fichiers SIP
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
 
+  @Light
   Scénario: Test de l'indexation d'une arborescence complexe
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_ARBO-COMPLEXE.zip
     Quand je télécharge le SIP
