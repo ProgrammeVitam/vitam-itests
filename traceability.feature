@@ -21,7 +21,7 @@ Fonctionnalité: Génération journal des opérations sécurisé
 
   Scénario: Test d'audit sans securisation
     # Audit without traceability (forced new ingest)
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/3_UNITS_2_GOTS.zip
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
@@ -47,7 +47,7 @@ Fonctionnalité: Génération journal des opérations sécurisé
 
   Scénario: Test d'audit avec securisation
     # Audit with traceability (already ingested file in _prepareTraceability.feature, at least 5 minutes ago)
-    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/3_UNITS_2_GOTS.zip
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Quand on lance la traçabilité des journaux de cycles de vie des unités archivistiques
     Et on lance la traçabilité des journaux de cycles de vie des groupes d'objets
     Et j'utilise la requête suivante
