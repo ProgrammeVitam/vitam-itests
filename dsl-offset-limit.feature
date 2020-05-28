@@ -1,5 +1,6 @@
 #language: fr
 
+@Dsl
 @DslOffsetLimit
 Fonctionnalité: Test offset limit
 

@@ -1,6 +1,7 @@
 # language: fr
 
-@AccessArchiveUnit
+@Access
+@ArchiveUnit
 Fonctionnalité: Mise à jour d'une unité archivistique
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
@@ -10,6 +11,7 @@ Fonctionnalité: Mise à jour d'une unité archivistique
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
+  @Light
   Scénario: UPDATE1 : vérifier la bonne modification du titre et d'une description d'une unité d'archive
     Etant donné les tests effectués sur le tenant 0
     Et un fichier SIP nommé data/SIP_WARNING/ZIP/WARNING_SIP_SRC2_TITLE_DESC_UNITS_SANS_OBJ.zip

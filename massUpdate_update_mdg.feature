@@ -1,5 +1,6 @@
 #language: fr
 
+@MassUpdate
 @updateMdgGestion
 Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
 
@@ -8,6 +9,7 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
 
 ## ajouter l'AU et son entrée au panier
 
+  @Light
   Scénario: Modifier le RuleId dans une même catégorie de règle
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_MODIFICATION_MASSE.zip
     Quand je télécharge le SIP

@@ -1,5 +1,6 @@
 # language: fr
 
+@Ingest
 @Ingest_OG_CHECK_AND_TRANSFORME
 Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
@@ -14,6 +15,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
 
 ### OK
 
+  @Light
   Scénario: SIP avec une empreinte MD5
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP-test-md5.zip
     Quand je recherche le journal des opérations
@@ -55,6 +57,7 @@ Fonctionnalité: uploader des fichiers SIP - OG_CHECK_AND_TRANSFORME
 
 ### KO
 
+  @Light
   Scénario: Empreinte invalide
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_BORD_empreinte_KO.zip
     Quand je télécharge le SIP

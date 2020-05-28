@@ -1,6 +1,7 @@
 # language: fr
 
 @Contracts
+@ManagementContracts
 Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
 
   Contexte: Avant de lancer cette suite de test, je verifie qu'au moins un contrat est uploadé.
@@ -57,7 +58,8 @@ Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
 ################################
 
 # Recherche de contrats de gestion
-  
+
+  @Light
   Scénario: MANAGEMENT_CONTRACTS - recherche d'un contrat de gestion existant par une requête sur le champ Identifier
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
     Quand j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS

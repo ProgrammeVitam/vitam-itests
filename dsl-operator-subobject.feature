@@ -1,5 +1,6 @@
 # language: fr
 
+@Dsl
 @DslOperatorSubobject
 Fonctionnalité: DSL test opérateur subobject (nested)
 

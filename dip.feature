@@ -6,7 +6,7 @@ Fonctionnalité: Demo
   Contexte: Avant de lancer cette suite de tests, je présuppose qu'un contrat d'accès est chargé.
     Etant donné les tests effectués sur le tenant 0
 
-
+  @Light
   Scénario: Test demo
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/3_UNITS_2_GOTS.zip
     Quand j'utilise la requête suivante

@@ -1,6 +1,6 @@
 # language: fr
 
-@Contacts
+@Agencies
 Fonctionnalité: Tests d'imports et de recherche de services producteurs
 
   Contexte: un service producteur ne doit etre importé q'une seule fois. je pre-suppose que ce feature ne sera executé qu'une seule fois.
@@ -8,6 +8,7 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
 
 ##### dans le cas de plate forme non nettoyée, il se peut que l'on obtienne un warning (agencies modifiées et agencies utilisées par des AU)
 
+    @Light
     Scénario: Tentative d'import de  service producteur (fichier csv)
     Etant donné un fichier de service producteur nommé data/agencies/agencies.csv
     Alors j'importe les services producteurs

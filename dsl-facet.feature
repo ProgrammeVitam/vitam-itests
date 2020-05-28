@@ -1,5 +1,6 @@
 #language: fr
 
+@Dsl
 @DslFacet
 Fonctionnalité: Test facet
 

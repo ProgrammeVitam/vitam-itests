@@ -1,12 +1,13 @@
 #language: fr
 
+@MassUpdate
 @massDeleteMddDescriptive
 Fonctionnalité: Supprimer en masse des métadonnées descriptives d'une AU
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
     Etant donné les tests effectués sur le tenant 0
 
-
+  @Light
   Scénario: Supprimer une métadonnée descriptive - Description (champ facultatif)
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_MODIFICATION_MASSE.zip
     Quand je télécharge le SIP
@@ -16,6 +17,7 @@ Fonctionnalité: Supprimer en masse des métadonnées descriptives d'une AU
     Et je lance la mise à jour de masse des units
     Alors le statut final du journal des opérations est OK
 
+  @Light
   Scénario: Supprimer une métadonnée descriptive - Titre (champ obligatoire)
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_MODIFICATION_MASSE.zip
     Quand je télécharge le SIP

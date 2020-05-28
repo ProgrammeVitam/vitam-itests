@@ -1,5 +1,6 @@
 # language: fr
 
+@Ingest
 @Ingest_CHECK_DATAOBJECTPACKAGE
 Fonctionnalité: uploader des fichiers SIP
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
@@ -15,6 +16,7 @@ Fonctionnalité: uploader des fichiers SIP
 
 ### OK
 
+  @Light
   Scénario: SIP avec un Binary Master
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_USAGE_1_BM.zip
     Quand je télécharge le SIP

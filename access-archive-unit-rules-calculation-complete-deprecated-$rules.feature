@@ -1,6 +1,7 @@
 # language: fr
 
-@AccessArchiveUnit
+@Access
+@ArchiveUnit
 Fonctionnalité: Calcul des règles de gestion sur jeu de test complexe complet via $rules (déprécié)
 
 Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.

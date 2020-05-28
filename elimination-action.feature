@@ -1,6 +1,7 @@
 #language: fr
 
-@DslOperatorIn
+@Elimination
+@EliminationAction
 Fonctionnalité: Test workflow d'analyse de l'élimination
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
@@ -9,8 +10,6 @@ Fonctionnalité: Test workflow d'analyse de l'élimination
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
-
-
 
 
   Scénario: Workflow d'action d'élimination post date du jour

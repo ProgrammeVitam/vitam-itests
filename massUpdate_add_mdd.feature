@@ -1,5 +1,6 @@
 #language: fr
 
+@MassUpdate
 @massAddMddDescriptive
 Fonctionnalité: Ajouter en masse des métadonnées descriptives d'une AU
 
@@ -9,6 +10,7 @@ Fonctionnalité: Ajouter en masse des métadonnées descriptives d'une AU
 
   ### Ajouter ###
 
+    @Light
     Scénario: Ajouter une métadonnée descriptive - Titre
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_mdd_title.json
       Et je lance la mise à jour de masse des units
@@ -40,6 +42,7 @@ Fonctionnalité: Ajouter en masse des métadonnées descriptives d'une AU
       ## il faut tester également que les modifications sont présentes dans le JCV des AU
 
    ### Cas KO d'ajout avec un mauvais type ###
+    @Light
     Scénario: Ajouter une métadonnée descriptive - MyBoolean [cas 1 : MyBoolean = string]
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_myboolean_string_ko.json
       Et je lance la mise à jour de masse des units

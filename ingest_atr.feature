@@ -11,7 +11,7 @@ Fonctionnalité: uploader des fichier SIP
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
-
+  @Light
   Scénario: Test virus
     Etant donné un fichier SIP nommé data/SIP_KO/ZIP/KO_VIRUS_code2.zip
     Quand je télécharge le SIP
@@ -23,6 +23,7 @@ Fonctionnalité: uploader des fichier SIP
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
 
+  @Light
   Scénario: Test ATR OK
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_2_GO.zip
     Quand je télécharge le SIP

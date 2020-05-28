@@ -1,5 +1,6 @@
 # language: fr
 
+@Dsl
 @DslOperatorMatch
 Fonctionnalité: DSL test opérateur match
 

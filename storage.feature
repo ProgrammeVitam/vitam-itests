@@ -8,7 +8,7 @@ Fonctionnalité: uploader des fichier et verifier qu'ils sont sauvegardés dans 
   Contexte:
     Etant donné les tests effectués sur le tenant 0
 
-
+  @Light
   Scénario: Test de stockage
     Etant donné un fichier nommé data/SIP_OK/ZIP/OK-RULES.zip
     Quand je sauvegarde le fichier dans la strategie default

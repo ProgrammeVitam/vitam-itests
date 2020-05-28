@@ -1,12 +1,13 @@
 # language: fr
 
-@Griffins_referential
+@Griffins
 Fonctionnalité: Import du referentiel griffons
 
   Contexte: Avant de lancer cette suite de test, je vérifie que je suis bien sur le tenant d'administration
     Etant donné les tests effectués sur le tenant 1
     Et je supprime les griffons et les scénarios de préservation sur tous les tenants
 
+  @Light
   Scénario: import griffons a deux éléments
     Quand j'importe le griffon nommé data/griffins/OK_griffons_referentiel.json
     Alors les metadonnées sont

@@ -1,6 +1,7 @@
 # language: fr
 
-@AccessArchiveUnit
+@Access
+@ArchiveUnit
 Fonctionnalité: Vérification du respect des permissions liées à la mise à jour d'une unité archivistique en utilisant un contrat d'accès spécifique
 
   Contexte: Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés et je charge un contrat d'accès
@@ -10,6 +11,7 @@ Fonctionnalité: Vérification du respect des permissions liées à la mise à j
     Et un contract nommé data/contracts/referential_contracts_ok.json
     Et j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
+  @Light
   Scénario: Vérifier la possibilité de mise à jour globale lorsque le contrat d'accès le permet
     Etant donné les tests effectués sur le tenant 0
     Et J'utilise le contrat d'access AllUpdatesAllowed

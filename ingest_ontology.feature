@@ -1,16 +1,19 @@
 # language: fr
 
+@Ingest
 @Ingest_Ontology
 Fonctionnalité: Ontology test
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
 
   Contexte:
     Etant donné les tests effectués sur le tenant 0
+
   Scénario: Import de contrat de type contract Entree
     Etant donné un contract nommé data/contracts/referential_contracts_ok.json
     Alors j'importe ce contrat sans échec de type INGEST_CONTRACTS
 
 ### OK
+  @Light
   Scénario: Test d'un ingest avec une date au format "2016-09-26Z" (pour transformation)
 
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_DATE_SHOULD_TRANSFORM_PASS.zip

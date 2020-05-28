@@ -11,6 +11,7 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
 
   #### Logbook operation traceability ####
+  @Light
   Scénario: Sécurisation du journal d’opération OK
     Quand je génère un journal des opérations sécurisé
     Et je recherche le journal des opérations

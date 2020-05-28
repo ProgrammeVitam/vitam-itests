@@ -1,6 +1,6 @@
 # language: fr
 
-@Contacts
+@Profiles
 Fonctionnalité: Tests d'imports et de recherches de profils
 
   Contexte: un profil ne doit etre importé q'une seule fois. je pre-suppose que ce feature ne sera executé qu'une seule fois.

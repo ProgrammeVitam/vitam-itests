@@ -1,5 +1,6 @@
 # language: fr
 
+@Dsl
 @DslOperatorRange
 Fonctionnalité: DSL test opérateur range sur métadonnées libres et SEDA
 

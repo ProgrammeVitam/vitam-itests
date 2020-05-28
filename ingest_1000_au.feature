@@ -1,5 +1,6 @@
 # language: fr
 
+@Ingest
 @Ingest_OG_CHECK_AND_TRANSFORME
 Fonctionnalité: 1000 AU
   Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.

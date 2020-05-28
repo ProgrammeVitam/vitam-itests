@@ -1,5 +1,6 @@
 # language: fr
 
+@Dsl
 @DslOperatorEq
 Fonctionnalité: DSL test opérateur eq
 
