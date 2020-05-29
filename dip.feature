@@ -8,7 +8,7 @@ Fonctionnalité: Demo
 
   @Light
   Scénario: Test demo
-    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/3_UNITS_2_GOTS.zip
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Quand j'utilise la requête suivante
 """
 {
