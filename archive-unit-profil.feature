@@ -6,7 +6,7 @@ Fonctionnalité: Tests d'import et de recherche de documents type
     Contexte: un document type ne doit être importé qu'une seule fois. Je pré-suppose que cette feature ne sera executée qu'une seule fois.
     Etant donné les tests effectués sur le tenant 1
 
-    @Ligt
+    @Light
     Scénario: Import de document type
     Etant donné un document type nommé data/archiveUnitProfiles/aup_ok.json
     Alors je fais un import du document type
