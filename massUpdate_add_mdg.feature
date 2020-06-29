@@ -41,7 +41,7 @@ Fonctionnalité: Modifier en masse des métadonnées de gestion d'une AU
     Scénario: Ajouter une catégorie avec un FinalAction non conforme - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_nonCompliantFinalActionRule_ko.json
         Et je lance la mise à jour de masse des règles de gestion
-        Alors le statut final du journal des opérations est KO
+        Alors le statut final du journal des opérations est WARNING
 
     Scénario: Ajouter une ClassificationRule avec ClassificationLevel inconnu - KO
         Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_unknownClassificationLevelRule_ko.json
