@@ -86,7 +86,7 @@ Fonctionnalité: Ajouter en masse des métadonnées descriptives d'une AU
     Scénario: Ajouter une métadonnée descriptive - MyDouble Cas 2 : ["MyDouble [Array 1]", "MyDouble [Array 2]"]
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_myDouble_array_ko.json
       Et je lance la mise à jour de masse des units
-      Alors le statut final du journal des opérations est KO
+      Alors le statut final du journal des opérations est WARNING
 
     Scénario: Ajouter une métadonnée descriptive - MyDouble Cas 3 : [MyDouble = "2016-10-12T16:28:40"]
       Quand j'utilise le fichier de requête suivant data/queries/mass-update/add_myDouble_dateNorme_ko.json
