@@ -45,7 +45,7 @@ Fonctionnalité: Modifier en masse des métadonnées descriptives d'une AU
     Alors le statut final du journal des opérations est OK
     Quand j'utilise le fichier de requête suivant data/queries/mass-update/update_mdd_descriptionLevel_ko.json
     Et je lance la mise à jour de masse des units
-    Alors le statut final du journal des opérations est KO
+    Alors le statut final du journal des opérations est WARNING
     ## il faut tester également que les modifications sont présentes dans le JCV des AU
 
   #Scénario: Modifier une métadonnée descriptive sans avoir les droit de modification - KO

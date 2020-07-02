@@ -25,7 +25,7 @@ Fonctionnalité: Supprimer en masse des métadonnées descriptives d'une AU
     Alors le statut final du journal des opérations est OK
     Quand j'utilise le fichier de requête suivant data/queries/mass-update/delete_title_mdd_ko.json
     Et je lance la mise à jour de masse des units
-    Alors le statut final du journal des opérations est KO
+    Alors le statut final du journal des opérations est WARNING
 
   Scénario: Supprimer la métadonnée descriptive Description (champ facultatif) et modifier la métadonnée descriptive Titre (champ obligatoire)
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_SIP_MODIFICATION_MASSE.zip
