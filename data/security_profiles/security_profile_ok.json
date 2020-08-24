@@ -10,9 +10,9 @@
     "Name": "TNR_SEC_PROFILE_OK_2",
     "FullAccess": false,
     "Permissions": [
-      "units:create",
+      "units:update",
       "units:read",
-      "units:id:read",
+      "units:id:read:json",
       "units:id:update"
     ]
   }
