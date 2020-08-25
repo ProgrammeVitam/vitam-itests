@@ -1,0 +1,10 @@
+[
+  {
+    "Identifier": "TNR_SEC_PROFILE_OK_3",
+    "Name": "TNR_SEC_PROFILE_OK_3",
+    "FullAccess": false,
+    "Permissions": [
+      "test:test"
+    ]
+  }
+]
