@@ -1,8 +1,8 @@
 {
   "$action": [
     {
-      "$set": {
-        "Permissions": "test:unknow:permission"
+      "$add": {
+        "Permissions": ["test:unknow:permission"]
       }
     }
   ]
