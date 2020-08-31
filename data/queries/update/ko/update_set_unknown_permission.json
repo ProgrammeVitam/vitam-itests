@@ -1,0 +1,9 @@
+{
+  "$action": [
+    {
+      "$add": {
+        "Permissions": ["test:unknow:permission"]
+      }
+    }
+  ]
+}

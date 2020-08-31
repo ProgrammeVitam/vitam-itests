@@ -55,7 +55,7 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
         | Code | 400 |
         Quand  je recherche le journal des opérations
         Alors le statut final du journal des opérations est KO
-        Et l'outcome détail de l'événement CHECK_RULES est CHECK_RULES.INVALID_CSV.KO
+        Et l'outcome détail de l'événement CHECK_RULES est CHECK_RULES.INVALID_CSV_ENCODING_NOT_UTF_EIGHT.KO
         Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des règles de gestion
 
 

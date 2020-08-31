@@ -46,3 +46,11 @@ Fonctionnalité: Tests d'imports, de recherches et de MAJ des profiles de sécur
   Scénario: MAJ du profile de sécurité fake attribute KO
     Etant donné un profile de sécurité ayant pour nom TNR_SEC_PROFILE_OK_2
     Quand je modifie le profile de sécurité avec le fichier de requête suivant data/queries/update/ko/update_set_fake_attribute.json le statut de la requête est 400
+
+  Scénario: MAJ du profile de sécurité unknown permission KO
+    Etant donné un profile de sécurité ayant pour nom TNR_SEC_PROFILE_OK_2
+    Quand je modifie le profile de sécurité avec le fichier de requête suivant data/queries/update/ko/update_set_unknown_permission.json le statut de la requête est 400
+
+  Scénario: Import de profile de sécurité KO à cause d'une permission invalide
+    Etant donné un profile de sécurité nommé data/security_profiles/security_profile_ko_unknown_permission.json
+    Alors j'importe ce profile de sécurité en échec
