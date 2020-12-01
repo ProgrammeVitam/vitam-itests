@@ -1,5 +1,5 @@
 RuleId,RuleType,RuleValue,RuleDescription,RuleDuration,RuleMeasurement
-APP-00001,AppraisalRule,Dossier individuel d’agent civil,"Durée de conservation des dossiers individuels d’agents. 
+APP-00001,AppraisalRule,Dossier individuel d’agent civil,"Durée de conservation des dossiers individuels d’agents.
 L’échéance est calculée à partir de la date de naissance de l’agent",80,Year
 APP-00002,AppraisalRule,Offres non retenues des marchés,"Durée de conservation des offres non retenues des marchés publics
 L’échéance est calculée à partir de la date de notification du marché au titulaire",5,Year
@@ -24,9 +24,9 @@ ACC-00007,AccessRule,Communicabilité des informations portant atteinte au secre
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",25,Year
 ACC-00008,AccessRule,Communicabilité des documents mentionnés à l’article L311-2 du code des relations entre le public et l’administration,"Durée de communicabilité applicable aux documents mentionnés à l’article L311-2 du code des relations entre le public et l’administration
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",25,Year
-ACC-00009,AccessRule,Communicabilité des informations portant atteinte au secret médical (date de naissance de l’intéressé),"Durée de communicabilité applicable aux informations portant atteinte au secret médical 
+ACC-00009,AccessRule,Communicabilité des informations portant atteinte au secret médical (date de naissance de l’intéressé),"Durée de communicabilité applicable aux informations portant atteinte au secret médical
 L’échéance est calculée à partir de la date de naissance de l’intéressé",120,Year
-ACC-00010,AccessRule,Communicabilité des informations portant atteinte au secret médical (date de décès de l’intéressé),"Durée de communicabilité applicable aux informations portant atteinte au secret médical 
+ACC-00010,AccessRule,Communicabilité des informations portant atteinte au secret médical (date de décès de l’intéressé),"Durée de communicabilité applicable aux informations portant atteinte au secret médical
 L’échéance est calculée à partir de la date de décès de l’intéressé",25,Year
 ACC-00011,AccessRule,Communicabilité des informations portant atteinte au secret de la défense nationale,"Durée de communicabilité applicable aux informations portant atteinte au secret de la défense nationale
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",50,Year
@@ -36,11 +36,11 @@ ACC-00013,AccessRule,Communicabilité des informations portant atteinte à la s�
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",50,Year
 ACC-00014,AccessRule,Communicabilité des informations portant atteinte à la sécurité publique,"Durée de communicabilité applicable aux informations portant atteinte à la sécurité publique
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",50,Year
-ACC-00015,AccessRule,Communicabilité des informations portant atteinte à la sécurité des personnes,"Durée de communicabilité applicable aux informations portant atteinte à la sécurité des personnes 
+ACC-00015,AccessRule,Communicabilité des informations portant atteinte à la sécurité des personnes,"Durée de communicabilité applicable aux informations portant atteinte à la sécurité des personnes
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",50,Year
 ACC-00016,AccessRule,Communicabilité des informations portant atteinte à la protection de la vie privée,"Durée de communicabilité applicable aux informations portant atteinte à la protection de la vie privée
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",50,Year
-ACC-00017,AccessRule,"Communicabilité des informations portant portent une appréciation ou un jugement de valeur sur une personne physique, nommément désignée ou facilement identifiable, ou qui font apparaître le comportement d'une personne dans des conditions susceptibles de lui porter préjudice ","Durée de communicabilité applicable aux informations portant portent une appréciation ou un jugement de valeur sur une personne physique, nommément désignée ou facilement identifiable, ou qui font apparaître le comportement d'une personne dans des conditions susceptibles de lui porter préjudice 
+ACC-00017,AccessRule,"Communicabilité des informations portant portent une appréciation ou un jugement de valeur sur une personne physique, nommément désignée ou facilement identifiable, ou qui font apparaître le comportement d'une personne dans des conditions susceptibles de lui porter préjudice ","Durée de communicabilité applicable aux informations portant portent une appréciation ou un jugement de valeur sur une personne physique, nommément désignée ou facilement identifiable, ou qui font apparaître le comportement d'une personne dans des conditions susceptibles de lui porter préjudice
 L’échéance est calculée à partir de la date du document ou du document le plus récent inclus dans le dossier",50,Year
 ACC-00018,AccessRule,"Communicabilité des informations relatifs à la construction, à l'équipement et au fonctionnement des ouvrages, bâtiments ou parties de bâtiment utilisés pour la détention des personnes ou recevant habituellement des personnes détenues","Durée de communicabilité applicable aux informations relatifs à la construction, à l'équipement et au fonctionnement des ouvrages, bâtiments ou parties de bâtiment utilisés pour la détention des personnes ou recevant habituellement des personnes détenues
 L’échéance est calculée à partir de la fin de l’affectation à ces usages des ouvrages, bâtiments ou parties de bâtiments en cause",50,Year
@@ -105,17 +105,17 @@ REU-00001,ReuseRule,Actes de décès,"Durée d’exclusivité accordé à la soc
 L’échéance est calculée à partir de la date de signature du contrat",10,Year
 CLASS-00001,ClassificationRule,Réévaluation par défaut de la classification des documents protégés au titre du secret de la défense nationale,"Délai de réévaluation par défaut du niveau de protection d’un document au titre du secret de la défense nationale
 L’échéance est calculée à partir de la date d’émission du document",10,Year
-APP-1069001,AppraisalRule,Dossier agent,"Durée de conservation des dossiers individuels d’agents. 
+APP-1069001,AppraisalRule,Dossier agent,"Durée de conservation des dossiers individuels d’agents.
 L’échéance est calculée à partir de la date de naissance de l’agent",10,Year
-APP-1069002,AppraisalRule,Photographie,"Durée de conservation des dossiers individuels d’agents. 
+APP-1069002,AppraisalRule,Photographie,"Durée de conservation des dossiers individuels d’agents.
 L’échéance est calculée à partir de la date de naissance de l’agent",1,Year
-APP-1069003,AppraisalRule,Extrait d'acte de naissance,"Durée de conservation des dossiers individuels d’agents. 
+APP-1069003,AppraisalRule,Extrait d'acte de naissance,"Durée de conservation des dossiers individuels d’agents.
 L’échéance est calculée à partir de la date de naissance de l’agent",1,Year
-APP-1069004,AppraisalRule,Certificat de nationalité,"Durée de conservation des dossiers individuels d’agents. 
+APP-1069004,AppraisalRule,Certificat de nationalité,"Durée de conservation des dossiers individuels d’agents.
 L’échéance est calculée à partir de la date de naissance de l’agent",10,Year
 DIS-1069001,DisseminationRule,Actes de décès,"Délai de diffusion en ligne des actes de décès
 L’échéance est calculée à partir de la date d’enregistrement du décès",50,Year
-HOL-00001,HoldRule,Règle de gel d'un an,"Gel pour une durée définie d'1 an",1,Year
+HOL-00001,HoldRule,Règle de gel invalide,"Gel pour sans durée valide",1,
 HOL-00002,HoldRule,Règle de gel sans durée,"Gel pour une indéfinie",,
 HOL-00003,HoldRule,Règle de gel décennale,"Gel pour une durée définie de 10 an",10,Year
 HOL-00004,HoldRule,Règle de gel illimitée,"Gel pour une durée définie illimitée",unlimited,Year
