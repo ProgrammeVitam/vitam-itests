@@ -1,0 +1,5 @@
+{
+  "$roots": [],
+  "$query": [ { "$eq": { "#operations": "Operation-Id" } } ],
+  "$projection": {}
+}

@@ -1,0 +1,9 @@
+{
+  "HoldRule": {
+    "Inheritance": {
+      "PreventRulesId": [
+        "HOL-00001"
+      ]
+    }
+  }
+}

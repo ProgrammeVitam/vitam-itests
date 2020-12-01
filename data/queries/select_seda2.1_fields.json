@@ -195,6 +195,46 @@
         },
         {
           "$eq": {
+            "#management.HoldRule.Rules.Rule": "HOL-00002"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.StartDate": "2000-01-01"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.EndDate": "2010-01-01"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.HoldEndDate": "2010-01-01"
+          }
+        },
+        {
+          "$match": {
+            "#management.HoldRule.Rules.HoldOwner": "Owner"
+          }
+        },
+        {
+          "$match": {
+            "#management.HoldRule.Rules.HoldReason": "Reason"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.HoldReassessingDate": "2005-01-01"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.PreventRearrangement": false
+          }
+        },
+        {
+          "$eq": {
             "#originating_agency": "FRAN_NP_009913"
           }
         }
