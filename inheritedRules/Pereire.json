@@ -158,5 +158,9 @@
       "EndDate" : "2000-01-01"
     } ],
     "Properties" : [ ]
+  },
+  "HoldRule": {
+    "Rules": [],
+    "Properties": []
   }
 }

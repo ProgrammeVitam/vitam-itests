@@ -105,5 +105,25 @@
       "EndDate" : "2025-01-01"
     } ],
     "Properties" : [ ]
+  },
+  "HoldRule": {
+    "Rules" : [ {
+      "UnitId" : "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Place des Fêtes}}", "{{unit:6_Pré Saint Gervais (ligne 3 bis)}}" ] ],
+      "Rule" : "HOL-00001",
+      "StartDate" : "2000-01-01",
+      "EndDate" : "2001-01-01",
+      "HoldOwner": "Owner",
+      "PreventRearrangement": false
+    },
+    {
+      "UnitId" : "{{unit:Place des Fêtes}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:Place des Fêtes}}" ] ],
+      "Rule" : "HOL-00004",
+      "HoldOwner" : "Owner HOL-00004"
+    } ],
+    "Properties": []
   }
 }

@@ -91,5 +91,9 @@
       "EndDate" : "2027-01-01"
     } ],
     "Properties" : [ ]
+  },
+  "HoldRule": {
+    "Rules": [],
+    "Properties": []
   }
 }
