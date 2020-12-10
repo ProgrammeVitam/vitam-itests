@@ -175,6 +175,17 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
         Et l'outcome détail de l'événement CHECK_RULES est CHECK_RULES.INVALID_CSV.KO
         Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des règles de gestion
 
+    Scénario: Import d'un fichier avec règle de gel avec un champ RuleDuration vide et RuleMeasurement non vide
+        Quand je vérifie le fichier nommé data/rules/rules_ko_holdrule_ruleMeasurement_non_vide_ruleDuration_vide.csv pour le référentiel RULES
+        Alors les metadonnées sont
+            | Code | 400 |
+        Quand j'importe le fichier nommé data/rules/rules_ko_holdrule_ruleMeasurement_non_vide_ruleDuration_vide.csv dans le référentiel RULES
+        Alors les metadonnées sont
+            | Code | 400 |
+        Quand  je recherche le journal des opérations
+        Alors le statut final du journal des opérations est KO
+        Et l'outcome détail de l'événement CHECK_RULES est CHECK_RULES.INVALID_CSV.KO
+        Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des règles de gestion
 
     Scénario: Import d'un fichier avec un champ RuleValue vide
         Quand je vérifie le fichier nommé data/rules/rules_ko_ruleValue_vide.csv pour le référentiel RULES
@@ -201,6 +212,17 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
         Et l'outcome détail de l'événement CHECK_RULES est CHECK_RULES.INVALID_CSV.KO
         Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des règles de gestion
 
+    Scénario: Import d'un fichier avec règle de gel avec un champ RuleMeasurement vide et RuleDuration non vide
+        Quand je vérifie le fichier nommé data/rules/rules_ko_holdrule_ruleMeasurement_vide_ruleDuration_non_vide.csv pour le référentiel RULES
+        Alors les metadonnées sont
+            | Code | 400 |
+        Quand j'importe le fichier nommé data/rules/rules_ko_holdrule_ruleMeasurement_vide_ruleDuration_non_vide.csv dans le référentiel RULES
+        Alors les metadonnées sont
+            | Code | 400 |
+        Quand  je recherche le journal des opérations
+        Alors le statut final du journal des opérations est KO
+        Et l'outcome détail de l'événement CHECK_RULES est CHECK_RULES.INVALID_CSV.KO
+        Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des règles de gestion
 
     Scénario: Import d'un fichier avec un champ RuleType vide
         Quand je vérifie le fichier nommé data/rules/rules_ko_ruleType_vide.csv pour le référentiel RULES
