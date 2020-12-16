@@ -1,0 +1,8 @@
+{
+  "HoldRule": {
+    "Inheritance": {
+      "PreventInheritance": true,
+      "PreventRulesId": []
+    }
+  }
+}

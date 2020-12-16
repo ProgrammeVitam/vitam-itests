@@ -1,0 +1,28 @@
+{
+  "HoldRule": {
+    "Rules": [
+      {
+        "Rule": "HOL-00001",
+        "StartDate": "2000-01-01",
+        "HoldOwner": "Owner de la r\u00E8gle de Gel HOL-00001",
+        "EndDate": "2001-01-01"
+      },
+      {
+        "Rule": "HOL-00002",
+        "HoldEndDate": "2010-01-01",
+        "HoldOwner": "Owner de la r\u00E8gle de Gel HOL-00002",
+        "HoldReassessingDate": "2005-01-01",
+        "PreventRearrangement": false,
+        "EndDate": "2010-01-01"
+      },
+      {
+        "Rule": "HOL-00003"
+      }
+    ],
+    "Inheritance": {
+      "PreventRulesId": [
+        "HOL-00004"
+      ]
+    }
+  }
+}

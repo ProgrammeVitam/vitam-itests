@@ -1,0 +1,15 @@
+{
+  "HoldRule": {
+    "Rules": [
+      {
+        "Rule": "HOL-00003",
+        "StartDate": "2000-01-01",
+        "HoldOwner": "Owner de la r\u00E8gle de Gel HOL-00003",
+        "HoldReason": "Motif du gel HOL-00003",
+        "HoldReassessingDate": "2005-01-01",
+        "PreventRearrangement": false,
+        "EndDate": "2010-01-01"
+      }
+    ]
+  }
+}
