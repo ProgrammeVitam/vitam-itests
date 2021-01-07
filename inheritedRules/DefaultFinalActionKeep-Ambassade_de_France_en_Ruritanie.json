@@ -35,5 +35,9 @@
   "AccessRule": {
     "Rules": [],
     "Properties": []
+  },
+  "HoldRule": {
+    "Rules": [],
+    "Properties": []
   }
 }

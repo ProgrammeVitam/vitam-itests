@@ -98,5 +98,15 @@
       "EndDate" : "2025-01-01"
     } ],
     "Properties" : [ ]
+  },
+  "HoldRule": {
+    "Rules" : [ {
+      "UnitId" : "{{unit:République}}",
+      "OriginatingAgency" : "RATP",
+      "Paths" : [ [ "{{unit:République}}" ] ],
+      "Rule" : "HOL-00003",
+      "HoldReason" : "Reason HOL-00003"
+    } ],
+    "Properties" : [ ]
   }
 }
