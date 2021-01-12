@@ -1,0 +1,59 @@
+{
+  "threshold": 10000,
+  "queries": [
+    {
+      "$query": [
+        {
+          "$and": [
+            {
+              "$in": {
+                "#operations": [
+                  "Operation-Id"
+                ]
+              }
+            },
+            {
+              "$eq": {
+                "ArchivalAgencyArchiveUnitIdentifier": "Value1"
+              }
+            }
+          ]
+        }
+      ],
+      "$action": [
+        {
+          "$set": {
+            "Title": "Fracture"
+          }
+        }
+      ]
+    },
+    {
+      "$query": [
+        {
+          "$and": [
+            {
+              "$in": {
+                "#operations": [
+                  "Operation-Id"
+                ]
+              }
+            },
+            {
+              "$eq": {
+                "ArchivalAgencyArchiveUnitIdentifier": "Value3"
+              }
+            }
+          ]
+        }
+      ],
+      "$action": [
+        {
+          "$set": {
+            "Description": "Cette unité de description a été modifiée par le passage des TNR"
+          }
+        }
+      ]
+    }
+  ]
+}
