@@ -52,7 +52,7 @@ Fonctionnalité: Test workflow d'analyse de l'élimination
   Scénario: Workflow d'action d'élimination mono service producteur
     Etant donné les tests effectués sur le tenant 0
 
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/TEST_ELIMINATION.zip
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/TEST_ELIMINATION_V2.zip
     Quand je télécharge le SIP
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
@@ -61,7 +61,7 @@ Fonctionnalité: Test workflow d'analyse de l'élimination
     """
     {"$roots": [],
       "$query": [{"$in":{"#operations":["Operation-Id"]}}]},
-      "$threshold": 6
+      "$threshold": 8
     """
     Et je lance une élimination définitive avec pour date le 2018-01-01 qui se termine avec le statut WARNING
 
@@ -74,7 +74,7 @@ Fonctionnalité: Test workflow d'analyse de l'élimination
       "$projection": {}}
     """
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 3
+    Alors le nombre de résultat est 5
 
     Et je recherche les groupes d'objets
     Alors le nombre de résultat est 2
