@@ -1,0 +1,61 @@
+{
+  "threshold": 10000,
+  "queries": [
+    {
+      "$query": [
+        {
+          "$in": {
+            "#operations": [
+              "Operation-Id"
+            ]
+          }
+        }
+      ],
+      "$action": [
+        {
+          "$setregex": {
+            "$target": "Description",
+            "$controlPattern": "Cette unité de description bloque",
+            "$updatePattern": "Cette unité de description modifié par le passage des TNR bloque"
+          }
+        }
+      ]
+    },
+    {
+      "$query": [
+        {
+          "$and": [
+            {
+              "$in": {
+                "#operations": [
+                  "Operation-Id"
+                ]
+              }
+            },
+            {
+              "$eq": {
+                "ArchivalAgencyArchiveUnitIdentifier": "Value14"
+              }
+            }
+          ]
+        }
+      ],
+      "$action": [
+        {
+          "$setregex": {
+            "$target": "Title",
+            "$controlPattern": "Simplon",
+            "$updatePattern": "Simplon modifié par le passage des TNR"
+          }
+        },
+        {
+          "$setregex": {
+            "$target": "Description",
+            "$controlPattern": "Cette unité de description doit hériter",
+            "$updatePattern": "Cette unité de description modifiée par le passage des TNR doit hériter"
+          }
+        }
+      ]
+    }
+  ]
+}
