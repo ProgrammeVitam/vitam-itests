@@ -7,7 +7,7 @@ Fonctionnalité: Demo
     Etant donné les tests effectués sur le tenant 0
 
   @Light
-  Scénario: Test demo
+  Scénario: Test export dip unit then OK
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Quand j'utilise la requête suivante
 """
@@ -28,4 +28,21 @@ Fonctionnalité: Demo
     Alors le dip contient 2 objets dont 2 sont binaires
 
 
-    
+
+  @Light
+  Scénario: Test export dip with no unit then KO
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
+    Quand j'utilise la requête suivante
+"""
+{
+  "$roots": [],
+  "$query": [
+    { "$eq": { "#opi": "anything" } }
+  ],
+  "$filter": {},
+  "$projection": {}
+}
+"""
+    Quand j'exporte le dip
+    Alors le statut final du journal des opérations est KO
+
