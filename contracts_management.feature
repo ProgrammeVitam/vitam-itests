@@ -66,7 +66,7 @@ Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
     Quand j'utilise le fichier de requête suivant data/queries/select_managementcontracts_by_Identifier.json
     Et je recherche les données dans le référentiel MANAGEMENT_CONTRACTS
     Alors le nombre de résultat est 1
-    Et les métadonnées sont
+    Et les metadonnées sont
       | Identifier | MCNoStorage |
       | Name       | Contrat de gestion sans stockage |
 
