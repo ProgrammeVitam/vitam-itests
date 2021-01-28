@@ -72,11 +72,11 @@ Fonctionnalité: Modification unitaire de masse de métadonnées descriptives d'
   Scénario: Modifier plusieurs métadonnées descriptives, en incluant une requete pour laquelle l'unité n'a pas besoin d'etre mise à jour
     ### Modification ###
     ## Description
-    Quand j'utilise le fichier de requête suivant data/queries/bulk-atomic-update/update_mdd_no_change_process_ok_global_ok.json
+    Quand j'utilise le fichier de requête suivant data/queries/bulk-atomic-update/update_mdd_no_change_process_warning_global_warning.json
     Et je lance la mise à jour unitaire de masse des units
     Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est OK
-    Et les statuts des événements BULK_ATOMIC_UPDATE_UNITS, BULK_ATOMIC_UPDATE_FINALIZE sont OK
+    Alors le statut final du journal des opérations est WARNING
+    Et les statuts des événements BULK_ATOMIC_UPDATE_UNITS, BULK_ATOMIC_UPDATE_FINALIZE sont WARNING
 
   Scénario: Modifier plusieurs métadonnées descriptives, en incluant seulement des requetes de sélection incorrectes, n'aboutissant à la mise à jour d'aucune unité
     ### Modification ###
