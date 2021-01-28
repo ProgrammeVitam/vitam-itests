@@ -50,7 +50,7 @@
       "$action": [
         {
           "$set": {
-            "Description": "Cette unité de description a été modifiée par le passage des TNR"
+            "EndDate": "2017-04-05T08:11:56"
           }
         }
       ]

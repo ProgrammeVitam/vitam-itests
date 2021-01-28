@@ -22,7 +22,7 @@
       "$action": [
         {
           "$set": {
-            "Title": "AAAUI Value1 modifiée par le passage des TNR"
+            "Title": "AAAUI Value1 modifiée par le 2ème passage des TNR"
           }
         }
       ]
@@ -51,12 +51,12 @@
           "$setregex": {
             "$target": "Description",
             "$controlPattern": "Cette unité de description doit hériter",
-            "$updatePattern": "Cette unité de description modifiée par le passage des TNR doit hériter"
+            "$updatePattern": "Cette unité de description modifiée par le 2ème passage des TNR doit hériter"
           }
         },
         {
           "$set": {
-            "Description": "Cette unité de description a été modifiée par le passage des TNR"
+            "Description": "Cette unité de description a été modifiée par le 2ème passage des TNR"
           }
         }
       ]
@@ -83,7 +83,7 @@
       "$action": [
         {
           "$set": {
-            "Description": "Cette unité de description a été modifiée par le passage des TNR"
+            "Description": "Cette unité de description a été modifiée par le 2ème passage des TNR"
           }
         }
       ]
@@ -110,7 +110,7 @@
       "$action": [
         {
           "$set": {
-            "Description": "Cette unité de description a été modifiée par le passage des TNR"
+            "Description": "Cette unité de description a été modifiée par le 2ème passage des TNR"
           }
         }
       ]
@@ -137,7 +137,7 @@
       "$action": [
         {
           "$set": {
-            "Description": "Cette unité de description a été modifiée par le passage des TNR"
+            "Description": "Cette unité de description a été modifiée par le 2ème passage des TNR"
           }
         }
       ]
@@ -165,8 +165,8 @@
         {
           "$setregex": {
             "$target": "Description",
-            "$controlPattern": "Cette unité de description a la même règle",
-            "$updatePattern": "Cette unité de description modifiée par le passage des TNR a la même règle"
+            "$controlPattern": "Cette unité de description",
+            "$updatePattern": "Cette unité de description modifiée par le 2ème passage des TNR a la même règle"
           }
         }
       ]
@@ -193,7 +193,7 @@
       "$action": [
         {
           "$set": {
-            "DescriptionLevel": "Item"
+            "DescriptionLevel": "RecordGrp"
           }
         }
       ]
@@ -220,7 +220,7 @@
       "$action": [
         {
           "$set": {
-            "Description": "Cette unité de description a été modifiée par le passage des TNR"
+            "Description": "Cette unité de description a été modifiée par le 2ème passage des TNR"
           }
         }
       ]
@@ -247,7 +247,7 @@
       "$action": [
         {
           "$set": {
-            "Ttile": "AAAUI Value9 modifiée par le passage des TNR"
+            "Ttile": "AAAUI Value9 modifiée par le 2ème passage des TNR"
           }
         }
       ]
@@ -275,7 +275,7 @@
         {
           "$set": {
             "StartDate": "2018-04-04T08:07:27",
-            "EndDate": "2019-04-04T08:07:27"
+            "EndDate": "2020-04-04T08:07:27"
           }
         }
       ]
@@ -302,7 +302,7 @@
       "$action": [
         {
           "$set": {
-            "Title": "AAAUI Value11 modifiée par le passage des TNR"
+            "Title": "AAAUI Value11 modifiée par le 2ème passage des TNR"
           }
         }
       ]
