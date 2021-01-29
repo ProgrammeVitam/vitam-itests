@@ -1,0 +1,9 @@
+{
+  "force": true,
+  "dslRequest": {
+    "$roots": [],
+    "$query": []
+  },
+  "operationId": "Named-Operation-Id<UpdateOperationId>",
+  "$fields": ["Description_.fr"]
+}
