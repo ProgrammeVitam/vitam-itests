@@ -1,0 +1,29 @@
+{
+    "$roots": [],
+    "$query": [
+        {
+            "$in": {
+                "#operations": [
+                    "Operation-Id"
+                ]
+            }
+        }
+    ],
+    "$action": [
+        {
+            "$setregex": {
+                "$target": "Title",
+                "$controlPattern": "Fracture",
+                "$updatePattern": "Radiographie des fractures"
+            }
+        },
+        {
+            "$setregex": {
+                "$target": "Description_.fr",
+                "$controlPattern": "Description français",
+                "$updatePattern": "le passage des TNR de modification en masse"
+            }
+        }
+    ],
+    "$threshold": 10000
+}
