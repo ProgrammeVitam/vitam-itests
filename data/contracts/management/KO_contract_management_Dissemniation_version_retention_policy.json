@@ -1,0 +1,33 @@
+[
+    {
+        "Name": "Contrat de gestion avec politique de conservation de version invalide pour un dissemination usage",
+        "Identifier": "MCInvalidDisseminationVersionRetentionPolicy",
+        "Description": "Contrat de gestion valide déclarant une politique de conservation de version invalide pour un dissemination usage",
+        "Status": "ACTIVE",
+        "LastUpdate": "10/12/2016",
+        "CreationDate": "10/12/2016",
+        "ActivationDate": "10/12/2016",
+        "DeactivationDate": "10/12/2016",
+        "Storage": {
+            "UnitStrategy": "default",
+            "ObjectGroupStrategy": "default",
+            "ObjectStrategy": "default"
+        },
+        "VersionRetentionPolicy": {
+            "InitialVersion": true,
+            "IntermediaryVersion": "LAST",
+            "Usages": [
+                {
+                    "UsageName": "BinaryMaster",
+                    "InitialVersion": true,
+                    "IntermediaryVersion": "LAST"
+                },
+                {
+                    "UsageName": "Dissemination",
+                    "InitialVersion": false,
+                    "IntermediaryVersion": null
+                }
+            ]
+        }
+    }
+]
