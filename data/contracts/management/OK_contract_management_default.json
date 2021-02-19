@@ -22,6 +22,10 @@
 			"UnitStrategy": "default",
 			"ObjectGroupStrategy": "default",
 			"ObjectStrategy": "default"
+		},
+		"VersionRetentionPolicy": {
+			"InitialVersion": true,
+			"IntermediaryVersion": "ALL"
 		}
 	},
 	{
@@ -35,6 +39,22 @@
 		"DeactivationDate": "10/12/2016",
 		"Storage": {
 			"ObjectStrategy": "default"
+		},
+		"VersionRetentionPolicy": {
+			"InitialVersion": true,
+			"IntermediaryVersion": "LAST",
+			"Usages": [
+				{
+					"UsageName": "BinaryMaster",
+					"InitialVersion": true,
+					"IntermediaryVersion": "LAST"
+				},
+				{
+					"UsageName": "Dissemination",
+					"InitialVersion": false,
+					"IntermediaryVersion": "ALL"
+				}
+			]
 		}
 	}
 ]

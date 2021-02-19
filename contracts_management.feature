@@ -55,6 +55,38 @@ Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
     Et le champ 'outMessg' de l'évenement final est : Échec de l'import du contrat de gestion : stratégie de stockage non trouvée ou invalide
     Et le champ 'evDetData' de l'évenement final est : managementContractCheck" : "Storage Strategy (fake-strategy-not-found) not found for the field Storage.UnitStrategy
 
+  Scénario: MANAGEMENT_CONTRACTS - Import d'un contrat de gestion déclarant une politique de conservation de verion par défault incorrecte
+    Etant donné un contract nommé data/contracts/management/KO_contract_management_default_version_retention_policy.json
+    Quand j'importe ce contrat incorrect de type MANAGEMENT_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec de l'import du contrat de gestion : politique de conservation de versions invalide
+    Et le champ 'evDetData' de l'évenement final est : managementContractCheck" : "The version retention policy's InitialVersion parameter in Default usage is invalid in the contract Contrat de gestion avec politique de conservation de version par default invalide.
+
+  Scénario: MANAGEMENT_CONTRACTS - Import d'un contrat de gestion déclarant une politique de conservation de verion du Binary Master usage incorrecte
+    Etant donné un contract nommé data/contracts/management/KO_contract_management_Binary_Master_version_retention_policy.json
+    Quand j'importe ce contrat incorrect de type MANAGEMENT_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec de l'import du contrat de gestion : politique de conservation de versions invalide
+    Et le champ 'evDetData' de l'évenement final est : managementContractCheck" : "The version retention policy's InitialVersion parameter in BinaryMaster usage is invalid in the contract Contrat de gestion avec politique de conservation de version invalide pour un binary master usage.
+
+  Scénario: MANAGEMENT_CONTRACTS - Import d'un contrat de gestion déclarant une politique de conservation de verion du Dissemination usage incorrecte
+    Etant donné un contract nommé data/contracts/management/KO_contract_management_Dissemniation_version_retention_policy.json
+    Quand j'importe ce contrat incorrect de type MANAGEMENT_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec de l'import du contrat de gestion : politique de conservation de versions invalide
+    Et le champ 'evDetData' de l'évenement final est : managementContractCheck" : "The version retention policy's IntermediaryVersion parameter in Dissemination usage is invalid in the contract Contrat de gestion avec politique de conservation de version invalide pour un dissemination usage.
+
+  Scénario: MANAGEMENT_CONTRACTS - Import d'un contrat de gestion déclarant une politique de conservation de verion d'un usage incorrect
+    Etant donné un contract nommé data/contracts/management/KO_contract_management_UsageName_version_retention_policy.json
+    Quand j'importe ce contrat incorrect de type MANAGEMENT_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec de l'import du contrat de gestion : politique de conservation de versions invalide
+    Et le champ 'evDetData' de l'évenement final est : managementContractCheck" : "The usage type test is invalid in the contract Contrat de gestion avec politique de conservation de version invalide pour un usage inconnu.
+
 ################################
 
 # Recherche de contrats de gestion

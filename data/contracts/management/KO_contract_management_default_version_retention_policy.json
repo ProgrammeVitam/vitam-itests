@@ -1,0 +1,21 @@
+[
+    {
+        "Name": "Contrat de gestion avec politique de conservation de version par default invalide",
+        "Identifier": "MCInvalidDefaultVersionRetentionPolicy",
+        "Description": "Contrat de gestion valide déclarant une politique de conservation de version par default invalide",
+        "Status": "ACTIVE",
+        "LastUpdate": "10/12/2016",
+        "CreationDate": "10/12/2016",
+        "ActivationDate": "10/12/2016",
+        "DeactivationDate": "10/12/2016",
+        "Storage": {
+            "UnitStrategy": "default",
+            "ObjectGroupStrategy": "default",
+            "ObjectStrategy": "default"
+        },
+        "VersionRetentionPolicy": {
+            "InitialVersion": false,
+            "IntermediaryVersion": "LAST"
+        }
+    }
+]
