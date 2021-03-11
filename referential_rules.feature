@@ -136,6 +136,18 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
         Et l'outcome détail de l'événement CHECK_RULES est CHECK_RULES.INVALID_CSV.KO
         Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des règles de gestion
 
+    Scénario: Import d'un fichier avec un champ RuleType déclarant une valeur invalide
+        Quand je vérifie le fichier nommé data/rules/rules_ko_ruleType_invalide.csv pour le référentiel RULES
+        Alors les metadonnées sont
+            | Code | 400 |
+        Quand j'importe le fichier nommé data/rules/rules_ko_ruleType_invalide.csv dans le référentiel RULES
+        Alors les metadonnées sont
+            | Code | 400 |
+        Quand  je recherche le journal des opérations
+        Alors le statut final du journal des opérations est KO
+        Et l'outcome détail de l'événement CHECK_RULES est CHECK_RULES.INVALID_CSV.KO
+        Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des règles de gestion
+
 
     Scénario: Import d'un fichier avec un champ RuleMeasurement déclarant une valeur non autorisée
         Quand je vérifie le fichier nommé data/rules/rules_ko_ruleMeasurement_incorrect.csv pour le référentiel RULES
@@ -238,7 +250,7 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
 
     @Light
     Scénario: Vérification et import des règles OK, recherche par id OK
-        Quand je vérifie le fichier nommé data/rules/rules_ok.csv pour le référentiel RULES
+        Quand j'importe le fichier nommé data/rules/rules_ok.csv pour le référentiel RULES
         Quand j'utilise le fichier de requête suivant data/queries/select_rule_by_id.json
         Et je recherche les données dans le référentiel RULES
         Alors le nombre de résultat est 1
@@ -262,4 +274,3 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
         Quand je vérifie le fichier nommé data/rules/regle_test_duration.csv pour le référentiel RULES
         Alors les metadonnées sont
           | Code           | 400 		|
-
