@@ -47,7 +47,6 @@ Fonctionnalité: Export DIP
     Alors le statut final du journal des opérations est KO
 
 
-
   Scénario: Test export dip avec un seuil de requête < taille du sip
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_Mercier.zip
     Quand j'utilise la requête suivante
@@ -69,7 +68,7 @@ Fonctionnalité: Export DIP
     "$projection" : { },
     "$facets" : [ ]
   },
-  "threshold": 1000
+  "maxSizeThreshold": 1000
 }
 """
     Quand j'exporte le DIP
