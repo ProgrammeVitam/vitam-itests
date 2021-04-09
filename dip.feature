@@ -1,7 +1,7 @@
 # language: fr
 
 @Dip
-Fonctionnalité: Demo
+Fonctionnalité: Export DIP
 
   Contexte: Avant de lancer cette suite de tests, je présuppose qu'un contrat d'accès est chargé.
     Etant donné les tests effectués sur le tenant 0
@@ -46,3 +46,30 @@ Fonctionnalité: Demo
     Quand j'exporte le dip
     Alors le statut final du journal des opérations est KO
 
+
+  Scénario: Test export dip avec un seuil de requête < taille du sip
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_Mercier.zip
+    Quand j'utilise la requête suivante
+"""
+{
+  "dataObjectVersionToExport" : {
+    "DataObjectVersions" : [ "BinaryMaster" ]
+  },
+  "exportType" : "MinimalArchiveDeliveryRequestReply",
+  "exportWithLogBookLFC" : true,
+  "dslRequest" : {
+    "$roots" : [ ],
+    "$query" : [ {
+      "$in" : {
+        "#operations" : [ "Operation-Id" ]
+      }
+    } ],
+    "$filter" : { },
+    "$projection" : { },
+    "$facets" : [ ]
+  },
+  "maxSizeThreshold": 1000
+}
+"""
+    Quand j'exporte le DIP
+    Alors le statut final du journal des opérations est KO
