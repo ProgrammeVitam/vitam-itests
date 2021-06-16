@@ -78,3 +78,61 @@ Fonctionnalité: Test workflow d'analyse de l'élimination
 
     Et je recherche les groupes d'objets
     Alors le nombre de résultat est 2
+
+
+  Scénario: Workflow d'action d'élimination sur une unité archivistique parent d'arbre de positionnement
+    Etant donné les tests effectués sur le tenant 0
+
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_TREE.zip
+    Quand je télécharge l'arbre
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+
+    Quand j'utilise la requête suivante
+    """
+    {"$roots": [],
+      "$query": [{"$eq":{"Title":"Parent"}}]},
+      "$threshold": 8
+    """
+    Et je lance une élimination définitive avec pour date le 2018-01-01 qui se termine avec le statut WARNING
+
+    # Vérification globale
+
+    Alors j'utilise la requête suivante
+    """
+    {"$roots": [],
+      "$query": [{"$eq":{"#opi":"Operation-Id"}}],
+      "$projection": {}}
+    """
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 6
+
+
+
+  Scénario: Workflow d'action d'élimination sur une unité archivistique sans enfants d'arbre de positionnement
+    Etant donné les tests effectués sur le tenant 0
+
+    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/OK_TREE.zip
+    Quand je télécharge l'arbre
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+
+    Quand j'utilise la requête suivante
+    """
+    {"$roots": [],
+      "$query": [{"$eq":{"Title":"Child A"}}]},
+      "$threshold": 8
+    """
+    Et je lance une élimination définitive avec pour date le 2018-01-01 qui se termine avec le statut OK
+
+    # Vérification globale
+
+    Alors j'utilise la requête suivante
+    """
+    {"$roots": [],
+      "$query": [{"$eq":{"#opi":"Operation-Id"}}],
+      "$projection": {}}
+    """
+    Et je recherche les unités archivistiques
+    Alors le nombre de résultat est 5
+
