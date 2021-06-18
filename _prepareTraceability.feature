@@ -1,4 +1,6 @@
 # language: fr
+# We need this feature file to run in early test stages by prefixing it with "_" in order to have an old ingest ready
+# for "traceability.feature" needs
 
 @Traceability
 Fonctionnalité: Génération journal des opérations sécurisé
