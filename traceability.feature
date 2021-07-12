@@ -1,5 +1,8 @@
 # language: fr
 
+# WARNING : A preparation feature "_prepareTraceability.feature" is run in early test stages in order to have an old ingest ready for "traceability.feature" needs
+# Otherwise, this test feature will need to sleep for 300s in order to have an ingest old enough for traceability.
+
 @Traceability
 Fonctionnalité: Génération journal des opérations sécurisé
 	Avant de lancer cette suite de test, je présuppose que les règles de gestions et de formats sont chargés.
@@ -48,6 +51,7 @@ Fonctionnalité: Génération journal des opérations sécurisé
   Scénario: Test d'audit avec securisation
     # Audit with traceability (already ingested file in _prepareTraceability.feature, at least 5 minutes ago)
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
+    Et que l'ingest date d'au moins 300 secondes
     Quand on lance la traçabilité des journaux de cycles de vie des unités archivistiques
     Et on lance la traçabilité des journaux de cycles de vie des groupes d'objets
     Et j'utilise la requête suivante
