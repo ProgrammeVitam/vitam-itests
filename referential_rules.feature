@@ -269,9 +269,9 @@ Fonctionnalité: gestion des données référentielles (vérification, import et
         Et les metadonnées sont
         | RuleId | APP-1069004 |
 
-    Scénario: Import des règles KO (la durée dépasse)
-        Etant donné les tests effectués sur le tenant 2
-        Quand je vérifie le fichier nommé data/rules/regle_test_duration.csv pour le référentiel RULES
-        Alors les metadonnées sont
-          | Code           | 400 		|
+#    Scénario: Import des règles KO (la durée dépasse)
+#        Etant donné les tests effectués sur le tenant 2
+#        Quand je vérifie le fichier nommé data/rules/regle_test_duration.csv pour le référentiel RULES
+#        Alors les metadonnées sont
+#          | Code           | 400 		|
 
