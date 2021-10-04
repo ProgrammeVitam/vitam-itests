@@ -1,6 +1,6 @@
 # language: fr
 
-@Griffins_referential
+@PreservationScenario
 Fonctionnalité: Import du referentiel scénario de preservation
 
   Contexte: Avant de lancer cette suite de test, je vérifie que je suis bien sur le tenant d'administration
@@ -9,6 +9,7 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Et j'importe le griffon nommé data/griffins/OK_griffons_referentiel.json
     Etant donné les tests effectués sur le tenant 0
 
+  @Light
   Scénario: import des scénario  a deux éléments
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/OK_scenario_liste.json
     Alors les metadonnées sont
@@ -16,6 +17,7 @@ Fonctionnalité: Import du referentiel scénario de preservation
     Et le statut final du journal des opérations est OK
     Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du référentiel des scénarios de préservation
 
+  @Light
   Scénario: import avec mise à jour intitulé
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/OK_scenario_maj_liste.json
     Et le statut final du journal des opérations est OK
@@ -42,77 +44,77 @@ Fonctionnalité: Import du referentiel scénario de preservation
   Scénario: Injection html default griffin args
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_defaultGriffin_args.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin extension
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_defaultGriffin_extension.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin identifier
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_defaultGriffin_griffinIdentifier.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin maxsize
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_defaultGriffin_maxSize.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin timeout
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_defaultGriffin_timeout.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin type
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_defaultGriffin_type.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default description
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_description.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default formatlist
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_formatList.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin by format args
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_griffinByFormat_args.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin by format debug
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_griffinByFormat_debug.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin by format extension
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_griffinByFormat_extension.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin by format maxsize
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_griffinByFormat_maxSize.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin by format timeout
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_griffinByFormat_timeout.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html default griffin by format type
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_griffinByFormat_type.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html identifier
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_identifier.json
     Alors les metadonnées sont
-    | Code | 412 |
+      | Code | 412 |
 
   Scénario: Injection html name
     Quand j'importe le preservation Scenario nommé data/preservationScenarios/KO_scenario_html_injection_name.json
