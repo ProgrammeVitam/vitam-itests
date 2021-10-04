@@ -1,6 +1,5 @@
 # language: fr
 
-@Preservation
 @PreservationScenario
 Fonctionnalité: Import du referentiel scénario de preservation
 
