@@ -1,0 +1,16 @@
+{
+  "$roots": ["aebaaaaaaahgmh4saaggmal4ktbvafaaaaaq"],
+  "$query": [],
+  "$filter": { },
+  "$projection": {
+    "$fields": {
+      "#nbobjects": 1,
+      "#id": 1,
+      "FileInfo.Filename": 1,
+      "#qualifiers.versions.FormatIdentification.MimeType": 1,
+      "#qualifiers.versions.FileInfo.Filename": 1,
+      "#qualifiers.versions.Size": 1,
+      "#qualifiers.versions.DataObjectVersion": 1
+    }
+  }
+}

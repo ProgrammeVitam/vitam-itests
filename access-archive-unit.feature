@@ -79,6 +79,17 @@ Fonctionnalité: Recherche une archive unit existante
     Quand j'utilise le fichier de requête suivant data/queries/update_unit_title_description.json
     Alors le statut de update résultat est Unauthorized
 
+  Scénario: US8742 -- Récupérer la liste des objets
+    Etant donné les tests effectués sur le tenant 0
+    Et les tests effectués sur le contrat id ContratTNR
+    Et un fichier SIP nommé data/SIP_OK/ZIP/Gallieni_metro_producteur1.zip
+    Quand je télécharge le SIP
+    Et j'utilise le fichier de requête suivant data/queries/select_accession_register_by_opc.json
+    Et je recherche les détails des registres de fond pour le service producteur producteur1             |
+    Quand j'utilise le fichier de requête suivant data/queries/select_object_group.json
+    Et je récupére la liste des objets
+    Alors le nombre de résultat est 1
+
   Scénario: US2231 -- Sélectionner le contrat “contrat_producteur1”
     Etant donné les tests effectués sur le tenant 0
     Et les tests effectués sur le contrat id ContratTNR
