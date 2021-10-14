@@ -88,7 +88,7 @@ Fonctionnalité: Recherche une archive unit existante
     Et je recherche les détails des registres de fond pour le service producteur producteur1             |
     Quand j'utilise le fichier de requête suivant data/queries/select_object_group.json
     Et je récupére la liste des objets
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 64
 
   Scénario: US2231 -- Sélectionner le contrat “contrat_producteur1”
     Etant donné les tests effectués sur le tenant 0

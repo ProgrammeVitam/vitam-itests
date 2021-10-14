@@ -1,6 +1,6 @@
 {
-  "$roots": ["aebaaaaaaafb2p2baah2kal4pyxohaqaaaba"],
-  "$query": [],
+  "$roots": [],
+  "$query": [{ "$match": { "FileInfo.Filename": "Gallieni Source" }}],
   "$filter": { },
   "$projection": {
     "$fields": {
