@@ -1814,6 +1814,29 @@
     ]
   },
   {
+    "Identifier": "ManifestComment",
+    "SedaField": "Comment",
+    "Description": "Mapping : accessionregisterdetail-es-mapping.json",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "Commentaire saisi au niveau du manifest",
+    "Collections": [
+      "AccessionRegisterDetail"
+    ]
+  },
+  {
+    "Identifier": "MessageIdentifier",
+    "SedaField": "MessageIdentifier",
+    "ApiField": "MessageIdentifier",
+    "Description": "Mapping : accessionregisterdetail-es-mapping.json",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "Le champ Seda MessageIdentifier du manifest",
+    "Collections": [
+      "AccessionRegisterDetail"
+    ]
+  },
+  {
     "Identifier": "deleted",
     "ApiField": "deleted",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
