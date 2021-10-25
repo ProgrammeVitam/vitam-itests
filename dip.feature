@@ -1,7 +1,7 @@
 # language: fr
 
 @Dip
-Fonctionnalité: Export DIP
+Fonctionnalité: Demo
 
   Contexte: Avant de lancer cette suite de tests, je présuppose qu'un contrat d'accès est chargé.
     Etant donné les tests effectués sur le tenant 0
@@ -15,7 +15,9 @@ Fonctionnalité: Export DIP
   "$roots": [],
   "$query": [
     { "$eq": { "#opi": "Operation-Id" } }
-  ]
+  ],
+  "$filter": {},
+  "$projection": {}
 }
 """
     Quand j'exporte le dip
@@ -36,7 +38,9 @@ Fonctionnalité: Export DIP
   "$roots": [],
   "$query": [
     { "$eq": { "#opi": "anything" } }
-  ]
+  ],
+  "$filter": {},
+  "$projection": {}
 }
 """
     Quand j'exporte le dip
