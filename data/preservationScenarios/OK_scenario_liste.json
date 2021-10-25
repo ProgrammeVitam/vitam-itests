@@ -1,5 +1,5 @@
 [
-{
+  {
     "Identifier": "PSC-000001",
     "Name": "Tranformation en GIF",
     "Description": "Tranformation en GIF",
@@ -10,11 +10,13 @@
     "MetadataFilter": null,
     "GriffinByFormat": [
       {
-        "FormatList": ["fmt/43"],
+        "FormatList": [
+          "fmt/43"
+        ],
         "GriffinIdentifier": "GRI-000001",
         "Timeout": 2000,
         "MaxSize": 10000000,
-        "Debug":true,
+        "Debug": true,
         "ActionDetail": [
           {
             "Type": "GENERATE",
@@ -30,25 +32,26 @@
       }
     ],
     "DefaultGriffin": {
-        "FormatList": ["fmt/43"],
-        "GriffinIdentifier": "GRI-000001",
-        "Timeout": 2000,
-        "MaxSize": 10000000,
-        "Debug":true,
-        "ActionDetail": [
-          {
-            "Type": "GENERATE",
-            "Values": {
-              "Extension": "GIF",
-              "Args": [
-                "-thumbnail",
-                "100x100"
-              ]
-            }
+      "FormatList": [
+        "fmt/43"
+      ],
+      "GriffinIdentifier": "GRI-000001",
+      "Timeout": 2000,
+      "MaxSize": 10000000,
+      "Debug": true,
+      "ActionDetail": [
+        {
+          "Type": "GENERATE",
+          "Values": {
+            "Extension": "GIF",
+            "Args": [
+              "-thumbnail",
+              "100x100"
+            ]
           }
-        ]
-      }
-    
+        }
+      ]
+    }
   },
   {
     "Identifier": "PSC-000005",
@@ -61,11 +64,13 @@
     "MetadataFilter": null,
     "GriffinByFormat": [
       {
-        "FormatList": ["fmt/43"],
+        "FormatList": [
+          "fmt/43"
+        ],
         "GriffinIdentifier": "GRI-000001",
         "Timeout": 2000,
         "MaxSize": 10000000,
-        "Debug":true,
+        "Debug": true,
         "ActionDetail": [
           {
             "Type": "GENERATE",
@@ -81,25 +86,26 @@
       }
     ],
     "DefaultGriffin": {
-        "FormatList": ["fmt/43"],
-        "GriffinIdentifier": "GRI-000001",
-        "Timeout": 2000,
-        "MaxSize": 10000000,
-        "Debug":true,
-        "ActionDetail": [
-          {
-            "Type": "GENERATE",
-            "Values": {
-              "Extension": "GIF",
-              "Args": [
-                "-thumbnail",
-                "100x100"
-              ]
-            }
+      "FormatList": [
+        "fmt/43"
+      ],
+      "GriffinIdentifier": "GRI-000001",
+      "Timeout": 2000,
+      "MaxSize": 10000000,
+      "Debug": true,
+      "ActionDetail": [
+        {
+          "Type": "GENERATE",
+          "Values": {
+            "Extension": "GIF",
+            "Args": [
+              "-thumbnail",
+              "100x100"
+            ]
           }
-        ]
-      }
-    
+        }
+      ]
+    }
   },
   {
     "Identifier": "PSC-000003",
@@ -112,11 +118,13 @@
     "MetadataFilter": null,
     "GriffinByFormat": [
       {
-        "FormatList": ["fmt/43"],
+        "FormatList": [
+          "fmt/43"
+        ],
         "GriffinIdentifier": "GRI-000001",
         "Timeout": 2000,
         "MaxSize": 10000000,
-        "Debug":true,
+        "Debug": true,
         "ActionDetail": [
           {
             "Type": "GENERATE",
@@ -132,24 +140,172 @@
       }
     ],
     "DefaultGriffin": {
-        "FormatList": ["fmt/43"],
-        "GriffinIdentifier": "GRI-000001",
-        "Timeout": 2000,
+      "FormatList": [
+        "fmt/43"
+      ],
+      "GriffinIdentifier": "GRI-000001",
+      "Timeout": 2000,
+      "MaxSize": 10000000,
+      "Debug": true,
+      "ActionDetail": [
+        {
+          "Type": "GENERATE",
+          "Values": {
+            "Extension": "GIF",
+            "Args": [
+              "-thumbnail",
+              "100x100"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Identifier": "PSC-000004",
+    "Name": "Transformation en DOC",
+    "Description": "Ce scénarion transforme des fichiers en .doc version MS word 97",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
+    "ActionList": [
+      "EXTRACT_AU"
+    ],
+    "MetadataFilter": null,
+    "GriffinByFormat": [],
+    "DefaultGriffin": {
+      "GriffinIdentifier": "GRI-000004",
+      "Timeout": 20,
+      "MaxSize": 10000000,
+      "Debug": true,
+      "ActionDetail": [
+        {
+          "Type": "EXTRACT_AU",
+          "Values": {
+            "Extension": "txt"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Identifier": "PSC-000002",
+    "Name": "Analyse with jhove",
+    "Description": "This scenario analyse content thx to jhove",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
+    "ActionList": [
+      "ANALYSE"
+    ],
+    "MetadataFilter": null,
+    "GriffinByFormat": [
+      {
+        "FormatList": [
+          "fmt/43",
+          "x-fmt/136",
+          "fmt/4",
+          "x-fmt/266",
+          "x-fmt/392",
+          "x-fmt/392",
+          "fmt/41",
+          "fmt/43",
+          "fmt/95",
+          "fmt/11",
+          "fmt/353",
+          "x-fmt/16",
+          "fmt/289",
+          "fmt/141",
+          "fmt/101",
+          "fmt/291",
+          "fmt/567"
+        ],
+        "GriffinIdentifier": "GRI-000002",
+        "Timeout": 20,
         "MaxSize": 10000000,
-        "Debug":true,
+        "Debug": true,
         "ActionDetail": [
           {
-            "Type": "GENERATE",
+            "Type": "ANALYSE",
+            "Values": null
+          }
+        ]
+      }
+    ],
+    "DefaultGriffin": null
+  },
+  {
+    "Identifier": "PSC-000006",
+    "Name": "Identification via siegfried",
+    "Description": "Identification Via SIEGFRIED",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
+    "ActionList": [
+      "IDENTIFY"
+    ],
+    "MetadataFilter": null,
+    "GriffinByFormat": [
+      {
+        "FormatList": [
+          "x-fmt/3"
+        ],
+        "GriffinIdentifier": "GRI-000006",
+        "Timeout": 20,
+        "MaxSize": 10000000,
+        "Debug": true,
+        "ActionDetail": [
+          {
+            "Type": "IDENTIFY",
+            "Values": null
+          }
+        ]
+      }
+    ],
+    "DefaultGriffin": {
+      "GriffinIdentifier": "GRI-000006",
+      "Timeout": 20,
+      "MaxSize": 10000000,
+      "Debug": true,
+      "ActionDetail": [
+        {
+          "Type": "IDENTIFY",
+          "Values": null
+        }
+      ]
+    }
+  },
+  {
+    "Identifier": "PSC-000007",
+    "Name": "Extract technical metadata",
+    "Description": "This scenario extract some technical metadata for JPG",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
+    "ActionList": [
+      "EXTRACT"
+    ],
+    "MetadataFilter": null,
+    "GriffinByFormat": [
+      {
+        "FormatList": [
+          "fmt/43"
+        ],
+        "GriffinIdentifier": "GRI-000004",
+        "Timeout": 20,
+        "MaxSize": 10000000,
+        "Debug": true,
+        "ActionDetail": [
+          {
+            "Type": "EXTRACT",
             "Values": {
-              "Extension": "GIF",
-              "Args": [
-                "-thumbnail",
-                "100x100"
+              "FilteredExtractedObjectGroupData": [
+                "ALL_METADATA"
+              ],
+              "FilteredExtractedUnitData": [
+                "ALL_METADATA"
               ]
             }
           }
         ]
       }
-    
+    ],
+    "DefaultGriffin": null
   }
 ]

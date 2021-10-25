@@ -90,7 +90,7 @@ Fonctionnalité: Recherche une archive unit existante
       | OriginatingAgency        | producteur1              |
     Quand j'utilise le fichier de requête suivant data/queries/select_Gallieni.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 3
+    Alors le nombre de résultat est 4
 
   Scénario: SRC1 - Recherche une archive unit avec un intervalle de temps sur plusieurs tenants
     Etant donné les tests effectués sur le tenant 0

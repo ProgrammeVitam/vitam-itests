@@ -6,11 +6,33 @@
     "ExecutableName": "imagemagick-griffin",
     "ExecutableVersion": "V1.0.0"
   },
-   {
+  {
+    "Identifier": "GRI-000004",
+    "Name": "Griffon Tesseract",
+    "Description": "A Tesseract griffin",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
+    "ExecutableName": "tesseract-griffin",
+    "ExecutableVersion": "V1.0.0"
+  },
+  {
     "Identifier": "GRI-000002",
-    "Name": "Griffon 2 : Griffon Jhove",
-    "Description": "JHOVE est un outil d'identification, de validation et de conversion de fichiers. Il traite les formats suivants : AIFF, ASCII, GIF, HTML, JPEG, JPEG 2000, PDF, TIFF, UTF-8, WAVE, XML, GZIP, PNG, WARC.",
+    "Name": "Griffon Jhove",
+    "Description": "A jhove griffin",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
     "ExecutableName": "jhove-griffin",
     "ExecutableVersion": "V1.0.0"
+  },
+  {
+    "Identifier": "GRI-000006",
+    "Name": "Griffon siegfried",
+    "Description": "A siegfried griffin",
+    "CreationDate": "2018-11-16T15:55:30.721",
+    "LastUpdate": "2018-11-20T15:34:21.542",
+    "ExecutableName": "siegfried-griffin",
+    "ExecutableVersion": "V1.0.0"
   }
+
+
 ]
