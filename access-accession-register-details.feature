@@ -27,3 +27,5 @@ Fonctionnalité: Recherche des détails de registres des fonds
       | TotalUnits.ingested         | 3 |
       | ArchivalAgreement           | ArchivalAgreement0 |
       | Status                      | STORED_AND_COMPLETED |
+      | Comment.array[]             | ["2eme SIP"] |
+      | obIdIn                      | SIP passant contenant 2 groupes d'objets |
