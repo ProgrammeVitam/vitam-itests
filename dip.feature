@@ -64,9 +64,8 @@ Fonctionnalité: Export DIP
         "#operations" : [ "Operation-Id" ]
       }
     } ],
-    "$filter" : { },
-    "$projection" : { },
-    "$facets" : [ ]
+  "$filter": {},
+  "$projection": {}
   },
   "maxSizeThreshold": 1000
 }
