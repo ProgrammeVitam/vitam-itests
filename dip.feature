@@ -15,7 +15,9 @@ Fonctionnalité: Export DIP
   "$roots": [],
   "$query": [
     { "$eq": { "#opi": "Operation-Id" } }
-  ]
+  ],
+  "$filter": {},
+  "$projection": {}
 }
 """
     Quand j'exporte le dip
@@ -36,7 +38,9 @@ Fonctionnalité: Export DIP
   "$roots": [],
   "$query": [
     { "$eq": { "#opi": "anything" } }
-  ]
+  ],
+  "$filter": {},
+  "$projection": {}
 }
 """
     Quand j'exporte le dip
@@ -59,7 +63,10 @@ Fonctionnalité: Export DIP
       "$in" : {
         "#operations" : [ "Operation-Id" ]
       }
-    } ]
+    } ],
+    "$filter" : { },
+    "$projection" : { },
+    "$facets" : [ ]
   },
   "maxSizeThreshold": 1000
 }
