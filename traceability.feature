@@ -10,8 +10,8 @@ Fonctionnalité: Génération journal des opérations sécurisé
   Contexte: Avant de lancer cette suite de tests, je présuppose qu'un contrat d'accès est chargé.
     Etant donné les tests effectués sur le tenant 0
     Etant donné les tests effectués sur le contrat id contrat_EveryOriginatingAgency_true
-    Et un contract nommé data/contracts/contract_access_every_originating_agency.json
-    Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
+    Et le contract contrat_EveryOriginatingAgency_true de type ACCESS_CONTRACTS définie dans le fichier data/contracts/contract_access_every_originating_agency.json
+    Et le contract ArchivalAgreement0 de type INGEST_CONTRACTS définie dans le fichier data/contracts/referential_contracts_ok.json
 
   #### Logbook operation traceability ####
   @Light
@@ -20,56 +20,33 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements STP_OP_SECURISATION, OP_SECURISATION_TIMESTAMP, OP_SECURISATION_STORAGE sont OK
-
-
-  Scénario: Test d'audit sans securisation
-    # Audit without traceability (forced new ingest)
-    Etant donné un fichier SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
-    Quand je télécharge le SIP
-    Et je recherche le journal des opérations
+    Quand j'utilise le fichier de requête suivant data/queries/audit/check_traceability.json
+    Et je lance la vérification des journaux de sécurisation
     Alors le statut final du journal des opérations est OK
-    Quand j'utilise la requête suivante
-"""
-{
-  "$roots": [],
-  "$query": [
-    {
-      "$and": [
-        { "$in": { "#operations": [ "Operation-Id" ] } },
-        { "$exists" : "Title" }
-      ]
-    }],
-    "$projection": { }
-}
-"""
-    Et je réalise un audit de traçabilité de la requete
-    Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est WARNING
-    Et l'outcome détail de l'événement EVIDENCE_AUDIT_PREPARE_REPORT est EVIDENCE_AUDIT_PREPARE_REPORT.WARNING
 
 
-  Scénario: Test d'audit avec securisation
-    # Audit with traceability (already ingested file in _prepareTraceability.feature, at least 5 minutes ago)
+  Scénario: Sécurisation du journal des cycles de vie des unités archivistiques OK
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Et que l'ingest date d'au moins 300 secondes
     Quand on lance la traçabilité des journaux de cycles de vie des unités archivistiques
-    Et on lance la traçabilité des journaux de cycles de vie des groupes d'objets
-    Et j'utilise la requête suivante
-"""
-{
-  "$roots": [],
-  "$query": [
-    {
-      "$and": [
-        { "$in": { "#operations": [ "Operation-Id" ] } },
-        { "$exists" : "Title" }
-      ]
-    }],
-    "$projection": { }
-}
-"""
-    Et je réalise un audit de traçabilité de la requete
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
-    Et l'outcome détail de l'événement EVIDENCE_AUDIT_PREPARE_REPORT est EVIDENCE_AUDIT_PREPARE_REPORT.OK
+    Et l'outcome détail de l'événement LOGBOOK_UNIT_LFC_TRACEABILITY est LOGBOOK_UNIT_LFC_TRACEABILITY.OK
+    Quand j'utilise le fichier de requête suivant data/queries/audit/check_traceability.json
+    Et je lance la vérification des journaux de sécurisation
+    Alors le statut final du journal des opérations est OK
+
+  Scénario: Sécurisation du journal des cycles de vie des groupes d'objets OK
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
+    Et que l'ingest date d'au moins 300 secondes
+    Quand on lance la traçabilité des journaux de cycles de vie des groupes d'objets
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Et l'outcome détail de l'événement LOGBOOK_OBJECTGROUP_LFC_TRACEABILITY est LOGBOOK_OBJECTGROUP_LFC_TRACEABILITY.OK
+    Quand j'utilise le fichier de requête suivant data/queries/audit/check_traceability.json
+    Et je lance la vérification des journaux de sécurisation
+    Alors le statut final du journal des opérations est OK
+
+
+
 
