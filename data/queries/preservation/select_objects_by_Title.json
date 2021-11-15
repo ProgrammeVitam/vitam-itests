@@ -1,0 +1,17 @@
+{
+  "$roots": [],
+  "$query": [
+    {
+      "$match": {
+        "FileInfo.Filename": "Gallieni Source"
+      }
+
+
+    }
+  ],
+  "$filter": {
+    "$offset": 0,
+    "$limit": 100
+  },
+  "$projection": {}
+}

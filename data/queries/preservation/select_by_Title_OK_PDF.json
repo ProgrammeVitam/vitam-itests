@@ -1,7 +1,7 @@
 {
   "$roots": [],
   "$query": [
-    { "$eq": { "Title": "Gallieni par producteur1" } }
+    { "$eq": { "Title": "fichier PDF/A" } }
   ],
   "$filter": {},
   "$projection": {}
