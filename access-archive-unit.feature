@@ -192,7 +192,6 @@ Fonctionnalité: Recherche une archive unit existante
       | #qualifiers.0.versions.0.PhysicalDimensions.Weight.dValue        | 1                   |
       | #qualifiers.0.versions.0.PhysicalDimensions.Weight.unit         | kilogram            |
       | #qualifiers.1.versions.0.DataObjectVersion                        | BinaryMaster_1      |
-      | #qualifiers.1.versions.0.FileInfo.Filename                        | Filename0           |
       | #qualifiers.1.versions.0.FormatIdentification.FormatId            | fmt/18              |
 
 
@@ -212,7 +211,6 @@ Fonctionnalité: Recherche une archive unit existante
       | #unitups.path.array[] | ["{{unit:ID4}}","{{unit:ID10}}"]                |
     Quand je recherche les groupes d'objets de l'unité archivistique dont le titre est ID8
     Alors les metadonnées sont
-      | FileInfo.Filename                  | jeux_test.ods   |
       | #qualifiers.BinaryMaster._nbc      | 1               |
 
   Scénario: Access EveryOriginatingAgency OK - Recherche d'une archive avec un contrat acceptant tous les services producteurs
