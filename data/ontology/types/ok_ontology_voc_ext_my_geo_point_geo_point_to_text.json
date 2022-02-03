@@ -939,6 +939,28 @@
     ]
   },
   {
+    "Identifier": "_aud",
+    "ApiField": "#approximate_update_date",
+    "Description": "Approximative updated date, Mapping : unit-es-mapping.json",
+    "Type": "DATE",
+    "Origin": "INTERNAL",
+    "ShortName": "_aud",
+    "Collections": [
+      "Unit"
+    ]
+  },
+  {
+    "Identifier": "_acd",
+    "ApiField": "#approximate_creation_date",
+    "Description": "Approximative created date, Mapping : unit-es-mapping.json",
+    "Type": "DATE",
+    "Origin": "INTERNAL",
+    "ShortName": "_acd",
+    "Collections": [
+      "Unit"
+    ]
+  },
+  {
     "Identifier": "_graph",
     "ApiField": "#graph",
     "Description": "Mapping : unit-es-mapping.json",
@@ -1710,28 +1732,6 @@
       "Griffin",
       "PreservationScenario",
       "ManagementContract"
-    ]
-  },
-  {
-    "Identifier": "_fuzzyUD",
-    "ApiField": "#fuzzyUD",
-    "Description": "Approximative updated date, Mapping : unit-es-mapping.json",
-    "Type": "DATE",
-    "Origin": "INTERNAL",
-    "ShortName": "_fuzzyUD",
-    "Collections": [
-      "Unit"
-    ]
-  },
-  {
-    "Identifier": "_fuzzyCD",
-    "ApiField": "#fuzzyCD",
-    "Description": "Approximative created date, Mapping : unit-es-mapping.json",
-    "Type": "DATE",
-    "Origin": "INTERNAL",
-    "ShortName": "_fuzzyCD",
-    "Collections": [
-      "Unit"
     ]
   },
   {
