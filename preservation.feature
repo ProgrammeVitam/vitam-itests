@@ -148,6 +148,6 @@ Fonctionnalité: Lancement d'opérations de préservation
     Et je recherche les groupes d'objets
     Et je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est fichier PDF/A
     Alors Le fichier binaire du type du qualifier BinaryMaster n'a pas été généré
-    Et les statuts des événements LFC.PRESERVATION_UNIT_METADATA_SECURITY_CHECKS, LFC.PRESERVATION_TESSERACT_SPLIT_TEXT_CONTENT, LFC.PRESERVATION_EXTRACTION_AU sont OK
+    Et les statuts des événements LFC.PRESERVATION_EXTRACTION_AU sont OK
 
 
