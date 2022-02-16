@@ -15,7 +15,7 @@
           {
                "$range": {
                     "DataDecimal3.DataDecimal33.DataDecimal332": {
-                         "$gte": 1234.500,
+                         "$gte": 1234,
                          "$lte": 1235.250
                     }
                },
