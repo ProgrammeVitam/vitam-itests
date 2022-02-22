@@ -1,5 +1,27 @@
 # language: fr
 
+# These test cases are not supported by the current mapping of elasticsearch
+# Vitam treats all extended metadata as Text @View file `unit-es-mapping.json`
+# To make Vitam support a typed extended metadata. you should update the file `unit-es-mapping.json`
+# Example :
+#  "DataDate2": {
+#    "type": "date"
+#  }
+# And update Vitam Ontology for unit validation
+# Example :
+# {
+#    "Identifier": "DataDate2",
+#    "SedaField": "DataDate2",
+#    "Description": "Mapping : unit-es-mapping.json",
+#    "Type": "DATE",
+#    "Origin": "EXTERNAL",
+#    "ShortName": "Date d'inscription",
+#    "Collections": [
+#      "Unit"
+#    ]
+#  }
+#
+
 @Dsl
 @DslOperatorRange
 Fonctionnalité: DSL test opérateur range sur métadonnées libres et SEDA
@@ -102,7 +124,7 @@ Fonctionnalité: DSL test opérateur range sur métadonnées libres et SEDA
     Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_decimal_lte_inf_gte.json
     Et je recherche les unités archivistiques
-    Alors le nombre de résultat est 1
+    Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_mdc_range_decimal_lte_gte_array.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
