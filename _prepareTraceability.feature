@@ -18,3 +18,10 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
+
+  Scénario: Préparation audit (test exécuté plus tard dans le fichier audit-consistency.feature nécessitant des données de plus de 5 minutes)
+
+    Etant donné les tests effectués sur le tenant 0
+    Et les données du jeu de test du SIP nommé data/SIP_OK/ZIP/1_UNIT_1_GOT_WITH_RULES.zip
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
