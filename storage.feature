@@ -18,3 +18,13 @@ Fonctionnalité: uploader des fichier et verifier qu'ils sont sauvegardés dans 
     Et je verifie que toutes ces strategies contiennent des fichiers
       | Nom              | valeur    |
       | ofre par default | default |
+
+
+  Scénario: Test de sauvegarde des journaux des écritures
+    Quand je lance une sauvegarde des journaux des écritures
+    Alors le statut final du journal des opérations est OK
+
+
+  Scénario: Test de sauvegarde des journaux des logs d'accès
+    Quand je lance une sauvegarde des journaux des logs d'accès
+    Alors le statut final du journal des opérations est OK
