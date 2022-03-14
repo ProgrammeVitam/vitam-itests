@@ -14,8 +14,8 @@ Fonctionnalité: Audit de Cohérence
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/1_UNIT_1_GOT_WITH_RULES.zip
     Et que l'ingest date d'au moins 300 secondes
     Et je nomme l'identifiant de l'opération IngestOperationId
-    Quand on lance la traçabilité des journaux de cycles de vie des unités archivistiques
-    Et on lance la traçabilité des journaux de cycles de vie des groupes d'objets
+    Quand je génère un journal des cycles de vie des unités archivistiques sécurisé
+    Et je génère un journal des cycles de vie des groupes d'objets sécurisé
     Et j'utilise la requête suivante
 """
 {
@@ -36,8 +36,8 @@ Fonctionnalité: Audit de Cohérence
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/1_UNIT_1_GOT_WITH_RULES.zip
     Et que l'ingest date d'au moins 300 secondes
     Et je nomme l'identifiant de l'opération IngestOperationId
-    Quand on lance la traçabilité des journaux de cycles de vie des unités archivistiques
-    Et on lance la traçabilité des journaux de cycles de vie des groupes d'objets
+    Quand je génère un journal des cycles de vie des unités archivistiques sécurisé
+    Et je génère un journal des cycles de vie des groupes d'objets sécurisé
     Et j'utilise la requête suivante
 """
 {
