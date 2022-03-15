@@ -48,5 +48,17 @@ Fonctionnalité: Génération journal des opérations sécurisé
     Alors le statut final du journal des opérations est OK
 
 
+  Scénario: Sécurisation du journal des écritures OK
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
+    Et que l'ingest date d'au moins 300 secondes
+    Quand je lance une sauvegarde des journaux des écritures
+    Alors le statut final du journal des opérations est OK
+    Quand je lance une sécurisation du journal des écritures
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Et l'outcome détail de l'événement STORAGE_SECURISATION_STORAGE est STORAGE_SECURISATION_STORAGE.OK
+    Quand j'utilise le fichier de requête suivant data/queries/audit/check_traceability.json
+    Et je lance la vérification des journaux de sécurisation
+    Alors le statut final du journal des opérations est OK
 
 
