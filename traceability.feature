@@ -28,7 +28,7 @@ Fonctionnalité: Génération journal des opérations sécurisé
   Scénario: Sécurisation du journal des cycles de vie des unités archivistiques OK
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Et que l'ingest date d'au moins 300 secondes
-    Quand on lance la traçabilité des journaux de cycles de vie des unités archivistiques
+    Quand je génère un journal des cycles de vie des unités archivistiques sécurisé
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et l'outcome détail de l'événement LOGBOOK_UNIT_LFC_TRACEABILITY est LOGBOOK_UNIT_LFC_TRACEABILITY.OK
@@ -39,7 +39,7 @@ Fonctionnalité: Génération journal des opérations sécurisé
   Scénario: Sécurisation du journal des cycles de vie des groupes d'objets OK
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Et que l'ingest date d'au moins 300 secondes
-    Quand on lance la traçabilité des journaux de cycles de vie des groupes d'objets
+    Quand je génère un journal des cycles de vie des groupes d'objets sécurisé
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et l'outcome détail de l'événement LOGBOOK_OBJECTGROUP_LFC_TRACEABILITY est LOGBOOK_OBJECTGROUP_LFC_TRACEABILITY.OK
