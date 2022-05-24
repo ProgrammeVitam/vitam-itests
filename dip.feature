@@ -7,7 +7,7 @@ Fonctionnalité: Export DIP
     Etant donné les tests effectués sur le tenant 0
 
   @Light
-  Scénario: Test export dip unit then OK
+  Scénario: Test export dip unit with default Seda version then OK
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
     Quand j'utilise la requête suivante
 """
@@ -26,8 +26,28 @@ Fonctionnalité: Export DIP
     Alors le dip contient 3 unités archivistiques
     Alors le dip contient 2 groupes d'objets
     Alors le dip contient 2 objets dont 2 sont binaires
+    Alors le dip utilise la version SEDA "2.2"
 
-
+  Scénario: Test export dip unit with specific Seda version then OK
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
+    Quand j'utilise la requête suivante
+"""
+{
+  "$roots": [],
+  "$query": [
+    { "$eq": { "#opi": "Operation-Id" } }
+  ],
+  "$filter": {},
+  "$projection": {}
+}
+"""
+    Quand j'exporte le dip avec la version SEDA "2.1"
+    Alors le statut final du journal des opérations est OK
+    Quand je télécharge le dip
+    Alors le dip contient 3 unités archivistiques
+    Alors le dip contient 2 groupes d'objets
+    Alors le dip contient 2 objets dont 2 sont binaires
+    Alors le dip utilise la version SEDA "2.1"
 
   @Light
   Scénario: Test export dip with no unit then KO
