@@ -93,3 +93,90 @@ Fonctionnalité: Export DIP
 """
     Quand j'exporte le DIP
     Alors le statut final du journal des opérations est KO
+
+  Scénario: Test export dip SEDA 2.2 OK
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_FULL_SEDA2.2.zip
+    Quand j'utilise la requête suivante
+"""
+{
+  "dataObjectVersionToExport" : {
+    "DataObjectVersions" : [ "BinaryMaster" ]
+  },
+  "exportType" : "MinimalArchiveDeliveryRequestReply",
+  "exportWithLogBookLFC" : false,
+  "dslRequest" : {
+    "$roots" : [ ],
+    "$query" : [ {
+      "$in" : {
+        "#operations" : [ "Operation-Id" ]
+      }
+    } ],
+    "$filter" : { },
+    "$projection" : { },
+    "$facets" : [ ]
+  }
+}
+"""
+    Quand j'exporte le DIP
+    Alors le statut final du journal des opérations est OK
+    Quand je télécharge le dip
+    Alors le SIP et le DIP sont semblables
+
+
+  Scénario: Test export dip SEDA 2.2 KO
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_FULL_SEDA2.2.zip
+    Quand j'utilise la requête suivante
+"""
+{
+  "dataObjectVersionToExport" : {
+    "DataObjectVersions" : [ "BinaryMaster" ]
+  },
+  "exportType" : "MinimalArchiveDeliveryRequestReply",
+  "exportWithLogBookLFC" : false,
+  "dslRequest" : {
+    "$roots" : [ ],
+    "$query" : [ {
+      "$in" : {
+        "#operations" : [ "Operation-Id" ]
+      }
+    } ],
+    "$filter" : { },
+    "$projection" : { },
+    "$facets" : [ ]
+  },
+  "sedaVersion": "2.1"
+}
+"""
+    Quand j'exporte le DIP
+    Alors le statut final du journal des opérations est KO
+
+
+
+  Scénario: Test export dip avec des métadonnées étendues
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/1_UNIT_1_GOT_WITH_RULES.zip
+    Quand j'utilise la requête suivante
+"""
+{
+  "dataObjectVersionToExport" : {
+    "DataObjectVersions" : [ "BinaryMaster" ]
+  },
+  "exportType" : "MinimalArchiveDeliveryRequestReply",
+  "exportWithLogBookLFC" : false,
+  "dslRequest" : {
+    "$roots" : [ ],
+    "$query" : [ {
+      "$in" : {
+        "#operations" : [ "Operation-Id" ]
+      }
+    } ],
+    "$filter" : { },
+    "$projection" : { },
+    "$facets" : [ ]
+  }
+}
+"""
+    Quand j'exporte le DIP
+    Alors le statut final du journal des opérations est OK
+    Quand je télécharge le dip
+    Alors le SIP et le DIP sont semblables
+
