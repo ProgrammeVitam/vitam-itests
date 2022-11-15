@@ -35,7 +35,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
-
+    Et je modifie les métadonnées du projet 
 
 
 
