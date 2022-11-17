@@ -38,10 +38,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et je met a jour le projet avec le nom updatedProjectName
     Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
     Et j'initialise une transaction
+    Et je recherche la transaction 
     Et je met a jour la transaction avec le nom updatedTransactionName
-
-
-
-
-
-
+    Et j'envoie l'arborescence bureautique suivante data/queries/collect/sampleStream.zip
