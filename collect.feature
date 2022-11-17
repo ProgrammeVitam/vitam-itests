@@ -35,7 +35,10 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
-    Et je modifie les métadonnées du projet 
+    Et je met a jour le projet avec le nom updatedProjectName
+    Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
+    Et j'initialise une transaction
+    Et je met a jour la transaction avec le nom updatedTransactionName
 
 
 
