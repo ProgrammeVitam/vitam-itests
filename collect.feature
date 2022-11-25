@@ -41,3 +41,4 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et je recherche la transaction 
     Et je met a jour la transaction avec le nom updatedTransactionName
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/sampleStream.zip
+    Et je constate qu'une AU ainsi qu'un GOT sont créés
