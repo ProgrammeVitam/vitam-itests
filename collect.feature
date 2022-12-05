@@ -3,6 +3,9 @@
 @Collect
 Fonctionnalité: Opérations de collecte de données pour construire un SIP consommable par VITAM
 
+Contexte: Vérifier collect service
+  Etant donné Le module de collect est deployé
+
   Scénario: Test 1 Initialisation d'un projet de collecte de données
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
