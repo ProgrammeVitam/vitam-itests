@@ -6,20 +6,21 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
 Contexte: Vérifier collect service
   Etant donné Le module de collect est deployé
 
-  Scénario: Test 1 Initialisation d'un projet de collecte de données
+  Scénario: Gestion du cycle de vie d'un projet de collecte de données
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
+    Alors le projet est créée en succés
     Et je recherche le projet
     Et je met a jour le projet avec le nom updateName
     Et je supprime le projet
-    Alors le statut de la reponse est OK
+    Alors le projet est supprimé en succés
 
-
-  Scénario: Test 2 Initialisation d'une transaction de collecte de données
+  Scénario: Gestion du cycle de vie d'une transaction de collecte de données
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
+    Alors le projet est créée en succés
     Et je recherche le projet
     Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
     Et j'initialise une transaction
@@ -34,10 +35,11 @@ Contexte: Vérifier collect service
     Et j'envoie le SIP et je constate son statut SENT
 
 
-  Scénario: Test 3 Envoie une arborescence bureautique et purge du projet
+  Scénario: Gestion d'une arborescence bureautique et purge du projet
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
+    Alors le projet est créée en succés
     Et je met a jour le projet avec le nom updatedProjectName
     Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
     Et j'initialise une transaction
