@@ -10,17 +10,17 @@ Contexte: Vérifier collect service
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
-    Alors le projet est créée en succés
+    Alors le projet est créé en succès
     Et je recherche le projet
     Et je met a jour le projet avec le nom updateName
     Et je supprime le projet
-    Alors le projet est supprimé en succés
+    Alors le projet est supprimé en succès
 
   Scénario: Gestion du cycle de vie d'une transaction de collecte de données
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
-    Alors le projet est créée en succés
+    Alors le projet est créé en succès
     Et je recherche le projet
     Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
     Et j'initialise une transaction
@@ -39,7 +39,7 @@ Contexte: Vérifier collect service
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
-    Alors le projet est créée en succés
+    Alors le projet est créé en succès
     Et je met a jour le projet avec le nom updatedProjectName
     Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
     Et j'initialise une transaction
