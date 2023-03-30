@@ -32,3 +32,14 @@ Fonctionnalité: Ontology test
     Et je recherche les unités archivistiques
     Alors les metadonnées sont
     | Writer.BirthDate        | 2016-09-26                                  |
+
+    Et j'utilise la requête suivante
+"""
+{ "$roots": [],
+  "$query": [{"$and":[{"$eq":{"FileInfo.Filename":"BinaryMaster.txt"}},{"$in":{"#operations":["Operation-Id"]}}]}],
+  "$projection": {
+  }}
+"""
+     Et je recherche les groupes d'objets
+     Alors les metadonnées sont
+     | FileInfo.LastModified        | 2016-10-18T21:03:30                                 |
