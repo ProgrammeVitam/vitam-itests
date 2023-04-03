@@ -45,5 +45,5 @@ Contexte: Vérifier collect service
     Et j'initialise une transaction
     Et je recherche la transaction 
     Et je met a jour la transaction avec le nom updatedTransactionName
-    Et j'envoie l'arborescence bureautique suivante data/queries/collect/sampleStream.zip
+    Et j'envoie l'arborescence bureautique suivante data/queries/collect/sample_stream.zip
     Et je constate qu'une AU ainsi qu'un GOT sont créés
