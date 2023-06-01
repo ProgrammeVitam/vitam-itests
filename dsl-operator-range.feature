@@ -201,4 +201,4 @@ Fonctionnalité: DSL test opérateur range sur métadonnées libres et SEDA
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 0
     Quand j'utilise le fichier de requête suivant data/queries/dsl-operator-range/select_tenant_range_query_invalid.json
-    Alors le statut de select résultat est Precondition Failed
+    Alors le statut de select résultat est Bad Request
