@@ -18,6 +18,14 @@ Fonctionnalité: Tests d'imports et de recherches de contrats de gestion
     Alors le statut final du journal des opérations est OK
     Et le champ 'outDetail' de l'évenement final est : STP_IMPORT_MANAGEMENT_CONTRACT.OK
     Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du contrat de gestion
+    
+  Scénario: MANAGEMENT_CONTRACTS - Import de contrat de type contract de gestion avec configuration ARK
+    Etant donné un contract nommé data/contracts/management/OK_contract_management_ark.json
+    Quand j'importe ce contrat de type MANAGEMENT_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Et le champ 'outDetail' de l'évenement final est : STP_IMPORT_MANAGEMENT_CONTRACT.OK
+    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du contrat de gestion
 
   Scénario: MANAGEMENT_CONTRACTS - Tentative d'import KO d'un contrat de gestion déjà existant
     Etant donné un contract nommé data/contracts/management/OK_contract_management_default.json
