@@ -879,7 +879,6 @@
       "Unit"
     ]
   },
-
   {
     "Identifier": "LinkingAgentIdentifierType",
     "SedaField": "LinkingAgentIdentifierType",
@@ -938,7 +937,7 @@
   {
     "Identifier": "DataObjectProfile",
     "SedaField": "DataObjectProfile",
-    "Description": "Mapping : unit-es-mapping.json. DataObjectProfile",
+    "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
     "Origin": "INTERNAL",
     "ShortName": "DataObjectProfile",
@@ -1195,6 +1194,17 @@
     ]
   },
   {
+    "Identifier": "_opts",
+    "ApiField": "#opts",
+    "Description": "Mapping : unit-es-mapping.json. Identifiants de l’opération dans laquelle l'unité archivistique est en cours de transfert",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "Opérations de transfert",
+    "Collections": [
+      "Unit"
+    ]
+  },
+  {
     "Identifier": "_ops",
     "ApiField": "#operations",
     "Description": "Mapping : unit-es-mapping.json. Identifiants d’opérations auxquelles cette unité archivistique a participé.",
@@ -1204,17 +1214,6 @@
     "Collections": [
       "Unit",
       "ObjectGroup"
-    ]
-  },
-  {
-    "Identifier": "_opts",
-    "ApiField": "#opts",
-    "Description": "Mapping : unit-es-mapping.json. Identifiants de l’opération dans laquelle l'unité archivistique est en cours de transfert",
-    "Type": "KEYWORD",
-    "Origin": "INTERNAL",
-    "ShortName": "Opérations de transfert",
-    "Collections": [
-      "Unit"
     ]
   },
   {
@@ -1357,14 +1356,14 @@
     ]
   },
   {
-   "Identifier": "_av",
-   "ApiField": "_av",
-   "Description": "Version interne de l’enregistrement décrit.",
-   "Type": "LONG",
-   "Origin": "INTERNAL",
-   "ShortName": "Version",
+    "Identifier": "_av",
+    "ApiField": "_av",
+    "Description": "Version interne de l’enregistrement décrit.",
+    "Type": "LONG",
+    "Origin": "INTERNAL",
+    "ShortName": "Version",
     "Collections": [
-     "Unit",
+      "Unit",
       "ObjectGroup"
     ]
   },
@@ -3337,7 +3336,8 @@
     "Type": "KEYWORD",
     "Description": "Extension au SEDA. Elément de type mot clé",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3347,7 +3347,8 @@
     "Type": "TEXT",
     "Description": "Extension au SEDA. Elément de type texte",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3357,7 +3358,8 @@
     "Type": "DATE",
     "Description": "Extension au SEDA. Elément de type date",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3367,7 +3369,8 @@
     "Type": "BOOLEAN",
     "Description": "Extension au SEDA. Elément de type booléen",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3377,7 +3380,8 @@
     "Type": "LONG",
     "Description": "Extension au SEDA. Elément de type chiffre",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3387,7 +3391,8 @@
     "Type": "DOUBLE",
     "Description": "Extension au SEDA. Elément de type décimal",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3397,7 +3402,8 @@
     "Type": "GEO_POINT",
     "Description": "Extension au SEDA. Elément de type gps",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3407,7 +3413,8 @@
     "Type": "ENUM",
     "Description": "Extension au SEDA. Elément de type énumératif",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   }
 ]
