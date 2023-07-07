@@ -3318,6 +3318,39 @@
     ]
   },
   {
+    "Identifier": "PersistentIdentifierPolicyType",
+    "ApiField": "PersistentIdentifierPolicyType",
+    "Description": "Mapping : managementcontract-es-mapping.json. Gestion d'une autorité nommante ARK",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "PersistentIdentifierPolicyType",
+    "Collections": [
+      "ManagementContract"
+    ]
+  },
+  {
+    "Identifier": "PersistentIdentifierUnit",
+    "ApiField": "PersistentIdentifierUnit",
+    "Description": "Mapping : managementcontract-es-mapping.json. Gestion d'une autorité nommante ARK",
+    "Type": "BOOLEAN",
+    "Origin": "INTERNAL",
+    "ShortName": "PersistentIdentifierUnit",
+    "Collections": [
+      "ManagementContract"
+    ]
+  },
+  {
+    "Identifier": "PersistentIdentifierAuthority",
+    "ApiField": "PersistentIdentifierAUTHORITY",
+    "Description": "Mapping : managementcontract-es-mapping.json. Gestion d'une autorité nommante ARK",
+    "Type": "LONG",
+    "Origin": "INTERNAL",
+    "ShortName": "PersistentIdentifierAUTHORITY",
+    "Collections": [
+      "ManagementContract"
+    ]
+  },
+  {
     "Identifier": "AgeDuCapitaine",
     "ApiField": "AgeDuCapitaine",
     "SedaField": "AgeDuCapitaine",
