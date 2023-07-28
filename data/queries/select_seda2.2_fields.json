@@ -140,7 +140,77 @@
         },
         {
           "$eq": {
-            "Event.evDetData": "EventDetailData_content0_seda21"
+            "Event.evDetData": "EventDetailData_content0_seda22"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.SigningRole": "Signature"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.DetachedSigningRole": "AdditionalProof"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.Signature.Signer.BirthName": "Bienvenüe"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.Signature.Signer.SigningTime": "1998-04-04T08:07:06"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.Signature.Signer.Nationality": "Française"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.Signature.Validator.GivenName": "Le père du métro"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.Signature.SigningType": "QualifiedSignature"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.TimestampingInformation.TimeStamp": "2017-04-04T08:07:06"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.TimestampingInformation.AdditionalTimestampingInformation": "ExtraInfo"
+          }
+        },
+        {
+          "$eq": {
+            "SigningInformation.AdditionalProof.AdditionalProofInformation": "ExtraInfo2"
+          }
+        },
+        {
+          "$eq": {
+            "PersistentIdentifier.PersistentIdentifierType": "ark"
+          }
+        },
+        {
+          "$eq": {
+            "PersistentIdentifier.PersistentIdentifierOrigin": "OriginatingAgency"
+          }
+        },
+        {
+          "$eq": {
+            "PersistentIdentifier.PersistentIdentifierReference": "Agency-00001"
+          }
+        },
+        {
+          "$eq": {
+            "PersistentIdentifier.PersistentIdentifierContent": "ark:/22567/001a957db5eadaac"
           }
         },
         {
