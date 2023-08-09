@@ -1,0 +1,12 @@
+[
+	{
+		"Name":"Contract_with_signature",
+		"Identifier":"Contract_with_signature",
+		"SignaturePolicy": {
+			"SignedDocument": "ALLOWED",
+			"NeedSignature": true,
+			"NeedTimestamp": false,
+			"NeedAdditionalProof": true
+		}
+	}
+]
