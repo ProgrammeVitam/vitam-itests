@@ -145,52 +145,27 @@
         },
         {
           "$eq": {
-            "SigningInformation.SigningRole": "Signature"
+            "Signature.Signer.BirthName": "Henry"
           }
         },
         {
           "$eq": {
-            "SigningInformation.DetachedSigningRole": "AdditionalProof"
+            "Signature.Signer.SigningTime": "2016-06-03T15:28:00"
           }
         },
         {
           "$eq": {
-            "SigningInformation.Signature.Signer.BirthName": "Bienvenüe"
+            "Signature.Signer.Nationality": "Monaco"
           }
         },
         {
           "$eq": {
-            "SigningInformation.Signature.Signer.SigningTime": "1998-04-04T08:07:06"
+            "Signature.Validator.ValidationTime": "2016-06-03T15:28:00"
           }
         },
         {
           "$eq": {
-            "SigningInformation.Signature.Signer.Nationality": "Française"
-          }
-        },
-        {
-          "$eq": {
-            "SigningInformation.Signature.Validator.GivenName": "Le père du métro"
-          }
-        },
-        {
-          "$eq": {
-            "SigningInformation.Signature.SigningType": "QualifiedSignature"
-          }
-        },
-        {
-          "$eq": {
-            "SigningInformation.TimestampingInformation.TimeStamp": "2017-04-04T08:07:06"
-          }
-        },
-        {
-          "$eq": {
-            "SigningInformation.TimestampingInformation.AdditionalTimestampingInformation": "ExtraInfo"
-          }
-        },
-        {
-          "$eq": {
-            "SigningInformation.AdditionalProof.AdditionalProofInformation": "ExtraInfo2"
+            "Signature.ReferencedObject.SignedObjectDigest.MessageDigest": "942bb63cc16bf5ca3ba7fabf40ce9be19c3185a36cd87ad17c63d6fad1aa29d4312d73f2d6a1ba1266c3a71fc4119dd476d2d776cf2ad2acd7a9a3dfa1f80dc7"
           }
         },
         {
