@@ -145,6 +145,31 @@
         },
         {
           "$eq": {
+            "Signature.Signer.BirthName": "Henry"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.Signer.SigningTime": "2016-06-03T15:28:00"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.Signer.Nationality": "Monaco"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.Validator.ValidationTime": "2016-06-03T15:28:00"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.ReferencedObject.SignedObjectDigest.MessageDigest": "942bb63cc16bf5ca3ba7fabf40ce9be19c3185a36cd87ad17c63d6fad1aa29d4312d73f2d6a1ba1266c3a71fc4119dd476d2d776cf2ad2acd7a9a3dfa1f80dc7"
+          }
+        },
+        {
+          "$eq": {
             "#management.StorageRule.FinalAction": "Transfer"
           }
         },
