@@ -155,27 +155,27 @@
         },
         {
           "$eq": {
-            "SigningInformation.Signature.Signer.BirthName": "Bienvenüe"
+            "SigningInformation.SignatureDescription.Signer.BirthName": "Bienvenüe"
           }
         },
         {
           "$eq": {
-            "SigningInformation.Signature.Signer.SigningTime": "1998-04-04T08:07:06"
+            "SigningInformation.SignatureDescription.Signer.SigningTime": "1998-04-04T08:07:06"
           }
         },
         {
           "$eq": {
-            "SigningInformation.Signature.Signer.Nationality": "Française"
+            "SigningInformation.SignatureDescription.Signer.Nationality": "Française"
           }
         },
         {
           "$eq": {
-            "SigningInformation.Signature.Validator.GivenName": "Le père du métro"
+            "SigningInformation.SignatureDescription.Validator.GivenName": "Le père du métro"
           }
         },
         {
           "$eq": {
-            "SigningInformation.Signature.SigningType": "QualifiedSignature"
+            "SigningInformation.SignatureDescription.SigningType": "QualifiedSignature"
           }
         },
         {
