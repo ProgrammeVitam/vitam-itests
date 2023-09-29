@@ -4,9 +4,9 @@
 		"Identifier":"Contract_with_signature",
 		"SignaturePolicy": {
 			"SignedDocument": "ALLOWED",
-			"NeedSignature": true,
-			"NeedTimestamp": false,
-			"NeedAdditionalProof": true
+			"DeclaredSignature": true,
+			"DeclaredTimestamp": false,
+			"DeclaredAdditionalProof": true
 		}
 	}
 ]
