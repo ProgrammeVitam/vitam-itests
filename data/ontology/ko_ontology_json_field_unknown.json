@@ -3519,8 +3519,8 @@
     ]
   },
   {
-    "Identifier": "NeedSignature",
-    "ApiField": "NeedSignature",
+    "Identifier": "DeclaredSignature",
+    "ApiField": "DeclaredSignature",
     "Description": "Données toujours accompagné d'une signature",
     "Type": "BOOLEAN",
     "Origin": "INTERNAL",
@@ -3530,8 +3530,8 @@
     ]
   },
   {
-    "Identifier": "NeedTimestamp",
-    "ApiField": "NeedTimestamp",
+    "Identifier": "DeclaredTimestamp",
+    "ApiField": "DeclaredTimestamp",
     "Description": "Données toujours accompagné d'un timestamp",
     "Type": "BOOLEAN",
     "Origin": "INTERNAL",
@@ -3541,8 +3541,8 @@
     ]
   },
   {
-    "Identifier": "NeedAdditionalProof",
-    "ApiField": "NeedAdditionalProof",
+    "Identifier": "DeclaredAdditionalProof",
+    "ApiField": "DeclaredAdditionalProof",
     "Description": "Données toujours accompagné de preuves complémentaire",
     "Type": "BOOLEAN",
     "Origin": "INTERNAL",
