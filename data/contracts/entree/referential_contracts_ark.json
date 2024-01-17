@@ -1,0 +1,112 @@
+[
+  {
+    "Name": "MCNoIdentificationStrategy",
+    "Identifier": "MCNoIdentificationStrategy",
+    "Description": "MCNoIdentificationStrategy",
+    "ManagementContractId": "MCNoIdentificationStrategy",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCWithIdentificationStrategy-1",
+    "Identifier": "MCWithIdentificationStrategy-1",
+    "Description": "MCWithIdentificationStrategy-1",
+    "ManagementContractId": "MCWithIdentificationStrategy-1",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCWithIdentificationStrategy-2",
+    "Identifier": "MCWithIdentificationStrategy-2",
+    "Description": "MCWithIdentificationStrategy-2",
+    "ManagementContractId": "MCWithIdentificationStrategy-2",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCWithIdentificationStrategy-3",
+    "Identifier": "MCWithIdentificationStrategy-3",
+    "Description": "MCWithIdentificationStrategy-3",
+    "ManagementContractId": "MCWithIdentificationStrategy-3",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCWithIdentificationStrategy-4",
+    "Identifier": "MCWithIdentificationStrategy-4",
+    "Description": "MCWithIdentificationStrategy-4",
+    "ManagementContractId": "MCWithIdentificationStrategy-4",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCWithIdentificationStrategy-5",
+    "Identifier": "MCWithIdentificationStrategy-5",
+    "Description": "MCWithIdentificationStrategy-5",
+    "ManagementContractId": "MCWithIdentificationStrategy-5",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCWithIdentificationStrategy-6",
+    "Identifier": "MCWithIdentificationStrategy-6",
+    "Description": "MCWithIdentificationStrategy-6",
+    "ManagementContractId": "MCWithIdentificationStrategy-6",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCWithIdentificationStrategy-7",
+    "Identifier": "MCWithIdentificationStrategy-7",
+    "Description": "MCWithIdentificationStrategy-7",
+    "ManagementContractId": "MCWithIdentificationStrategy-7",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCWithIdentificationStrategy-8",
+    "Identifier": "MCWithIdentificationStrategy-8",
+    "Description": "MCWithIdentificationStrategy-8",
+    "ManagementContractId": "MCWithIdentificationStrategy-8",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  },
+  {
+    "Name": "MCDefaultPersistentIdentifierPolicy",
+    "Identifier": "MCDefaultPersistentIdentifierPolicy",
+    "Description": "MCDefaultPersistentIdentifierPolicy",
+    "ManagementContractId": "MCDefaultPersistentIdentifierPolicy",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016"
+  }
+]
