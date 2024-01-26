@@ -1,0 +1,7 @@
+[
+  {
+    "Cardinality": "ONE",
+    "Path": "Invoice.Provider.Address",
+    "ShortName": "Adresse du provider"
+  }
+]

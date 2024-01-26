@@ -1,0 +1,24 @@
+[
+  {
+    "IsObject": true,
+    "Cardinality": "MANY",
+    "Path": "Invoice",
+    "ShortName": "Facture"
+  },
+  {
+    "IsObject": true,
+    "Cardinality": "ONE",
+    "Path": "Invoice.Provider",
+    "ShortName": "Provider"
+  },
+  {
+    "Cardinality": "ONE",
+    "Path": "Invoice.Provider.BirthDate",
+    "ShortName": "Date de naissance du provider"
+  },
+  {
+    "Cardinality": "ONE",
+    "Path": "Invoice.Provider.BirthDate",
+    "ShortName": "Another path duplicated"
+  }
+]
