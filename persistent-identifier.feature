@@ -4,7 +4,7 @@
 Fonctionnalité: recherche sur les identifiants ARK
 
   Contexte: Avant de lancer cette suite de test, je présuppose que le contrat de gestion avec ID pérenne est chargé et déclaré dans un contrat d'entrée.
-    Etant donné les tests effectués sur le tenant 0
+    Etant donné les tests effectués sur le tenant 1
     Et un contract nommé data/contracts/management/OK_contract_management_IdentificationPolicy.json
     Et j'importe ce contrat sans échec de type MANAGEMENT_CONTRACTS
     Et un contract nommé data/contracts/entree/referential_contracts_ark.json
