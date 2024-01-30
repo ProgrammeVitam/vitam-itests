@@ -1,7 +1,7 @@
 [
   {
     "Cardinality": "ONE",
-    "Path": "Invoice.Provider.Address",
+    "Path": "TNRSchema.Provider.Address",
     "ShortName": "Adresse du provider"
   }
 ]
