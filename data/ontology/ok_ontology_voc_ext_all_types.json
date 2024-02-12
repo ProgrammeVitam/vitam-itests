@@ -292,7 +292,8 @@
       "Profile",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1288,7 +1289,8 @@
       "LogbookOperation",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1352,7 +1354,8 @@
       "LogbookOperation",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1655,7 +1658,8 @@
       "SecurityProfile",
       "FileRules",
       "FileFormat",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1705,7 +1709,8 @@
       "FileRules",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1775,7 +1780,8 @@
       "Profile",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -2824,7 +2830,8 @@
     "Origin": "INTERNAL",
     "ShortName": "Contexte de création",
     "Collections": [
-      "Ontology"
+      "Ontology",
+      "Schema"
     ]
   },
   {
@@ -2846,7 +2853,8 @@
     "Origin": "INTERNAL",
     "ShortName": "Traduction",
     "Collections": [
-      "Ontology"
+      "Ontology",
+      "Schema"
     ]
   },
   {
@@ -2868,7 +2876,8 @@
     "Origin": "INTERNAL",
     "ShortName": "Fichier",
     "Collections": [
-      "Profile"
+      "Profile",
+      "Schema"
     ]
   },
   {
@@ -3548,6 +3557,49 @@
     "ShortName": "Données toujours accompagné de preuves complémentaire",
     "Collections": [
       "IngestContract"
+    ]
+  },{
+  "Identifier": "Cardinality",
+  "ApiField": "Cardinality",
+  "Description": "Cardinality ",
+  "Type": "KEYWORD",
+  "Origin": "INTERNAL",
+  "ShortName": "Cardinalité",
+  "Collections": [
+    "Schema"
+  ]
+},
+  {
+    "Identifier": "StringSize",
+    "ApiField": "StringSize",
+    "Description": "The size of input with values SHORT, MEDIUM or LARGE",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "Taille du champs",
+    "Collections": [
+      "Schema"
+    ]
+  },
+  {
+    "Identifier": "IsObject",
+    "ApiField": "IsObject",
+    "Description": "Mapping : accesscontract-es-mapping.json",
+    "Type": "BOOLEAN",
+    "Origin": "INTERNAL",
+    "ShortName": "Is Object type",
+    "Collections": [
+      "Schema"
+    ]
+  },
+  {
+    "Identifier": "Collection",
+    "ApiField": "Collection",
+    "Description": "Mapping : ontology-es-mapping.json. Collection(s) de la base de données associée(s) à un vocabulaire",
+    "Type": "KEYWORD",
+    "Origin": "INTERNAL",
+    "ShortName": "Collection",
+    "Collections": [
+      "Schema"
     ]
   },
   {

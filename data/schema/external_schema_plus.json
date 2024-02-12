@@ -1,0 +1,7 @@
+[
+  {
+    "Cardinality": "ONE",
+    "Path": "TNRSchema.Provider.Address",
+    "ShortName": "Adresse du provider"
+  }
+]
