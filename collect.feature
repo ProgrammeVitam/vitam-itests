@@ -69,8 +69,7 @@ Contexte: Vérifier collect service
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/sample_stream.zip
     Et je constate qu'une AU ainsi qu'un GOT sont créés
 
-
-  Scénario: Gestion d'une arborescence bureautique et purge du projet
+  Scénario: Gestion d'une arborescence bureautique et MAJ des métadonnées via CSV et purge du projet
     Etant donné les tests effectués sur le tenant 0
     Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
     Et j'initialise le project
@@ -78,12 +77,42 @@ Contexte: Vérifier collect service
     Et je met a jour le projet avec le nom updatedProjectName
     Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
     Et j'initialise une transaction
-    Et je recherche la transaction 
+    Et je recherche la transaction
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie.zip
-    Et j'envoie un fichier de mise à jour data/queries/collect/metadata_maj.csv
+    Et j'envoie un fichier de mise à jour CSV data/queries/collect/metadata_maj.csv
     Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
-    Et je clôture et je constate son statut READY 
+    Et je clôture et je constate son statut READY
     Et j'envoie le SIP et je constate son statut SENT
-    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK 
+    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+
+  Scénario: Gestion d'une arborescence bureautique et MAJ des métadonnées via JSONL et purge du projet
+    Etant donné les tests effectués sur le tenant 0
+    Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
+    Et j'initialise le project
+    Alors le projet est créé en succès
+    Et je met a jour le projet avec le nom updatedProjectName
+    Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
+    Et j'initialise une transaction
+    Et je recherche la transaction
+    Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie.zip
+    Et j'envoie un fichier de mise à jour JSONL data/queries/collect/metadata_maj.jsonl
+    Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
+    Et je clôture et je constate son statut READY
+    Et j'envoie le SIP et je constate son statut SENT
+    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
 
 
+  Scénario: Gestion d'une arborescence bureautique intégrant un fichier métadonnées JSONL et purge du projet
+    Etant donné les tests effectués sur le tenant 0
+    Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
+    Et j'initialise le project
+    Alors le projet est créé en succès
+    Et je met a jour le projet avec le nom updatedProjectName
+    Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
+    Et j'initialise une transaction
+    Et je recherche la transaction
+    Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie_MetadataJsonl.zip
+    Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
+    Et je clôture et je constate son statut READY
+    Et j'envoie le SIP et je constate son statut SENT
+    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
