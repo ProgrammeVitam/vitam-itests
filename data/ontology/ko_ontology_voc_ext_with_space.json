@@ -4160,5 +4160,19 @@
     "Collections": [
       "Unit"
     ]
+  },
+  {
+    "Identifier": "_batchId",
+    "ApiField": "#batchId",
+    "Description": "Mapping : unit-es-mapping.json",
+    "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
+    "Origin": "INTERNAL",
+    "ShortName": "Identifiant de lot",
+    "Collections": [
+      "Unit",
+      "ObjectGroup"
+    ]
   }
 ]
