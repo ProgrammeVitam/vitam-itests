@@ -27,6 +27,8 @@ Fonctionnalité: Import de vocabulaire externe dans l'ontologie
     Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import de l'ontologie
     Quand je recherche le vocabulaire intitulé MyText
     Alors le type du vocabulaire est KEYWORD
+    Alors le type détaillé du vocabulaire est STRING
+    Et la taille de la chaîne de caractère du vocabulaire est MEDIUM
     Alors les metadonnées sont
       | Code | 200 |
     Et le statut final du journal des opérations est OK
@@ -374,14 +376,6 @@ Fonctionnalité: Import de vocabulaire externe dans l'ontologie
     Etant donné un fichier ontologie nommé data/ontology/ok_ontology_voc_ext_all_types.json
     Quand j'importe l'ontologie
     Et le statut final du journal des opérations est OK
-    Etant donné un fichier ontologie nommé data/ontology/types/ok_ontology_voc_ext_my_geo_point_geo_point_to_keyword.json
-    Quand j'importe l'ontologie
-    Et le statut final du journal des opérations est OK
-    Etant donné un fichier ontologie nommé data/ontology/vitam_ontology.json
-    Quand j'importe l'ontologie
-    Etant donné un fichier ontologie nommé data/ontology/ok_ontology_voc_ext_all_types.json
-    Quand j'importe l'ontologie
-    Et le statut final du journal des opérations est OK
     Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import de l'ontologie
     Etant donné un fichier ontologie nommé data/ontology/types/ko_ontology_voc_ext_my_geo_point_geo_point_to_date.json
     Quand j'importe l'ontologie
@@ -439,3 +433,45 @@ Fonctionnalité: Import de vocabulaire externe dans l'ontologie
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import de l'ontologie
     Et le champ 'evDetData' de l'évenement final est : ontologyCheck" : "MyEnum : Change of type from ENUM to GEO_POINT is not possible
 
+  Scénario: valeurs par défaut pour les type détaillés et la taille des chaînes de caractère
+    Etant donné un fichier ontologie nommé data/ontology/ok_ontology_voc_ext_all_types.json
+    Quand j'importe l'ontologie
+    Alors les metadonnées sont
+      | Code | 200 |
+    Et le statut final du journal des opérations est OK
+    Etant donné un fichier ontologie nommé data/ontology/types/ok_ontology_voc_ext_no_type_detail.json
+    Quand j'importe l'ontologie
+    Et le statut final du journal des opérations est OK
+    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import de l'ontologie
+    Quand je recherche le vocabulaire intitulé MyKeyword
+      Alors le type du vocabulaire est KEYWORD
+      Et le type détaillé du vocabulaire est STRING
+      Et la taille de la chaîne de caractère du vocabulaire est MEDIUM
+    Quand je recherche le vocabulaire intitulé MyText
+      Alors le type du vocabulaire est TEXT
+      Et le type détaillé du vocabulaire est STRING
+      Et la taille de la chaîne de caractère du vocabulaire est MEDIUM
+    Quand je recherche le vocabulaire intitulé MyDate
+      Alors le type du vocabulaire est DATE
+      Et le type détaillé du vocabulaire est DATETIME
+      Et la taille de la chaîne de caractère du vocabulaire est indéfinie
+    Quand je recherche le vocabulaire intitulé MyBoolean
+      Alors le type du vocabulaire est BOOLEAN
+      Et le type détaillé du vocabulaire est BOOLEAN
+      Et la taille de la chaîne de caractère du vocabulaire est indéfinie
+    Quand je recherche le vocabulaire intitulé MyLong
+      Alors le type du vocabulaire est LONG
+      Et le type détaillé du vocabulaire est LONG
+      Et la taille de la chaîne de caractère du vocabulaire est indéfinie
+    Quand je recherche le vocabulaire intitulé MyDouble
+      Alors le type du vocabulaire est DOUBLE
+      Et le type détaillé du vocabulaire est DOUBLE
+      Et la taille de la chaîne de caractère du vocabulaire est indéfinie
+    Quand je recherche le vocabulaire intitulé MyGeoPoint
+      Alors le type du vocabulaire est GEO_POINT
+      Et le type détaillé du vocabulaire est STRING
+      Et la taille de la chaîne de caractère du vocabulaire est MEDIUM
+    Quand je recherche le vocabulaire intitulé MyEnum
+      Alors le type du vocabulaire est ENUM
+      Et le type détaillé du vocabulaire est ENUM
+      Et la taille de la chaîne de caractère du vocabulaire est indéfinie

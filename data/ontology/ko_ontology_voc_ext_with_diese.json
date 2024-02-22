@@ -4,6 +4,7 @@
     "SedaField": "AcquiredDate",
     "Description": "Mapping : unit-es-mapping.json. Références : ARKMS.DateAcquired",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de numérisation",
     "Collections": [
@@ -15,6 +16,7 @@
     "SedaField": "BirthDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de naissance",
     "Collections": [
@@ -26,6 +28,8 @@
     "SedaField": "BirthName",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Nom de naissance",
     "Collections": [
@@ -37,6 +41,8 @@
     "SedaField": "Address",
     "Description": "Mapping : unit-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : Adresse. Références : ead.address",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Addresse",
     "Collections": [
@@ -48,6 +54,8 @@
     "SedaField": "City",
     "Description": "Mapping : unit-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : Ville.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Ville",
     "Collections": [
@@ -59,6 +67,8 @@
     "SedaField": "Country",
     "Description": "Mapping : unit-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : Pays.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Pays",
     "Collections": [
@@ -70,6 +80,8 @@
     "SedaField": "Geogname",
     "Description": "Mapping : unit-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : Nom géographique. Références : ead.geogname",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Nom géographique",
     "Collections": [
@@ -81,6 +93,8 @@
     "SedaField": "PostalCode",
     "Description": "Mapping : unit-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : Code postal.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Code postal",
     "Collections": [
@@ -92,6 +106,8 @@
     "SedaField": "Region",
     "Description": "Mapping : unit-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : Région.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Région",
     "Collections": [
@@ -103,6 +119,8 @@
     "SedaField": "Corpname",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Nom d'une entité",
     "Collections": [
@@ -114,6 +132,7 @@
     "SedaField": "DeathDate",
     "Description": "Mapping : unit-es-mapping.json. Date de décès d'une personne.",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de décès",
     "Collections": [
@@ -125,6 +144,8 @@
     "SedaField": "FirstName",
     "Description": "Mapping : unit-es-mapping.json. Prénom d'une personne.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Prénom",
     "Collections": [
@@ -136,6 +157,8 @@
     "SedaField": "Gender",
     "Description": "Mapping : unit-es-mapping.json. Sexe de la personne.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Sexe",
     "Collections": [
@@ -147,6 +170,8 @@
     "SedaField": "GivenName",
     "Description": "Mapping : unit-es-mapping.json. Nom d'usage d'une personne.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Nom d'usage",
     "Collections": [
@@ -158,6 +183,8 @@
     "SedaField": "Identifier",
     "Description": "Mapping : unit-es-mapping.json. UNITE ARCHIVISTIQUE : Dans le PersonGroup, Identifiant de type numéro matricule. Dans le EntityGroup, Identifiant de l'entité. REFERENTIELS : identifiant.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant",
     "Collections": [
@@ -180,6 +207,8 @@
     "SedaField": "Nationality",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Nationalité",
     "Collections": [
@@ -191,6 +220,8 @@
     "SedaField": "ArchivalAgencyArchiveUnitIdentifier",
     "Description": "Mapping : unit-es-mapping.json. Identifiant métier attribué à l'ArchiveUnit par le service d'archives. Peut être comparé à une cote.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant métier (Service d'archives)",
     "Collections": [
@@ -202,6 +233,8 @@
     "SedaField": "ArchiveUnitProfile",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Profil d'unité archivistique",
     "Collections": [
@@ -213,6 +246,8 @@
     "SedaField": "Juridictional",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Couverture administrative",
     "Collections": [
@@ -224,6 +259,8 @@
     "SedaField": "Spatial",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Couverture géographique",
     "Collections": [
@@ -235,6 +272,8 @@
     "SedaField": "Temporal",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Couverture temporelle",
     "Collections": [
@@ -246,6 +285,7 @@
     "SedaField": "CreatedDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de création",
     "Collections": [
@@ -258,6 +298,8 @@
     "SedaField": "DataObjectGroupReferenceId",
     "Description": "Mapping : unit-es-mapping.json. Référence à un groupe d'objets-données listé dans les métadonnées de transport.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence à un groupe d'objets",
     "Collections": [
@@ -269,6 +311,8 @@
     "SedaField": "CustodialHistoryItem",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "LARGE",
     "Origin": "INTERNAL",
     "ShortName": "Historique de propriété, de responsabilité et de conservation",
     "Collections": [
@@ -280,6 +324,8 @@
     "SedaField": "Description",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "LARGE",
     "Origin": "INTERNAL",
     "ShortName": "Description",
     "Collections": [
@@ -292,7 +338,8 @@
       "Profile",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -300,6 +347,8 @@
     "SedaField": "DescriptionLanguage",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Langue des descriptions",
     "Collections": [
@@ -311,6 +360,7 @@
     "SedaField": "DescriptionLevel",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "ENUM",
     "Origin": "INTERNAL",
     "ShortName": "Niveau de description",
     "Collections": [
@@ -322,6 +372,8 @@
     "SedaField": "DocumentType",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Type de document",
     "Collections": [
@@ -333,6 +385,7 @@
     "SedaField": "EndDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de fin",
     "Collections": [
@@ -346,6 +399,8 @@
     "SedaField": "EventDetail",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Détail",
     "Collections": [
@@ -357,6 +412,8 @@
     "SedaField": "FilePlanPosition",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Position dans le plan de classement",
     "Collections": [
@@ -368,6 +425,7 @@
     "SedaField": "GpsAltitude",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Altitude",
     "Collections": [
@@ -379,6 +437,8 @@
     "SedaField": "GpsAltitudeRef",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Niveau de la mer",
     "Collections": [
@@ -390,6 +450,8 @@
     "SedaField": "GpsDateStamp",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Heure et date",
     "Collections": [
@@ -401,6 +463,8 @@
     "SedaField": "GpsLatitude",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Latitude",
     "Collections": [
@@ -412,6 +476,8 @@
     "SedaField": "GpsLatitudeRef",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence",
     "Collections": [
@@ -423,6 +489,8 @@
     "SedaField": "GpsLongitude",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Longitude",
     "Collections": [
@@ -434,6 +502,8 @@
     "SedaField": "GpsLongitudeRef",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence",
     "Collections": [
@@ -445,6 +515,8 @@
     "SedaField": "GpsVersionID",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de version du GPS",
     "Collections": [
@@ -456,6 +528,7 @@
     "SedaField": "HoldEndDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de fin de gel",
     "Collections": [
@@ -467,6 +540,8 @@
     "SedaField": "HoldOwner",
     "Description": "Mapping : unit-es-mapping.json. Propriétaire de la demande de gel.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Propriétaire de la demande de gel",
     "Collections": [
@@ -478,6 +553,7 @@
     "SedaField": "HoldReassessingDate",
     "Description": "Mapping : unit-es-mapping.json. Date de réévaluation du gel.",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de réévaluation",
     "Collections": [
@@ -489,6 +565,8 @@
     "SedaField": "HoldReason",
     "Description": "Mapping : unit-es-mapping.json. Motif de gel.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Motif de gel",
     "Collections": [
@@ -500,6 +578,8 @@
     "ApiField": "HoldRuleIds",
     "Description": "Mapping : unit-es-mapping.json. Identifiants des règles de gel",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "HoldRuleIds",
     "Collections": [
@@ -511,6 +591,8 @@
     "SedaField": "KeywordContent",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Mot clé",
     "Collections": [
@@ -522,6 +604,8 @@
     "SedaField": "KeywordReference",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence",
     "Collections": [
@@ -533,6 +617,7 @@
     "SedaField": "KeywordType",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "ENUM",
     "Origin": "INTERNAL",
     "ShortName": "Type",
     "Collections": [
@@ -544,6 +629,8 @@
     "SedaField": "Language",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Langue des documents",
     "Collections": [
@@ -555,6 +642,8 @@
     "SedaField": "OriginatingAgencyArchiveUnitIdentifier",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant métier (Service producteur)",
     "Collections": [
@@ -566,6 +655,8 @@
     "SedaField": "OriginatingSystemId",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant système (Service producteur)",
     "Collections": [
@@ -577,6 +668,7 @@
     "SedaField": "ReceivedDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de réception",
     "Collections": [
@@ -588,6 +680,7 @@
     "SedaField": "RegisteredDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date d'enregistrement",
     "Collections": [
@@ -599,6 +692,8 @@
     "SedaField": "ArchiveUnitRefId",
     "Description": "Mapping : unit-es-mapping.json. Référence à une ArchiveUnit interne.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence à une ArchiveUnit interne",
     "Collections": [
@@ -610,6 +705,8 @@
     "SedaField": "DataObjectReferenceId",
     "Description": "Mapping : unit-es-mapping.json. Référence à un objet-données ou à un groupe d'objets-données interne(s).",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence à un objet ou à un groupe d'objets interne(s)",
     "Collections": [
@@ -621,6 +718,8 @@
     "SedaField": "RepositoryArchiveUnitPID",
     "Description": "Mapping : unit-es-mapping.json. Référence à un ArchiveUnit déjà conservé dans un système d'archivage.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence à une ArchiveUnit déjà conservée",
     "Collections": [
@@ -632,6 +731,8 @@
     "SedaField": "RepositoryObjectPID",
     "Description": "Mapping : unit-es-mapping.json. Référence à un un objet-données ou à un groupe d'objets-données déjà conservé(s) dans un système d'archivage.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence à un objet ou à un groupe d'objets déjà conservé(s)",
     "Collections": [
@@ -643,6 +744,8 @@
     "SedaField": "ExternalReference",
     "Description": "Mapping : unit-es-mapping.json. Référence à un objet externe, présent ni dans le message, ni dans le SAE",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Référence à un objet externe, présent ni dans le message, ni dans le SAE",
     "Collections": [
@@ -654,6 +757,8 @@
     "SedaField": "Activity",
     "Description": "Mapping : unit-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : Activité.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Activité",
     "Collections": [
@@ -665,6 +770,8 @@
     "SedaField": "ExecutableName",
     "Description": "Mapping : griffin-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : ExecutableName.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "ExecutableName",
     "Collections": [
@@ -676,6 +783,8 @@
     "SedaField": "ExecutableVersion",
     "Description": "Mapping : griffin-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : ExecutableVersion.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "ExecutableVersion",
     "Collections": [
@@ -687,6 +796,8 @@
     "SedaField": "Function",
     "Description": "Mapping : unit-es-mapping.json. En plus des balises Tag et Keyword, il est possible d'indexer les objets avec des éléments pré-définis : Fonction.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Fonction",
     "Collections": [
@@ -698,6 +809,8 @@
     "SedaField": "Position",
     "Description": "Mapping : unit-es-mapping.json. Intitulé du poste de travail occupé par la personne.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Intitulé du poste",
     "Collections": [
@@ -709,6 +822,8 @@
     "SedaField": "Role",
     "Description": "Mapping : unit-es-mapping.json. Droits avec lesquels un utilisateur a réalisé une opération, notamment dans une application.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Droits",
     "Collections": [
@@ -720,6 +835,8 @@
     "SedaField": "Mandate",
     "Description": "Mapping : unit-es-mapping.json. Mandat octroyé à la personne.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Mandat octroyé à la personne",
     "Collections": [
@@ -731,6 +848,7 @@
     "SedaField": "SentDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date d'envoi",
     "Collections": [
@@ -742,6 +860,8 @@
     "SedaField": "Algorithm",
     "Description": "Mapping : unit-es-mapping.json. Attribut SEDA.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Algorithme",
     "Collections": [
@@ -754,6 +874,8 @@
     "SedaField": "SignedObjectId",
     "Description": "Mapping : unit-es-mapping.json. Identifiant de l'objet-données signé.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant",
     "Collections": [
@@ -765,6 +887,8 @@
     "SedaField": "FullName",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Nom / Nom + Prénom",
     "Collections": [
@@ -776,6 +900,7 @@
     "SedaField": "SigningTime",
     "Description": "Mapping : unit-es-mapping.json. Date de signature",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date",
     "Collections": [
@@ -787,6 +912,7 @@
     "SedaField": "ValidationTime",
     "Description": "Mapping : unit-es-mapping.json. Date de la validation de la signature.",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date",
     "Collections": [
@@ -798,6 +924,8 @@
     "SedaField": "Source",
     "Description": "Mapping : unit-es-mapping.json. En cas de substitution numérique, permet de faire référence au papier.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Source",
     "Collections": [
@@ -809,6 +937,7 @@
     "SedaField": "StartDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de début",
     "Collections": [
@@ -822,6 +951,8 @@
     "SedaField": "Status",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Statut",
     "Collections": [
@@ -840,6 +971,8 @@
     "SedaField": "SystemId",
     "Description": "Mapping : unit-es-mapping.json. Identifiant attribué aux objets. Il est attribué par le SAE et correspond à un identifiant interne.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "GUID",
     "Collections": [
@@ -851,6 +984,8 @@
     "SedaField": "Tag",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Tag",
     "Collections": [
@@ -862,6 +997,8 @@
     "SedaField": "Title",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Intitulé",
     "Collections": [
@@ -873,6 +1010,8 @@
     "SedaField": "TextContent",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "TextContent",
     "Collections": [
@@ -884,6 +1023,8 @@
     "SedaField": "LinkingAgentIdentifierType",
     "Description": "Mapping : unit-es-mapping.json. LinkingAgentIdentifierType ",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "LinkingAgentIdentifierType",
     "Collections": [
@@ -895,6 +1036,8 @@
     "SedaField": "LinkingAgentIdentifierValue",
     "Description": "Mapping : unit-es-mapping.json. LinkingAgentIdentifierValue",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "LinkingAgentIdentifierValue",
     "Collections": [
@@ -906,6 +1049,8 @@
     "SedaField": "LinkingAgentRole",
     "Description": "Mapping : unit-es-mapping.json. LinkingAgentRole",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "LinkingAgentRole",
     "Collections": [
@@ -917,6 +1062,8 @@
     "SedaField": "OriginatingSystemIdReplyTo",
     "Description": "Mapping : unit-es-mapping.json. OriginatingSystemIdReplyTo",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "OriginatingSystemIdReplyTo",
     "Collections": [
@@ -928,6 +1075,8 @@
     "SedaField": "DateLitteral",
     "Description": "Mapping : unit-es-mapping.json. DateLitteral",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "DateLitteral",
     "Collections": [
@@ -939,6 +1088,8 @@
     "SedaField": "DataObjectProfile",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "DataObjectProfile",
     "Collections": [
@@ -950,6 +1101,7 @@
     "SedaField": "TransactedDate",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de la transaction",
     "Collections": [
@@ -961,6 +1113,8 @@
     "SedaField": "TransferringAgencyArchiveUnitIdentifier",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "ID métier (Service versant)",
     "Collections": [
@@ -972,6 +1126,8 @@
     "SedaField": "Type",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Type",
     "Collections": [
@@ -981,10 +1137,25 @@
     ]
   },
   {
+    "Identifier": "TypeDetail",
+    "ApiField": "TypeDetail",
+    "Description": "The type of input with values STRING, ENUM, DATETIME, DATE, LONG, DOUBLE, BOOLEAN",
+    "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
+    "Origin": "INTERNAL",
+    "ShortName": "TypeDetail",
+    "Collections": [
+      "Ontology"
+    ]
+  },
+  {
     "Identifier": "Version",
     "SedaField": "Version",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Version",
     "Collections": [
@@ -997,6 +1168,7 @@
     "ApiField": "#graph_last_persisted_date",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "_glpd",
     "Collections": [
@@ -1009,6 +1181,8 @@
     "ApiField": "#graph",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "_graph",
     "Collections": [
@@ -1020,6 +1194,7 @@
     "ApiField": "#max",
     "Description": "Mapping : unit-es-mapping.json. Profondeur maximale de l’unité archivistique par rapport à une racine.",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Profondeur maximale",
     "Collections": [
@@ -1031,6 +1206,7 @@
     "SedaField": "PreventInheritance",
     "Description": "Mapping : unit-es-mapping.json. Indique si les règles de gestion héritées des ArchiveUnit parents doivent être ignorées pour l'ArchiveUnit concerné.",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Ignorer l'héritage",
     "Collections": [
@@ -1042,6 +1218,7 @@
     "SedaField": "PreventRearrangement",
     "Description": "Mapping : unit-es-mapping.json. Blocage de la reclassification de l'ArchiveUnit lorsque la restriction de gel est effective.",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Blocage de la reclassification.",
     "Collections": [
@@ -1053,6 +1230,8 @@
     "SedaField": "RefNonRuleId",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Bloquer la règle",
     "Collections": [
@@ -1064,6 +1243,8 @@
     "SedaField": "Rule",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Règle de gestion",
     "Collections": [
@@ -1075,6 +1256,8 @@
     "SedaField": "FinalAction",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Sort final",
     "Collections": [
@@ -1086,6 +1269,8 @@
     "SedaField": "ClassificationLevel",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Niveau de classification",
     "Collections": [
@@ -1097,6 +1282,8 @@
     "SedaField": "ClassificationOwner",
     "Description": "Mapping : unit-es-mapping.json. Propriétaire de la classification. Service émetteur au sens de l'IGI 1300.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Service émetteur / Propriétaire de la classification",
     "Collections": [
@@ -1108,6 +1295,8 @@
     "SedaField": "ClassificationAudience",
     "Description": "Mapping : unit-es-mapping.json. Permet de gérer les questions de 'diffusion restreinte', de 'spécial France' et de 'Confidentiel Industrie'.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Audience de la classification",
     "Collections": [
@@ -1119,6 +1308,7 @@
     "SedaField": "ClassificationReassessingDate",
     "Description": "Mapping : unit-es-mapping.json. Date de réévaluation de la classification.",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de réévaluation",
     "Collections": [
@@ -1130,6 +1320,7 @@
     "SedaField": "NeedReassessingAuthorization",
     "Description": "Mapping : unit-es-mapping.json. Indique si une autorisation humaine est nécessaire pour réévaluer la classification.",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Autorisation",
     "Collections": [
@@ -1141,6 +1332,7 @@
     "SedaField": "NeedAuthorization",
     "Description": "Mapping : unit-es-mapping.json. Indique si une autorisation humaine est nécessaire pour vérifier ou valider les opérations de gestion des ArchiveUnit.",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Autorisation",
     "Collections": [
@@ -1152,6 +1344,7 @@
     "ApiField": "#min",
     "Description": "Mapping : unit-es-mapping.json. Profondeur minimum de l’unité archivistique par rapport à une racine.",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Profondeur minimale",
     "Collections": [
@@ -1163,6 +1356,7 @@
     "ApiField": "_nbc",
     "Description": "Mapping : unit-es-mapping.json. Nombre d’objets correspondant à un usage ou à un groupe d'objets.",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Nombre d’objets",
     "Collections": [
@@ -1175,6 +1369,8 @@
     "ApiField": "#object",
     "Description": "Mapping : unit-es-mapping.json. Identifiant du groupe d’objets représentant cette unité archivistique.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du groupe d’objets",
     "Collections": [
@@ -1186,20 +1382,10 @@
     "ApiField": "#opi",
     "Description": "Mapping : unit-es-mapping.json. Identifiant de l’opération à l’origine de la création de cette unité archivistique.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Opération initiale",
-    "Collections": [
-      "Unit",
-      "ObjectGroup"
-    ]
-  },
-  {
-    "Identifier": "_ops",
-    "ApiField": "#operations",
-    "Description": "Mapping : unit-es-mapping.json. Identifiants d’opérations auxquelles cette unité archivistique a participé.",
-    "Type": "KEYWORD",
-    "Origin": "INTERNAL",
-    "ShortName": "Opérations",
     "Collections": [
       "Unit",
       "ObjectGroup"
@@ -1210,10 +1396,26 @@
     "ApiField": "#opts",
     "Description": "Mapping : unit-es-mapping.json. Identifiants de l’opération dans laquelle l'unité archivistique est en cours de transfert",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Opérations de transfert",
     "Collections": [
       "Unit"
+    ]
+  },
+  {
+    "Identifier": "_ops",
+    "ApiField": "#operations",
+    "Description": "Mapping : unit-es-mapping.json. Identifiants d’opérations auxquelles cette unité archivistique a participé.",
+    "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
+    "Origin": "INTERNAL",
+    "ShortName": "Opérations",
+    "Collections": [
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -1222,6 +1424,8 @@
     "ApiField": "#originating_agency",
     "Description": "Mapping : unit-es-mapping.json. Service producteur d’origine déclaré lors de la prise en charge de l’unité archivistique par la solution logicielle Vitam.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Service producteur",
     "Collections": [
@@ -1234,6 +1438,8 @@
     "ApiField": "#originating_agencies",
     "Description": "Mapping : unit-es-mapping.json. Services producteurs liés à l’unité archivistique suite à un rattachement et ayant des droits d’accès sur celle-ci.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Services producteurs liés à l’unité archivistique",
     "Collections": [
@@ -1246,6 +1452,8 @@
     "ApiField": "offerIds",
     "Description": "Mapping : unit-es-mapping.json. Deprecated.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "offerIds",
     "Collections": [
@@ -1258,6 +1466,8 @@
     "ApiField": "strategyId",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "strategyId",
     "Collections": [
@@ -1270,6 +1480,7 @@
     "ApiField": "#tenant",
     "Description": "Mapping : unit-es-mapping.json. Identifiant du tenant.",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Tenant",
     "Collections": [
@@ -1288,7 +1499,8 @@
       "LogbookOperation",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1296,6 +1508,8 @@
     "ApiField": "#unitType",
     "Description": "Mapping : unit-es-mapping.json. Type d’unité archivistique concerné : SIP, plan de classement, arbre de positionnement.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Type d'unité archivistique",
     "Collections": [
@@ -1307,6 +1521,8 @@
     "ApiField": "#unitups",
     "Description": "Mapping : unit-es-mapping.json. Pour une unité archivistique, identifiant(s) des unités archivistiques parentes (parents immédiats). Pour un groupe d'objets, identifiant(s) des unités archivistiques représentées par ce groupe d’objets.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant(s) des unités archivistiques parentes (parents immédiats)",
     "Collections": [
@@ -1319,6 +1535,8 @@
     "ApiField": "#allunitups",
     "Description": "Mapping : unit-es-mapping.json. Tableau contenant la parentalité, c’est à dire l’ensemble des unités archivistiques parentes, indexé de la manière suivante : [ GUID1, GUID2, … ].",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant(s) des unités archivistiques parentes",
     "Collections": [
@@ -1331,6 +1549,7 @@
     "ApiField": "#version",
     "Description": "Mapping : unit-es-mapping.json. Version de l’enregistrement décrit.",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Version",
     "Collections": [
@@ -1352,7 +1571,8 @@
       "LogbookOperation",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1360,6 +1580,7 @@
     "ApiField": "_av",
     "Description": "Version interne de l’enregistrement décrit.",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Version",
     "Collections": [
@@ -1372,6 +1593,8 @@
     "SedaField": "CreatingApplicationName",
     "Description": "Mapping : og-es-mapping.json. Version de l'application utilisée pour créer le fichier.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Nom de l'application",
     "Collections": [
@@ -1383,6 +1606,8 @@
     "SedaField": "CreatingApplicationVersion",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Version de l'application",
     "Collections": [
@@ -1394,6 +1619,8 @@
     "SedaField": "CreatingOs",
     "Description": "Mapping : og-es-mapping.json. Système d'exploitation utilisé pour créer le fichier.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Système d'exploitation",
     "Collections": [
@@ -1405,6 +1632,8 @@
     "SedaField": "CreatingOsVersion",
     "Description": "Mapping : og-es-mapping.json. Version du système d'exploitation utilisé pour créer le fichier.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Version du système d'exploitation",
     "Collections": [
@@ -1416,6 +1645,7 @@
     "SedaField": "DateCreatedByApplication",
     "Description": "Mapping : og-es-mapping.json. Date de création du fichier.",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de création",
     "Collections": [
@@ -1427,6 +1657,8 @@
     "SedaField": "Filename",
     "Description": "Mapping : og-es-mapping.json. Nom du fichier d'origine.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Nom du fichier",
     "Collections": [
@@ -1439,6 +1671,7 @@
     "SedaField": "LastModified",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Dernière modification",
     "Collections": [
@@ -1450,6 +1683,8 @@
     "ApiField": "_profil",
     "Description": "Mapping : og-es-mapping.json. Catégorie de l’objet. Valeurs possibles : Audio, Document, Text, Image et Video. Des extensions seront possibles (Database, Plan3D, …).",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Catégorie d'objet",
     "Collections": [
@@ -1461,6 +1696,8 @@
     "ApiField": "qualifier",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Usage",
     "Collections": [
@@ -1472,6 +1709,8 @@
     "SedaField": "DataObjectGroupId",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du groupe d'objets techniques",
     "Collections": [
@@ -1483,6 +1722,8 @@
     "SedaField": "DataObjectVersion",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Usage",
     "Collections": [
@@ -1496,6 +1737,8 @@
     "SedaField": "Encoding",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Encodage",
     "Collections": [
@@ -1507,6 +1750,8 @@
     "SedaField": "FormatId",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "PUID du format",
     "Collections": [
@@ -1518,6 +1763,8 @@
     "SedaField": "FormatLitteral",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Nom litteral",
     "Collections": [
@@ -1529,6 +1776,8 @@
     "SedaField": "MimeType",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Type Mime",
     "Collections": [
@@ -1541,6 +1790,8 @@
     "SedaField": "MessageDigest",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Empreinte",
     "Collections": [
@@ -1554,6 +1805,7 @@
     "ApiField": "dValue",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "DOUBLE",
+    "TypeDetail": "DOUBLE",
     "Origin": "INTERNAL",
     "ShortName": "Valeur",
     "Collections": [
@@ -1565,6 +1817,8 @@
     "SedaField": "unit",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Unité",
     "Collections": [
@@ -1576,6 +1830,7 @@
     "SedaField": "NumberOfPage",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Nombre de pages",
     "Collections": [
@@ -1587,6 +1842,8 @@
     "SedaField": "Shape",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Forme",
     "Collections": [
@@ -1598,6 +1855,8 @@
     "SedaField": "PhysicalId",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant d'objet physique",
     "Collections": [
@@ -1609,6 +1868,7 @@
     "SedaField": "Size",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Taille (en octets)",
     "Collections": [
@@ -1621,6 +1881,8 @@
     "SedaField": "Uri",
     "Description": "Mapping : og-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Uri",
     "Collections": [
@@ -1632,6 +1894,8 @@
     "ApiField": "#id",
     "Description": "Mapping : og-es-mapping.json. Identifiant du groupe d’objets",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du groupe d'objets",
     "Collections": [
@@ -1655,7 +1919,8 @@
       "SecurityProfile",
       "FileRules",
       "FileFormat",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1663,6 +1928,8 @@
     "ApiField": "AccessLog",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Log des accès",
     "Collections": [
@@ -1674,6 +1941,7 @@
     "ApiField": "ActivationDate",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date d'activation",
     "Collections": [
@@ -1690,6 +1958,7 @@
     "ApiField": "CreationDate",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de création",
     "Collections": [
@@ -1705,7 +1974,8 @@
       "FileRules",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1713,6 +1983,7 @@
     "ApiField": "DeactivationDate",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de désactivation",
     "Collections": [
@@ -1729,6 +2000,7 @@
     "ApiField": "EveryDataObjectVersion",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Tous les usages",
     "Collections": [
@@ -1741,6 +2013,7 @@
     "ApiField": "EveryOriginatingAgency",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Tous les services producteurs",
     "Collections": [
@@ -1752,6 +2025,8 @@
     "ApiField": "ExcludedRootUnits",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Noeuds inaccessibles",
     "Collections": [
@@ -1763,6 +2038,7 @@
     "ApiField": "LastUpdate",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Dernière modification",
     "Collections": [
@@ -1775,7 +2051,8 @@
       "Profile",
       "Griffin",
       "PreservationScenario",
-      "ManagementContract"
+      "ManagementContract",
+      "Schema"
     ]
   },
   {
@@ -1783,10 +2060,12 @@
     "ApiField": "#approximate_update_date",
     "Description": "Approximative updated date, Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "_aud",
     "Collections": [
-      "Unit", "ObjectGroup"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -1794,10 +2073,12 @@
     "ApiField": "#approximate_creation_date",
     "Description": "Approximative created date, Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "_acd",
     "Collections": [
-      "Unit", "ObjectGroup"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -1805,6 +2086,8 @@
     "ApiField": "Name",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Intitulé",
     "Collections": [
@@ -1826,6 +2109,8 @@
     "ApiField": "OriginatingAgencies",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Liste blanche des services producteurs",
     "Collections": [
@@ -1837,6 +2122,8 @@
     "ApiField": "RuleCategoryToFilter",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Liste des catégories de règles à filtrer",
     "Collections": [
@@ -1848,6 +2135,8 @@
     "ApiField": "RootUnits",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Noeuds de consultation",
     "Collections": [
@@ -1859,6 +2148,7 @@
     "ApiField": "WritingPermission",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Droit d'écriture",
     "Collections": [
@@ -1870,6 +2160,7 @@
     "ApiField": "WritingRestrictedDesc",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Restriction d'écriture aux métadonnées de description",
     "Collections": [
@@ -1882,6 +2173,8 @@
     "ApiField": "AcquisitionInformation",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Modalités d'entrée",
     "Collections": [
@@ -1893,6 +2186,8 @@
     "SedaField": "ArchivalAgreement",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Contrat d'entrée",
     "Collections": [
@@ -1905,6 +2200,7 @@
     "ApiField": "deleted",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Supprimé",
     "Collections": [
@@ -1917,6 +2213,8 @@
     "SedaField": "ActionList",
     "Description": "Mapping : preservationscenario-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "ActionList",
     "Collections": [
@@ -1928,6 +2226,8 @@
     "SedaField": "FormatList",
     "Description": "Mapping : preservationscenario-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "FormatList",
     "Collections": [
@@ -1939,6 +2239,8 @@
     "SedaField": "GriffinIdentifier",
     "Description": "Mapping : preservationscenario-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "GriffinIdentifier",
     "Collections": [
@@ -1950,6 +2252,7 @@
     "SedaField": "Timeout",
     "Description": "Mapping : preservationscenario-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Timeout",
     "Collections": [
@@ -1961,6 +2264,7 @@
     "SedaField": "MaxSize",
     "Description": "Mapping : preservationscenario-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "MaxSize",
     "Collections": [
@@ -1972,6 +2276,7 @@
     "SedaField": "Debug",
     "Description": "Mapping : preservationscenario-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Debug",
     "Collections": [
@@ -1983,6 +2288,8 @@
     "SedaField": "Args",
     "Description": "Mapping : preservationscenario-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Extension",
     "Collections": [
@@ -1994,6 +2301,7 @@
     "ApiField": "ingested",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Total",
     "Collections": [
@@ -2006,6 +2314,7 @@
     "ApiField": "remained",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Restant",
     "Collections": [
@@ -2018,6 +2327,8 @@
     "ApiField": "Opi",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json. Identifiant de l’opération d’entrée ayant versé les archives recensées dans ce détail du registre des fonds",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de l'opération",
     "Collections": [
@@ -2029,6 +2340,8 @@
     "ApiField": "Opc",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json. Identifiant de l’opération courante (Ingest, Elimination,...) ayant modifié les archives recensées dans ce détail du registre des fonds",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de l'opération courante",
     "Collections": [
@@ -2040,6 +2353,8 @@
     "ApiField": "OpType",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json. Le type de l'opération (Ingest, Elimination, ...)",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Type de l'opération",
     "Collections": [
@@ -2051,6 +2366,7 @@
     "ApiField": "Gots",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json. Total des groupes d'objets modifiant le register des fonds suite à une opération (ingest, élimination, ...)",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Total des groupes d'objets",
     "Collections": [
@@ -2062,6 +2378,7 @@
     "ApiField": "Units",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json. Total des unités archivistiques modifiant le register des fonds suite à une opération (ingest, élimination, ...)",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Total des unités archivistiques",
     "Collections": [
@@ -2073,6 +2390,7 @@
     "ApiField": "Objects",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json. Total des objets modifiant le register des fonds suite à une opération (ingest, élimination, ...)",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Total des objets",
     "Collections": [
@@ -2084,6 +2402,7 @@
     "ApiField": "ObjSize",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json. Total de poids d'objets modifiant le register des fonds suite à une opération (ingest, élimination, ...)",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Total des poids d'objets",
     "Collections": [
@@ -2095,6 +2414,8 @@
     "ApiField": "OperationIds",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de l'opération",
     "Collections": [
@@ -2106,6 +2427,8 @@
     "SedaField": "OriginatingAgencyIdentifier",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Service producteur",
     "Collections": [
@@ -2119,6 +2442,8 @@
     "SedaField": "SubmissionAgencyIdentifier",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Service versant",
     "Collections": [
@@ -2130,6 +2455,8 @@
     "SedaField": "LegalStatus",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Statut légal",
     "Collections": [
@@ -2142,6 +2469,8 @@
     "ApiField": "ControlSchema",
     "Description": "Mapping : archiveunitprofile-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Schéma de contrôle",
     "Collections": [
@@ -2153,6 +2482,8 @@
     "ApiField": "Fields",
     "Description": "Mapping : archiveunitprofile-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Fields",
     "Collections": [
@@ -2164,6 +2495,7 @@
     "ApiField": "EnableControl",
     "Description": "Mapping : context-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Activation des contrôles",
     "Collections": [
@@ -2175,6 +2507,8 @@
     "ApiField": "AccessContracts",
     "Description": "Mapping : context-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Liste contrats d'accès",
     "Collections": [
@@ -2186,6 +2520,8 @@
     "ApiField": "IngestContracts",
     "Description": "Mapping : context-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Liste contrats d'entrée",
     "Collections": [
@@ -2197,6 +2533,7 @@
     "ApiField": "tenant",
     "Description": "Mapping : context-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Tenant",
     "Collections": [
@@ -2208,6 +2545,8 @@
     "ApiField": "SecurityProfile",
     "Description": "Mapping : context-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Profil de sécurité",
     "Collections": [
@@ -2219,6 +2558,7 @@
     "ApiField": "Alert",
     "Description": "Mapping : format-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Alerte",
     "Collections": [
@@ -2230,6 +2570,8 @@
     "SedaField": "Comment",
     "Description": "Mapping : format-es-mapping.json / accessionregisterdetail-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Commentaire",
     "Collections": [
@@ -2242,6 +2584,8 @@
     "SedaField": "MessageIdentifier",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Object identifier income",
     "Collections": [
@@ -2253,6 +2597,8 @@
     "ApiField": "Extension",
     "Description": "Mapping : format-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Extension(s)",
     "Collections": [
@@ -2265,6 +2611,8 @@
     "ApiField": "Group",
     "Description": "Mapping : format-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Groupe",
     "Collections": [
@@ -2276,6 +2624,8 @@
     "ApiField": "HasPriorityOverFileFormatID",
     "Description": "Mapping : format-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Priorité sur les versions précédentes",
     "Collections": [
@@ -2287,6 +2637,8 @@
     "ApiField": "PUID",
     "Description": "Mapping : format-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "PUID",
     "Collections": [
@@ -2298,6 +2650,8 @@
     "ApiField": "VersionPronom",
     "Description": "Mapping : format-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Version de Pronom",
     "Collections": [
@@ -2309,6 +2663,8 @@
     "ApiField": "ArchiveProfiles",
     "Description": "Mapping : ingestcontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Profils d'archivage",
     "Collections": [
@@ -2320,6 +2676,8 @@
     "ApiField": "CheckParentLink",
     "Description": "Mapping : ingestcontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Contrôle sur noeud de rattachement",
     "Collections": [
@@ -2331,6 +2689,7 @@
     "ApiField": "EveryFormatType",
     "Description": "Mapping : ingestcontract-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Tous les formats",
     "Collections": [
@@ -2342,6 +2701,8 @@
     "ApiField": "FormatType",
     "Description": "Mapping : ingestcontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Liste blanche des formats",
     "Collections": [
@@ -2353,6 +2714,7 @@
     "ApiField": "FormatUnidentifiedAuthorized",
     "Description": "Mapping : ingestcontract-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Formats non identifiés autorisés",
     "Collections": [
@@ -2364,6 +2726,7 @@
     "ApiField": "ComputeInheritedRulesAtIngest",
     "Description": "Mapping : ingestcontract-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Execute ComputedInheritedRules at ingest",
     "Collections": [
@@ -2375,6 +2738,8 @@
     "ApiField": "LinkParentId",
     "Description": "Mapping : ingestcontract-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Noeud de rattachement",
     "Collections": [
@@ -2386,6 +2751,7 @@
     "ApiField": "MasterMandatory",
     "Description": "Mapping : ingestcontract-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Présence obligatoire d'un Master",
     "Collections": [
@@ -2397,6 +2763,8 @@
     "ApiField": "ManagementContractId",
     "Description": "Mapping : ingestcontract-es-mapping.json.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du contrat de gestion",
     "Collections": [
@@ -2408,6 +2776,7 @@
     "ApiField": "#lastPersistedDate",
     "Description": "Mapping : logbook-es-mapping.json. Date technique de sauvegarde en base.",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de sauvegarde",
     "Collections": [
@@ -2419,6 +2788,8 @@
     "ApiField": "agId",
     "Description": "Mapping : logbook-es-mapping.json. Identifiant de l’agent interne réalisant l’évènement.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de l'agent interne",
     "Collections": [
@@ -2431,6 +2802,7 @@
     "ApiField": "evDateTime",
     "Description": "Mapping : logbook-es-mapping.json. Date de lancement de l’opération",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date",
     "Collections": [
@@ -2444,6 +2816,8 @@
     "ApiField": "evId",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de l'événement",
     "Collections": [
@@ -2457,6 +2831,8 @@
     "ApiField": "evDetData",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Détails techniques",
     "Collections": [
@@ -2468,6 +2844,8 @@
     "ApiField": "evIdProc",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du processus",
     "Collections": [
@@ -2479,6 +2857,8 @@
     "ApiField": "SecurisationVersion",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "SecurisationVersion",
     "Collections": [
@@ -2490,6 +2870,7 @@
     "ApiField": "MaxEntriesReached",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "MaxEntriesReached",
     "Collections": [
@@ -2501,6 +2882,8 @@
     "SedaField": "ServiceLevel",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Niveau de service",
     "Collections": [
@@ -2512,6 +2895,8 @@
     "ApiField": "evIdReq",
     "Description": "Mapping : logbook-es-mapping.json. Identifiant de la requête déclenchant l’opération",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de la requête",
     "Collections": [
@@ -2523,6 +2908,8 @@
     "ApiField": "evParentId",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de l'événement parent",
     "Collections": [
@@ -2535,6 +2922,8 @@
     "ApiField": "evType",
     "Description": "Mapping : logbook-es-mapping.json. Code du type de l’opération",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Type d'opération",
     "Collections": [
@@ -2548,6 +2937,8 @@
     "ApiField": "evTypeProc",
     "Description": "Mapping : logbook-es-mapping.json. Type de processus. Equivaut à la traduction du code du type de l'opération.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Catégorie d'opération",
     "Collections": [
@@ -2561,6 +2952,8 @@
     "ApiField": "ArchivalAgency",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Service d'archives",
     "Collections": [
@@ -2572,6 +2965,8 @@
     "SedaField": "TransferringAgency",
     "Description": "Mapping : logbook-es-mapping.json. Service en charge du transfert.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Service versant",
     "Collections": [
@@ -2583,6 +2978,8 @@
     "ApiField": "AgIfTrans",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "AgIfTrans",
     "Collections": [
@@ -2594,6 +2991,7 @@
     "ApiField": "EvDateTimeReq",
     "Description": "Mapping : logbook-es-mapping.json. Date de la demande de transfert inscrit dans le champ evDetData",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de la demande de transfert",
     "Collections": [
@@ -2605,6 +3003,8 @@
     "ApiField": "EvDetailReq",
     "Description": "Mapping : logbook-es-mapping.json. Précisions sur la demande de transfert. Chaîne de caractères. Reprend le champ « Comment » du message ArchiveTransfer.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Précisions",
     "Collections": [
@@ -2616,6 +3016,8 @@
     "ApiField": "Hash",
     "Description": "Mapping : logbook-es-mapping.json. Empreinte de la racine de l’arbre de Merkle.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Empreinte",
     "Collections": [
@@ -2627,6 +3029,8 @@
     "ApiField": "LogType",
     "Description": "Mapping : logbook-es-mapping.json. Type de logbook sécurisé : OPERATION ou LIFECYCLE.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Type de journal",
     "Collections": [
@@ -2638,6 +3042,7 @@
     "ApiField": "MinusOneMonthLogbookTraceabilityDate",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de l’opération de sécurisation passée d’un mois",
     "Collections": [
@@ -2649,6 +3054,7 @@
     "ApiField": "MinusOneYearLogbookTraceabilityDate",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "date de l’opération de sécurisation passée d’un an",
     "Collections": [
@@ -2660,6 +3066,7 @@
     "ApiField": "NumberOfElements",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Nombre d'éléments",
     "Collections": [
@@ -2671,6 +3078,7 @@
     "ApiField": "PreviousLogbookTraceabilityDate",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Date de la précédente opération de sécurisation",
     "Collections": [
@@ -2682,6 +3090,8 @@
     "ApiField": "TimeStampToken",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Tampon d'horodatage",
     "Collections": [
@@ -2693,6 +3103,8 @@
     "ApiField": "diff",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Différentiel",
     "Collections": [
@@ -2704,6 +3116,8 @@
     "ApiField": "errors",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Erreurs",
     "Collections": [
@@ -2715,6 +3129,8 @@
     "ApiField": "reports",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "reports",
     "Collections": [
@@ -2726,6 +3142,8 @@
     "ApiField": "loadingURI",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "loadingURI",
     "Collections": [
@@ -2738,6 +3156,8 @@
     "ApiField": "pointer",
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "pointer",
     "Collections": [
@@ -2749,6 +3169,8 @@
     "ApiField": "obId",
     "Description": "Mapping : logbook-es-mapping.json. Identifiant Vitam du lot d’objets auquel s’applique l’opération (lot correspondant à une liste).",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du lot d'objets",
     "Collections": [
@@ -2761,6 +3183,8 @@
     "ApiField": "outDetail",
     "Description": "Mapping : logbook-es-mapping.json. Code correspondant au résultat de l’événement.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Code technique",
     "Collections": [
@@ -2774,6 +3198,8 @@
     "ApiField": "outMessg",
     "Description": "Mapping : logbook-es-mapping.json. Détail du résultat de l’événement.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Message",
     "Collections": [
@@ -2787,6 +3213,8 @@
     "ApiField": "outcome",
     "Description": "Mapping : logbook-es-mapping.json. Statut de l’événement",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Statut",
     "Collections": [
@@ -2799,6 +3227,8 @@
     "ApiField": "ApiField",
     "Description": "Mapping : ontology-es-mapping.json. Correspond au nom donné au vocabulaire ontologique côté API.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Intitulé",
     "Collections": [
@@ -2810,6 +3240,8 @@
     "ApiField": "Collections",
     "Description": "Mapping : ontology-es-mapping.json. Collection(s) de la base de données associée(s) à un vocabulaire ontologique",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Collections",
     "Collections": [
@@ -2821,10 +3253,13 @@
     "ApiField": "Origin",
     "Description": "Mapping : ontology-es-mapping.json. Liste de valeurs : Interne (élément défini par VITAM) ou Externe (extension au SEDA)",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Contexte de création",
     "Collections": [
-      "Ontology"
+      "Ontology",
+      "Schema"
     ]
   },
   {
@@ -2832,6 +3267,8 @@
     "ApiField": "SedaField",
     "Description": "Mapping : ontology-es-mapping.json. Elémént XML issu du SEDA.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Intitulé",
     "Collections": [
@@ -2843,10 +3280,13 @@
     "ApiField": "ShortName",
     "Description": "Mapping : ontology-es-mapping.json. Correspond au label, ou traduction d'un enregistrement de la base de données.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Traduction",
     "Collections": [
-      "Ontology"
+      "Ontology",
+      "Schema"
     ]
   },
   {
@@ -2854,6 +3294,8 @@
     "ApiField": "Format",
     "Description": "Mapping : profile-es-mapping.json. Liste de valeurs : RNG ou XSD.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Format",
     "Collections": [
@@ -2865,10 +3307,13 @@
     "ApiField": "Path",
     "Description": "Mapping : profile-es-mapping.json. Lien vers le profil d'archivage RNG ou XSD.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Fichier",
     "Collections": [
-      "Profile"
+      "Profile",
+      "Schema"
     ]
   },
   {
@@ -2876,6 +3321,8 @@
     "ApiField": "RuleDescription",
     "Description": "Mapping : rule-es-mapping.json. Description associée à une règle de gestion.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Description",
     "Collections": [
@@ -2887,6 +3334,8 @@
     "ApiField": "RuleDuration",
     "Description": "Mapping : rule-es-mapping.json. Durée associée à une règle de gestion, correspond à un entier.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Durée",
     "Collections": [
@@ -2898,6 +3347,8 @@
     "ApiField": "RuleId",
     "Description": "Mapping : rule-es-mapping.json. Identifiant associé à une règle de gestion.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant",
     "Collections": [
@@ -2909,6 +3360,8 @@
     "ApiField": "RuleMeasurement",
     "Description": "Mapping : rule-es-mapping.json. Mesure associée à une règle de gestion. Correspond aux valeurs : année, mois, jour. Mesure devant être associée à une durée.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Mesure",
     "Collections": [
@@ -2920,6 +3373,8 @@
     "ApiField": "RuleType",
     "Description": "Mapping : rule-es-mapping.json. Type associé à une règle de gestion.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Type",
     "Collections": [
@@ -2931,6 +3386,8 @@
     "ApiField": "RuleValue",
     "Description": "Mapping : rule-es-mapping.json. Identifiant, code ou clé définissant une règle de gestion. Doit être unique.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant",
     "Collections": [
@@ -2942,6 +3399,7 @@
     "ApiField": "UpdateDate",
     "Description": "Mapping : rule-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Dernière modification",
     "Collections": [
@@ -2954,6 +3412,7 @@
     "ApiField": "FullAccess",
     "Description": "Mapping : securityprofile-es-mapping.json. Mode super-administrateur donnant toutes les permissions.",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Tous les droits",
     "Collections": [
@@ -2965,6 +3424,8 @@
     "ApiField": "Permissions",
     "Description": "Mapping : securityprofile-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Permissions",
     "Collections": [
@@ -2976,6 +3437,7 @@
     "ApiField": "ud",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "Dernière modification",
     "Collections": [
@@ -2987,6 +3449,8 @@
     "ApiField": "OperationId",
     "Description": "Mapping : unit-es-mapping.json. Identifiant de l'operation.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "OperationId",
     "Collections": [
@@ -2998,6 +3462,8 @@
     "ApiField": "GlobalStatus",
     "Description": "Mapping : unit-es-mapping.json. Statut global de l'indexation.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "GlobalStatus",
     "Collections": [
@@ -3009,6 +3475,8 @@
     "ApiField": "DestroyableOriginatingAgencies",
     "Description": "Mapping : unit-es-mapping.json. Services producteurs éliminables",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "DestroyableOriginatingAgencies",
     "Collections": [
@@ -3020,6 +3488,8 @@
     "ApiField": "NonDestroyableOriginatingAgencies",
     "Description": "Mapping : unit-es-mapping.json. Services producteurs non éliminables",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "NonDestroyableOriginatingAgencies",
     "Collections": [
@@ -3031,6 +3501,8 @@
     "ApiField": "ExtendedInfoType",
     "Description": "Mapping : unit-es-mapping.json. Type d'informations étendues",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "ExtendedInfoType",
     "Collections": [
@@ -3042,6 +3514,8 @@
     "ApiField": "ParentUnitId",
     "Description": "Mapping : unit-es-mapping.json. Identifiant de l'unité parente",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "ParentUnitId",
     "Collections": [
@@ -3053,6 +3527,8 @@
     "ApiField": "OriginatingAgenciesInConflict",
     "Description": "Mapping : unit-es-mapping.json. Services producteurs en conflit",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "OriginatingAgenciesInConflict",
     "Collections": [
@@ -3064,6 +3540,8 @@
     "ApiField": "#sedaVersion",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "_sedaVersion",
     "Collections": [
@@ -3075,6 +3553,8 @@
     "ApiField": "#implementationVersion",
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "_implementationVersion",
     "Collections": [
@@ -3086,6 +3566,8 @@
     "SedaField": "Compressed",
     "Description": "Indique si l’objet-données est compressé et doit être décompressé.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Objet compressé",
     "Collections": [
@@ -3097,6 +3579,8 @@
     "ApiField": "RawMetadata",
     "Description": "Métadonnées brutes, issues d'une extraction de métadonnées",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Métadonnées extraites",
     "Collections": [
@@ -3108,6 +3592,7 @@
     "ApiField": "BinaryObjectSize",
     "Description": "Volumétrie des objets de fonds symboliques",
     "Type": "DOUBLE",
+    "TypeDetail": "DOUBLE",
     "Origin": "INTERNAL",
     "ShortName": "Volumétrie des objets",
     "Collections": [
@@ -3119,6 +3604,7 @@
     "ApiField": "BinaryObject",
     "Description": "Nombre d'objets de fonds symboliques",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Nombre d'objets",
     "Collections": [
@@ -3130,6 +3616,7 @@
     "ApiField": "ObjectGroup",
     "Description": "Nombre de groupes d'objets techniques de fonds symboliques",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Nombre de groupes d'objets techniques",
     "Collections": [
@@ -3141,6 +3628,7 @@
     "ApiField": "ArchiveUnit",
     "Description": "Nombre d'unités archivistiques de fonds symboliques",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "Nombre d'unités archivistiques",
     "Collections": [
@@ -3152,6 +3640,8 @@
     "ApiField": "FilteredExtractedObjectGroupData",
     "Description": "Métadonnées à extraire dans le groupe d'objets techniques",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Métadonnées à extraire dans le groupe d'objets techniques",
     "Collections": [
@@ -3163,6 +3653,8 @@
     "ApiField": "FilteredExtractedUnitData",
     "Description": "Métadonnées à extraire dans les unités archivistiques",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Métadonnées à extraire dans les unités archivistiques",
     "Collections": [
@@ -3174,6 +3666,8 @@
     "ApiField": "CheckParentId",
     "Description": "Déclaration d’un ou plusieurs cônes de positionnement des rattachements",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Déclaration d’un ou plusieurs cônes de positionnement des rattachements",
     "Collections": [
@@ -3185,6 +3679,8 @@
     "SedaField": "ArchivalProfile",
     "Description": "Mapping : accessionregisterdetail-es-mapping.json.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Profile d'archivage",
     "Collections": [
@@ -3196,6 +3692,8 @@
     "SedaField": "DataObjectSystemId",
     "Description": "Mapping : og-es-mapping.json.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de l'objet",
     "Collections": [
@@ -3207,6 +3705,8 @@
     "SedaField": "DataObjectGroupSystemId",
     "Description": "Mapping : og-es-mapping.json.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du groupe d'objet",
     "Collections": [
@@ -3217,6 +3717,7 @@
     "Identifier": "_validComputedInheritedRules",
     "Description": "Indique si les règles calculées sont valides",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "validComputedInheritedRules",
     "Collections": [
@@ -3227,6 +3728,8 @@
     "Identifier": "InheritanceOrigin",
     "Description": "Origine de définition des règles de gestion",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "InheritanceOrigin",
     "Collections": [
@@ -3237,6 +3740,8 @@
     "Identifier": "InheritedRuleIds",
     "Description": "Identifiant des règles héritées applicables",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "InheritedRuleIds",
     "Collections": [
@@ -3247,6 +3752,7 @@
     "Identifier": "MaxEndDate",
     "Description": "Date de fin maximale",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "MaxEndDate",
     "Collections": [
@@ -3257,6 +3763,7 @@
     "Identifier": "indexationDate",
     "Description": "Date d'indexation'",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "indexationDate",
     "Collections": [
@@ -3269,6 +3776,8 @@
     "SedaField": "DataObjectUse",
     "Description": "Data Object Use",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "DataObjectUse",
     "Collections": [
@@ -3281,6 +3790,7 @@
     "SedaField": "DataObjectNumber",
     "Description": "Data Object Number",
     "Type": "LONG",
+    "TypeDetail": "LONG",
     "Origin": "INTERNAL",
     "ShortName": "DataObjectNumber",
     "Collections": [
@@ -3292,6 +3802,8 @@
     "SedaField": "PersistentIdentifierType",
     "Description": "Persistent Identifier Type",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "PersistentIdentifierType",
     "Collections": [
@@ -3304,6 +3816,8 @@
     "SedaField": "PersistentIdentifierOrigin",
     "Description": "Persistent Identifier Origin",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "PersistentIdentifierOrigin",
     "Collections": [
@@ -3316,6 +3830,8 @@
     "SedaField": "PersistentIdentifierReference",
     "Description": "Persistent Identifier Reference",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "PersistentIdentifierReference",
     "Collections": [
@@ -3328,6 +3844,8 @@
     "SedaField": "PersistentIdentifierContent",
     "Description": "Persistent Identifier Content",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "PersistentIdentifierContent",
     "Collections": [
@@ -3340,6 +3858,8 @@
     "ApiField": "UnitStrategy",
     "Description": "Mapping : managementcontract-es-mapping.json. Stratégie de stockage pour les métadonnées de type unité archivistique",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "UnitStrategy",
     "Collections": [
@@ -3351,6 +3871,8 @@
     "ApiField": "ObjectGroupStrategy",
     "Description": "Mapping : managementcontract-es-mapping.json. Stratégie de stockage pour les métadonnées de type groupe d'objet technique",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "ObjectGroupStrategy",
     "Collections": [
@@ -3362,6 +3884,8 @@
     "ApiField": "ObjectStrategy",
     "Description": "Mapping : managementcontract-es-mapping.json. Stratégie de stockage pour les objets",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "ObjectStrategy",
     "Collections": [
@@ -3373,6 +3897,7 @@
     "ApiField": "InitialVersion",
     "Description": "Mapping : managementcontract-es-mapping.json. Politique de conservation des versions initiales",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "InitialVersion",
     "Collections": [
@@ -3384,6 +3909,8 @@
     "ApiField": "IntermediaryVersion",
     "Description": "Mapping : managementcontract-es-mapping.json. Politique de conservation des versions intermédiaries",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "IntermediaryVersion",
     "Collections": [
@@ -3395,6 +3922,8 @@
     "ApiField": "UsageName",
     "Description": "Mapping : managementcontract-es-mapping.json. Nom d'usage pour la politique de conservation des versions",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "UsageName",
     "Collections": [
@@ -3406,6 +3935,8 @@
     "ApiField": "PersistentIdentifierPolicyType",
     "Description": "Mapping : managementcontract-es-mapping.json. Gestion d'une autorité nommante ARK",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "PersistentIdentifierPolicyType",
     "Collections": [
@@ -3417,6 +3948,7 @@
     "ApiField": "PersistentIdentifierUnit",
     "Description": "Mapping : managementcontract-es-mapping.json. Gestion d'une autorité nommante ARK",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "PersistentIdentifierUnit",
     "Collections": [
@@ -3428,6 +3960,8 @@
     "ApiField": "PersistentIdentifierAuthority",
     "Description": "Mapping : managementcontract-es-mapping.json. Gestion d'une autorité nommante ARK",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "PersistentIdentifierAuthority",
     "Collections": [
@@ -3440,6 +3974,7 @@
     "SedaField": "SigningRole",
     "Description": "Mapping : unit-es-mapping.json. Rôle de l'unité d'archives dans un contexte de signature. Quatre rôles (étiquettes) ont été identifiés : document signé, signature, horodatage et preuves complémentaires.",
     "Type": "KEYWORD",
+    "TypeDetail": "ENUM",
     "Origin": "INTERNAL",
     "ShortName": "SigningRole",
     "Collections": [
@@ -3452,6 +3987,7 @@
     "SedaField": "DetachedSigningRole",
     "Description": "Mapping : unit-es-mapping.json. Référence aux rôles des unités d'archives encapsulées sous la racine contenant le document signé.",
     "Type": "KEYWORD",
+    "TypeDetail": "ENUM",
     "Origin": "INTERNAL",
     "ShortName": "DetachedSigningRole",
     "Collections": [
@@ -3464,6 +4000,8 @@
     "SedaField": "SigningType",
     "Description": "Mapping : unit-es-mapping.json. Type de signature, au sens juridique du terme. Par exemple, simple, avancée, qualifiée.",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "SigningType",
     "Collections": [
@@ -3476,6 +4014,7 @@
     "SedaField": "TimeStamp",
     "Description": "Mapping : unit-es-mapping.json. Horodatage de la signature",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Origin": "INTERNAL",
     "ShortName": "TimeStamp",
     "Collections": [
@@ -3488,6 +4027,8 @@
     "SedaField": "AdditionalTimestampingInformation",
     "Description": "Mapping : unit-es-mapping.json. Informations complémentaires sur l'horodatage d'une signature",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "LARGE",
     "Origin": "INTERNAL",
     "ShortName": "AdditionalTimestampingInformation",
     "Collections": [
@@ -3500,6 +4041,8 @@
     "SedaField": "AdditionalProofInformation",
     "Description": "Mapping : unit-es-mapping.json. Informations relatives aux preuves complémentaires archivées dans un contexte de signature.",
     "Type": "TEXT",
+    "TypeDetail": "STRING",
+    "StringSize": "LARGE",
     "Origin": "INTERNAL",
     "ShortName": "AdditionalProofInformation",
     "Collections": [
@@ -3511,6 +4054,8 @@
     "ApiField": "SignedDocument",
     "Description": "Accepte tout type de données signée ou non",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Accepte tout type de données signée ou non",
     "Collections": [
@@ -3522,6 +4067,7 @@
     "ApiField": "DeclaredSignature",
     "Description": "Données toujours accompagné d'une signature",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Données toujours accompagné d'une signature",
     "Collections": [
@@ -3533,6 +4079,7 @@
     "ApiField": "DeclaredTimestamp",
     "Description": "Données toujours accompagné d'un timestamp",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Données toujours accompagné d'un timestamp",
     "Collections": [
@@ -3544,40 +4091,47 @@
     "ApiField": "DeclaredAdditionalProof",
     "Description": "Données toujours accompagné de preuves complémentaire",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
     "ShortName": "Données toujours accompagné de preuves complémentaire",
     "Collections": [
       "IngestContract"
     ]
-  },{
-  "Identifier": "Cardinality",
-  "ApiField": "Cardinality",
-  "Description": "Cardinality ",
-  "Type": "KEYWORD",
-  "Origin": "INTERNAL",
-  "ShortName": "Cardinalité",
-  "Collections": [
-    "Schema"
-  ]
-},
+  },
   {
-    "Identifier": "StringSize",
-    "ApiField": "StringSize",
-    "Description": "The size of input with values SHORT, MEDIUM or LARGE",
+    "Identifier": "Cardinality",
+    "ApiField": "Cardinality",
+    "Description": "Cardinality ",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
-    "ShortName": "Taille du champs",
+    "ShortName": "Cardinalité",
     "Collections": [
       "Schema"
     ]
   },
   {
+    "Identifier": "StringSize",
+    "ApiField": "StringSize",
+    "Description": "The size of input with values SHORT, MEDIUM or LARGE",
+    "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
+    "Origin": "INTERNAL",
+    "ShortName": "Taille du champs",
+    "Collections": [
+      "Ontology"
+    ]
+  },
+  {
     "Identifier": "IsObject",
     "ApiField": "IsObject",
-    "Description": "Mapping : accesscontract-es-mapping.json",
+    "Description": "Describe if the field is an object ==> true, leaf ==> false",
     "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
-    "ShortName": "Is Object type",
+    "ShortName": "Is Object field",
     "Collections": [
       "Schema"
     ]
@@ -3587,6 +4141,8 @@
     "ApiField": "Collection",
     "Description": "Mapping : ontology-es-mapping.json. Collection(s) de la base de données associée(s) à un vocabulaire",
     "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Collection",
     "Collections": [
@@ -3599,6 +4155,7 @@
     "SedaField": "#MaDate",
     "Origin": "EXTERNAL",
     "Type": "DATE",
+    "TypeDetail": "DATETIME",
     "Description": "Extension au SEDA. Elément de type date.",
     "Collections": [
       "Unit"
