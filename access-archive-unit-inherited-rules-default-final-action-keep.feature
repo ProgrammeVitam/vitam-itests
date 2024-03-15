@@ -81,7 +81,6 @@ Contexte: Avant de lancer cette suite de test, je présuppose que les règles de
     Etant donné un fichier SIP nommé data/SIP_OK/ZIP/InheritedRules-SIP-Service économique.zip
     Et je construit le sip de rattachement avec le template
     Et je télécharge le SIP
-    Et je recherche le journal des opérationsService_politique
     Alors le statut final du journal des opérations est OK
     Et je nomme l'identifiant de l'opération OperationId4
 
