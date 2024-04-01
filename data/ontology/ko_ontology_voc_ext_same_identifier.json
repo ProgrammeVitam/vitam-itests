@@ -4172,15 +4172,28 @@
   {
     "Identifier": "_batchId",
     "ApiField": "#batchId",
-    "Description": "Mapping : unit-es-mapping.json",
+    "Description": "Mapping : unit-es-mapping.json (collect-only)",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
     "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
-    "ShortName": "Identifiant de lot",
+    "ShortName": "Identifiant de lot de collecte",
     "Collections": [
       "Unit",
       "ObjectGroup"
+    ]
+  },
+  {
+    "Identifier": "_uploadPath",
+    "ApiField": "#uploadPath",
+    "Description": "Mapping : unit-es-mapping.json (collect-only)",
+    "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
+    "Origin": "INTERNAL",
+    "ShortName": "Chemin initial de versement",
+    "Collections": [
+      "Unit"
     ]
   }
 ]
