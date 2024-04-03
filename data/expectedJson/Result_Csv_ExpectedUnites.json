@@ -2,6 +2,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123460_20230131.pdf",
+       "#uploadPath": "File/BP_123460_20230131.pdf",
        "Agent":[
           {
              "FirstName":"SAND",
@@ -47,6 +48,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123457_20230131.pdf",
+       "#uploadPath": "File/BP_123457_20230131.pdf",
        "Agent":[
           {
              "FirstName":"NOM MODIFIE",
@@ -92,6 +94,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123459_20230131.pdf",
+       "#uploadPath": "File/BP_123459_20230131.pdf",
        "Agent":[
           {
              "FirstName":"QUINT",
@@ -128,6 +131,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123458_20230131.pdf",
+       "#uploadPath": "File/BP_123458_20230131.pdf",
        "Agent":[
           {
              "FirstName":"CESAR",
@@ -173,6 +177,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123456_20230131.pdf",
+       "#uploadPath": "File/BP_123456_20230131.pdf",
        "Agent":[
           {
              "FirstName":"DUPONT",
@@ -218,6 +223,7 @@
     {
        "DescriptionLevel":"Collection",
        "Title":"File",
+       "#uploadPath": "File",
        "StartDate":"2023-01-01",
        "Tag":[
           "Paie",
@@ -235,6 +241,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123461_20230131.pdf",
+       "#uploadPath": "File/BP_123461_20230131.pdf",
        "Agent":[
           {
              "FirstName":"DE MEDICIS",
@@ -280,6 +287,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123462_20230131.pdf",
+       "#uploadPath":"File/BP_123462_20230131.pdf",
        "Agent":[
           {
              "FirstName":"ANTOINETTE",
@@ -325,6 +333,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123463_20230131.pdf",
+       "#uploadPath":"File/BP_123463_20230131.pdf",
        "Agent":[
           {
              "FirstName":"DUPOND",
@@ -370,6 +379,7 @@
     {
        "DescriptionLevel":"Item",
        "Title":"BP_123464_20230131.pdf",
+       "#uploadPath":"File/BP_123464_20230131.pdf",
        "Agent":[
           {
              "FirstName":"CHARLES",
