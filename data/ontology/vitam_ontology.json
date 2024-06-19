@@ -400,7 +400,7 @@
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Détail",
     "Collections": [
@@ -2817,7 +2817,7 @@
     "Description": "Mapping : logbook-es-mapping.json",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Identifiant de l'événement",
     "Collections": [
@@ -2832,7 +2832,7 @@
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Détails techniques",
     "Collections": [
@@ -2923,7 +2923,7 @@
     "Description": "Mapping : logbook-es-mapping.json. Code du type de l’opération",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Type d'opération",
     "Collections": [
@@ -2938,7 +2938,7 @@
     "Description": "Mapping : logbook-es-mapping.json. Type de processus. Equivaut à la traduction du code du type de l'opération.",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Catégorie d'opération",
     "Collections": [
@@ -3184,7 +3184,7 @@
     "Description": "Mapping : logbook-es-mapping.json. Code correspondant au résultat de l’événement.",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Code technique",
     "Collections": [
@@ -3199,7 +3199,7 @@
     "Description": "Mapping : logbook-es-mapping.json. Détail du résultat de l’événement.",
     "Type": "TEXT",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Message",
     "Collections": [
@@ -3214,7 +3214,7 @@
     "Description": "Mapping : logbook-es-mapping.json. Statut de l’événement",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Statut",
     "Collections": [
