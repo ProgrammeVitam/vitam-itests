@@ -2131,6 +2131,30 @@
     ]
   },
   {
+    "Identifier": "SkipFilingSchemeOriginatingAgencyFilter",
+    "ApiField": "SkipFilingSchemeOriginatingAgencyFilter",
+    "Description": "Mapping : accesscontract-es-mapping.json",
+    "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
+    "Origin": "INTERNAL",
+    "ShortName": "Exclure les plans de classement du filtrage par services producteurs",
+    "Collections": [
+      "AccessContract"
+    ]
+  },
+  {
+    "Identifier": "SkipFilingSchemeRuleCategoryFilter",
+    "ApiField": "SkipFilingSchemeRuleCategoryFilter",
+    "Description": "Mapping : accesscontract-es-mapping.json",
+    "Type": "BOOLEAN",
+    "TypeDetail": "BOOLEAN",
+    "Origin": "INTERNAL",
+    "ShortName": "Exclure les plans de classement du filtrage par catégories de règles",
+    "Collections": [
+      "AccessContract"
+    ]
+  },
+  {
     "Identifier": "RootUnits",
     "ApiField": "RootUnits",
     "Description": "Mapping : accesscontract-es-mapping.json",
