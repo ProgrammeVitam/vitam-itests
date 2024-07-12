@@ -3573,6 +3573,20 @@
     ]
   },
   {
+    "Identifier": "SedaVersion",
+    "ApiField": "SedaVersion",
+    "Description": "Mapping : profile-es-mapping.json",
+    "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
+    "Origin": "INTERNAL",
+    "ShortName": "SedaVersion",
+    "Collections": [
+      "ArchiveUnitProfile",
+      "Profile"
+    ]
+  },
+  {
     "Identifier": "_implementationVersion",
     "ApiField": "#implementationVersion",
     "Description": "Mapping : unit-es-mapping.json",
