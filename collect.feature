@@ -5,6 +5,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
 
 Contexte: Vérifier collect service
   Etant donné Le module de collect est deployé
+  Et les tests effectués sur le tenant 0
 
 
   Scénario: Gestion du cycle de vie d'un projet de collecte de données
@@ -100,6 +101,59 @@ Contexte: Vérifier collect service
     Et je clôture et je constate son statut READY
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+
+
+
+  Scénario: Rattachement unique
+    Etant donné un fichier SIP nommé data/SIP_OK/US_1900_2011/OK_arbre_AN.zip
+    Quand je télécharge l'arbre
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Quand j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
+    Et je recherche une unité archivistique et je recupère son id
+    Et j'utilise le fichier json suivant data/queries/collect/create_project_with_rattachement.json
+    Et j'initialise le project
+    Alors le projet est créé en succès
+    Et je met a jour le projet avec le nom updatedProjectName
+    Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
+    Et j'initialise une transaction
+    Et je recherche la transaction
+    Et je met a jour la transaction avec le nom updatedTransactionName
+    Et j'envoie l'arborescence bureautique suivante data/queries/collect/sample_stream.zip
+    Et je constate qu'une AU ainsi qu'un GOT sont créés
+    Et je clôture et je constate son statut READY
+    Et j'envoie le SIP et je constate son statut SENT
+    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
+    Et je recherche les unités archivistiques
+    Et je vérifie que l'unité est rattaché au noeud de l'arbre de positionnement
+
+
+
+  Scénario: Rattachement clé valeur
+    Etant donné un fichier SIP nommé data/queries/collect/Import_arbre.zip
+    Quand je télécharge l'arbre
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Quand j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
+    Et je recherche une unité archivistique et je recupère son id
+    Et j'utilise le fichier json suivant data/queries/collect/create_project_with_rattachement_cle_valeur.json
+    Et j'initialise le project
+    Alors le projet est créé en succès
+    Et je met a jour le projet avec le nom updatedProjectName
+    Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
+    Et j'initialise une transaction
+    Et je recherche la transaction
+    Et je met a jour la transaction avec le nom updatedTransactionName
+    Et j'envoie l'arborescence bureautique suivante data/queries/collect/sample_stream_with_metadata.zip
+    Et je constate qu'une AU ainsi qu'un GOT sont créés
+    Et je clôture et je constate son statut READY
+    Et j'envoie le SIP et je constate son statut SENT
+    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+    Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
+    Et je recherche les unités archivistiques
+    Et je vérifie que l'unité est rattaché au noeud de l'arbre de positionnement
+
 
 
   Scénario: Gestion d'une arborescence bureautique intégrant un fichier métadonnées JSONL et purge du projet
