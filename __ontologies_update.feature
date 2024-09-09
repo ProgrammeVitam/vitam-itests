@@ -1,14 +1,14 @@
 # language: fr
 
 @OntologyUpdate
-Fonctionnalité: Import de vocabulaire externe dans l'ontologie
+Fonctionnalité: Import et mise à jour de vocabulaire externe dans l'ontologie
 
   Contexte: Avant de lancer cette suite de test, je vérifie que je suis bien sur le tenant d'administration
     Etant donné les tests effectués sur le tenant 1
 
-
   Scénario: restauration ontology
     Etant donné un fichier ontologie nommé data/ontology/vitam_ontology.json
+
     Quand j'importe l'ontologie
     Alors les metadonnées sont
       | Code | 200 |

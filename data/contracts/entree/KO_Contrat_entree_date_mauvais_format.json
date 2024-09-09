@@ -1,15 +1,15 @@
 [
-	{
-		"Name":"Contrat_Acces_Par-Defaut",
-		"Description":"Contrat permettant de faire des opérations pour tous les services producteurs et sur tousles usages",
-		"Identifier":"testrecette",
-		"Status":"ACTIVE",
-		"OriginatingAgencies":[],
-		"DataObjectVersion": [],
-		"LastUpdate":"04/08/2017",
-		"CreationDate":"tom",
-		"WritingPermission": true,
-		"EveryOriginatingAgency": true,
-		"EveryDataObjectVersion": true
-	}
+  {
+    "Name": "Contrat_Acces_Par-Defaut",
+    "Description": "Contrat permettant de faire des opérations pour tous les services producteurs et sur tousles usages",
+    "Identifier": "testrecette",
+    "Status": "ACTIVE",
+    "DataObjectVersion": [],
+    "LastUpdate": "04/08/2017",
+    "CreationDate": "tom",
+    "WritingPermission": true,
+    "EveryOriginatingAgency": true,
+    "OriginatingAgencies": [],
+    "EveryDataObjectVersion": true
+  }
 ]

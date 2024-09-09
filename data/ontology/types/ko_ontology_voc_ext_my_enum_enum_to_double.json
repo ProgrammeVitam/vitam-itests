@@ -2131,13 +2131,26 @@
     ]
   },
   {
-    "Identifier": "SkipFilingSchemeOriginatingAgencyFilter",
-    "ApiField": "SkipFilingSchemeOriginatingAgencyFilter",
+    "Identifier": "RuleCategoryToFilterForTheOtherOriginatingAgencies",
+    "ApiField": "RuleCategoryToFilterForTheOtherOriginatingAgencies",
+    "Description": "Mapping : accesscontract-es-mapping.json",
+    "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
+    "Origin": "INTERNAL",
+    "ShortName": "Liste des catégories de règles à filtrer pour tous les autres producteurs",
+    "Collections": [
+      "AccessContract"
+    ]
+  },
+  {
+    "Identifier": "DoNotFilterFilingSchemes",
+    "ApiField": "DoNotFilterFilingSchemes",
     "Description": "Mapping : accesscontract-es-mapping.json",
     "Type": "BOOLEAN",
     "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
-    "ShortName": "Exclure les plans de classement du filtrage par services producteurs",
+    "ShortName": "Ne pas appliquer les filtres aux plans de classement",
     "Collections": [
       "AccessContract"
     ]
@@ -2149,7 +2162,7 @@
     "Type": "BOOLEAN",
     "TypeDetail": "BOOLEAN",
     "Origin": "INTERNAL",
-    "ShortName": "Exclure les plans de classement du filtrage par catégories de règles",
+    "ShortName": "Champ caché / option avancée : Exclure les plans de classement du filtrage par catégories de règles",
     "Collections": [
       "AccessContract"
     ]
