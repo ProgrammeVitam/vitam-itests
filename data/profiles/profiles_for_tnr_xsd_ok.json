@@ -1,12 +1,14 @@
 [
-	{ 	"Identifier":"PROFIL_TNR_XSD",
-		"Name":"profilTrnXsd",
-		"Description":"Recherche de profil XSD",
-		"Status":"ACTIVE",
-		"Format":"XSD",
-		"LastUpdate":"10/12/2016",
-		"CreationDate":"10/12/2016",
-		"ActivationDate":"10/12/2016",
-		"DeactivationDate":"10/12/2016"
-	}
+  {
+    "Identifier": "PROFIL_TNR_XSD",
+    "Name": "profilTrnXsd",
+    "Description": "Recherche de profil XSD",
+    "Status": "ACTIVE",
+    "Format": "XSD",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016",
+    "SedaVersion": "2.2"
+  }
 ]
