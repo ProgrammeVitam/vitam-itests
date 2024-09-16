@@ -1,15 +1,17 @@
 [
-	{
-		"Name":"Contrat_Acces_Par-Defaut",
-		"Description":"Contrat service producteur inconnu",
-		"Identifier":"testrecette",
-		"Status":"ACTIVE",
-		"OriginatingAgencies":["testlalalal"],
-		"DataObjectVersion": [],
-		"LastUpdate":"04/08/2017",
-		"CreationDate":"12/02/1976",
-		"WritingPermission": true,
-		"EveryOriginatingAgency": true,
-		"EveryDataObjectVersion": true
-	}
+  {
+    "Name": "Contrat_Acces_Par-Defaut",
+    "Description": "Contrat service producteur inconnu",
+    "Identifier": "testrecette",
+    "Status": "ACTIVE",
+    "DataObjectVersion": [],
+    "LastUpdate": "04/08/2017",
+    "CreationDate": "12/02/1976",
+    "WritingPermission": true,
+    "EveryOriginatingAgency": true,
+    "OriginatingAgencies": [
+      "testlalalal"
+    ],
+    "EveryDataObjectVersion": true
+  }
 ]

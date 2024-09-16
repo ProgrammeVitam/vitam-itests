@@ -1,15 +1,15 @@
 [
-	{
-		"Name":"Contrat_Acces_Par-Defaut",
-		"Description":"KO_erreur_valeur_champ-WritingPermission.json",
-		"Identifier":"testrecette",
-		"Status":"ACTIVE",
-		"OriginatingAgencies":[],
-		"DataObjectVersion": [],
-		"LastUpdate":"04/08/2017",
-		"CreationDate":"12/02/1976",
-		"WritingPermission": "nono",
-		"EveryOriginatingAgency": true,
-		"EveryDataObjectVersion": true
-	}
+  {
+    "Name": "Contrat_Acces_Par-Defaut",
+    "Description": "KO_erreur_valeur_champ-WritingPermission.json",
+    "Identifier": "testrecette",
+    "Status": "ACTIVE",
+    "DataObjectVersion": [],
+    "LastUpdate": "04/08/2017",
+    "CreationDate": "12/02/1976",
+    "WritingPermission": "nono",
+    "EveryOriginatingAgency": true,
+    "OriginatingAgencies": [],
+    "EveryDataObjectVersion": true
+  }
 ]

@@ -1,5 +1,6 @@
 .DS_Store
 .idea
+.run
 vitam-itests.iml
 .project
 .directory

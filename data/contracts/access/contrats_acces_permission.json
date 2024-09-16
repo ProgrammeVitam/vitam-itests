@@ -1,50 +1,53 @@
 [
-    {
-        "Name":"NoUpdatesAllowed",
-        "Identifier": "NoUpdatesAllowed",
-        "Description":"Contrat d'accès - Sans droits de modification des unités archivistiques",
-        "Status" : "ACTIVE",
-        "LastUpdate":"10/12/2016",
-        "CreationDate":"10/12/2016",
-        "ActivationDate":"10/12/2016",
-        "DeactivationDate":"10/12/2016",
-        "EveryOriginatingAgency": true,
-        "WritingPermission": false,
-        "WritingRestrictedDesc": false
-    }, {
-        "Name":"AllUpdatesAllowed",
-        "Identifier": "AllUpdatesAllowed",
-        "Description":"Contrat d'accès - Droit de mise à jour complet",
-        "Status" : "ACTIVE",
-        "LastUpdate":"10/12/2016",
-        "CreationDate":"10/12/2016",
-        "ActivationDate":"10/12/2016",
-        "DeactivationDate":"10/12/2016",
-        "EveryOriginatingAgency": true,
-        "WritingPermission": true,
-        "WritingRestrictedDesc": false
-    }, {
-        "Name":"OnlyDescUpdateAllowed",
-        "Identifier": "OnlyDescUpdateAllowed",
-        "Description":"Contrat d'accès - Droit de modification restrinct aux unités archivistiques",
-        "Status" : "ACTIVE",
-        "LastUpdate":"10/12/2016",
-        "CreationDate":"10/12/2016",
-        "ActivationDate":"10/12/2016",
-        "DeactivationDate":"10/12/2016",
-        "EveryOriginatingAgency": true,
-        "WritingPermission": true,
-        "WritingRestrictedDesc": true
-    }, {
-        "Name":"DefaultWritePermissions",
-        "Identifier": "DefaultWritePermissions",
-        "Description":"Contrat Acces - Modiffications authorisés sans précisions supplémentaires",
-        "Status" : "ACTIVE",
-        "LastUpdate":"10/12/2016",
-        "CreationDate":"10/12/2016",
-        "ActivationDate":"10/12/2016",
-        "DeactivationDate":"10/12/2016",
-        "EveryOriginatingAgency": true,
-        "WritingPermission": true
-    }
+  {
+    "Name": "NoUpdatesAllowed",
+    "Identifier": "NoUpdatesAllowed",
+    "Description": "Contrat d'accès - Sans droits de modification des unités archivistiques",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016",
+    "EveryOriginatingAgency": true,
+    "WritingPermission": false,
+    "WritingRestrictedDesc": false
+  },
+  {
+    "Name": "AllUpdatesAllowed",
+    "Identifier": "AllUpdatesAllowed",
+    "Description": "Contrat d'accès - Droit de mise à jour complet",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016",
+    "EveryOriginatingAgency": true,
+    "WritingPermission": true,
+    "WritingRestrictedDesc": false
+  },
+  {
+    "Name": "OnlyDescUpdateAllowed",
+    "Identifier": "OnlyDescUpdateAllowed",
+    "Description": "Contrat d'accès - Droit de modification restrinct aux unités archivistiques",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016",
+    "EveryOriginatingAgency": true,
+    "WritingPermission": true,
+    "WritingRestrictedDesc": true
+  },
+  {
+    "Name": "DefaultWritePermissions",
+    "Identifier": "DefaultWritePermissions",
+    "Description": "Contrat Acces - Modiffications authorisés sans précisions supplémentaires",
+    "Status": "ACTIVE",
+    "LastUpdate": "10/12/2016",
+    "CreationDate": "10/12/2016",
+    "ActivationDate": "10/12/2016",
+    "DeactivationDate": "10/12/2016",
+    "EveryOriginatingAgency": true,
+    "WritingPermission": true
+  }
 ]
