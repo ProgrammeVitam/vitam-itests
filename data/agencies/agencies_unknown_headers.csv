@@ -1,0 +1,2 @@
+Identifier,Name,Description,Entity-Type,NameEntryParallel,AuthorizedForm,AlternativeForm,EntityId,FromDate,ToDate,Functions,BiogHist,Places,LegalStatuses,Mandates,StructureOrGenealogy,GeneralContext,MaintenanceStatus,LocalStatus,Sources,EventDescription
+test,test,une description de service agent,EntityType1,NameEntryParallel1,AuthorizedForm1,Alternative Form1,Entity Id,15/02/2024,14/08/2024,Function1|function2,BiogHist,Places,LegalStatuses,Mandates,StructureOrGenealogy,GeneralContext,MaintenanceStatus,LocalStatus,Sources,EventDescription

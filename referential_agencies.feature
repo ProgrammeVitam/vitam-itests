@@ -16,6 +16,11 @@ Fonctionnalité: gestion des données référentielles agencies (vérification, 
     Alors les metadonnées sont
       | Code           | 200                                     |
 
+  @Light
+  Scénario: Vérification et import des services producteurs enrichis OK
+    Quand je vérifie le fichier nommé data/agencies/agencies_with_additional_fields.csv pour le référentiel AGENCIES
+    Alors les metadonnées sont
+      | Code           | 200                                     |
 
   Scénario: Vérification et import d'un fichier de services agents au mauvais format
     Quand je vérifie le fichier nommé data/agencies/KO_agencies.pdf pour le référentiel AGENCIES
