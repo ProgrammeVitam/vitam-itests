@@ -3,30 +3,18 @@
 		"Name":"PROFIL_INACTIVE_2194",
 		"Description":"PROFIL_INACTIVE_2194",
 		"Status":"INACTIVE",
-		"Format":"RNG",
-		"LastUpdate":"10/12/2016",
-		"CreationDate":"10/12/2016",
-		"ActivationDate":"10/12/2016",
-		"DeactivationDate":"10/12/2016"
+		"Format":"RNG"
 	},
 	{	"Identifier":"PROFIL_TNR_2194",
 		"Name":"PROFIL_TNR_2194",
 		"Description":"PROFIL_TNR_2194",
 		"Status":"ACTIVE",
-		"Format":"RNG",
-		"LastUpdate":"10/12/2016",
-		"CreationDate":"10/12/2016",
-		"ActivationDate":"10/12/2016",
-		"DeactivationDate":"10/12/2016"
+		"Format":"RNG"
 	},
 	{	"Identifier":"PROFIL_TNR_2194_DIFF",
 		"Name":"PROFIL_TNR_2194_DIFF",
 		"Description":"PROFIL_TNR_2194",
 		"Status":"ACTIVE",
-		"Format":"RNG",
-		"LastUpdate":"10/12/2016",
-		"CreationDate":"10/12/2016",
-		"ActivationDate":"10/12/2016",
-		"DeactivationDate":"10/12/2016"
+		"Format":"RNG"
 	}
 ]
