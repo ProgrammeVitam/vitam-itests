@@ -32,7 +32,15 @@ Fonctionnalité: Tests d'imports et de recherche de services producteurs
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est KO
     Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des services agents
-    Et le champ 'evDetData' de l'évenement final est : Import agency error > File invalid -- lack of column Identifier
+    Et le champ 'evDetData' de l'évenement final est : "agencyCheck" : "Import agency error > Unknown fields found: Identifier/Name/Description"
+
+  Scénario: Import d'un fichier de services agents avec de mauvais champs
+    Etant donné un fichier de service producteur nommé data/agencies/agencies_unknown_headers.csv
+    Quand j'importe les services producteurs sans échec
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est KO
+    Et le champ 'outMessg' de l'évenement final est : Échec du processus d'import du référentiel des services agents
+    Et le champ 'evDetData' de l'évenement final est : "agencyCheck" : "Import agency error > Unknown fields found: Entity-Type"
 
 
     #Scénario: Import d'un fichier de services agents non encodé en UTF8
