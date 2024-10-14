@@ -25,7 +25,7 @@ Fonctionnalité: initialisation
     Et les tests effectués sur le tenant 1
     Et j'importe le fichier nommé data/rules/rules_ok.csv pour le référentiel RULES
     Et j'importe le fichier nommé data/rules/rules_ko_empty_line.csv dans le référentiel RULES
-    Et j'importe le fichier nommé data/formats/DROID_SignatureFile_V95.xml dans le référentiel FORMATS
+    Et j'importe le fichier nommé data/formats/DROID_SignatureFile_V109.xml dans le référentiel FORMATS
     Et un contract nommé data/contracts/contract_acces_TNR_tenant_1.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
