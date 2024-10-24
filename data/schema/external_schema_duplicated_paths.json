@@ -3,22 +3,26 @@
     "IsObject": true,
     "Cardinality": "MANY",
     "Path": "Invoice",
-    "ShortName": "Facture"
+    "ShortName": "Facture",
+    "Description": "description"
   },
   {
     "IsObject": true,
     "Cardinality": "ONE",
     "Path": "Invoice.Provider",
-    "ShortName": "Provider"
+    "ShortName": "Provider",
+    "Description": "description"
   },
   {
     "Cardinality": "ONE",
     "Path": "Invoice.Provider.BirthDate",
-    "ShortName": "Date de naissance du provider"
+    "ShortName": "Date de naissance du provider",
+    "Description": "description"
   },
   {
     "Cardinality": "ONE",
     "Path": "Invoice.Provider.BirthDate",
-    "ShortName": "Another path duplicated"
+    "ShortName": "Another path duplicated",
+    "Description": "description"
   }
 ]
