@@ -3,18 +3,21 @@
     "IsObject": true,
     "Cardinality": "MANY",
     "Path": "TNRSchema",
-    "ShortName": "Facture"
+    "ShortName": "Facture",
+    "Description": "Facture description"
   },
   {
     "IsObject": true,
     "Cardinality": "MANY",
     "Path": "TNRSchema.Provider",
-    "ShortName": "Provider"
+    "ShortName": "Provider",
+    "Description": "Provider description"
   },
   {
     "Cardinality": "ONE",
     "Path": "TNRSchema.Provider.BirthDate",
     "ShortName": "Date de naissance du provider",
-    "Type": "DATE"
+    "Type": "DATE",
+    "Description": "BirthDate description"
   }
 ]
