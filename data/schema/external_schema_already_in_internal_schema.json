@@ -2,6 +2,7 @@
   {
     "Cardinality": "ONE",
     "Path": "Addressee.DeathPlace.Country",
-    "ShortName": "Some wrong path"
+    "ShortName": "Some wrong path",
+    "Description": "description"
   }
 ]
