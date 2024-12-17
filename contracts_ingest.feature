@@ -64,6 +64,14 @@ Scénario: import OK de contrats d'entrée avec le champ FormatUnidentifiedAutho
       | MasterMandatory        | true        |
       | EveryDataObjectVersion | false       |
 
+  Scénario: Import OK de contrat avec l'objet Signature
+    Etant donné un contract nommé data/contracts/entree/contract_with_signature.json
+    Quand j'importe ce contrat de type INGEST_CONTRACTS
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Et le champ 'outDetail' de l'évenement final est : STP_IMPORT_INGEST_CONTRACT.OK
+    Et le champ 'outMessg' de l'évenement final est : Succès du processus d'import du contrat d'entrée
+
 # Cas KO
 
   Scénario: Tentative d'import KO d'un contrat d'entrée déjà existant
