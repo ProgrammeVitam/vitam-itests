@@ -41,6 +41,8 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.069"
@@ -87,6 +89,8 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.158"
@@ -124,6 +128,8 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.182"
@@ -170,6 +176,8 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.206"
@@ -216,6 +224,8 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.254"
@@ -234,6 +244,8 @@
        "#management":{},
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.558",
        "#approximate_update_date":"2023-12-19T10:54:00.284"
@@ -280,6 +292,8 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.094"
@@ -326,6 +340,8 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.120"
@@ -372,6 +388,8 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.228"
@@ -418,9 +436,10 @@
        },
        "#unitType":"INGEST",
        "#opi":"aeeaaaaaacfuviyza24poammqg3amfqaaaaq",
+       "#originating_agency":"FRAN_NP_009915",
+       "#originating_agencies":["FRAN_NP_009915"],
        "#version":2,
        "#approximate_creation_date":"2023-12-19T10:53:59.611",
        "#approximate_update_date":"2023-12-19T10:54:00.311"
     }
  ]
- 
