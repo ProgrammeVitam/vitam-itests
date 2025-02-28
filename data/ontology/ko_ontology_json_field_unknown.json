@@ -302,7 +302,7 @@
     "TypeDetail": "STRING",
     "StringSize": "SHORT",
     "Origin": "INTERNAL",
-    "ShortName": "Référence à un groupe d'objets",
+    "ShortName": "ID du groupe d'objets",
     "Collections": [
       "Unit"
     ]
@@ -696,7 +696,7 @@
     "TypeDetail": "STRING",
     "StringSize": "SHORT",
     "Origin": "INTERNAL",
-    "ShortName": "Référence à une ArchiveUnit interne",
+    "ShortName": "Unité",
     "Collections": [
       "Unit"
     ]
@@ -709,7 +709,7 @@
     "TypeDetail": "STRING",
     "StringSize": "SHORT",
     "Origin": "INTERNAL",
-    "ShortName": "Référence à un objet ou à un groupe d'objets interne(s)",
+    "ShortName": "ID de l'objet",
     "Collections": [
       "Unit"
     ]
@@ -722,7 +722,7 @@
     "TypeDetail": "STRING",
     "StringSize": "SHORT",
     "Origin": "INTERNAL",
-    "ShortName": "Référence à une ArchiveUnit déjà conservée",
+    "ShortName": "Unité déjà archivée",
     "Collections": [
       "Unit"
     ]
@@ -735,7 +735,7 @@
     "TypeDetail": "STRING",
     "StringSize": "SHORT",
     "Origin": "INTERNAL",
-    "ShortName": "Référence à un objet ou à un groupe d'objets déjà conservé(s)",
+    "ShortName": "Objet déjà archivé",
     "Collections": [
       "Unit"
     ]
@@ -748,7 +748,7 @@
     "TypeDetail": "STRING",
     "StringSize": "SHORT",
     "Origin": "INTERNAL",
-    "ShortName": "Référence à un objet externe, présent ni dans le message, ni dans le SAE",
+    "ShortName": "Référence externe",
     "Collections": [
       "Unit"
     ]
