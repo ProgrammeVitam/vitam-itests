@@ -26,7 +26,7 @@ Fonctionnalité: Export DIP
     Alors le dip contient 3 unités archivistiques
     Alors le dip contient 2 groupes d'objets
     Alors le dip contient 2 objets dont 2 sont binaires
-    Alors le dip utilise la version SEDA "2.2"
+    Alors le dip utilise la version SEDA "2.3"
 
   Scénario: Test export dip unit with specific Seda version then OK
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
@@ -94,8 +94,8 @@ Fonctionnalité: Export DIP
     Quand j'exporte le DIP
     Alors le statut final du journal des opérations est KO
 
-  Scénario: Test export dip SEDA 2.2 OK
-    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_FULL_SEDA2.2.zip
+  Scénario: Test export dip SEDA 2.3 OK
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_FULL_SEDA2.3.zip
     Quand j'utilise la requête suivante
 """
 {
