@@ -33,7 +33,7 @@ Contexte: Vérifier collect service
     Et j'utilise le fichier json suivant data/queries/collect/upload_got_collect.json
     Et je crée un GOT
     Et j'upload le fichier suivant data/queries/collect/plan-barbusse.txt
-    Et je clôture et je constate son statut READY
+    Et je clôture et je constate son statut READY ou VALIDATED
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK 
 
@@ -52,7 +52,7 @@ Contexte: Vérifier collect service
     Et j'utilise le fichier json suivant data/queries/collect/upload_got_collect.json
     Et je crée un GOT
     Et j'upload le fichier suivant data/queries/collect/plan-barbusse.txt
-    Et je clôture et je constate son statut READY
+    Et je clôture et je constate son statut READY ou VALIDATED
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut KO depuis l'ingest et je constate son statut ACK_KO 
 
@@ -82,7 +82,7 @@ Contexte: Vérifier collect service
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie.zip
     Et j'envoie un fichier de mise à jour CSV data/queries/collect/metadata_maj.csv
     Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
-    Et je clôture et je constate son statut READY
+    Et je clôture et je constate son statut READY ou VALIDATED
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
 
@@ -98,7 +98,7 @@ Contexte: Vérifier collect service
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie.zip
     Et j'envoie un fichier de mise à jour JSONL data/queries/collect/metadata_maj.jsonl
     Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
-    Et je clôture et je constate son statut READY
+    Et je clôture et je constate son statut READY ou VALIDATED
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
 
@@ -121,7 +121,7 @@ Contexte: Vérifier collect service
     Et je met a jour la transaction avec le nom updatedTransactionName
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/sample_stream.zip
     Et je constate qu'une AU ainsi qu'un GOT sont créés
-    Et je clôture et je constate son statut READY
+    Et je clôture et je constate son statut READY ou VALIDATED
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
@@ -147,7 +147,7 @@ Contexte: Vérifier collect service
     Et je met a jour la transaction avec le nom updatedTransactionName
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/sample_stream_with_metadata.zip
     Et je constate qu'une AU ainsi qu'un GOT sont créés
-    Et je clôture et je constate son statut READY
+    Et je clôture et je constate son statut READY ou VALIDATED
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
@@ -167,6 +167,6 @@ Contexte: Vérifier collect service
     Et je recherche la transaction
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie_MetadataJsonl.zip
     Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
-    Et je clôture et je constate son statut READY
+    Et je clôture et je constate son statut READY ou VALIDATED
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
