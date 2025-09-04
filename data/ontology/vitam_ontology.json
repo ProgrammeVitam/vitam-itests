@@ -2860,7 +2860,8 @@
     "ShortName": "Identifiant de l'événement",
     "Collections": [
       "LogbookOperation",
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -2874,7 +2875,8 @@
     "Origin": "INTERNAL",
     "ShortName": "Détails techniques",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -2981,7 +2983,8 @@
     "ShortName": "Catégorie d'opération",
     "Collections": [
       "LogbookOperation",
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3212,7 +3215,9 @@
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du lot d'objets",
     "Collections": [
-      "LogbookOperation"
+      "LogbookOperation",
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3227,7 +3232,8 @@
     "ShortName": "Code technique",
     "Collections": [
       "LogbookOperation",
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -3242,7 +3248,8 @@
     "ShortName": "Message",
     "Collections": [
       "LogbookOperation",
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
