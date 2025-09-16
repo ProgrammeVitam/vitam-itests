@@ -170,3 +170,19 @@ Contexte: Vérifier collect service
     Et je clôture et je constate son statut READY ou VALIDATED
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+
+
+  Scénario: Gestion d'une arborescence bureautique et MAJ des métadonnées via SIP
+    Etant donné les tests effectués sur le tenant 0
+    Quand j'utilise le fichier json suivant data/queries/collect/create_project.json
+    Et j'initialise le project
+    Alors le projet est créé en succès
+    Et je met a jour le projet avec le nom updatedProjectName
+    Et j'utilise le fichier json suivant data/queries/collect/create_transaction.json
+    Et j'initialise une transaction
+    Et je recherche la transaction
+    Et j'importe le sip suivant data/SIP_OK/ZIP/4_UNITS_2_GOTS.zip
+    Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_SIP_ExpectedUnites.json
+    Et je clôture et je constate son statut READY ou VALIDATED
+    Et j'envoie le SIP et je constate son statut SENT
+    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
