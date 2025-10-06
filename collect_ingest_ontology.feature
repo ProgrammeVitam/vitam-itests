@@ -21,9 +21,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et que j'importe le sip suivant data/SIP_OK/ZIP/OK_DATE_SHOULD_TRANSFORM_PASS.zip
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
-#    # FIXME: NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
     Et j'utilise la requête suivante
 """
 { "$roots": [],
@@ -34,14 +31,3 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et je recherche les unités archivistiques de la transaction
     Alors les metadonnées sont
     | Writer.BirthDate        | 2016-09-26                                  |
-#    # FIXME : NO search OG API  
-#    Et j'utilise la requête suivante
-#"""
-#{ "$roots": [],
-#  "$query": [{"$and":[{"$eq":{"FileInfo.Filename":"BinaryMaster.txt"}},{"$in":{"#operations":["Operation-Id"]}}]}],
-#  "$projection": {
-#  }}
-#"""
-#     Et je recherche les groupes d'objets
-#     Alors les metadonnées sont
-#     | FileInfo.LastModified        | 2016-10-18T21:03:30                                 |

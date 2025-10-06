@@ -21,7 +21,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors le statut final du journal des opérations est KO
     Et le journal ne contient pas de statut FATAL
     Et le journal des opérations est cohérent
-    # FIXME : OG_OBJECTS_ANTIVIRUS_CHECK vs SANITY_CHECK_SIP
     Et le statut de l'événement OG_OBJECTS_ANTIVIRUS_CHECK est KO
 
   @Light
@@ -43,8 +42,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors le manifest généré de la transaction contient 1 unité archivistique
     Et le manifest généré de la transaction contient 1 objet binaire
     Et le manifest généré de la transaction contient 1 objet physique
-    # FIXME : IC-00001 issu du projet et non pas ArchivalAgreement0 issu du SIP importé
-    # Et le manifest généré de la transaction contient la valeur <ArchivalAgreement>ArchivalAgreement0</ArchivalAgreement>
 
   Scénario: Import dans collect d'un SIP avec cycle
     Quand j'initialise une transaction
@@ -55,4 +52,3 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et le journal des opérations est cohérent
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
     Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_LOOP.KO
-    # FIXME: Pas d'ATR

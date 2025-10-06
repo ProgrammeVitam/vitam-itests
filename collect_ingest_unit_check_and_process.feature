@@ -25,10 +25,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements CHECK_UNIT_SCHEMA, STP_UNIT_CHECK_AND_PROCESS sont KO
     Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
 
   Scénario: Import dans collect d'un SIP avec date invalide KO (US 1791)
     Quand j'initialise une transaction
@@ -38,10 +34,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements CHECK_UNIT_SCHEMA, STP_UNIT_CHECK_AND_PROCESS sont KO
     Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.CONSISTENCY.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, CHECK_UNIT_SCHEMA.CONSISTENCY.KO
 
   Scénario: Import dans collect d'un SIP with invalid date KO (US 1791)
     Quand j'initialise une transaction
@@ -51,10 +43,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements CHECK_UNIT_SCHEMA, STP_UNIT_CHECK_AND_PROCESS sont KO
     Et l'outcome détail de l'événement CHECK_UNIT_SCHEMA est CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_UNIT_SCHEMA.KO, CHECK_UNIT_SCHEMA.INVALID_UNIT.KO
 
 ##### UNITS_RULES_COMPUTE #####
 
@@ -68,19 +56,11 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
-#    Et le fichier ATR contient 2 unités archivistiques
-#    Et le fichier ATR contient 2 objets binaires
     Quand je valide la transaction sans erreur
     Alors je constate que la transaction passe au statut VALIDATED
     Quand je télécharge le SIP de la transaction
     Alors le manifest généré de la transaction contient 2 unités archivistiques
     Et le manifest généré de la transaction contient 2 objets binaires
-#    # FIXME : NO LFC
-#    Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-#    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit racines non dotées de règles, mais avec un ManagementMetadata doté de règles
     Quand j'initialise une transaction
@@ -90,19 +70,11 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
-#    Et le fichier ATR contient 2 unités archivistiques
-#    Et le fichier ATR contient 2 objets binaires
     Quand je valide la transaction sans erreur
     Alors je constate que la transaction passe au statut VALIDATED
     Quand je télécharge le SIP de la transaction
     Alors le manifest généré de la transaction contient 2 unités archivistiques
     Et le manifest généré de la transaction contient 2 objets binaires
-#    # FIXME : NO LFC
-#    Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-#    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit racines dotées de règles, mais avec un ManagementMetadata sans règle
@@ -113,19 +85,11 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
-#    Et le fichier ATR contient 2 unités archivistiques
-#    Et le fichier ATR contient 2 objets binaires
     Quand je valide la transaction sans erreur
     Alors je constate que la transaction passe au statut VALIDATED
     Quand je télécharge le SIP de la transaction
     Alors le manifest généré de la transaction contient 2 unités archivistiques
     Et le manifest généré de la transaction contient 2 objets binaires
-#    # FIXME : NO LFC
-#    Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-#    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit qui est à la racine de DescriptiveMetadata qui partage la même règle que le ManagementMetadata mais avec des StartDate différentes
@@ -136,19 +100,11 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
-#    Et le fichier ATR contient 5 unités archivistiques
-#    Et le fichier ATR contient 2 objets binaires
     Quand je valide la transaction sans erreur
     Alors je constate que la transaction passe au statut VALIDATED
     Quand je télécharge le SIP de la transaction
     Alors le manifest généré de la transaction contient 5 unités archivistiques
     Et le manifest généré de la transaction contient 2 objets binaires
-#    # FIXME : NO LFC
-#    Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-#    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit qui est à la racine de DescriptiveMetadata sans règle, mais avec des règles définies au niveau du bloc ManagementMetadata
@@ -159,19 +115,11 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
-#    Et le fichier ATR contient 5 unités archivistiques
-#    Et le fichier ATR contient 2 objets binaires
     Quand je valide la transaction sans erreur
     Alors je constate que la transaction passe au statut VALIDATED
     Quand je télécharge le SIP de la transaction
     Alors le manifest généré de la transaction contient 5 unités archivistiques
     Et le manifest généré de la transaction contient 2 objets binaires
-#    # FIXME : NO LFC
-#    Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-#    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
 
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit qui est à la racine de DescriptiveMetadata, sans qu'aucune règle ne soit définie au niveau du bloc ManagementMetadata
@@ -182,20 +130,11 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
-#    Et le fichier ATR contient 5 unités archivistiques
-#    Et le fichier ATR contient 2 objets binaires
     Quand je valide la transaction sans erreur
     Alors je constate que la transaction passe au statut VALIDATED
     Quand je télécharge le SIP de la transaction
     Alors le manifest généré de la transaction contient 5 unités archivistiques
     Et le manifest généré de la transaction contient 2 objets binaires
-#    # FIXME : NO LFC
-#    Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-#    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
-
 
   Scénario: test sur le RULES_Compute pour une ArchiveUnit qui n'est pas à la racine du bloc DescriptiveMetadata
     Quand j'initialise une transaction
@@ -205,20 +144,11 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
-#    Et le fichier ATR contient 5 unités archivistiques
-#    Et le fichier ATR contient 2 objets binaires
     Quand je valide la transaction sans erreur
     Alors je constate que la transaction passe au statut VALIDATED
     Quand je télécharge le SIP de la transaction
     Alors le manifest généré de la transaction contient 5 unités archivistiques
     Et le manifest généré de la transaction contient 2 objets binaires
-#    # FIXME : NO LFC
-#    Quand je recherche le JCV de l'unité archivistique dont le titre est Oxford Street
-#    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
-
 
   Scénario: SIP dont la règle de gestion du bloc ManagementMetadata s'applique aux deux racines
     Quand j'initialise une transaction
@@ -228,20 +158,11 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
-#    Et le fichier ATR contient 7 unités archivistiques
-#    Et le fichier ATR contient 1 objets binaires
     Quand je valide la transaction sans erreur
     Alors je constate que la transaction passe au statut VALIDATED
     Quand je télécharge le SIP de la transaction
     Alors le manifest généré de la transaction contient 7 unités archivistiques
     Et le manifest généré de la transaction contient 1 objets binaires
-#    # FIXME : NO LFC
-#    Quand je recherche le JCV de l'unité archivistique dont le titre est AU1 Racine002
-#    Alors les statuts des événements LFC.CHECK_MANIFEST, LFC.CHECK_MANIFEST.LFC_CREATION, LFC.CHECK_UNIT_SCHEMA, LFC.UNITS_RULES_COMPUTE, LFC.UNIT_METADATA_INDEXATION sont OK
-
 
 ### KO
 
@@ -254,10 +175,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.UNKNOWN.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
     Et l'outcome détail de l'événement COLLECT_SIP_INGEST est COLLECT_SIP_INGEST.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, UNITS_RULES_COMPUTE.UNKNOWN.KO
 
   Scénario: SIP KO sur la tâche RULES_COMPUTE pour une catégorie de règle déclarant un identifiant de règle d'une autre catégorie
     Quand j'initialise une transaction
@@ -267,10 +184,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont KO
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.CONSISTENCY.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, UNITS_RULES_COMPUTE.CONSISTENCY.KO
 
   Scénario: SIP avec une catégorie de règle ayant un refNonRuleId déclarant un id de règle n'étant pas de la même catégorie
     Quand j'initialise une transaction
@@ -280,10 +193,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements UNITS_RULES_COMPUTE, STP_UNIT_CHECK_AND_PROCESS sont KO
     Et l'outcome détail de l'événement UNITS_RULES_COMPUTE est UNITS_RULES_COMPUTE.REF_INCONSISTENCY.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, UNITS_RULES_COMPUTE.KO, UNITS_RULES_COMPUTE.REF_INCONSISTENCY.KO
 
   Scénario: SIP avec classification level KO
     Quand j'initialise une transaction
@@ -293,11 +202,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements CHECK_CLASSIFICATION_LEVEL, STP_UNIT_CHECK_AND_PROCESS sont KO
     Et l'outcome détail de l'événement CHECK_CLASSIFICATION_LEVEL est CHECK_CLASSIFICATION_LEVEL.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_CLASSIFICATION_LEVEL.KO, LFC.CHECK_CLASSIFICATION_LEVEL.KO
-
 
     ##### CHECK_ARCHIVE_UNIT_PROFILE #####
 
@@ -311,9 +215,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements CHECK_ARCHIVE_UNIT_PROFILE, STP_UNIT_CHECK_AND_PROCESS sont OK
     Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.OK
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.OK
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est OK
 
 ### KO
 
@@ -325,14 +226,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements CHECK_ARCHIVE_UNIT_PROFILE, STP_UNIT_CHECK_AND_PROCESS sont KO
     Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.NOT_FOUND.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.NOT_FOUND.KO
-#    Et le fichier ATR contient la  chaîne de caractères
-#"""
-#"evDetTechData":"Archive Unit Profile not found"
-#"""
 
   Scénario: Import dans collect d'un SIP ne respectant pas le schéma de son document type
     Quand j'initialise une transaction
@@ -342,7 +235,3 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements CHECK_ARCHIVE_UNIT_PROFILE, STP_UNIT_CHECK_AND_PROCESS sont KO
     Et l'outcome détail de l'événement CHECK_ARCHIVE_UNIT_PROFILE est CHECK_ARCHIVE_UNIT_PROFILE.NOT_AU_JSON_VALID.KO
     Et l'outcome détail de l'événement STP_UNIT_CHECK_AND_PROCESS est STP_UNIT_CHECK_AND_PROCESS.KO
-#    # FIXME : NO ATR
-#    Quand je télécharge son fichier ATR
-#    Alors l'état final du fichier ATR est KO
-#    Et le fichier ATR contient les valeurs STP_UNIT_CHECK_AND_PROCESS.KO, CHECK_ARCHIVE_UNIT_PROFILE.KO, CHECK_ARCHIVE_UNIT_PROFILE.NOT_AU_JSON_VALID.KO

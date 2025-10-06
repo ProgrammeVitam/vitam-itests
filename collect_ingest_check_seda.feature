@@ -13,26 +13,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et j'initialise le project
     Et que le projet est créé en succès
 
-##### CHECK_SEDA.CONTAINER_FORMAT #####
-
-# FIXME: "Content" folder is hardcoded
-#  Scénario: Import dans collect d'un SIP avec multi répertoire Content
-#    Quand j'initialise une transaction
-#    Et que j'importe le sip suivant data/SIP_KO/ZIP/KO_DEUX_Contents.zip
-#    Et je recherche le journal des opérations
-#    Alors le statut final du journal des opérations est KO
-#    Et le statut de l'événement CHECK_SEDA est KO
-#    Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.CONTAINER_FORMAT.DIRECTORY.KO
-
-# FIXME : Manifest check and unicity not implemented
-#  Scénario: Import dans collect d'un SIP multi manifest
-#    Quand j'initialise une transaction
-#    Et que j'importe le sip suivant data/SIP_KO/ZIP/KO_DEUX-Manifest.zip
-#    Et je recherche le journal des opérations
-#    Alors le statut final du journal des opérations est KO
-#    Et le statut de l'événement CHECK_SEDA est KO
-#    Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.CONTAINER_FORMAT.FILE.KO
-
 ##### CHECK_SEDA.NO_FILE #####
 
   Scénario: Import dans collect d'un SIP avec bordereau mauvais format
@@ -42,15 +22,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_SEDA, STP_INGEST_CONTROL_SIP sont KO
     Et l'outcome détail de l'événement CHECK_SEDA est CHECK_SEDA.NOT_XML_FILE.KO
-
-# FIXME : Manifest check and unicity not implemented
-#  Scénario: Import dans collect d'un SIP avec bordereau absent
-#    Quand j'initialise une transaction
-#    Et que j'importe le sip suivant data/SIP_KO/ZIP/KO_BORD_absent.zip
-#    Et je recherche le journal des opérations
-#    Alors le statut final du journal des opérations est KO
-#    Et le statut de l'événement MANIFEST_FILE_NAME_CHECK est KO
-#    Et l'outcome détail de l'événement MANIFEST_FILE_NAME_CHECK est MANIFEST_FILE_NAME_CHECK.KO
 
 ##### CHECK_SEDA.NOT_XML_FILE #####
 

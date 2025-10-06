@@ -22,7 +22,3 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Quand j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
     Et je recherche les unités archivistiques de la transaction
     Alors le nombre de résultat est 2
-# FIXME : Pas de recherche de GOTs
-#    Et je recherche les groupes d'objets
-#    Alors les metadonnées sont
-#     | #nbobjects        | 33                                |

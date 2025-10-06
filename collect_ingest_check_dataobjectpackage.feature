@@ -20,7 +20,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont OK
-    # FIXME : No LFC
 
   Scénario: Import dans collect d'un SIP avec des usages sans numéros
     Quand j'initialise une transaction
@@ -28,7 +27,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST_DATAOBJECT_VERSION, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont OK
-    # FIXME : No ATR / LFC
 
   Scénario: Import dans collect d'un SIP avec mauvaises versions déclarées
     Quand j'initialise une transaction
@@ -181,12 +179,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors le statut final du journal des opérations est KO
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
     Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.NOT_FOUND_ATTACHMENT.KO
-
-  # FIXME: Attachement
-  ##### Attach AU to existing GOT #####
-  # Scénario: Rattachement d'une unité archivistique de sip à un groupe d'objet existant OK
-  # Scénario: Test SIP avec GOT rattachement KO (US 2754)
-  # Scénario: Test SIP avec SystemID n'étant pas un GUID
 
 ##### CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY #####
 
