@@ -33,9 +33,9 @@ Contexte: Vérifier collect service
     Et j'utilise le fichier json suivant data/queries/collect/upload_got_collect.json
     Et je crée un GOT
     Et j'upload le fichier suivant data/queries/collect/plan-barbusse.txt
-    Et je clôture et je constate son statut READY ou VALIDATED
+    Et je valide la transaction sans erreur
     Et j'envoie le SIP et je constate son statut SENT
-    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK 
+    Et je constate que la transaction passe au statut ACK_OK
 
   Scénario: Gestion du cycle de vie d'une transaction de collecte de données ko
     Etant donné les tests effectués sur le tenant 0
@@ -52,7 +52,7 @@ Contexte: Vérifier collect service
     Et j'utilise le fichier json suivant data/queries/collect/upload_got_collect.json
     Et je crée un GOT
     Et j'upload le fichier suivant data/queries/collect/plan-barbusse.txt
-    Et je clôture et je constate son statut READY ou VALIDATED
+    Et je valide la transaction sans erreur
     Et j'envoie le SIP et je constate son statut SENT
     Et je reçois un statut KO depuis l'ingest et je constate son statut ACK_KO 
 
@@ -82,9 +82,9 @@ Contexte: Vérifier collect service
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie.zip
     Et j'envoie un fichier de mise à jour CSV data/queries/collect/metadata_maj.csv
     Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
-    Et je clôture et je constate son statut READY ou VALIDATED
+    Et je valide la transaction sans erreur
     Et j'envoie le SIP et je constate son statut SENT
-    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+    Et je constate que la transaction passe au statut ACK_OK
 
   Scénario: Gestion d'une arborescence bureautique et MAJ des métadonnées via JSONL et purge du projet
     Etant donné les tests effectués sur le tenant 0
@@ -98,9 +98,9 @@ Contexte: Vérifier collect service
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie.zip
     Et j'envoie un fichier de mise à jour JSONL data/queries/collect/metadata_maj.jsonl
     Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
-    Et je clôture et je constate son statut READY ou VALIDATED
+    Et je valide la transaction sans erreur
     Et j'envoie le SIP et je constate son statut SENT
-    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+    Et je constate que la transaction passe au statut ACK_OK
 
 
 
@@ -121,9 +121,9 @@ Contexte: Vérifier collect service
     Et je met a jour la transaction avec le nom updatedTransactionName
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/sample_stream.zip
     Et je constate qu'une AU ainsi qu'un GOT sont créés
-    Et je clôture et je constate son statut READY ou VALIDATED
+    Et je valide la transaction sans erreur
     Et j'envoie le SIP et je constate son statut SENT
-    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+    Et je constate que la transaction passe au statut ACK_OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
     Et je recherche les unités archivistiques
     Et je vérifie que l'unité est rattaché au noeud de l'arbre de positionnement
@@ -147,9 +147,9 @@ Contexte: Vérifier collect service
     Et je met a jour la transaction avec le nom updatedTransactionName
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/sample_stream_with_metadata.zip
     Et je constate qu'une AU ainsi qu'un GOT sont créés
-    Et je clôture et je constate son statut READY ou VALIDATED
+    Et je valide la transaction sans erreur
     Et j'envoie le SIP et je constate son statut SENT
-    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+    Et je constate que la transaction passe au statut ACK_OK
     Et j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
     Et je recherche les unités archivistiques
     Et je vérifie que l'unité est rattaché au noeud de l'arbre de positionnement
@@ -167,9 +167,9 @@ Contexte: Vérifier collect service
     Et je recherche la transaction
     Et j'envoie l'arborescence bureautique suivante data/queries/collect/SIP_Paie_MetadataJsonl.zip
     Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_Csv_ExpectedUnites.json
-    Et je clôture et je constate son statut READY ou VALIDATED
+    Et je valide la transaction sans erreur
     Et j'envoie le SIP et je constate son statut SENT
-    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+    Et je constate que la transaction passe au statut ACK_OK
 
 
   Scénario: Gestion d'une arborescence bureautique et MAJ des métadonnées via SIP
@@ -183,6 +183,6 @@ Contexte: Vérifier collect service
     Et je recherche la transaction
     Et j'importe le sip suivant data/SIP_OK/ZIP/4_UNITS_2_GOTS.zip
     Et je constate que des métadonnées correspondent au fichier json data/expectedJson/Result_SIP_ExpectedUnites.json
-    Et je clôture et je constate son statut READY ou VALIDATED
+    Et je valide la transaction sans erreur
     Et j'envoie le SIP et je constate son statut SENT
-    Et je reçois un statut OK depuis l'ingest et je constate son statut ACK_OK
+    Et je constate que la transaction passe au statut ACK_OK
