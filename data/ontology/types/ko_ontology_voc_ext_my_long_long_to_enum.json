@@ -3724,9 +3724,9 @@
   {
     "Identifier": "TransformationRules",
     "Description": "Mapping : preservationscenario-es-mapping.json",
-    "Type": "TEXT",
+    "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "LARGE",
+    "StringSize": "MEDIUM",
     "Origin": "INTERNAL",
     "ShortName": "Fichier jstl pour la préservation",
     "Collections": [
