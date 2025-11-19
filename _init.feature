@@ -21,11 +21,11 @@ Fonctionnalité: initialisation
     Etant donné un fichier de service producteur nommé data/agencies/agencies_init.csv
     Alors j'importe les services producteurs sans échec
 
-  Scénario: Scénario 1 import des regles des getions et formats et des ...
+  Scénario: Scénario 1 import des référentiels
     Et les tests effectués sur le tenant 1
     Et j'importe le fichier nommé data/rules/rules_ok.csv pour le référentiel RULES
     Et j'importe le fichier nommé data/rules/rules_ko_empty_line.csv dans le référentiel RULES
-    Et j'importe le fichier nommé data/formats/DROID_SignatureFile_V109.xml dans le référentiel FORMATS
+    Et j'importe le fichier nommé data/formats/DROID_SignatureFile_V121.xml dans le référentiel FORMATS
     Et un contract nommé data/contracts/contract_acces_TNR_tenant_1.json
     Et j'importe ce contrat sans échec de type ACCESS_CONTRACTS
     Et un contract nommé data/contracts/referential_contracts_ok.json
