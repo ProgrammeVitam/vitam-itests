@@ -115,7 +115,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
 
   Scénario: Cleanup (finally) : Reset référentiel PRONOM
     Etant donné les tests effectués sur le tenant 1
-    Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_V109.xml dans le référentiel FORMATS
+    Quand j'importe le fichier nommé data/formats/DROID_SignatureFile_V121.xml dans le référentiel FORMATS
     Alors les metadonnées sont
       | Code           | 201                                     |
     Etant donné les tests effectués sur le tenant 0
