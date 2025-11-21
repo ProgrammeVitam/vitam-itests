@@ -1,0 +1,254 @@
+{
+  "$roots": [],
+  "$query": [
+    {
+      "$and": [
+        {
+          "$exists": "#object"
+        },
+        {
+          "$match": {
+            "Title": "monSIP"
+          }
+        },
+        {
+          "$eq": {
+            "Writer.Nationality": "Sealand"
+          }
+        },
+        {
+          "$eq": {
+            "Addressee.FirstName": "Jules"
+          }
+        },
+        {
+          "$eq": {
+            "Addressee.FullName": "Iulius Caesar Divus"
+          }
+        },
+        {
+          "$eq": {
+            "Addressee.Nationality": "Italien"
+          }
+        },
+        {
+          "$eq": {
+            "Addressee.GivenName": "Alexandre"
+          }
+        },
+        {
+          "$eq": {
+            "Addressee.BirthPlace.City": "Pella"
+          }
+        },
+        {
+          "$eq": {
+            "Addressee.BirthPlace.Country": "Macédoine"
+          }
+        },
+        {
+          "$eq": {
+            "Transmitter.Function": "Service de transmission"
+          }
+        },
+        {
+          "$eq": {
+            "Sender.GivenName": "Alexander"
+          }
+        },
+        {
+          "$eq": {
+            "Sender.BirthDate": "1970-06-03"
+          }
+        },
+        {
+          "$eq": {
+            "Sender.Position": "CEO"
+          }
+        },
+        {
+          "$eq": {
+            "Sender.Mandate": "Mandataire_1"
+          }
+        },
+        {
+          "$eq": {
+            "Sender.Mandate": "Mandataire_2"
+          }
+        },
+        {
+          "$eq": {
+            "RelatedObjectReference.Replaces.ExternalReference": "ID_Fictif"
+          }
+        },
+        {
+          "$eq": {
+            "StartDate": "2016-06-03T15:28:00"
+          }
+        },
+        {
+          "$eq": {
+            "Event.evDateTime": "2016-06-03T15:28:00"
+          }
+        },
+        {
+          "$eq": {
+            "Event.evId": "EventIdentifier_content0"
+          }
+        },
+        {
+          "$eq": {
+            "Event.evTypeProc": "EventTypeCode_content0"
+          }
+        },
+        {
+          "$eq": {
+            "Event.evType": "EventType_content0"
+          }
+        },
+        {
+          "$eq": {
+            "Event.evDateTime": "2016-06-03T15:28:00"
+          }
+        },
+        {
+          "$eq": {
+            "Event.evTypeDetail": "EventDetail_content0"
+          }
+        },
+        {
+          "$eq": {
+            "Event.outcome": "Outcome0"
+          }
+        },
+        {
+          "$eq": {
+            "Event.outDetail": "OutcomeDetail_content0"
+          }
+        },
+        {
+          "$eq": {
+            "Event.outMessg": "OutcomeDetailMessage_content0"
+          }
+        },
+        {
+          "$eq": {
+            "Event.evDetData": "EventDetailData_content0_seda22"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.Signer.BirthName": "Henry"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.Signer.SigningTime": "2016-06-03T15:28:00"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.Signer.Nationality": "Monaco"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.Validator.ValidationTime": "2016-06-03T15:28:00"
+          }
+        },
+        {
+          "$eq": {
+            "Signature.ReferencedObject.SignedObjectDigest.MessageDigest": "942bb63cc16bf5ca3ba7fabf40ce9be19c3185a36cd87ad17c63d6fad1aa29d4312d73f2d6a1ba1266c3a71fc4119dd476d2d776cf2ad2acd7a9a3dfa1f80dc7"
+          }
+        },
+        {
+          "$eq": {
+            "PersistentIdentifier.PersistentIdentifierType": "ark"
+          }
+        },
+        {
+          "$eq": {
+            "PersistentIdentifier.PersistentIdentifierOrigin": "OriginatingAgency"
+          }
+        },
+        {
+          "$eq": {
+            "PersistentIdentifier.PersistentIdentifierReference": "Agency-00001"
+          }
+        },
+        {
+          "$eq": {
+            "PersistentIdentifier.PersistentIdentifierContent": "ark:/22567/001a957db5eadaac"
+          }
+        },
+        {
+          "$eq": {
+            "#management.StorageRule.FinalAction": "Transfer"
+          }
+        },
+        {
+          "$eq": {
+            "#management.ClassificationRule.ClassificationAudience": "ClassificationAudience0"
+          }
+        },
+        {
+          "$eq": {
+            "#management.ClassificationRule.ClassificationLevel": "Secret Défense"
+          }
+        },
+        {
+          "$eq": {
+            "#management.ClassificationRule.ClassificationOwner": "ClassificationOwner0"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.Rule": "HOL-00002"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.StartDate": "2000-01-01"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.EndDate": "2010-01-01"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.HoldEndDate": "2010-01-01"
+          }
+        },
+        {
+          "$match": {
+            "#management.HoldRule.Rules.HoldOwner": "Owner"
+          }
+        },
+        {
+          "$match": {
+            "#management.HoldRule.Rules.HoldReason": "Reason"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.HoldReassessingDate": "2005-01-01"
+          }
+        },
+        {
+          "$eq": {
+            "#management.HoldRule.Rules.PreventRearrangement": false
+          }
+        },
+        {
+          "$eq": {
+            "#originating_agency": "FRAN_NP_009913"
+          }
+        }
+      ]
+    }
+  ],
+  "$filter": {},
+  "$projection": {}
+}

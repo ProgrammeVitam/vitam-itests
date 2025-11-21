@@ -43,7 +43,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
   "$roots": [],
   "$query": [
     {
-       "$in":{"#opi":["Named-Operation-Id<OperationId1>"]}
+      "$exists": "#id"
     }
   ],
   "$projection": {}
@@ -69,7 +69,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
   "$roots": [],
   "$query": [
     {
-       "$in":{"#opi":["Named-Operation-Id<OperationId1>"]}
+        "$exists": "#id"
     }
   ],
   "$projection": {}
@@ -98,7 +98,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et que j'importe le sip suivant data/SIP_OK/ZIP/OK_SIP_FULL_SEDA2.2.zip
     Quand je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
-    Quand j'utilise le fichier de requête suivant data/queries/select_seda2.2_fields.json
+    Quand j'utilise le fichier de requête suivant data/queries/select_seda2.2_fields_any_operation.json
     Et je recherche les unités archivistiques de la transaction
     Alors le nombre de résultat est 1
     Quand j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json

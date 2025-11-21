@@ -21,6 +21,6 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et que j'importe le sip suivant data/SIP_OK/ZIP/OK_SIP_1000_AU.zip
     Et je recherche le journal des opérations
     Alors le statut final du journal des opérations est WARNING
-    Quand j'utilise le fichier de requête suivant data/queries/select_units_by_operation_id.json
+    Quand j'utilise le fichier de requête suivant data/queries/select_all_units_any_operation.json
     Et je recherche les unités archivistiques de la transaction
     Alors le nombre de résultat est 1000

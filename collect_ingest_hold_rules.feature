@@ -21,7 +21,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors le statut final du journal des opérations est WARNING
 
     # Vérification globale
-    Quand j'utilise le fichier de requête suivant data/queries/select_all_units.json
+    Quand j'utilise le fichier de requête suivant data/queries/select_all_units_any_operation.json
     Et je recherche les unités archivistiques de la transaction
     Alors le nombre de résultat est 8
 
@@ -29,7 +29,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors j'utilise la requête suivante
     """
     {"$roots": [],
-      "$query": [{"$and": [ {"$eq":{"#opi":"Operation-Id"}}, {"$eq": {"Title": "Unit1"}}]} ],
+      "$query": [{"$and": [ {"$eq": {"Title": "Unit1"}}]} ],
       "$projection": {}}
     """
     Et je recherche les unités archivistiques de la transaction
@@ -40,7 +40,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors j'utilise la requête suivante
     """
     {"$roots": [],
-      "$query": [{"$and": [ {"$eq":{"#opi":"Operation-Id"}}, {"$eq": {"Title": "Unit2"}}]} ],
+      "$query": [{"$and": [ {"$eq": {"Title": "Unit2"}}]} ],
       "$projection": {}}
     """
     Et je recherche les unités archivistiques de la transaction
@@ -51,7 +51,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors j'utilise la requête suivante
     """
     {"$roots": [],
-      "$query": [{"$and": [ {"$eq":{"#opi":"Operation-Id"}}, {"$eq": {"Title": "Unit3"}}]} ],
+      "$query": [{"$and": [ {"$eq": {"Title": "Unit3"}}]} ],
       "$projection": {}}
     """
     Et je recherche les unités archivistiques de la transaction
@@ -62,7 +62,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors j'utilise la requête suivante
     """
     {"$roots": [],
-      "$query": [{"$and": [ {"$eq":{"#opi":"Operation-Id"}}, {"$eq": {"Title": "Unit4"}}]} ],
+      "$query": [{"$and": [ {"$eq": {"Title": "Unit4"}}]} ],
       "$projection": {}}
     """
     Et je recherche les unités archivistiques de la transaction
@@ -73,7 +73,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors j'utilise la requête suivante
     """
     {"$roots": [],
-      "$query": [{"$and": [ {"$eq":{"#opi":"Operation-Id"}}, {"$eq": {"Title": "Unit5"}}]} ],
+      "$query": [{"$and": [ {"$eq": {"Title": "Unit5"}}]} ],
       "$projection": {}}
     """
     Et je recherche les unités archivistiques de la transaction
@@ -84,7 +84,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors j'utilise la requête suivante
     """
     {"$roots": [],
-      "$query": [{"$and": [ {"$eq":{"#opi":"Operation-Id"}}, {"$eq": {"Title": "Unit6"}}]} ],
+      "$query": [{"$and": [ {"$eq": {"Title": "Unit6"}}]} ],
       "$projection": {}}
     """
     Et je recherche les unités archivistiques de la transaction
@@ -95,7 +95,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors j'utilise la requête suivante
     """
     {"$roots": [],
-      "$query": [{"$and": [ {"$eq":{"#opi":"Operation-Id"}}, {"$eq": {"Title": "Unit7"}}]} ],
+      "$query": [{"$and": [ {"$eq": {"Title": "Unit7"}}]} ],
       "$projection": {}}
     """
     Et je recherche les unités archivistiques de la transaction
@@ -106,7 +106,7 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Alors j'utilise la requête suivante
     """
     {"$roots": [],
-      "$query": [{"$and": [ {"$eq":{"#opi":"Operation-Id"}}, {"$eq": {"Title": "Unit8"}}]} ],
+      "$query": [{"$and": [ {"$eq": {"Title": "Unit8"}}]} ],
       "$projection": {}}
     """
     Et je recherche les unités archivistiques de la transaction

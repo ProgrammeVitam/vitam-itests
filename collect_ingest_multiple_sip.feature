@@ -13,21 +13,17 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et j'initialise le project
     Et que le projet est créé en succès
 
+
 ### OK
-  @Light
-  Scénario: Import dans collect d'un SIP avec une date au format "2016-09-26Z" (pour transformation)
+  Scénario: Import dans collect de plusieurs SIP chacun avec 1000 AU
 
     Quand j'initialise une transaction
-    Et que j'importe le sip suivant data/SIP_OK/ZIP/OK_DATE_SHOULD_TRANSFORM_PASS.zip
+    Et que j'importe le sip suivant data/SIP_OK/ZIP/OK_SIP_1000_AU.zip
     Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est OK
-    Et j'utilise la requête suivante
-"""
-{ "$roots": [],
-  "$query": [{"$and":[{"$eq":{"Title":"Date Format z"}}]}],
-  "$projection": {
-  }}
-"""
+    Alors le statut final du journal des opérations est WARNING
+    Et que j'importe le sip suivant data/SIP_OK/ZIP/OK_SIP_1000_AU.zip
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est WARNING
+    Quand j'utilise le fichier de requête suivant data/queries/select_all_units_any_operation.json
     Et je recherche les unités archivistiques de la transaction
-    Alors les metadonnées sont
-    | Writer.BirthDate        | 2016-09-26                                  |
+    Alors le nombre de résultat est 2000
