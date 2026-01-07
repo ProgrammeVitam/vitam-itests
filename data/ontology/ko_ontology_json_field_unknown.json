@@ -2846,7 +2846,8 @@
     "ShortName": "Date",
     "Collections": [
       "LogbookOperation",
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
@@ -2890,7 +2891,9 @@
     "Origin": "INTERNAL",
     "ShortName": "Identifiant du processus",
     "Collections": [
-      "LogbookOperation"
+      "LogbookOperation",
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
