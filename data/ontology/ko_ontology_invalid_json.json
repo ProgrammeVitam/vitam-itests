@@ -3502,7 +3502,8 @@
     "Origin": "INTERNAL",
     "ShortName": "OperationId",
     "Collections": [
-      "Unit"
+      "Unit",
+      "ObjectGroup"
     ]
   },
   {
