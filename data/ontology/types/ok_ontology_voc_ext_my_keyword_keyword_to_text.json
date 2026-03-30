@@ -400,7 +400,7 @@
     "Description": "Mapping : unit-es-mapping.json",
     "Type": "TEXT",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Détail",
     "Collections": [
@@ -2865,7 +2865,7 @@
       "ObjectGroup"
     ]
   },
-    {
+  {
     "Identifier": "evDetData",
     "SedaField": "EventDetailData",
     "ApiField": "evDetData",
@@ -2966,7 +2966,7 @@
     "Description": "Mapping : logbook-es-mapping.json. Code du type de l’opération",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Type d'opération",
     "Collections": [
@@ -3262,7 +3262,7 @@
     "Description": "Mapping : logbook-es-mapping.json. Statut de l’événement",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
-    "StringSize": "MEDIUM",
+    "StringSize": "SHORT",
     "Origin": "INTERNAL",
     "ShortName": "Statut",
     "Collections": [
@@ -4597,7 +4597,7 @@
   {
     "Identifier": "SourceOriginatingAgency",
     "ApiField": "SourceOriginatingAgency",
-    "Description": "Identifiant de l'ancien service producteur source d'une opération de réattribution",
+    "Description": "Identifiant du service producteur source avant réattribution",
     "Type": "KEYWORD",
     "TypeDetail": "STRING",
     "StringSize": "MEDIUM",
@@ -4605,33 +4605,36 @@
     "ShortName": "Service producteur source",
     "Collections": [
       "Unit",
-      "ObjectGroup"
+      "ObjectGroup",
+      "AccessionRegisterDetail"
     ]
-  },{
-  "Identifier": "TargetOriginatingAgency",
-  "ApiField": "TargetOriginatingAgency",
-  "Description": "Identifiant de l'ancien service producteur cible d'une opération de réattribution",
-  "Type": "KEYWORD",
-  "TypeDetail": "STRING",
-  "StringSize": "MEDIUM",
-  "Origin": "INTERNAL",
-  "ShortName": "Service producteur cible",
-  "Collections": [
-    "Unit",
-    "ObjectGroup"
-  ]
   },
   {
-  "Identifier": "ReassignmentDate",
-  "ApiField": "ReassignmentDate",
-  "Description": "Date de réattribution de service producteur",
-  "Type": "DATE",
-  "TypeDetail": "DATETIME",
-  "Origin": "INTERNAL",
-  "ShortName": "Date de réattribution de service producteur",
-  "Collections": [
-    "Unit",
-    "ObjectGroup"
-  ]
-}
+    "Identifier": "TargetOriginatingAgency",
+    "ApiField": "TargetOriginatingAgency",
+    "Description": "Identifiant du service producteur cible après réattribution",
+    "Type": "KEYWORD",
+    "TypeDetail": "STRING",
+    "StringSize": "MEDIUM",
+    "Origin": "INTERNAL",
+    "ShortName": "Service producteur cible",
+    "Collections": [
+      "Unit",
+      "ObjectGroup",
+      "AccessionRegisterDetail"
+    ]
+  },
+  {
+    "Identifier": "ReassignmentDate",
+    "ApiField": "ReassignmentDate",
+    "Description": "Date de réattribution de service producteur",
+    "Type": "DATE",
+    "TypeDetail": "DATETIME",
+    "Origin": "INTERNAL",
+    "ShortName": "Date de réattribution de service producteur",
+    "Collections": [
+      "Unit",
+      "ObjectGroup"
+    ]
+  }
 ]
