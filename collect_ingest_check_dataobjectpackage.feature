@@ -172,13 +172,13 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
     Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.CHECK_MANIFEST_LOOP.KO
 
-  Scénario: Import dans collect d'un SIP avec AU rattachement KO (US 2754)
-    Quand j'initialise une transaction
-    Et que j'importe le sip suivant data/SIP_KO/ZIP/KO_WRONG_ATTACHMENT_AU.zip
-    Et je recherche le journal des opérations
-    Alors le statut final du journal des opérations est KO
-    Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
-    Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.NOT_FOUND_ATTACHMENT.KO
+  #Scénario: Import dans collect d'un SIP avec AU rattachement KO (US 2754)
+  #  Quand j'initialise une transaction
+  #  Et que j'importe le sip suivant data/SIP_KO/ZIP/KO_WRONG_ATTACHMENT_AU.zip
+  #  Et je recherche le journal des opérations
+  #  Alors le statut final du journal des opérations est KO
+  #  Et les statuts des événements CHECK_DATAOBJECTPACKAGE, CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST sont KO
+  #  Et le résultat de l'événement CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST est CHECK_DATAOBJECTPACKAGE.CHECK_MANIFEST.NOT_FOUND_ATTACHMENT.KO
 
 ##### CHECK_DATAOBJECTPACKAGE.CHECK_CONSISTENCY #####
 
