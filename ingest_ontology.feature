@@ -36,10 +36,10 @@ Fonctionnalité: Ontology test
     Et j'utilise la requête suivante
 """
 { "$roots": [],
-  "$query": [{"$and":[{"$eq":{"FileInfo.Filename":"BinaryMaster.txt"}},{"$in":{"#operations":["Operation-Id"]}}]}],
+  "$query": [{"$eq":{"#operations":"Operation-Id"}}],
   "$projection": {
   }}
 """
      Et je recherche les groupes d'objets
      Alors les metadonnées sont
-     | FileInfo.LastModified        | 2016-10-18T21:03:30                                 |
+     | #qualifiers.1.versions.0.FileInfo.LastModified        | 2016-10-18T21:03:30                                 |
