@@ -26,7 +26,7 @@ Fonctionnalité: Export DIP
     Alors le dip contient 3 unités archivistiques
     Alors le dip contient 2 groupes d'objets
     Alors le dip contient 2 objets dont 2 sont binaires
-    Alors le dip utilise la version SEDA "2.3"
+    Alors le dip utilise la version SEDA "2.4"
 
   Scénario: Test export dip unit with specific Seda version then OK
     Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/NEW_3_UNITS_2_GOTS.zip
