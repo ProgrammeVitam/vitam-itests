@@ -17,11 +17,13 @@ Fonctionnalité: SEDA 2.4
     Alors le statut final du journal des opérations est OK
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est OK
+    Et le fichier ATR contient la valeur fr:gouv:culture:archivesdefrance:seda:v2.4
     Quand je recherche le JCV du groupe d'objet de l'unité archivistique dont le titre est monSIP
     Alors les statuts des événements LFC.OG_METADATA_INDEXATION est OK
     Quand j'utilise le fichier de requête suivant data/queries/select_seda2.3_fields.json
     Et je recherche les unités archivistiques
     Alors le nombre de résultat est 1
+    Alors tous les résultats contiennent la propriété "#sedaVersion" dont la valeur est "2.4"
     Quand j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
@@ -31,3 +33,43 @@ Fonctionnalité: SEDA 2.4
     Alors les metadonnées pour le détail du registre de fond sont
       | LegalStatus                    | Private Archive                      |
       | AcquisitionInformation         | AcquisitionInformation0              |
+
+  Scénario: Transfert en SEDA 2.4 puis acquittement en succès
+    Etant donné les données du jeu de test du SIP nommé data/SIP_OK/ZIP/OK_SIP_FULL_SEDA2.4.zip
+    Quand j'utilise la requête suivante
+"""
+{
+  "dataObjectVersionToExport": {
+    "dataObjectVersions": [ "BinaryMaster" ]
+  },
+  "transferWithLogBookLFC": false,
+  "transferRequestParameters": {
+    "archivalAgreement": "ArchivalAgreement0",
+    "originatingAgencyIdentifier": "FRAN_NP_009913",
+    "archivalAgencyIdentifier": "Identifier4",
+    "transferringAgency": "Identifier5",
+    "comment": "Transfert SEDA 2.4"
+  },
+  "dslRequest": {
+    "$roots": [],
+    "$query": [
+      { "$in": { "#operations": [ "Operation-Id" ] } }
+    ],
+    "$filter": {},
+    "$projection": {}
+  },
+  "sedaVersion": "2.4"
+}
+"""
+    Quand je lance un transfert
+    Alors le statut final du journal des opérations est OK
+    Quand je télécharge le sip du transfert
+    Et j'upload le sip du transfert
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK
+    Quand je télécharge son fichier ATR
+    Alors l'état final du fichier ATR est OK
+    Et le fichier ATR contient la valeur fr:gouv:culture:archivesdefrance:seda:v2.4
+    Quand je receptionne l'ATR du versement d'un transfert
+    Et je recherche le journal des opérations
+    Alors le statut final du journal des opérations est OK

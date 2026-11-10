@@ -18,9 +18,10 @@ Fonctionnalité: Opérations de collecte de données pour construire un SIP cons
     Et que j'importe le sip suivant data/SIP_OK/ZIP/OK_SIP_FULL_SEDA2.4.zip
     Quand je recherche le journal des opérations
     Alors le statut final du journal des opérations est OK
-    Quand j'utilise le fichier de requête suivant data/queries/select_seda2.4_fields_any_operation.json
+    Quand j'utilise le fichier de requête suivant data/queries/select_seda2.3_fields_any_operation.json
     Et je recherche les unités archivistiques de la transaction
     Alors le nombre de résultat est 1
+    Alors tous les résultats contiennent la propriété "#sedaVersion" dont la valeur est "2.4"
     Quand j'utilise le fichier de requête suivant data/queries/select_logbook_operation_by_id.json
     Et je recherche les journaux d'opération
     Alors les metadonnées sont
