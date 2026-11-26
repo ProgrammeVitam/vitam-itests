@@ -22,6 +22,7 @@ Fonctionnalité: uploader des fichier SIP
     Et le statut de l'événement SANITY_CHECK_SIP est KO
     Quand je télécharge son fichier ATR
     Alors l'état final du fichier ATR est KO
+    Et le fichier ATR contient la valeur fr:gouv:culture:archivesdefrance:seda:v2.4
 
   @Light
   Scénario: Test ATR OK
